@@ -1,0 +1,22 @@
+#cover {
+  width: 100%;
+  background: url("../images/cover.jpg") center center no-repeat fixed;
+  background-size: cover; }
+
+#article {
+  -webkit-flow: "article_flow";
+  -webkit-flow-into: article_flow; }
+
+#region1, #region2 {
+  width: 100%;
+  content: -webkit-from-flow("article_flow");
+  -webkit-flow-from: article_flow; }
+
+#region1 {
+  height: 9em;
+  background: yellow; }
+
+#region2 {
+  margin-top: 10em;
+  height: 12em;
+  background: pink; }
