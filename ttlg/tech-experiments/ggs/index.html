@@ -1,0 +1,72 @@
+<!doctype html>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+
+<!--
+	The comment jumble above is handy for targeting old IE with CSS.
+	http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+-->
+	
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<title>CSS Regions // Alpha Test</title>
+		
+		<!-- Please don't add "maximum-scale=1" here. It's bad for accessibility. -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		
+		<!-- Feel free to split the CSS into separate files, if you like. -->
+		<link rel="stylesheet" href="styles/ggs.css"/> 
+		<link rel="stylesheet" href="styles/styles.css"/>
+		
+		<!-- Here's Golden Gridlet, the grid overlay script. -->
+		<script src="js/GGS.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<!-- Temporary JS for resizing covers to window height -->
+		<script type='text/javascript'>
+			$(document).ready(function() {
+				var $coverHeight = $(window).height();
+				// alert ($coverHeight);
+				$('#cover').css({'height':(($coverHeight))+'px'});
+			});
+		</script>
+	</head>
+	
+	<body lang="en">
+		
+		<!--
+		<header id="cover">
+			<div class="wrapper">
+				<h1>Cafeteria 405 Kitchen</h1>
+				<h2>Not Too Hot, Not Too Cold</h2>
+			</div>
+		</header>
+	-->
+
+		<article id="story" class="destination wrapper">
+			<section id="region1"></section>
+			<section id="region2"></section>
+			<blockquote class="large">And should you be out with your honey, floor seating is much more convenient for (discreet) side-by-side snuggling. <em>This is an out-of-the-flow quote.</em></blockquote>
+			<section id="region3"></section>
+		</article>
+
+		<article id="quote" class="wrapper">
+			<blockquote>And should you be out with your honey, floor seating is much more convenient for (discreet) side-by-side snuggling.</blockquote>
+		</article>
+
+		<!-- No .wrapper class because the attributes of the entire flow container will be displayed in the destination(s), even things like padding which was the culprit here. AKA DON'T STYLE THIS	-->
+		<article id="article">
+			<p>There’s nothing particularly extraordinary about Hongdae’s 405 Kitchen. It doesn’t break new stylistic ground, nor does it boast a menu of dishes to wow your palate. There isn’t a stage to showcase the trendiest new bands or gimmicks like underwater finger painting or skin-nibbling fish footbaths. Sure, the décor is endearing with its antique trinkets sitting atop mismatched shelving and chalkboard walls adorned with personal messages, but all this is hardly groundbreaking by Korean café standards.</p>
+		<!-- inline blockquotes can't have specific 'container' breaks defined so they can get split between destination containers, in short, this doesn't work
+			<blockquote class="inline">And should you be out with your honey, floor seating is much more convenient for (discreet) side-by-side snuggling.</blockquote>
+		-->
+			<p>Instead, 405 Kitchen aims to fulfill all of your potential café needs, whether it be for work, meeting friends, or filling those in-between times with restful pause.</p>
+			<p>The standard array of coffee drinks? Check. Beer and wine? Check. Café fare to appease your appetite? Check. Add in the free Wi-Fi and variety of seating options, and you’ve got a go-to destination in my book. Make a beeline for 405 Kitchen if, for example, you’ve got an hour before dinner and two of your friends need caffeine, another needs a beer, and you, yourself, are starving because one roll of <em>kimbap</em> at 10:30 a.m. does not qualify as lunch. Be forewarned that the main course items are somewhat overpriced, ranging from the mid- to high-teens.</p>
+			<p>There is one rather unique interior feature that sets 405 Kitchen apart: A semi-lofted area in the back offers floor seating on large, comfy cushions around low, round tables. Kick off your shoes before stepping in, and enjoy the abundant view of the foliage in their veranda., which is especially nice during the day. And should you be out with your honey, floor seating is much more convenient for (discreet) side-by-side snuggling. (But please, lest I regret my words, spare us your more outrageous PDA.)</p>
+			<p>Despite my offhand dismissal of “trendy-café-standard,” I personally like the light bulbs that line the chalkboards and the ladles hanging on the wall. The blend of quirky with the well-worn makes for a comfortable <em>bunuigi</em> (분위기), or atmosphere.</p>
+			<p>Next time you’re in Hongdae and need a place to park yourself, try stopping by 405 Kitchen. I think you’ll find that it’s just about right.</p>
+		</article>
+
+	</body>
+	
+</html>
