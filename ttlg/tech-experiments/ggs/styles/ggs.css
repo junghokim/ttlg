@@ -172,91 +172,96 @@ h3 {
 body {
   padding-bottom: 3em; }
 
+header#masthead {
+  z-index: 1;
+  position: fixed;
+  margin: 0 0 0 5.556%; }
+
+section.article {
+  width: 100%; }
+
 header#cover {
+  position: relative;
   display: block;
   overflow: auto;
-  padding: 1.5em 0;
+  padding: 1.5em 5.556%;
   width: 100%;
-  background: url("../images/cover.jpg") center center no-repeat; }
-  header#cover h1 {
-    margin-top: 0;
-    width: 37.5%;
-    color: white;
+  background: url("../images/cover.jpg") center center no-repeat;
+  box-sizing: border-box; }
+  header#cover .wrapper {
+    position: absolute;
+    right: 11.111%;
+    bottom: 12em;
     background: black; }
-  header#cover h2 {
-    color: turquoise; }
-
-article {
-  margin-top: 20px; }
+    header#cover .wrapper h1 {
+      color: white; }
+    header#cover .wrapper h2 {
+      color: turquoise; }
 
 article#story {
-  margin: 0 5.556%; }
+  float: left;
+  margin: 0 16.667%; }
   article#story #district-1, article#story #district-2 {
+    overflow: hidden;
     margin-top: 3em;
     margin-bottom: 3em; }
   article#story #district-1 {
-    position: relative;
-    width: 50%; }
-    article#story #district-1 .outer-canvas {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: -100%;
-      width: 100%; }
-      article#story #district-1 .outer-canvas .canvas {
-        overflow: hidden; }
-        article#story #district-1 .outer-canvas .canvas p {
-          margin: 0 0.75em; }
-        article#story #district-1 .outer-canvas .canvas img {
-          margin: 0 0.75em;
-          width: 100%; }
+    float: left;
+    width: 100%;
+    height: 100%; }
+    article#story #district-1 #region-1 {
+      float: left; }
+    article#story #district-1 #region-2, article#story #district-1 #region-3 {
+      float: right; }
+    article#story #district-1 #region-1 {
+      width: 50%;
+      height: 18em; }
+    article#story #district-1 #image-1 {
+      float: right;
+      margin-right: 12.5%;
+      width: 25%; }
+      article#story #district-1 #image-1 img {
+        width: 100%; }
+    article#story #district-1 #region-2 {
+      clear: left;
+      width: 25%;
+      height: 12em; }
+    article#story #district-1 #region-3 {
+      clear: right;
+      margin-left: 12.5%;
+      width: 37.5%;
+      height: 21em; }
   article#story #district-2 {
-    position: relative;
-    width: 37.5%; }
-    article#story #district-2 .outer-canvas {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: -100%;
-      width: 100%; }
-      article#story #district-2 .outer-canvas .canvas {
-        overflow: hidden; }
-        article#story #district-2 .outer-canvas .canvas p {
-          margin: 0 0.75em; }
+    float: right;
+    width: 50%;
+    height: 33em; }
+    article#story #district-2 #r-1, article#story #district-2 #region2, article#story #district-2 #region3 {
+      float: left; }
+    article#story #district-2 #region2 {
+      width: 50%; }
+    article#story #district-2 #region3 {
+      width: 50%; }
+    article#story #district-2 #quote-1 {
+      width: 62.5%; }
+  article#story blockquote {
+    float: left;
+    margin: 3em 0;
+    padding: 1.5em;
+    color: turquoise;
+    border-top: 1px dotted green;
+    border-bottom: 1px dotted green;
+    box-sizing: border-box; }
 
 .destination {
   display: block; }
 
 #article {
   -webkit-flow-into: article_flow; }
-  #article p {
-    margin-bottom: 1.5em; }
 
-article#story img#image-1 {
-  width: 25%; }
-article#story #region1, article#story #region2, article#story #region3 {
-  box-sizing: border-box; }
-article#story #region1 {
-  width: 100%;
-  height: 9em;
-  background: #ffff99; }
-article#story #region2 {
-  width: 25%;
-  margin: 3em 0 0 5%;
-  height: 12em;
-  color: red;
-  background: pink;
-  border-radius: 3px; }
-article#story #region3 {
-  width: 100%;
-  height: 100%;
-  background: yellow; }
-article#story blockquote {
-  float: left;
-  margin: 3em 0;
-  padding: 1.5em;
-  width: 100%;
-  color: turquoise;
-  border-top: 1px dotted green;
-  border-bottom: 1px dotted green;
+p {
+  margin-bottom: 1.5em; }
+
+article#story #region-1, article#story #region-2, article#story #region-3 {
+  content: -webkit-from-flow("article_flow");
+  -webkit-flow-from: article_flow;
   box-sizing: border-box; }

@@ -287,56 +287,88 @@ h3
 //	
 body
 	padding-bottom: 3em
+header#masthead
+	z-index: 1
+	position: fixed
+	margin: 0 0 0 $column*1
+section.article
+	width: 100%
 header#cover
+	position: relative
 	display: block
 	overflow: auto
-	padding: 1.5em 0
+	padding: 1.5em $column*1
 	width: 100%
 	background: url('../images/cover.jpg') center center no-repeat
-	h1
-		margin-top: 0
-		width: 37.5%
-		color: white
+	//background-size: cover
+	box-sizing: border-box
+	.wrapper
+		position: absolute
+		right: $column*2
+		bottom: 12em
 		background: black
-	h2
-		color: turquoise
-article
-	margin-top: 20px
+		h1
+			color: white
+		h2
+			color: turquoise
 // Styling for the destination containers
 article#story
-	margin: 0 $column*1
+	float: left
+	margin: 0 $column*3
 	#district-1, #district-2
+		overflow: hidden
 		margin-top: 3em
 		margin-bottom: 3em
 	#district-1
-		position: relative
-		width: 50%
-		.outer-canvas
-			display: block
-			position: absolute
-			top: 0
-			right: -100%
-			width: 100%
-			.canvas
-				overflow: hidden
-				p
-					margin: 0 0.75em
-				img
-					margin: 0 0.75em
-					width: 100%
+		float: left
+		width: 100%
+		height: 100%
+		#region-1
+			float: left
+		#region-2, #region-3
+			float: right
+			// Set width individually
+		#region-1 /* .wrapper */
+			width: 50%
+			height: 18em
+		#image-1
+			float: right
+			margin-right: 12.5%
+			width: 25%
+			img
+				width: 100%
+		#region-2 /* .wrapper */
+			clear: left
+			width: 25%
+			height: 12em
+		#region-3 /* .wrapper */
+			// to break the float space
+			clear: right
+			margin-left: 12.5%
+			width: 37.5%
+			height: 21em
 	#district-2
-		position: relative
-		width: 37.5%
-		.outer-canvas
-			display: block
-			position: absolute
-			top: 0
-			right: -100%
-			width: 100%
-			.canvas
-				overflow: hidden
-				p
-					margin: 0 0.75em
+		float: right
+		width: 50%
+		height: 33em
+		#r-1, #region2, #region3
+			float: left
+		// Set width individually
+		#region2 /* .wrapper */
+			width: 50%
+		#region3 /* .wrapper */
+			width: 50%
+		#quote-1
+			width: 62.5%
+	blockquote
+		float: left
+		margin: 3em 0
+		padding: 1.5em
+		color: turquoise
+		border-top: 1px dotted green
+		border-bottom: 1px dotted green
+		// Not automatically applied with GGS
+		box-sizing: border-box
 .destination
 	display: block
 	// Flowed content will automatically overflow the container, this stops it
@@ -346,42 +378,11 @@ article#story
 // Making things flow
 #article
 	-webkit-flow-into: article_flow
-	p
-		margin-bottom: 1.5em
+p
+	margin-bottom: 1.5em
 article#story
-	img#image-1
-		width: 25%
-	#region1, #region2, #region3
-		//float: left
-		//content: -webkit-from-flow('article_flow')
-		//-webkit-flow-from: article_flow
+	#region-1, #region-2, #region-3
+		content: -webkit-from-flow('article_flow')
+		-webkit-flow-from: article_flow
 		box-sizing: border-box
 	// Styling different regions... differently
-	#region1
-		width: 100%
-		height: 9em
-		background: lighten(yellow, 30%)
-	#region2
-		width: 25%
-		margin: 3em 0 0 5%
-		height: 12em
-		// Doesn't work because you can only style content in the parent container
-		color: red
-		background: pink
-		border-radius: 3px
-	#region3
-		width: 100%
-		height: 100%
-		// min-height functions the same as height
-		// background won't work unless a width is declared
-		background: yellow
-	blockquote
-		float: left
-		margin: 3em 0
-		padding: 1.5em
-		width: 100%
-		color: turquoise
-		border-top: 1px dotted green
-		border-bottom: 1px dotted green
-		// Not automatically applied with GGS
-		box-sizing: border-box
