@@ -280,74 +280,108 @@ h3
 
 
 
-
 //	
 //	
 //	My shit
 //	
 //	
-
-.wrapper
-	background: magenta
-#cover
+body
+	padding-bottom: 3em
+header#cover
+	display: block
+	overflow: auto
+	padding: 1.5em 0
 	width: 100%
 	background: url('../images/cover.jpg') center center no-repeat
 	h1
 		margin-top: 0
+		width: 37.5%
+		color: white
+		background: black
+	h2
+		color: turquoise
 article
 	margin-top: 20px
 // Styling for the destination containers
 article#story
 	margin: 0 $column*1
+	#district-a, #district-b
+		margin-top: 3em
+		margin-bottom: 3em
+	#district-a
+		position: relative
+		width: 50%
+		.outer-canvas
+			display: block
+			position: absolute
+			top: 0
+			right: -100%
+			width: 100%
+			.canvas
+				overflow: hidden
+				p
+					margin: 0 0.75em
+				img
+					margin: 0 0.75em
+					width: 100%
+	#district-b
+		position: relative
+		width: 37.5%
+		.outer-canvas
+			display: block
+			position: absolute
+			top: 0
+			right: -100%
+			width: 100%
+			.canvas
+				overflow: hidden
+				p
+					margin: 0 0.75em
 .destination
+	display: block
 	// Flowed content will automatically overflow the container, this stops it
-	overflow: hidden
+	//overflow: hidden
 	// Content destinations need to have a fixed height declared, otherwise they default to the equivalent of height: auto
-	height: 100%
+	//height: 100%
 // Making things flow
 #article
-	-webkit-flow: 'article_flow'
 	-webkit-flow-into: article_flow
 	p
 		margin-bottom: 1.5em
-#region1, #region2, #region3
-	float: left
-	content: -webkit-from-flow('article_flow')
-	-webkit-flow-from: article_flow
-	box-sizing: border-box
-// Styling different regions... differently
-#region1
-	width: 50%
-	height: 9em
-	background: lighten(yellow, 30%)
-#region2
-	width: 25%
-	margin: 3em 0 0 5%
-	height: 12em
-	// Doesn't work because you can only style content in the parent container
-	color: red
-	background: pink
-	border-radius: 3px
-#region3
-	width: 100%
-	height: 100%
-	// min-height functions the same as height
-	// background won't work unless a width is declared
-	background: yellow
-article#quote
-	float: left
-	margin: 0 $column*3
-blockquote
-	float: left
-	margin: 3em 0
-	padding: 1.5em
-	width: 100%
-	color: turquoise
-	border-top: 1px dotted green
-	border-bottom: 1px dotted green
-	// Not automatically applied with GGS
-	box-sizing: border-box
-blockquote.inline
-	float: left
-	margin: 0
-	// inline elements will have padding set on the parent (destination) container
+article#story
+	img#image-1
+		width: 25%
+	#region1, #region2, #region3
+		//float: left
+		//content: -webkit-from-flow('article_flow')
+		//-webkit-flow-from: article_flow
+		box-sizing: border-box
+	// Styling different regions... differently
+	#region1
+		width: 100%
+		height: 9em
+		background: lighten(yellow, 30%)
+	#region2
+		width: 25%
+		margin: 3em 0 0 5%
+		height: 12em
+		// Doesn't work because you can only style content in the parent container
+		color: red
+		background: pink
+		border-radius: 3px
+	#region3
+		width: 100%
+		height: 100%
+		// min-height functions the same as height
+		// background won't work unless a width is declared
+		background: yellow
+	blockquote
+		float: left
+		margin: 3em 0
+		padding: 1.5em
+		width: 100%
+		color: turquoise
+		border-top: 1px dotted green
+		border-bottom: 1px dotted green
+		// Not automatically applied with GGS
+		box-sizing: border-box

@@ -17,6 +17,10 @@
 		
 		<!-- Feel free to split the CSS into separate files, if you like. -->
 		<link rel="stylesheet" href="styles/ggs.css"/> 
+		<!-- Should split CSS into:
+			1. publication CSS
+			2. article CSS
+		-->
 		<!--<link rel="stylesheet" href="styles/styles.css"/>-->
 		
 		<!-- Here's Golden Gridlet, the grid overlay script. -->
@@ -27,29 +31,56 @@
 			$(document).ready(function() {
 				var $coverHeight = $(window).height();
 				// alert ($coverHeight);
-				$('#cover').css({'height':(($coverHeight))+'px'});
+				$('#cover').css({'height':(($coverHeight)*.5)+'px'});
 			});
 		</script>
 	</head>
 	
 	<body lang="en">
 		
-		<!--
 		<header id="cover">
 			<div class="wrapper">
-				<h1>Cafeteria 405 Kitchen</h1>
+				<h1 class="huge">Cafeteria 405 Kitchen</h1>
 				<h2>Not Too Hot, Not Too Cold</h2>
 			</div>
 		</header>
-	-->
 
-		<article id="story" class="destination wrapper">
-			<div id="region1"></div>
-			<div id="region2"></div>
-			<blockquote class="large">And should you be out with your honey, floor seating is much more convenient for (discreet) side-by-side snuggling. <em>This is an out-of-the-flow quote.</em></blockquote>
-			<div id="region3"></div>
+		<article id="story" class="destination">
+			<div id="district-a" class="wrapper">
+				<div class="outer-canvas">
+					<div class="canvas">
+						<p>There’s nothing particularly extraordinary about Hongdae’s 405 Kitchen. It doesn’t break new stylistic ground, nor does it boast a menu of dishes to wow your palate. There isn’t a stage to showcase the trendiest new bands or gimmicks like underwater finger painting or skin-nibbling fish footbaths. Sure, the décor is endearing with its antique trinkets sitting atop mismatched shelving and chalkboard walls adorned with personal messages, but all this is hardly groundbreaking by Korean café standards.</p>
+						<!--<img src="images/405-kitchen_03_1000px.jpg" alt="Sitting in Cafeteria 405 Kitchen" />-->
+					</div>
+				</div>
+				<p>There’s nothing particularly extraordinary about Hongdae’s 405 Kitchen. It doesn’t break new stylistic ground, nor does it boast a menu of dishes to wow your palate. There isn’t a stage to showcase the trendiest new bands or gimmicks like underwater finger painting or skin-nibbling fish footbaths. Sure, the décor is endearing with its antique trinkets sitting atop mismatched shelving and chalkboard walls adorned with personal messages, but all this is hardly groundbreaking by Korean café standards.</p>
+				<p>Instead, 405 Kitchen aims to fulfill all of your potential café needs, whether it be for work, meeting friends, or filling those in-between times with restful pause.</p>
+				<!--<div id="region1"></div>-->
+			</div>
+			<div id="district-b" class="wrapper">
+				<div class="outer-canvas">
+					<div class="canvas">
+						<p>There’s nothing particularly extraordinary about Hongdae’s 405 Kitchen. It doesn’t break new stylistic ground, nor does it boast a menu of dishes to wow your palate. There isn’t a stage to showcase the trendiest new bands or gimmicks like underwater finger painting or skin-nibbling fish footbaths. Sure, the décor is endearing with its antique trinkets sitting atop mismatched shelving and chalkboard walls adorned with personal messages, but all this is hardly groundbreaking by Korean café standards.</p>
+						<p>Instead, 405 Kitchen aims to fulfill all of your potential café needs, whether it be for work, meeting friends, or filling those in-between times with restful pause.</p>
+					</div>
+				</div>
+				<p>There’s nothing particularly extraordinary about Hongdae’s 405 Kitchen. It doesn’t break new stylistic ground, nor does it boast a menu of dishes to wow your palate. There isn’t a stage to showcase the trendiest new bands or gimmicks like underwater finger painting or skin-nibbling fish footbaths. Sure, the décor is endearing with its antique trinkets sitting atop mismatched shelving and chalkboard walls adorned with personal messages, but all this is hardly groundbreaking by Korean café standards.</p>
+				<!--<div id="region1"></div>-->
+			</div>
+
+			<!--
+			<div class="wrapper">
+				<img id="image-1" src="images/405-kitchen_03_1000px.jpg" alt="Sitting in Cafeteria 405 Kitchen" />
+			</div>
+			-->
+			<!--
+			<div class="wrapper">
+				<div id="region2"></div>
+				<blockquote class="large">And should you be out with your honey, floor seating is much more convenient for (discreet) side-by-side snuggling. <em>This is an out-of-the-flow quote.</em></blockquote>
+				<div id="region3"></div>
+			</div>
 		</article>
-
+-->
 		<!-- No .wrapper class because the attributes of the entire flow container will be displayed in the destination(s), even things like padding which was the culprit here. AKA DON'T STYLE THIS	-->
 		<article id="article">
 			<p>There’s nothing particularly extraordinary about Hongdae’s 405 Kitchen. It doesn’t break new stylistic ground, nor does it boast a menu of dishes to wow your palate. There isn’t a stage to showcase the trendiest new bands or gimmicks like underwater finger painting or skin-nibbling fish footbaths. Sure, the décor is endearing with its antique trinkets sitting atop mismatched shelving and chalkboard walls adorned with personal messages, but all this is hardly groundbreaking by Korean café standards.</p>
