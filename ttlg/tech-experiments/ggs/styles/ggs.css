@@ -191,37 +191,37 @@ article {
 
 article#story {
   margin: 0 5.556%; }
-  article#story #district-a, article#story #district-b {
+  article#story #district-1, article#story #district-2 {
     margin-top: 3em;
     margin-bottom: 3em; }
-  article#story #district-a {
+  article#story #district-1 {
     position: relative;
     width: 50%; }
-    article#story #district-a .outer-canvas {
+    article#story #district-1 .outer-canvas {
       display: block;
       position: absolute;
       top: 0;
       right: -100%;
       width: 100%; }
-      article#story #district-a .outer-canvas .canvas {
+      article#story #district-1 .outer-canvas .canvas {
         overflow: hidden; }
-        article#story #district-a .outer-canvas .canvas p {
+        article#story #district-1 .outer-canvas .canvas p {
           margin: 0 0.75em; }
-        article#story #district-a .outer-canvas .canvas img {
+        article#story #district-1 .outer-canvas .canvas img {
           margin: 0 0.75em;
           width: 100%; }
-  article#story #district-b {
+  article#story #district-2 {
     position: relative;
     width: 37.5%; }
-    article#story #district-b .outer-canvas {
+    article#story #district-2 .outer-canvas {
       display: block;
       position: absolute;
       top: 0;
       right: -100%;
       width: 100%; }
-      article#story #district-b .outer-canvas .canvas {
+      article#story #district-2 .outer-canvas .canvas {
         overflow: hidden; }
-        article#story #district-b .outer-canvas .canvas p {
+        article#story #district-2 .outer-canvas .canvas p {
           margin: 0 0.75em; }
 
 .destination {
