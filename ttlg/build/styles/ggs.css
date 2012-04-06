@@ -167,7 +167,8 @@ h3 {
     margin-left: 25%; } }
 body {
   padding-bottom: 3em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "jubilat", Helvetica, Arial, sans-serif;
+  font-weight: 400; }
 
 header#masthead {
   z-index: 1;
@@ -204,11 +205,15 @@ section.article {
     -webkit-box-shadow: 0 0 12px black;
     box-shadow: 0 0 12px black; }
   section.article header {
-    margin-left: 22.222%; }
+    margin: 0;
+    padding-left: 22.222%; }
     section.article header .wrapper h1 {
       margin: 0.2em 0;
       color: #33ccff;
       font-weight: 100; }
+    section.article header .wrapper h2 {
+      font-weight: 100;
+      font-style: italic; }
 
 article#story {
   float: left;

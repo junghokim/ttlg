@@ -286,7 +286,8 @@ h3
 //	
 body
 	padding-bottom: 3em
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+	font-family: 'jubilat', Helvetica, Arial, sans-serif
+	font-weight: 400
 header#masthead
 	z-index: 1
 	position: fixed
@@ -319,12 +320,16 @@ section.article
 		box-sizing: border-box
 		@include page-shadow
 	header
-		margin-left: $column*4
+		margin: 0
+		padding-left: $column*4
 		.wrapper
 			h1
 				margin: 0.2em 0
 				color: $blue
 				font-weight: 100
+			h2
+				font-weight: 100
+				font-style: italic
 // Styling for the destination containers
 article#story
 	float: left
@@ -394,7 +399,6 @@ article#story
 p
 	margin-bottom: 1.5em
 	-webkit-hyphens: auto
-	just
 article#story
 	#region-1, #region-2, #region-3, #region-4
 		content: -webkit-from-flow('article_flow')
