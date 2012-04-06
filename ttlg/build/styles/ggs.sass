@@ -259,21 +259,10 @@ h3
 
 	header, #twoway 
 		margin: 0 $column*1
-	
-
-	header .wrapper 
-		width: 37.5%
-		margin-left: 25%
-	
-
 	#cover .wrapper h1 
 		margin-left: 12.5%
-	
-
 	#twoway .wrapper 
 		width: 25%
-	
-
 	#twoway .wrapper:first-child 
 		margin-left: 25%
 	
@@ -290,7 +279,15 @@ body
 header#masthead
 	z-index: 1
 	position: fixed
-	margin: 0 0 0 $column*1
+	margin: 1.5em 0 0 $column*1
+	width: 100%
+	.wrapper
+		width: $column*2
+		h1, h2
+			display: none
+			margin: 0
+		img
+			max-width: 100%
 section.article
 	width: 100%
 header#cover
@@ -314,7 +311,7 @@ header#cover
 // Styling for the destination containers
 article#story
 	float: left
-	margin: 0 $column*3
+	margin: 0 $column*4
 	#district-1, #district-2
 		overflow: hidden
 		margin-top: 3em
@@ -349,26 +346,24 @@ article#story
 			height: 21em
 	#district-2
 		float: right
-		width: 50%
+		width: 100%
 		height: 33em
-		#r-1, #region2, #region3
+		#region-4
 			float: left
 		// Set width individually
-		#region2 /* .wrapper */
-			width: 50%
-		#region3 /* .wrapper */
+		#region-4 // .wrapper 
 			width: 50%
 		#quote-1
 			width: 62.5%
-	blockquote
-		float: left
-		margin: 3em 0
-		padding: 1.5em
-		color: turquoise
-		border-top: 1px dotted green
-		border-bottom: 1px dotted green
-		// Not automatically applied with GGS
-		box-sizing: border-box
+		blockquote
+			float: left
+			margin: 3em 0 3em 50%
+			padding: 1.5em
+			color: turquoise
+			border-top: 1px dotted green
+			border-bottom: 1px dotted green
+			// Not automatically applied with GGS
+			box-sizing: border-box
 .destination
 	display: block
 	// Flowed content will automatically overflow the container, this stops it
@@ -381,7 +376,7 @@ article#story
 p
 	margin-bottom: 1.5em
 article#story
-	#region-1, #region-2, #region-3
+	#region-1, #region-2, #region-3, #region-4
 		content: -webkit-from-flow('article_flow')
 		-webkit-flow-from: article_flow
 		box-sizing: border-box

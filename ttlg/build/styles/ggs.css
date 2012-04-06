@@ -157,10 +157,6 @@ h3 {
   header, #twoway {
     margin: 0 5.556%; }
 
-  header .wrapper {
-    width: 37.5%;
-    margin-left: 25%; }
-
   #cover .wrapper h1 {
     margin-left: 12.5%; }
 
@@ -175,7 +171,15 @@ body {
 header#masthead {
   z-index: 1;
   position: fixed;
-  margin: 0 0 0 5.556%; }
+  margin: 1.5em 0 0 5.556%;
+  width: 100%; }
+  header#masthead .wrapper {
+    width: 11.111%; }
+    header#masthead .wrapper h1, header#masthead .wrapper h2 {
+      display: none;
+      margin: 0; }
+    header#masthead .wrapper img {
+      max-width: 100%; }
 
 section.article {
   width: 100%; }
@@ -200,7 +204,7 @@ header#cover {
 
 article#story {
   float: left;
-  margin: 0 16.667%; }
+  margin: 0 22.222%; }
   article#story #district-1, article#story #district-2 {
     overflow: hidden;
     margin-top: 3em;
@@ -233,24 +237,22 @@ article#story {
       height: 21em; }
   article#story #district-2 {
     float: right;
-    width: 50%;
+    width: 100%;
     height: 33em; }
-    article#story #district-2 #r-1, article#story #district-2 #region2, article#story #district-2 #region3 {
+    article#story #district-2 #region-4 {
       float: left; }
-    article#story #district-2 #region2 {
-      width: 50%; }
-    article#story #district-2 #region3 {
+    article#story #district-2 #region-4 {
       width: 50%; }
     article#story #district-2 #quote-1 {
       width: 62.5%; }
-  article#story blockquote {
-    float: left;
-    margin: 3em 0;
-    padding: 1.5em;
-    color: turquoise;
-    border-top: 1px dotted green;
-    border-bottom: 1px dotted green;
-    box-sizing: border-box; }
+    article#story #district-2 blockquote {
+      float: left;
+      margin: 3em 0 3em 50%;
+      padding: 1.5em;
+      color: turquoise;
+      border-top: 1px dotted green;
+      border-bottom: 1px dotted green;
+      box-sizing: border-box; }
 
 .destination {
   display: block; }
@@ -261,7 +263,7 @@ article#story {
 p {
   margin-bottom: 1.5em; }
 
-article#story #region-1, article#story #region-2, article#story #region-3 {
+article#story #region-1, article#story #region-2, article#story #region-3, article#story #region-4 {
   content: -webkit-from-flow("article_flow");
   -webkit-flow-from: article_flow;
   box-sizing: border-box; }
