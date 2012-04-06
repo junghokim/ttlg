@@ -173,10 +173,10 @@ header#masthead {
   z-index: 1;
   position: fixed;
   margin: 1.5em 0 0 5.556%;
-  width: 100%; }
+  width: 11.111%; }
   header#masthead .wrapper {
     position: relative;
-    width: 11.111%;
+    width: 100%;
     height: 100%; }
     header#masthead .wrapper hgroup#mini-mast {
       z-index: 2;
@@ -197,15 +197,18 @@ section.article {
     overflow: auto;
     padding: 1.5em 5.556%;
     width: 100%;
-    background: url("../images/405-kitchen_03_1000px.jpg") top left no-repeat;
+    background: url("../images/cover-large.jpg") top left no-repeat;
     background-size: cover;
-    box-sizing: border-box; }
-  section.article header .wrapper h1 {
-    margin: 0.2em 0;
-    color: #33ccff;
-    font-weight: 100; }
-  section.article header .wrapper h2 {
-    color: turquoise; }
+    box-sizing: border-box;
+    -moz-box-shadow: 0 0 12px black;
+    -webkit-box-shadow: 0 0 12px black;
+    box-shadow: 0 0 12px black; }
+  section.article header {
+    margin-left: 22.222%; }
+    section.article header .wrapper h1 {
+      margin: 0.2em 0;
+      color: #33ccff;
+      font-weight: 100; }
 
 article#story {
   float: left;
@@ -213,7 +216,10 @@ article#story {
   article#story #district-1, article#story #district-2 {
     overflow: hidden;
     margin-top: 3em;
-    margin-bottom: 3em; }
+    margin-bottom: 3em;
+    -moz-box-shadow: 0 0 12px black;
+    -webkit-box-shadow: 0 0 12px black;
+    box-shadow: 0 0 12px black; }
   article#story #district-1 {
     float: left;
     width: 100%;

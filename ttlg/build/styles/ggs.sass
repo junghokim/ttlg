@@ -1,3 +1,8 @@
+@import 'all'
+
+@mixin page-shadow
+	@include box-shadow(0, 0, 12px, black)
+
 //
 // Important numbers
 //
@@ -286,10 +291,10 @@ header#masthead
 	z-index: 1
 	position: fixed
 	margin: 1.5em 0 0 $column*1
-	width: 100%
+	width: $column*2
 	.wrapper
 		position: relative
-		width: $column*2
+		width: 100%
 		height: 100%
 		hgroup#mini-mast
 			z-index: 2
@@ -309,17 +314,17 @@ section.article
 		overflow: auto
 		padding: 1.5em $column*1
 		width: 100%
-		background: url('../images/405-kitchen_03_1000px.jpg') top left no-repeat
+		background: url('../images/cover-large.jpg') top left no-repeat
 		background-size: cover
 		box-sizing: border-box
+		@include page-shadow
 	header
+		margin-left: $column*4
 		.wrapper
 			h1
 				margin: 0.2em 0
 				color: $blue
 				font-weight: 100
-			h2
-				color: turquoise
 // Styling for the destination containers
 article#story
 	float: left
@@ -328,6 +333,7 @@ article#story
 		overflow: hidden
 		margin-top: 3em
 		margin-bottom: 3em
+		@include page-shadow
 	#district-1
 		float: left
 		width: 100%

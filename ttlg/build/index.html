@@ -33,7 +33,13 @@
 				// alert ($coverHeight);
 				$('#cover, #masthead').css({'height':(($coverHeight))+'px'});
 			});
+			$(window).resize(function() {
+				var $coverHeight = $(window).height();
+  			$('#cover, #masthead').css({'height':(($coverHeight))+'px'});
+			});
 		</script>
+		<script type="text/javascript" src="http://use.typekit.com/yae8ohy.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
 	
 	<body lang="en">
