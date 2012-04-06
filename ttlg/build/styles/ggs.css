@@ -175,10 +175,13 @@ header#masthead {
   margin: 1.5em 0 0 5.556%;
   width: 100%; }
   header#masthead .wrapper {
-    width: 11.111%; }
+    position: relative;
+    width: 11.111%;
+    height: 100%; }
     header#masthead .wrapper hgroup#mini-mast {
       z-index: 2;
       position: absolute;
+      right: 0.75em;
       left: 0.75em;
       bottom: 3em; }
       header#masthead .wrapper hgroup#mini-mast h1, header#masthead .wrapper hgroup#mini-mast h2 {
@@ -200,8 +203,7 @@ section.article {
   section.article header .wrapper h1 {
     margin: 0.2em 0;
     color: #33ccff;
-    font-weight: 100;
-    text-shadow: 1px 1px #0086b3; }
+    font-weight: 100; }
   section.article header .wrapper h2 {
     color: turquoise; }
 

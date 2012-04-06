@@ -288,10 +288,13 @@ header#masthead
 	margin: 1.5em 0 0 $column*1
 	width: 100%
 	.wrapper
+		position: relative
 		width: $column*2
+		height: 100%
 		hgroup#mini-mast
 			z-index: 2
 			position: absolute
+			right: 0.75em
 			left: 0.75em
 			bottom: 3em
 			h1, h2
@@ -315,7 +318,6 @@ section.article
 				margin: 0.2em 0
 				color: $blue
 				font-weight: 100
-				text-shadow: 1px 1px darken($blue, 25%)
 			h2
 				color: turquoise
 // Styling for the destination containers
