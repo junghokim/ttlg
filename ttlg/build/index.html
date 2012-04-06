@@ -31,7 +31,7 @@
 			$(document).ready(function() {
 				var $coverHeight = $(window).height();
 				// alert ($coverHeight);
-				$('#cover').css({'height':(($coverHeight)*.66)+'px'});
+				$('#cover, #mini-mast').css({'height':(($coverHeight))+'px'});
 			});
 		</script>
 	</head>
@@ -39,19 +39,20 @@
 	<body lang="en">
 		<header id="masthead">
 			<div class="wrapper">
-				<hgroup>
-					<h1>Seoulist Select</h1>
-					<h2>Bespoke Lifestyle &amp; Culture</h2>
+				<img id="logo" src="images/seoulist_bug.png" />
+				<hgroup id="mini-mast">
+					<h1 class="small">Seoulist Select</h1>
+					<h2 class="small">Bespoke Lifestyle &amp; Culture</h2>
 				</hgroup>
-				<img src="images/seoulist_bug.png" />
 			</div>
 		</header>
 		<section class="article">
-			<header id="cover">
-				<div class="wrapper">
-					<h1 class="huge">Cafeteria 405 Kitchen</h1>
+			<div id="cover"></div>
+			<header>
+				<hgroup class="wrapper">
+					<h1 class="gigantic">Cafeteria<br />405<br /> Kitchen</h1>
 					<h2>Not Too Hot, Not Too Cold</h2>
-				</div>
+				</hgroup>
 			</header>
 
 			<article id="story" class="destination">

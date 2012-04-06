@@ -7,6 +7,11 @@ $column: 100% / 18
 $font-size: 16
 $em: $font-size * 1
 
+//
+// Colours
+//
+
+$blue: #3CF
 
 //	Margin, padding, and border resets
 //	except for form elements
@@ -276,6 +281,7 @@ h3
 //	
 body
 	padding-bottom: 3em
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
 header#masthead
 	z-index: 1
 	position: fixed
@@ -283,35 +289,39 @@ header#masthead
 	width: 100%
 	.wrapper
 		width: $column*2
-		h1, h2
-			display: none
-			margin: 0
-		img
+		hgroup#mini-mast
+			z-index: 2
+			position: absolute
+			left: 0.75em
+			bottom: 3em
+			h1, h2
+				margin: 0
+		img#logo
 			max-width: 100%
+			opacity: 0.8
 section.article
 	width: 100%
-header#cover
-	position: relative
-	display: block
-	overflow: auto
-	padding: 1.5em $column*1
-	width: 100%
-	background: url('../images/cover.jpg') center center no-repeat
-	//background-size: cover
-	box-sizing: border-box
-	.wrapper
-		position: absolute
-		right: $column*2
-		bottom: 12em
-		background: black
-		h1
-			color: white
-		h2
-			color: turquoise
+	#cover
+		display: block
+		overflow: auto
+		padding: 1.5em $column*1
+		width: 100%
+		background: url('../images/405-kitchen_03_1000px.jpg') top left no-repeat
+		background-size: cover
+		box-sizing: border-box
+	header
+		.wrapper
+			h1
+				margin: 0.2em 0
+				color: $blue
+				font-weight: 100
+				text-shadow: 1px 1px darken($blue, 25%)
+			h2
+				color: turquoise
 // Styling for the destination containers
 article#story
 	float: left
-	margin: 0 $column*4
+	margin: 0 $column*2 0 $column*4
 	#district-1, #district-2
 		overflow: hidden
 		margin-top: 3em
@@ -352,12 +362,12 @@ article#story
 			float: left
 		// Set width individually
 		#region-4 // .wrapper 
-			width: 50%
-		#quote-1
 			width: 62.5%
+		#quote-1
+			width: 37.5%
 		blockquote
-			float: left
-			margin: 3em 0 3em 50%
+			float: right
+			margin: 0
 			padding: 1.5em
 			color: turquoise
 			border-top: 1px dotted green
@@ -375,6 +385,8 @@ article#story
 	-webkit-flow-into: article_flow
 p
 	margin-bottom: 1.5em
+	-webkit-hyphens: auto
+	just
 article#story
 	#region-1, #region-2, #region-3, #region-4
 		content: -webkit-from-flow('article_flow')

@@ -166,7 +166,8 @@ h3 {
   #twoway .wrapper:first-child {
     margin-left: 25%; } }
 body {
-  padding-bottom: 3em; }
+  padding-bottom: 3em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 header#masthead {
   z-index: 1;
@@ -175,36 +176,38 @@ header#masthead {
   width: 100%; }
   header#masthead .wrapper {
     width: 11.111%; }
-    header#masthead .wrapper h1, header#masthead .wrapper h2 {
-      display: none;
-      margin: 0; }
-    header#masthead .wrapper img {
-      max-width: 100%; }
+    header#masthead .wrapper hgroup#mini-mast {
+      z-index: 2;
+      position: absolute;
+      left: 0.75em;
+      bottom: 3em; }
+      header#masthead .wrapper hgroup#mini-mast h1, header#masthead .wrapper hgroup#mini-mast h2 {
+        margin: 0; }
+    header#masthead .wrapper img#logo {
+      max-width: 100%;
+      opacity: 0.8; }
 
 section.article {
   width: 100%; }
-
-header#cover {
-  position: relative;
-  display: block;
-  overflow: auto;
-  padding: 1.5em 5.556%;
-  width: 100%;
-  background: url("../images/cover.jpg") center center no-repeat;
-  box-sizing: border-box; }
-  header#cover .wrapper {
-    position: absolute;
-    right: 11.111%;
-    bottom: 12em;
-    background: black; }
-    header#cover .wrapper h1 {
-      color: white; }
-    header#cover .wrapper h2 {
-      color: turquoise; }
+  section.article #cover {
+    display: block;
+    overflow: auto;
+    padding: 1.5em 5.556%;
+    width: 100%;
+    background: url("../images/405-kitchen_03_1000px.jpg") top left no-repeat;
+    background-size: cover;
+    box-sizing: border-box; }
+  section.article header .wrapper h1 {
+    margin: 0.2em 0;
+    color: #33ccff;
+    font-weight: 100;
+    text-shadow: 1px 1px #0086b3; }
+  section.article header .wrapper h2 {
+    color: turquoise; }
 
 article#story {
   float: left;
-  margin: 0 22.222%; }
+  margin: 0 11.111% 0 22.222%; }
   article#story #district-1, article#story #district-2 {
     overflow: hidden;
     margin-top: 3em;
@@ -242,12 +245,12 @@ article#story {
     article#story #district-2 #region-4 {
       float: left; }
     article#story #district-2 #region-4 {
-      width: 50%; }
-    article#story #district-2 #quote-1 {
       width: 62.5%; }
+    article#story #district-2 #quote-1 {
+      width: 37.5%; }
     article#story #district-2 blockquote {
-      float: left;
-      margin: 3em 0 3em 50%;
+      float: right;
+      margin: 0;
       padding: 1.5em;
       color: turquoise;
       border-top: 1px dotted green;
@@ -261,7 +264,8 @@ article#story {
   -webkit-flow-into: article_flow; }
 
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  -webkit-hyphens: auto; }
 
 article#story #region-1, article#story #region-2, article#story #region-3, article#story #region-4 {
   content: -webkit-from-flow("article_flow");
