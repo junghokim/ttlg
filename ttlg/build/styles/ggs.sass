@@ -295,7 +295,7 @@ body
 	padding-bottom: 3em
 	font-family: 'jubilat', Helvetica, Arial, sans-serif
 	font-weight: 400
-header#masthead
+header.masthead
 	float: left
 	z-index: 1
 	position: fixed
@@ -326,6 +326,7 @@ header#masthead
 .pagination-previous, .pagination-next
 	opacity: 0.7
 .previous-container
+	z-index: 2
 	position: fixed
 	top: 50%
 	left: $column*1/5
@@ -349,6 +350,7 @@ header#masthead
 		.previous-article-title
 			display: inline-block
 .next-container
+	z-index: 2
 	position: fixed
 	top: 50%
 	right: $column*1/5
@@ -373,6 +375,23 @@ header#masthead
 			display: inline-block
 
 //
+// Pagination Setup
+//
+#content-scroller-wrapper
+	overflow: hidden
+#content-scroller
+	.article-container
+		float: left
+		
+#slideshow
+	overflow: hidden
+	width: 500px
+	ul
+		width: 9999px
+		li
+			float: left
+
+//
 //
 // Article Stuff
 //
@@ -380,7 +399,8 @@ header#masthead
 section.article
 	float: left
 	width: 100%
-	#cover
+	.cover
+		position: relative
 		float: left
 		display: block
 		overflow: auto

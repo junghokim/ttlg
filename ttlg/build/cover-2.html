@@ -27,41 +27,116 @@
 		<script src="js/GGS.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<!-- Temporary JS for resizing covers to window height -->
+		<script type='text/javascript' src="js/jquery.scrollTo.js"></script>
+		<script type='text/javascript' src="js/jquery.serialScroll.js"></script>
 		<script type='text/javascript' src="js/global.js"></script>
 		<script type="text/javascript" src="http://use.typekit.com/yae8ohy.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	</head>
+	</head>	
 	
 	<body lang="en">
-		
-		<header id="masthead">
-			<div class="wrapper">
-				<!--
-				<img id="logo" src="images/seoulist_bug.png" />
-				 homepage only?
-				<hgroup id="mini-mast">
-					<h1>Seoulist Selects</h1>
-					<h2 class="small">Bespoke Lifestyle &amp; Culture</h2>
-				</hgroup>
-			-->
+		<!--
+			<div id="screen2">
+		<div id="buttons">
+			<a class="prev" href="#">Previous</a>
+			<a class="next" href="#">Next</a>
+			<br class="clear" />
+		</div>
+		<div id="slideshow">
+			<ul>
+				<li><img width="225" height="300" src="http://www.stockvault.net/data/s/113497.jpg" /></li>
+				<li><img width="225" height="300" src="http://www.stockvault.net/data/s/100177.jpg" /></li>
+				<li><img width="225" height="300" src="http://www.stockvault.net/data/s/101916.jpg" /></li>
+				<li><img width="225" height="300" src="http://www.dreamstime.com/animal-steps-in-snow-thumb12853223.jpg" /></li>
+				<li><img width="225" height="300" src="http://www.dreamstime.com/animal-eggs-thumb15876342.jpg" /></li>
+				<li><img width="225" height="300" src="http://www.dreamstime.com/animal-cat-thumb15385101.jpg" /></li>
+				<li><img width="225" height="300" src="http://www.dreamstime.com/green-nature-thumb596309.jpg" /></li>
+				<li><img width="225" height="300" src="http://www.dreamstime.com/office-in-nature-thumb3256171.jpg" /></li>
+				<li><img width="225" height="300" src="http://www.dreamstime.com/nature-tree-thumb16030502.jpg" /></li>
+				<li><img width="225" height="300" src="http://www.dreamstime.com/gift-of-the-nature-thumb15977958.jpg" /></li>
+				<li><img width="225" height="300" src="http://www.dreamstime.com/nature-abstract-thumb3615419.jpg" /></li>
+				<li><img width="225" height="300" src="http://www.dreamstime.com/nature-path-in-forest-with-sunshine-thumb8241130.jpg" /></li>
+				<li><img width="225" height="300" src="http://www.dreamstime.com/nature-walk-thumb8436665.jpg" /></li>
+				<li><img width="225" height="300" src="http://www.dreamstime.com/save-the-nature-thumb15696583.jpg" /></li>
+			</ul>
+		</div>
+	</div>-->
+		<span class="previous-container">
+			<a class="pagination-previous" href="#previous-article">&rarr;</a>
+			<span class="previous-article-title">Previous Article</span>
+		</span>
+		<span class="next-container">
+			<a class="pagination-next" href="#next-article">&rarr;</a>
+			<span class="next-article-title">Next Article</span>
+		</span>
+		<div id="content-scroller-wrapper">
+			<div id="content-scroller">
+				<section class="article-container">
+					<header class="masthead">
+						<div class="wrapper">
+							<!--
+							<img id="logo" src="images/seoulist_bug.png" />
+							 homepage only?
+							<hgroup id="mini-mast">
+								<h1>Seoulist Selects</h1>
+								<h2 class="small">Bespoke Lifestyle &amp; Culture</h2>
+							</hgroup>
+						-->
+						</div>
+					</header>
+					<section class="article">
+						<div class="cover">
+							<hgroup id="article-title" class="wrapper">
+								<h1 class="gigantic">Cafeteria<br />405<br /> Kitchen</h1>
+								<h2>Not Too Hot, Not Too Cold</h2>
+							</hgroup>
+						</div>
+					</section>
+				</section>
+				<section class="article-container">
+					<header class="masthead">
+						<div class="wrapper">
+							<!--
+							<img id="logo" src="images/seoulist_bug.png" />
+							 homepage only?
+							<hgroup id="mini-mast">
+								<h1>Seoulist Selects</h1>
+								<h2 class="small">Bespoke Lifestyle &amp; Culture</h2>
+							</hgroup>
+						-->
+						</div>
+					</header>
+					<section class="article">
+						<div class="cover">
+							<hgroup id="article-title" class="wrapper">
+								<h1 class="gigantic">Cafeteria<br />405<br /> Kitchen</h1>
+								<h2>Not Too Hot, Not Too Cold</h2>
+							</hgroup>
+						</div>
+					</section>
+				</section>
+				<section class="article-container">
+					<header class="masthead">
+						<div class="wrapper">
+							<!--
+							<img id="logo" src="images/seoulist_bug.png" />
+							 homepage only?
+							<hgroup id="mini-mast">
+								<h1>Seoulist Selects</h1>
+								<h2 class="small">Bespoke Lifestyle &amp; Culture</h2>
+							</hgroup>
+						-->
+						</div>
+					</header>
+					<section class="article">
+						<div class="cover">
+							<hgroup id="article-title" class="wrapper">
+								<h1 class="gigantic">Cafeteria<br />405<br /> Kitchen</h1>
+								<h2>Not Too Hot, Not Too Cold</h2>
+							</hgroup>
+						</div>
+					</section>
 			</div>
-		</header>
-		<section class="article">
-			<div id="cover">
-				<hgroup id="article-title" class="wrapper">
-					<h1 class="gigantic">Cafeteria<br />405<br /> Kitchen</h1>
-					<h2>Not Too Hot, Not Too Cold</h2>
-				</hgroup>
-				<span class="previous-container">
-					<a class="pagination-previous" href="#previous-article">&rarr;</a>
-					<span class="previous-article-title">Don't Stop Make Believing</span>
-				</span>
-				<span class="next-container">
-					<a class="pagination-next" href="#next-article">&rarr;</a>
-					<span class="next-article-title">To Be Young and in Love and Swinging</span>
-				</span>
-			</div>
-		</section>
-
+		</div>
 	</body>
 </html>

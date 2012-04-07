@@ -170,32 +170,32 @@ body {
   font-family: "jubilat", Helvetica, Arial, sans-serif;
   font-weight: 400; }
 
-header#masthead {
+header.masthead {
   float: left;
   z-index: 1;
   position: fixed;
   margin: 1.5em 0 0 5.556%;
   width: 11.111%; }
-  header#masthead .wrapper {
+  header.masthead .wrapper {
     position: relative;
     width: 100%;
     height: 100%; }
-    header#masthead .wrapper hgroup#mini-mast {
+    header.masthead .wrapper hgroup#mini-mast {
       z-index: 2;
       position: absolute;
       right: 0.75em;
       left: 0.75em;
       bottom: 9em; }
-      header#masthead .wrapper hgroup#mini-mast h1, header#masthead .wrapper hgroup#mini-mast h2 {
+      header.masthead .wrapper hgroup#mini-mast h1, header.masthead .wrapper hgroup#mini-mast h2 {
         margin: 0;
         text-shadow: 0 1px 3px #4d4d4d; }
-      header#masthead .wrapper hgroup#mini-mast h1 {
+      header.masthead .wrapper hgroup#mini-mast h1 {
         font-size: 1.625em;
         line-height: 1em;
         color: #99e6ff; }
-      header#masthead .wrapper hgroup#mini-mast h2 {
+      header.masthead .wrapper hgroup#mini-mast h2 {
         color: #e1e1e1; }
-    header#masthead .wrapper img#logo {
+    header.masthead .wrapper img#logo {
       width: 50%;
       opacity: 0.8; }
 
@@ -203,6 +203,7 @@ header#masthead {
   opacity: 0.7; }
 
 .previous-container {
+  z-index: 2;
   position: fixed;
   top: 50%;
   left: 1.111%;
@@ -226,6 +227,7 @@ header#masthead {
     display: inline-block; }
 
 .next-container {
+  z-index: 2;
   position: fixed;
   top: 50%;
   right: 1.111%;
@@ -248,10 +250,25 @@ header#masthead {
   .next-container:hover .next-article-title {
     display: inline-block; }
 
+#content-scroller-wrapper {
+  overflow: hidden; }
+
+#content-scroller .article-container {
+  float: left; }
+
+#slideshow {
+  overflow: hidden;
+  width: 500px; }
+  #slideshow ul {
+    width: 9999px; }
+    #slideshow ul li {
+      float: left; }
+
 section.article {
   float: left;
   width: 100%; }
-  section.article #cover {
+  section.article .cover {
+    position: relative;
     float: left;
     display: block;
     overflow: auto;
