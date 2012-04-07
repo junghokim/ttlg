@@ -24,33 +24,10 @@
 		<!--<link rel="stylesheet" href="styles/styles.css"/>-->
 		
 		<!-- Here's Golden Gridlet, the grid overlay script. -->
-		<!--<script src="js/GGS.js"></script>-->
+		<script src="js/GGS.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<!-- Temporary JS for resizing covers to window height -->
-		<script type='text/javascript'>
-			$(document).ready(function() {
-				var $coverHeight = $(window).height();
-				// alert ($coverHeight);
-				$('#cover').css({'height':(($coverHeight))+'px'});
-				$('#masthead').css({'height':(($coverHeight))+'px'});
-			});
-			$(window).resize(function() {
-				var $coverHeight = $(window).height();
-  			$('#cover').css({'height':(($coverHeight))+'px'});
-				$('#masthead').css({'height':(($coverHeight))+'px'});
-			});
-			var nav_pos = $('.navigation').offset();
-			$(window).scroll(function(e) {
-				// Detect if content is being scroll offscreen.
-				if ( (document.documentElement.scrollTop || document.body.scrollTop) >= nav_pos)
-				{
-					$('body').addClass('smartposition');
-				}
-				else $('body').removeClass('smartposition');
-				//$('#mini-mast h1').text('#mini-mast'.scrollTop());
-			});
-			
-		</script>
+		<script type='text/javascript' src="js/global.js"></script>
 		<script type="text/javascript" src="http://use.typekit.com/yae8ohy.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
@@ -58,8 +35,9 @@
 	<body lang="en">
 		<header id="masthead">
 			<div class="wrapper">
+				<!--
 				<img id="logo" src="images/seoulist_bug.png" />
-				<!-- homepage only?
+				 homepage only?
 				<hgroup id="mini-mast">
 					<h1>Seoulist Selects</h1>
 					<h2 class="small">Bespoke Lifestyle &amp; Culture</h2>
