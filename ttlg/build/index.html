@@ -31,11 +31,13 @@
 			$(document).ready(function() {
 				var $coverHeight = $(window).height();
 				// alert ($coverHeight);
-				$('#cover, #masthead').css({'height':(($coverHeight))+'px'});
+				$('#cover').css({'height':(($coverHeight))+'px'});
+				$('#masthead').css({'height':(($coverHeight))+'px'});
 			});
 			$(window).resize(function() {
 				var $coverHeight = $(window).height();
-  			$('#cover, #masthead').css({'height':(($coverHeight))+'px'});
+  			$('#cover').css({'height':(($coverHeight))+'px'});
+				$('#masthead').css({'height':(($coverHeight))+'px'});
 			});
 		</script>
 		<script type="text/javascript" src="http://use.typekit.com/yae8ohy.js"></script>
@@ -47,20 +49,25 @@
 			<div class="wrapper">
 				<img id="logo" src="images/seoulist_bug.png" />
 				<hgroup id="mini-mast">
-					<h1 class="small">Seoulist Selects</h1>
+					<h1>Seoulist Selects</h1>
 					<h2 class="small">Bespoke Lifestyle &amp; Culture</h2>
 				</hgroup>
 			</div>
 		</header>
 		<section class="article">
-			<div id="cover"></div>
-			<header>
-				<hgroup class="wrapper">
+			<div id="cover">
+				<hgroup id="article-title" class="wrapper">
+					<h1 class="gigantic">Cafeteria<br />405<br /> Kitchen</h1>
+					<h2>Not Too Hot, Not Too Cold</h2>
+				</hgroup>
+			</div>
+<!--			<header>
+				<hgroup id="article-title" class="wrapper">
 					<h1 class="gigantic">Cafeteria<br />405<br /> Kitchen</h1>
 					<h2>Not Too Hot, Not Too Cold</h2>
 				</hgroup>
 			</header>
-
+-->
 			<article id="story" class="destination">
 				<div id="district-1">
 					<div id="region-1" class="wrapper">
@@ -68,6 +75,7 @@
 					</div>
 					<div id="image-1" class="wrapper">
 						<img src="images/405-kitchen_03_1000px.jpg" alt="Sitting in Cafeteria 405 Kitchen" />
+						<p class="caption small">Low seating provides a comfortable escape.</p>
 					</div>
 					<div id="region-2" class="wrapper"></div>
 					<div id="region-3" class="wrapper"></div>

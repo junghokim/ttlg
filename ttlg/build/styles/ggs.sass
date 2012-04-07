@@ -17,6 +17,13 @@ $em: $font-size * 1
 //
 
 $blue: #3CF
+$light-grey: #E1E1E1
+$grey: #999999
+
+// For Article
+
+$yellow: #FDE700
+
 
 //	Margin, padding, and border resets
 //	except for form elements
@@ -289,6 +296,7 @@ body
 	font-family: 'jubilat', Helvetica, Arial, sans-serif
 	font-weight: 400
 header#masthead
+	float: left
 	z-index: 1
 	position: fixed
 	margin: 1.5em 0 0 $column*1
@@ -305,12 +313,21 @@ header#masthead
 			bottom: 3em
 			h1, h2
 				margin: 0
+				text-shadow: 0 1px 3px lighten(black, 30%)
+			h1
+				font-size: #{26 / $em}em
+				line-height: 1em
+				color: lighten($blue, 20%)
+			h2
+				color: $light-grey
 		img#logo
-			max-width: 100%
+			width: 50%
 			opacity: 0.8
 section.article
+	float: left
 	width: 100%
 	#cover
+		float: left
 		display: block
 		overflow: auto
 		padding: 1.5em $column*1
@@ -320,69 +337,88 @@ section.article
 		box-sizing: border-box
 		@include page-shadow
 	header
+		float: left
 		margin: 0
-		padding-left: $column*4
-		.wrapper
-			h1
-				margin: 0.2em 0
-				color: $blue
-				font-weight: 100
-			h2
-				font-weight: 100
-				font-style: italic
+		padding: 1.5em  0 1.5em $column*5
+		width: 100%
+		background: $yellow
+		@include page-shadow
+		box-sizing: border-box
+	#article-title.wrapper
+		position: absolute
+		right: 0
+		bottom: 25%
+		padding: 2em 4em 2em 2em
+		text-align: right
+		background: $yellow
+		@include border-radius-ind(top, left, 4px)
+		@include border-radius-ind(bottom, left, 4px)
+		opacity: 0.95
+		h1
+			margin: 0
+			color: $blue
+			font-weight: 100
+			//text-shadow: 0 2px 3px #555
+		h2
+			margin: 0
+			font-family: 'omnes-pro', sans-serif
+			font-weight: 200
+			font-style: italic
 // Styling for the destination containers
 article#story
 	float: left
-	margin: 0 $column*2 0 $column*4
+	padding: 0 $column*1
+	h2
+		font-weight: 600
 	#district-1, #district-2
 		overflow: hidden
 		margin-top: 3em
-		margin-bottom: 3em
-		@include page-shadow
 	#district-1
 		float: left
 		width: 100%
 		height: 100%
-		#region-1
-			float: left
-		#region-2, #region-3
-			float: right
-			// Set width individually
 		#region-1 /* .wrapper */
+			float: left
+			margin-left: 25%
 			width: 50%
-			height: 18em
+			height: 27em
 		#image-1
 			float: right
-			margin-right: 12.5%
 			width: 25%
 			img
 				width: 100%
+			.caption
+				padding-top: 0.75em
+				border-top: .25em solid $light-grey
 		#region-2 /* .wrapper */
-			clear: left
-			width: 25%
+			float: left
+			margin-left: 25%
+			width: 37.5%
 			height: 12em
 		#region-3 /* .wrapper */
+			float: left
 			// to break the float space
-			clear: right
-			margin-left: 12.5%
 			width: 37.5%
 			height: 21em
 	#district-2
 		float: right
 		width: 100%
-		height: 33em
+		height: 60em
 		#region-4
+			display: block
 			float: left
-		// Set width individually
-		#region-4 // .wrapper 
-			width: 62.5%
+			margin-left: 25%
+			width: 75%
 		#quote-1
+			margin-left: 25%
 			width: 37.5%
 		blockquote
-			float: right
+			float: left
 			margin: 0
 			padding: 1.5em
-			color: turquoise
+			font-weight: 100
+			font-style: italic
+			color: $blue
 			border-top: 1px dotted green
 			border-bottom: 1px dotted green
 			// Not automatically applied with GGS
@@ -396,9 +432,11 @@ article#story
 // Making things flow
 #article
 	-webkit-flow-into: article_flow
-p
-	margin-bottom: 1.5em
-	-webkit-hyphens: auto
+	h2
+		margin-top: 0
+	p
+		margin-bottom: 1.5em
+		-webkit-hyphens: auto
 article#story
 	#region-1, #region-2, #region-3, #region-4
 		content: -webkit-from-flow('article_flow')
