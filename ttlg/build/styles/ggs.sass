@@ -310,7 +310,7 @@ header#masthead
 			position: absolute
 			right: 0.75em
 			left: 0.75em
-			bottom: 3em
+			bottom: 9em
 			h1, h2
 				margin: 0
 				text-shadow: 0 1px 3px lighten(black, 30%)
@@ -323,6 +323,58 @@ header#masthead
 		img#logo
 			width: 50%
 			opacity: 0.8
+.pagination-previous, .pagination-next
+	opacity: 0.7
+.previous-container
+	position: fixed
+	left: $column*1/5
+	bottom: 3em
+	.pagination-previous
+		float: left
+		display: inline-block
+		width: 66px
+		height: 66px
+		color: white
+		background: url('../images/pagination-previous.png') center center no-repeat transparent
+		text-indent: -1000em
+	.previous-article-title
+		float: left
+		display: none
+		margin: 1.25em 0 0 0.75em
+		color: white
+	&:hover
+		.pagination-previous
+			opacity: 1.0
+		.previous-article-title
+			display: inline-block
+.next-container
+	position: fixed
+	right: $column*1/5
+	bottom: 3em
+	.pagination-next
+		float: right
+		display: inline-block
+		width: 66px
+		height: 66px
+		color: white
+		background: url('../images/pagination-next.png') center center no-repeat transparent
+		text-indent: -1000em
+	.next-article-title
+		float: right
+		display: none
+		margin: 1.25em 0.75em 0 0
+		color: white
+	&:hover
+		.pagination-next
+			opacity: 1.0
+		.next-article-title
+			display: inline-block
+
+//
+//
+// Article Stuff
+//
+//
 section.article
 	float: left
 	width: 100%
@@ -347,8 +399,8 @@ section.article
 	#article-title.wrapper
 		position: absolute
 		right: 0
-		bottom: 25%
-		padding: 2em 4em 2em 2em
+		bottom: 20%
+		padding: 2em $column*1 2em 2em
 		text-align: right
 		background: $yellow
 		@include border-radius-ind(top, left, 4px)
@@ -377,7 +429,7 @@ article#story
 		float: left
 		width: 100%
 		height: 100%
-		#region-1 /* .wrapper */
+		#region-1, #region-2, #region-3 /* .wrapper */
 			float: left
 			margin-left: 25%
 			width: 50%
@@ -391,17 +443,13 @@ article#story
 				padding-top: 0.75em
 				border-top: .25em solid $light-grey
 		#region-2 /* .wrapper */
-			float: left
-			margin-left: 25%
-			width: 37.5%
 			height: 12em
+			width: 75%
 		#region-3 /* .wrapper */
-			float: left
-			// to break the float space
-			width: 37.5%
 			height: 21em
+			width: 75%
 	#district-2
-		float: right
+		float: left
 		width: 100%
 		height: 60em
 		#region-4
@@ -409,6 +457,7 @@ article#story
 			float: left
 			margin-left: 25%
 			width: 75%
+			height: 20em
 		#quote-1
 			margin-left: 25%
 			width: 37.5%

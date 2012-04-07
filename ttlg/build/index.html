@@ -39,6 +39,17 @@
   			$('#cover').css({'height':(($coverHeight))+'px'});
 				$('#masthead').css({'height':(($coverHeight))+'px'});
 			});
+			var nav_pos = $('.navigation').offset();
+			$(window).scroll(function(e) {
+				// Detect if content is being scroll offscreen.
+				if ( (document.documentElement.scrollTop || document.body.scrollTop) >= nav_pos)
+				{
+					$('body').addClass('smartposition');
+				}
+				else $('body').removeClass('smartposition');
+				//$('#mini-mast h1').text('#mini-mast'.scrollTop());
+			});
+			
 		</script>
 		<script type="text/javascript" src="http://use.typekit.com/yae8ohy.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -60,6 +71,14 @@
 					<h1 class="gigantic">Cafeteria<br />405<br /> Kitchen</h1>
 					<h2>Not Too Hot, Not Too Cold</h2>
 				</hgroup>
+				<span class="previous-container">
+					<a class="pagination-previous" href="#previous-article">&rarr;</a>
+					<span class="previous-article-title">Don't Stop Make Believing</span>
+				</span>
+				<span class="next-container">
+					<a class="pagination-next" href="#next-article">&rarr;</a>
+					<span class="next-article-title">To Be Young and in Love and Swinging</span>
+				</span>
 			</div>
 <!--			<header>
 				<hgroup id="article-title" class="wrapper">

@@ -185,7 +185,7 @@ header#masthead {
       position: absolute;
       right: 0.75em;
       left: 0.75em;
-      bottom: 3em; }
+      bottom: 9em; }
       header#masthead .wrapper hgroup#mini-mast h1, header#masthead .wrapper hgroup#mini-mast h2 {
         margin: 0;
         text-shadow: 0 1px 3px #4d4d4d; }
@@ -198,6 +198,53 @@ header#masthead {
     header#masthead .wrapper img#logo {
       width: 50%;
       opacity: 0.8; }
+
+.pagination-previous, .pagination-next {
+  opacity: 0.7; }
+
+.previous-container {
+  position: fixed;
+  left: 1.111%;
+  bottom: 3em; }
+  .previous-container .pagination-previous {
+    float: left;
+    display: inline-block;
+    width: 66px;
+    height: 66px;
+    color: white;
+    background: url("../images/pagination-previous.png") center center no-repeat transparent;
+    text-indent: -1000em; }
+  .previous-container .previous-article-title {
+    float: left;
+    display: none;
+    margin: 1.25em 0 0 0.75em;
+    color: white; }
+  .previous-container:hover .pagination-previous {
+    opacity: 1; }
+  .previous-container:hover .previous-article-title {
+    display: inline-block; }
+
+.next-container {
+  position: fixed;
+  right: 1.111%;
+  bottom: 3em; }
+  .next-container .pagination-next {
+    float: right;
+    display: inline-block;
+    width: 66px;
+    height: 66px;
+    color: white;
+    background: url("../images/pagination-next.png") center center no-repeat transparent;
+    text-indent: -1000em; }
+  .next-container .next-article-title {
+    float: right;
+    display: none;
+    margin: 1.25em 0.75em 0 0;
+    color: white; }
+  .next-container:hover .pagination-next {
+    opacity: 1; }
+  .next-container:hover .next-article-title {
+    display: inline-block; }
 
 section.article {
   float: left;
@@ -227,8 +274,8 @@ section.article {
   section.article #article-title.wrapper {
     position: absolute;
     right: 0;
-    bottom: 25%;
-    padding: 2em 4em 2em 2em;
+    bottom: 20%;
+    padding: 2em 5.556% 2em 2em;
     text-align: right;
     background: #fde700;
     -moz-border-top-left-radius: 4px;
@@ -260,7 +307,7 @@ article#story {
     float: left;
     width: 100%;
     height: 100%; }
-    article#story #district-1 #region-1 {
+    article#story #district-1 #region-1, article#story #district-1 #region-2, article#story #district-1 #region-3 {
       float: left;
       margin-left: 25%;
       width: 50%;
@@ -274,23 +321,21 @@ article#story {
         padding-top: 0.75em;
         border-top: 0.25em solid #e1e1e1; }
     article#story #district-1 #region-2 {
-      float: left;
-      margin-left: 25%;
-      width: 37.5%;
-      height: 12em; }
+      height: 12em;
+      width: 75%; }
     article#story #district-1 #region-3 {
-      float: left;
-      width: 37.5%;
-      height: 21em; }
+      height: 21em;
+      width: 75%; }
   article#story #district-2 {
-    float: right;
+    float: left;
     width: 100%;
     height: 60em; }
     article#story #district-2 #region-4 {
       display: block;
       float: left;
       margin-left: 25%;
-      width: 75%; }
+      width: 75%;
+      height: 20em; }
     article#story #district-2 #quote-1 {
       margin-left: 25%;
       width: 37.5%; }
