@@ -1,0 +1,302 @@
+@import 'all'
+@import 'shared-variables'
+
+@mixin page-shadow
+	@include box-shadow(0, 0, 12px, black)
+
+//	Margin, padding, and border resets
+//	except for form elements
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, nav, section, menu, time, mark, audio, video, canvas 
+	margin: 0
+	padding: 0
+	border: 0
+
+
+//	
+//	
+//	Consistency fixes
+//	adopted from http://necolas.github.com/normalize.css/
+//	
+//	
+
+html 
+	height: 100%
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+
+body 
+	min-height: 100%
+	font-size: 100%
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, nav, section, audio, canvas, video 
+	display: block
+
+sub, sup 
+	font-size: 75%
+	line-height: 0
+	position: relative
+	vertical-align: baseline
+
+sup 
+	top: -0.5em
+
+sub 
+	bottom: -0.25em
+
+pre 
+	white-space: pre
+	white-space: pre-wrap
+	word-wrap: break-word
+
+b, strong 
+	font-weight: bold
+
+abbr[title] 
+	border-bottom: 1px dotted
+
+input, textarea, button, select 
+	margin: 0
+	font-size: 100%
+	line-height: normal
+	vertical-align: baseline
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] 
+	cursor: pointer
+	-webkit-appearance: button
+
+input[type="checkbox"],
+input[type="radio"] 
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	-ms-box-sizing: border-box
+	-o-box-sizing: border-box
+	box-sizing: border-box
+
+textarea 
+	overflow: auto
+
+table 
+	border-collapse: collapse
+	border-spacing: 0
+
+
+
+//	
+//	
+//	Simple fluid media
+//	
+//	
+
+figure 
+	position: relative
+
+figure img, figure object, figure embed, figure video 
+	max-width: 100%
+	display: block
+
+img 
+	border: 0
+	-ms-interpolation-mode: bicubic
+
+
+
+//	
+//	
+//	Zoomable baseline grid
+//	type size presets
+//	
+//	
+
+body 
+	/* 16px / 24px */
+	font-size: $font-size / 16 * 1em
+	line-height: #{$line / $em}em
+
+
+.small 
+	/* 13px / 18px */
+	font-size: #{($font-size*0.8125) / $em}em
+	line-height: ($line*0.75) / ($font-size*0.8125) * 1em
+
+
+.normal, h3 
+	/* 16px / 24px */
+	font-size: #{$font-size / $em}em
+	line-height: #{$line / $em}em /* 24 */
+
+
+.large, h2, h1 
+	/* 26 / 36px */
+	font-size: #{26 / $em}em
+	line-height: ($line*1.5) / 26 * 1em
+
+
+.huge 
+	/* 42px / 48px */
+	font-size: #{42 / $em}em
+	line-height: ($line*2) / 42 * 1em
+
+
+.massive 
+	/* 68px / 72px */
+	font-size: #{68 / $em}em
+	line-height: ($line*3) / 68 * 1em
+
+
+.gigantic 
+	/* 110px / 120px */
+	font-size: #{110 / $em}em
+	line-height: ($line*5) / 110 * 1em
+
+//	
+//	Simple elastic gutters
+//	Note: box-sizing will not work in IE6-7
+//	
+
+.wrapper 
+	padding: 0 #{($line/2) / $em}em
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	-ms-box-sizing: border-box
+	box-sizing: border-box
+
+
+/* Seoulist */
+
+body
+	padding-bottom: 3em
+	font-family: 'jubilat', Helvetica, Arial, sans-serif
+	font-weight: 400
+header.masthead
+	float: left
+	z-index: 1
+	position: fixed
+	margin: 1.5em 0 0 $column*1
+	width: $column*2
+	.wrapper
+		position: relative
+		width: 100%
+		height: 100%
+		hgroup#mini-mast
+			z-index: 2
+			position: absolute
+			right: 0.75em
+			left: 0.75em
+			bottom: 9em
+			h1, h2
+				margin: 0
+				text-shadow: 0 1px 3px lighten(black, 30%)
+			h1
+				font-size: #{26 / $em}em
+				line-height: 1em
+				color: lighten($blue, 20%)
+			h2
+				color: $light-grey
+		img#logo
+			width: 50%
+			opacity: 0.8
+.pagination-previous, .pagination-next
+	opacity: 0.7
+.previous-container
+	z-index: 2
+	position: fixed
+	top: 50%
+	left: $column*1/5
+	margin-top: -33px
+	.pagination-previous
+		float: left
+		display: inline-block
+		width: 66px
+		height: 66px
+		color: white
+		background: url('../images/pagination-previous.png') center center no-repeat transparent
+		text-indent: -1000em
+	.previous-article-title
+		float: left
+		display: none
+		margin: 1.25em 0 0 0.75em
+		color: white
+		text-shadow: 0 1px 2px #555
+	&:hover
+		.pagination-previous
+			opacity: 1.0
+		.previous-article-title
+			display: inline-block
+.next-container
+	z-index: 2
+	position: fixed
+	top: 50%
+	right: $column*1/5
+	margin-top: -33px
+	.pagination-next
+		float: right
+		display: inline-block
+		width: 66px
+		height: 66px
+		color: white
+		background: url('../images/pagination-next.png') center center no-repeat transparent
+		text-indent: -1000em
+	.next-article-title
+		float: right
+		display: none
+		margin: 1.25em 0.75em 0 0
+		color: white
+		text-shadow: 0 1px 2px #555
+	&:hover
+		.pagination-next
+			opacity: 1.0
+		.next-article-title
+			display: inline-block
+
+//
+// Pagination Setup
+//
+#content-scroller-wrapper
+	overflow: hidden
+#content-scroller
+	.article-container
+		float: left
+
+//
+// Cover Setup
+//
+
+.article
+	float: left
+	width: 100%
+	.cover
+		position: relative
+		float: left
+		display: block
+		overflow: auto
+		padding: 1.5em $column*1
+		width: 100%
+		background-size: cover
+		box-sizing: border-box
+		@include page-shadow
+
+//
+// Article Setup
+//
+
+#story
+	float: left
+	padding: 0 $column*1
+p
+	font-weight: 300
+
+//
+// Regions Setup
+//
+.article-source
+	-webkit-flow-into: article_flow
+	h2
+		margin-top: 0
+	p
+		margin-bottom: 1.5em
+		-webkit-hyphens: auto
