@@ -1,0 +1,28 @@
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+    font-size: 1em; } }
+/* @media screen and (min-width: 984px) */
+/* @media screen and (min-width: 1872px) */
+#seoul-got-soul.article .cover {
+  background: black; }
+  #seoul-got-soul.article .cover #article-title.wrapper {
+    margin: 10% auto;
+    text-align: center;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    opacity: 0.95; }
+    #seoul-got-soul.article .cover #article-title.wrapper h1 {
+      margin: 0;
+      color: white;
+      font-weight: 900; }
+    #seoul-got-soul.article .cover #article-title.wrapper h2 {
+      margin: 0;
+      font-family: "omnes-pro", sans-serif;
+      font-weight: 300;
+      font-style: italic; }
+  #seoul-got-soul.article .cover iframe {
+    width: 100%;
+    height: 56.25%; }
