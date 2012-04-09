@@ -259,24 +259,43 @@ body
 				font-style: italic
 		h2
 			display: inline-block
-	.branding-area
+	#fixer
+		display: block
 		float: left
-		padding: 1.5em 0 0
+		padding: 0 $column*1
 		width: 100%
-		color: $blue
 		box-sizing: border-box
 		@include page-shadow
-		img
+		#mini-mast.wrapper
 			display: block
-			margin: 0 auto
-			width: 4em
-		hgroup#mini-mast
+			float: left
+			width: 37.5%
+			background: red
+			hgroup
+				display: block
+		.wrapper
 			display: block
-			margin: 1.5em auto 0
-			padding: 0 0 1.5em 0
-			width: 100%
-			text-align: center
-			border-bottom: 1px dotted $light-grey
+			float: left
+			background: $yellow
+			width: 12.5%
+	.branding-area
+		display: block
+		float: left
+		padding: 0 $column*1
+		width: 100%
+		box-sizing: border-box
+		@include page-shadow
+		#logo-wrapper /* .wrapper */
+			display: block
+			float: left
+			width: 12.5%
+			img
+				float: left
+				width: 4em
+		hgroup#mini-mast /* .wrapper */
+			display: block
+			float: left
+			width: 37.5%
 			h1
 				margin: 0
 				font-weight: 700

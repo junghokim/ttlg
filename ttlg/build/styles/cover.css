@@ -211,26 +211,47 @@ body {
       font-style: italic; }
   #list .home-item h2 {
     display: inline-block; }
-#list .branding-area {
+#list #fixer {
+  display: block;
   float: left;
-  padding: 1.5em 0 0;
+  padding: 0 5.556%;
   width: 100%;
-  color: #33ccff;
   box-sizing: border-box;
   -moz-box-shadow: 0 0 12px black;
   -webkit-box-shadow: 0 0 12px black;
   box-shadow: 0 0 12px black; }
-  #list .branding-area img {
+  #list #fixer #mini-mast.wrapper {
     display: block;
-    margin: 0 auto;
-    width: 4em; }
+    float: left;
+    width: 37.5%;
+    background: red; }
+    #list #fixer #mini-mast.wrapper hgroup {
+      display: block; }
+  #list #fixer .wrapper {
+    display: block;
+    float: left;
+    background: #fde700;
+    width: 12.5%; }
+#list .branding-area {
+  display: block;
+  float: left;
+  padding: 0 5.556%;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-shadow: 0 0 12px black;
+  -webkit-box-shadow: 0 0 12px black;
+  box-shadow: 0 0 12px black; }
+  #list .branding-area #logo-wrapper {
+    display: block;
+    float: left;
+    width: 12.5%; }
+    #list .branding-area #logo-wrapper img {
+      float: left;
+      width: 4em; }
   #list .branding-area hgroup#mini-mast {
     display: block;
-    margin: 1.5em auto 0;
-    padding: 0 0 1.5em 0;
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px dotted #e1e1e1; }
+    float: left;
+    width: 37.5%; }
     #list .branding-area hgroup#mini-mast h1 {
       margin: 0;
       font-weight: 700;
