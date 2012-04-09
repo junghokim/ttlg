@@ -168,7 +168,7 @@ body
 
 /* Seoulist */
 
-body
+.cover
 	border-top: 0.25em solid $blue
 
 #grid
@@ -246,13 +246,12 @@ body
 		background: url('../images/spaces_eatyourkimchi_01.jpg') center center no-repeat
 
 #list
-	background: url('../images/furley_bg.png') repeat
+	//background: url('../images/furley_bg.png') repeat
 	a
 		color: $blue
 	.home-item
-		margin: 1.5em auto
-		width: 50%
-		text-align: center
+		background-size: cover
+		box-sizing: border-box
 		h1, h2, h3
 			@include small-text
 			font-weight: 200
@@ -261,38 +260,120 @@ body
 		h2
 			display: inline-block
 	.branding-area
-		padding: 1.5em 0
+		float: left
+		padding: 1.5em 0 0
 		width: 100%
 		color: $blue
-		background: $brown
 		box-sizing: border-box
+		@include page-shadow
 		img
 			display: block
 			margin: 0 auto
-			width: 7%
-		hgroup
+			width: 4em
+		hgroup#mini-mast
 			display: block
-			margin: 1.5em auto
-			width: 37.5%
+			margin: 1.5em auto 0
+			padding: 0 0 1.5em 0
+			width: 100%
 			text-align: center
+			border-bottom: 1px dotted $light-grey
 			h1
-				margin: 0 0 0.25em 0
+				margin: 0
 				font-weight: 700
-				color: white
+				color: $brown
 				span.ist
 					font-weight: 700
 					color: $blue
 				span.selects
-					display: block
+					margin-left: 0.25em
 					line-height: 100%
 					font-weight: 100
 			h2
 				padding: 1em 0 0 0
 				font-weight: 100
-				border-top: 1px dotted $light-grey
 			h3
 				font-weight: 200
-
-
+	#introduction
+		display: none
+		float: left
+		margin: 1.5em $column*1
+		p
+			float: left
+			width: 33%
+	#table-of-contents
+		float: left
+		margin: 0
+		width: 100%
+		// border-top: 1px dotted $blue
+		#featured
+			float: left
+			width: 40%
+			.home-item
+				height: 15em
+				text-indent: -9999em
+			#around-the-corner
+				background: url('../images/around-the-corner_4-690x460.jpg') center center no-repeat
+			#dont-stop-make-believing
+				background: url('../images/cosplay-girl-group.jpg') center center no-repeat
+			#energy-drinks
+				background: url('../images/seoulist_energy-drinks_1000px.jpg') center center no-repeat
+		#article-list
+			float: left
+			padding: 1.5em 0
+			width: 100%
+			-webkit-column-count: 3
+			-webkit-column-gap: 0.75em
+			box-sizing: border-box
+			text-align: center
+			.home-item
+				margin-bottom: 0.75em
+				padding: 0 0 0.75em
+				border-bottom: 1px dotted $light-grey
+				hgroup
+					h1
+						font-weight: 500
+					h3
+						@include small-text
+						text-transform: uppercase
+						letter-spacing: 0.1em
+	#slideshow
+		float: left
+		overflow: hidden
+		width: 100%
+		height: 30em
+		@include page-shadow
+		.slides_container
+			overflow: hidden
+			width: inherit
+			height: inherit
+			div
+				position: relative
+				height: inherit
+			.cafeteria-405-kitchen
+				hgroup
+					position: absolute
+					right: 0
+					bottom: 3em
+					padding: 2em $column*1 0 3em
+					text-align: right
+					background: $yellow
+					@include border-radius-ind(top, left, 5px)
+					@include border-radius-ind(bottom, left, 5px)
+					h1, h2
+						font-weight: 100
+					h1
+						font-size: 4em
+						line-height: 1em
+						color: $blue
+						span
+							font-family: 'omnes-pro', sans-serif
+							font-size: 0.4em
+							font-style: italic
+							color: black
+					h2, h3
+						display: inline-block
+						@include small-text
+						text-transform: uppercase
+						letter-spacing: 0.1em
 
 

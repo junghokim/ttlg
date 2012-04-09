@@ -231,6 +231,9 @@ header.masthead {
     -webkit-box-shadow: 0 0 12px black;
     box-shadow: 0 0 12px black; }
 
+.cover {
+  box-sizing: border-box; }
+
 #story {
   float: left;
   padding: 0 5.556%; }

@@ -17,6 +17,8 @@ $(document).ready(function() {
 	$('.masthead').css({'height':((coverHeight))+'px'});
 	// Set the width of the scrollable area which contains articles equal to the width of the viewport multiplied by the number of articles
 	$('#content-scroller').css({'width':((coverWidth)*(articleCount))+'px'});
+	// Set slideshow image width
+	$('.slideshow-image').css({'width':((coverWidth))+'px'});
 
 	/* Scrolling */
 
@@ -80,5 +82,17 @@ $(document).ready(function() {
 		});
 
 	}
+
+  $("#slideshow").slides({
+    preload: false,
+    play: 7500,
+		effect: 'slide, fade',
+		crossfade: true,
+		slideSpeed: 500,
+		fadeSpeed: 500,
+		pagination: false,
+		generateNextPrev: false,
+		generatePagination: false
+  });
 
 });

@@ -121,7 +121,7 @@ body {
   box-sizing: border-box; }
 
 /* Seoulist */
-body {
+.cover {
   border-top: 0.25em solid #33ccff; }
 
 #grid .home-item {
@@ -197,52 +197,142 @@ body {
 #grid #eat-your-kimchi {
   background: url("../images/spaces_eatyourkimchi_01.jpg") center center no-repeat; }
 
-#list {
-  background: url("../images/furley_bg.png") repeat; }
-  #list a {
-    color: #33ccff; }
-  #list .home-item {
-    margin: 1.5em auto;
-    width: 50%;
-    text-align: center; }
-    #list .home-item h1, #list .home-item h2, #list .home-item h3 {
-      /* 13px / 18px */
-      font-size: 0.813em;
-      line-height: 1.385em;
+#list a {
+  color: #33ccff; }
+#list .home-item {
+  background-size: cover;
+  box-sizing: border-box; }
+  #list .home-item h1, #list .home-item h2, #list .home-item h3 {
+    /* 13px / 18px */
+    font-size: 0.813em;
+    line-height: 1.385em;
+    font-weight: 200; }
+    #list .home-item h1 a, #list .home-item h2 a, #list .home-item h3 a {
+      font-style: italic; }
+  #list .home-item h2 {
+    display: inline-block; }
+#list .branding-area {
+  float: left;
+  padding: 1.5em 0 0;
+  width: 100%;
+  color: #33ccff;
+  box-sizing: border-box;
+  -moz-box-shadow: 0 0 12px black;
+  -webkit-box-shadow: 0 0 12px black;
+  box-shadow: 0 0 12px black; }
+  #list .branding-area img {
+    display: block;
+    margin: 0 auto;
+    width: 4em; }
+  #list .branding-area hgroup#mini-mast {
+    display: block;
+    margin: 1.5em auto 0;
+    padding: 0 0 1.5em 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px dotted #e1e1e1; }
+    #list .branding-area hgroup#mini-mast h1 {
+      margin: 0;
+      font-weight: 700;
+      color: #210c08; }
+      #list .branding-area hgroup#mini-mast h1 span.ist {
+        font-weight: 700;
+        color: #33ccff; }
+      #list .branding-area hgroup#mini-mast h1 span.selects {
+        margin-left: 0.25em;
+        line-height: 100%;
+        font-weight: 100; }
+    #list .branding-area hgroup#mini-mast h2 {
+      padding: 1em 0 0 0;
+      font-weight: 100; }
+    #list .branding-area hgroup#mini-mast h3 {
       font-weight: 200; }
-      #list .home-item h1 a, #list .home-item h2 a, #list .home-item h3 a {
-        font-style: italic; }
-    #list .home-item h2 {
-      display: inline-block; }
-  #list .branding-area {
+#list #introduction {
+  display: none;
+  float: left;
+  margin: 1.5em 5.556%; }
+  #list #introduction p {
+    float: left;
+    width: 33%; }
+#list #table-of-contents {
+  float: left;
+  margin: 0;
+  width: 100%; }
+  #list #table-of-contents #featured {
+    float: left;
+    width: 40%; }
+    #list #table-of-contents #featured .home-item {
+      height: 15em;
+      text-indent: -9999em; }
+    #list #table-of-contents #featured #around-the-corner {
+      background: url("../images/around-the-corner_4-690x460.jpg") center center no-repeat; }
+    #list #table-of-contents #featured #dont-stop-make-believing {
+      background: url("../images/cosplay-girl-group.jpg") center center no-repeat; }
+    #list #table-of-contents #featured #energy-drinks {
+      background: url("../images/seoulist_energy-drinks_1000px.jpg") center center no-repeat; }
+  #list #table-of-contents #article-list {
+    float: left;
     padding: 1.5em 0;
     width: 100%;
-    color: #33ccff;
-    background: #210c08;
-    box-sizing: border-box; }
-    #list .branding-area img {
-      display: block;
-      margin: 0 auto;
-      width: 7%; }
-    #list .branding-area hgroup {
-      display: block;
-      margin: 1.5em auto;
-      width: 37.5%;
-      text-align: center; }
-      #list .branding-area hgroup h1 {
-        margin: 0 0 0.25em 0;
-        font-weight: 700;
-        color: white; }
-        #list .branding-area hgroup h1 span.ist {
-          font-weight: 700;
-          color: #33ccff; }
-        #list .branding-area hgroup h1 span.selects {
-          display: block;
-          line-height: 100%;
-          font-weight: 100; }
-      #list .branding-area hgroup h2 {
-        padding: 1em 0 0 0;
-        font-weight: 100;
-        border-top: 1px dotted #e1e1e1; }
-      #list .branding-area hgroup h3 {
-        font-weight: 200; }
+    -webkit-column-count: 3;
+    -webkit-column-gap: 0.75em;
+    box-sizing: border-box;
+    text-align: center; }
+    #list #table-of-contents #article-list .home-item {
+      margin-bottom: 0.75em;
+      padding: 0 0 0.75em;
+      border-bottom: 1px dotted #e1e1e1; }
+      #list #table-of-contents #article-list .home-item hgroup h1 {
+        font-weight: 500; }
+      #list #table-of-contents #article-list .home-item hgroup h3 {
+        /* 13px / 18px */
+        font-size: 0.813em;
+        line-height: 1.385em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em; }
+#list #slideshow {
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  height: 30em;
+  -moz-box-shadow: 0 0 12px black;
+  -webkit-box-shadow: 0 0 12px black;
+  box-shadow: 0 0 12px black; }
+  #list #slideshow .slides_container {
+    overflow: hidden;
+    width: inherit;
+    height: inherit; }
+    #list #slideshow .slides_container div {
+      position: relative;
+      height: inherit; }
+    #list #slideshow .slides_container .cafeteria-405-kitchen hgroup {
+      position: absolute;
+      right: 0;
+      bottom: 3em;
+      padding: 2em 5.556% 0 3em;
+      text-align: right;
+      background: #fde700;
+      -moz-border-top-left-radius: 5px;
+      -webkit-border-top-left-radius: 5px;
+      border-top-left-radius: 5px;
+      -moz-border-bottom-left-radius: 5px;
+      -webkit-border-bottom-left-radius: 5px;
+      border-bottom-left-radius: 5px; }
+      #list #slideshow .slides_container .cafeteria-405-kitchen hgroup h1, #list #slideshow .slides_container .cafeteria-405-kitchen hgroup h2 {
+        font-weight: 100; }
+      #list #slideshow .slides_container .cafeteria-405-kitchen hgroup h1 {
+        font-size: 4em;
+        line-height: 1em;
+        color: #33ccff; }
+        #list #slideshow .slides_container .cafeteria-405-kitchen hgroup h1 span {
+          font-family: "omnes-pro", sans-serif;
+          font-size: 0.4em;
+          font-style: italic;
+          color: black; }
+      #list #slideshow .slides_container .cafeteria-405-kitchen hgroup h2, #list #slideshow .slides_container .cafeteria-405-kitchen hgroup h3 {
+        display: inline-block;
+        /* 13px / 18px */
+        font-size: 0.813em;
+        line-height: 1.385em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em; }
