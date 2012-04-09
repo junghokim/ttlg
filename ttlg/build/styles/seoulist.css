@@ -239,7 +239,8 @@ header.masthead {
   padding: 0 5.556%; }
 
 p {
-  font-weight: 300; }
+  font-family: "rooney-web";
+  font-weight: 400; }
 
 .article-source {
   -webkit-flow-into: article_flow; }

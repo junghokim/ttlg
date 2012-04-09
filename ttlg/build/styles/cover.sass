@@ -168,7 +168,7 @@ body
 
 /* Seoulist */
 
-.cover
+body
 	border-top: 0.25em solid $blue
 
 #grid
@@ -341,12 +341,13 @@ body
 		overflow: hidden
 		width: 100%
 		height: 30em
-		@include page-shadow
+		//@include page-shadow
 		.slides_container
 			overflow: hidden
 			width: inherit
 			height: inherit
 			div
+				z-index: -10
 				position: relative
 				height: inherit
 			.cafeteria-405-kitchen
