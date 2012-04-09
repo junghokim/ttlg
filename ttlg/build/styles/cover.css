@@ -1,0 +1,248 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, nav, section, menu, time, mark, audio, video, canvas {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  min-height: 100%;
+  font-size: 100%; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, nav, section, audio, canvas, video {
+  display: block; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+b, strong {
+  font-weight: bold; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+input, textarea, button, select {
+  margin: 0;
+  font-size: 100%;
+  line-height: normal;
+  vertical-align: baseline; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+textarea {
+  overflow: auto; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+figure {
+  position: relative; }
+
+figure img, figure object, figure embed, figure video {
+  max-width: 100%;
+  display: block; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+body {
+  /* 16px / 24px */
+  font-size: 1em;
+  line-height: 1.5em; }
+
+.small {
+  /* 13px / 18px */
+  font-size: 0.813em;
+  line-height: 1.385em; }
+
+.normal, h3 {
+  /* 16px / 24px */
+  font-size: 1em;
+  line-height: 1.5em; }
+
+.large, h2, h1 {
+  /* 26 / 36px */
+  font-size: 1.625em;
+  line-height: 1.385em; }
+
+.huge {
+  /* 42px / 48px */
+  font-size: 2.625em;
+  line-height: 1.143em; }
+
+.massive {
+  /* 68px / 72px */
+  font-size: 4.25em;
+  line-height: 1.059em; }
+
+.gigantic {
+  /* 110px / 120px */
+  font-size: 6.875em;
+  line-height: 1.091em; }
+
+.wrapper {
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Seoulist */
+body {
+  border-top: 0.25em solid #33ccff; }
+
+#grid .home-item {
+  float: left;
+  display: inline-block;
+  width: 20%;
+  height: 10em;
+  background: #ffc0cb;
+  border: 1px dotted white;
+  box-sizing: border-box;
+  background-size: cover; }
+  #grid .home-item:hover {
+    opacity: 0.9; }
+#grid .branding-area {
+  float: left;
+  display: inline-block;
+  width: 40%;
+  height: 20em;
+  padding: 0.75em;
+  color: #33ccff;
+  background: #210c08;
+  box-sizing: border-box; }
+  #grid .branding-area img {
+    float: left;
+    width: 50%; }
+  #grid .branding-area hgroup {
+    float: left;
+    margin: 20% 0 0 1.5em; }
+    #grid .branding-area hgroup h1 {
+      margin: 0 0 1em 0;
+      font-weight: 700;
+      color: white; }
+      #grid .branding-area hgroup h1 span.ist {
+        font-weight: 700;
+        color: #33ccff; }
+      #grid .branding-area hgroup h1 span.selects {
+        display: block;
+        line-height: 100%;
+        font-weight: 100; }
+    #grid .branding-area hgroup h2 {
+      font-weight: 100; }
+#grid #cafeteria-405-kitchen {
+  background: url("../images/405-kitchen_03_1000px.jpg") center center no-repeat; }
+#grid #dont-stop-make-believing {
+  background: url("../images/cosplay-girl-group.jpg") center center no-repeat; }
+#grid #seoul-got-soul {
+  position: relative;
+  background: black;
+  color: #999999;
+  text-align: center; }
+  #grid #seoul-got-soul hgroup {
+    position: absolute;
+    top: 50%;
+    margin: -3em auto 0;
+    width: 100%;
+    text-align: center; }
+    #grid #seoul-got-soul hgroup h1 {
+      font-weight: 100; }
+#grid #around-the-corner {
+  background: url("../images/around-the-corner_4-690x460.jpg") center center no-repeat; }
+#grid #stephanie-cafe {
+  background: url("../images/stephanie-cafe_03_690px-690x459.jpg") center center no-repeat; }
+#grid #temple-stay {
+  background: url("../images/temple-stay_01_690px-690x460.jpg") center center no-repeat; }
+#grid #energy-drinks {
+  background: url("../images/seoulist_energy-drinks_1000px.jpg") center center no-repeat; }
+#grid #ssuk {
+  background: url("../images/seoulist_ssuk_1000px-690x461.jpg") center center no-repeat; }
+#grid #searching-for-the-little-black-pen {
+  background: url("../images/little_black_pen_mon_ami_690px_04-690x460.jpg") center center no-repeat; }
+#grid #blu {
+  background: url("../images/blu-guesthouse_02.jpg") center center no-repeat; }
+#grid #eat-your-kimchi {
+  background: url("../images/spaces_eatyourkimchi_01.jpg") center center no-repeat; }
+
+#list {
+  background: url("../images/furley_bg.png") repeat; }
+  #list a {
+    color: #33ccff; }
+  #list .home-item {
+    margin: 1.5em auto;
+    width: 50%;
+    text-align: center; }
+    #list .home-item h1, #list .home-item h2, #list .home-item h3 {
+      /* 13px / 18px */
+      font-size: 0.813em;
+      line-height: 1.385em;
+      font-weight: 200; }
+      #list .home-item h1 a, #list .home-item h2 a, #list .home-item h3 a {
+        font-style: italic; }
+    #list .home-item h2 {
+      display: inline-block; }
+  #list .branding-area {
+    padding: 1.5em 0;
+    width: 100%;
+    color: #33ccff;
+    background: #210c08;
+    box-sizing: border-box; }
+    #list .branding-area img {
+      display: block;
+      margin: 0 auto;
+      width: 7%; }
+    #list .branding-area hgroup {
+      display: block;
+      margin: 1.5em auto;
+      width: 37.5%;
+      text-align: center; }
+      #list .branding-area hgroup h1 {
+        margin: 0 0 0.25em 0;
+        font-weight: 700;
+        color: white; }
+        #list .branding-area hgroup h1 span.ist {
+          font-weight: 700;
+          color: #33ccff; }
+        #list .branding-area hgroup h1 span.selects {
+          display: block;
+          line-height: 100%;
+          font-weight: 100; }
+      #list .branding-area hgroup h2 {
+        padding: 1em 0 0 0;
+        font-weight: 100;
+        border-top: 1px dotted #e1e1e1; }
+      #list .branding-area hgroup h3 {
+        font-weight: 200; }
