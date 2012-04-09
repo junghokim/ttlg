@@ -259,31 +259,13 @@ body
 				font-style: italic
 		h2
 			display: inline-block
-	#fixer
-		display: block
-		float: left
-		padding: 0 $column*1
-		width: 100%
-		box-sizing: border-box
-		@include page-shadow
-		#mini-mast.wrapper
-			display: block
-			float: left
-			width: 37.5%
-			background: red
-			hgroup
-				display: block
-		.wrapper
-			display: block
-			float: left
-			background: $yellow
-			width: 12.5%
 	.branding-area
 		display: block
 		float: left
-		padding: 0 $column*1
+		padding: 1.5em $column*1
 		width: 100%
 		box-sizing: border-box
+		background: white
 		@include page-shadow
 		#logo-wrapper /* .wrapper */
 			display: block
@@ -293,9 +275,10 @@ body
 				float: left
 				width: 4em
 		hgroup#mini-mast /* .wrapper */
+			position: relative
 			display: block
 			float: left
-			width: 37.5%
+			width: 87.5%
 			h1
 				margin: 0
 				font-weight: 700
@@ -308,9 +291,15 @@ body
 					line-height: 100%
 					font-weight: 100
 			h2
-				padding: 1em 0 0 0
+				padding: 0
 				font-weight: 100
+				@include small-text
 			h3
+				position: absolute
+				top: 50%
+				right: 0
+				margin-top: -0.5em
+				height: 1em
 				font-weight: 200
 	#introduction
 		display: none
@@ -323,7 +312,8 @@ body
 		float: left
 		margin: 0
 		width: 100%
-		// border-top: 1px dotted $blue
+		background: #F8F8F8
+		border-top: 1px dotted $blue
 		#featured
 			float: left
 			width: 40%
@@ -373,7 +363,7 @@ body
 				hgroup
 					position: absolute
 					right: 0
-					bottom: 3em
+					bottom: 6em
 					padding: 2em $column*1 0 3em
 					text-align: right
 					background: $yellow
@@ -387,7 +377,7 @@ body
 						color: $blue
 						span
 							font-family: 'omnes-pro', sans-serif
-							font-size: 0.4em
+							font-size: 0.3em
 							font-style: italic
 							color: black
 					h2, h3

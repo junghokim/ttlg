@@ -211,33 +211,13 @@ body {
       font-style: italic; }
   #list .home-item h2 {
     display: inline-block; }
-#list #fixer {
-  display: block;
-  float: left;
-  padding: 0 5.556%;
-  width: 100%;
-  box-sizing: border-box;
-  -moz-box-shadow: 0 0 12px black;
-  -webkit-box-shadow: 0 0 12px black;
-  box-shadow: 0 0 12px black; }
-  #list #fixer #mini-mast.wrapper {
-    display: block;
-    float: left;
-    width: 37.5%;
-    background: red; }
-    #list #fixer #mini-mast.wrapper hgroup {
-      display: block; }
-  #list #fixer .wrapper {
-    display: block;
-    float: left;
-    background: #fde700;
-    width: 12.5%; }
 #list .branding-area {
   display: block;
   float: left;
-  padding: 0 5.556%;
+  padding: 1.5em 5.556%;
   width: 100%;
   box-sizing: border-box;
+  background: white;
   -moz-box-shadow: 0 0 12px black;
   -webkit-box-shadow: 0 0 12px black;
   box-shadow: 0 0 12px black; }
@@ -249,9 +229,10 @@ body {
       float: left;
       width: 4em; }
   #list .branding-area hgroup#mini-mast {
+    position: relative;
     display: block;
     float: left;
-    width: 37.5%; }
+    width: 87.5%; }
     #list .branding-area hgroup#mini-mast h1 {
       margin: 0;
       font-weight: 700;
@@ -264,9 +245,17 @@ body {
         line-height: 100%;
         font-weight: 100; }
     #list .branding-area hgroup#mini-mast h2 {
-      padding: 1em 0 0 0;
-      font-weight: 100; }
+      padding: 0;
+      font-weight: 100;
+      /* 13px / 18px */
+      font-size: 0.813em;
+      line-height: 1.385em; }
     #list .branding-area hgroup#mini-mast h3 {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -0.5em;
+      height: 1em;
       font-weight: 200; }
 #list #introduction {
   display: none;
@@ -278,7 +267,9 @@ body {
 #list #table-of-contents {
   float: left;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+  background: #f8f8f8;
+  border-top: 1px dotted #33ccff; }
   #list #table-of-contents #featured {
     float: left;
     width: 40%; }
@@ -327,7 +318,7 @@ body {
     #list #slideshow .slides_container .cafeteria-405-kitchen hgroup {
       position: absolute;
       right: 0;
-      bottom: 3em;
+      bottom: 6em;
       padding: 2em 5.556% 0 3em;
       text-align: right;
       background: #fde700;
@@ -345,7 +336,7 @@ body {
         color: #33ccff; }
         #list #slideshow .slides_container .cafeteria-405-kitchen hgroup h1 span {
           font-family: "omnes-pro", sans-serif;
-          font-size: 0.4em;
+          font-size: 0.3em;
           font-style: italic;
           color: black; }
       #list #slideshow .slides_container .cafeteria-405-kitchen hgroup h2, #list #slideshow .slides_container .cafeteria-405-kitchen hgroup h3 {
