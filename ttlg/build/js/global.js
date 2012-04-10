@@ -85,7 +85,8 @@ $(document).ready(function() {
 
   $("#slideshow").slides({
     preload: false,
-    play: 7500,
+    play: 0,
+    bigTarget: true,
 		effect: 'slide, fade',
 		crossfade: true,
 		slideSpeed: 500,
