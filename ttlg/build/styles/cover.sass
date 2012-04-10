@@ -387,29 +387,52 @@ body
 						letter-spacing: 0.1em
 
 #full-frontal
-	.cover
-		box-shadow: none
-	#bottom-section
+	#content-scroller-wrapper
+		display: block
 		float: left
-		margin: 0 $column*1
-		padding: 1.5em 0
-		.wrapper
-			float: left
+		@include page-shadow
+	#bottom-section
+		// removing float: left and adding display: inline-block plus 100% width to child elements keeps shadow for #content-scroller-wrapper in check for some reason...
+		//float: left
+		padding: 1.5em $column*1
+		width: 100%
+		background: lighten(black, 5%)
+		box-sizing: border-box
 		#introduction
+			display: none
 			width: 37.5%
 		#article-list
-			width: 62.5%
-			box-sizing: border-box
-			.home-item
+			//-webkit-column-count: 2
+			display: inline-block
+			width: 100%
+			.home-item /* .wrapper */
 				float: left
 				position: relative
-				width: 33.3333%
-				height: 12em
-				padding: 0 0.75em
+				margin: 0 0 1.5em
+				width: 50%
+				height: 9em
+				// swapping margin for padding
+				//padding: 0
+				//padding: 0 0.75em
 				background: none
-				border-bottom: 1px dotted $blue
+				//border-bottom: 1px dotted $blue
 				box-sizing: border-box
+				.thumb-crop
+					overflow: hidden
+					float: left
+					width: 5em
+					height: 5em
+					@include border-radius(3px)
+					img
+						height: 5em
 				hgroup
+					//float: left
+					//margin-left: 0.75em
+					position: absolute
+					top: 0
+					right: 0.75em
+					bottom: 0
+					left: 6.5em
 					a
 						color: $grey
 						font-style: italic
@@ -419,28 +442,38 @@ body
 						font-weight: 200
 						color: $grey
 					h1
+						margin: 0 0 0.25em 0
 						font-size: 1.25em
 						font-weight: 600
-						color: $grey
+						color: $light-grey
 					h3
+						//display: none
 						position: absolute
 						right: 0
 						bottom: 0
-						left: 0
-						padding: 0.75em 0
+						left: -7.25em
+						padding: 0.75em 0 0.75em 7.25em
 						text-transform: uppercase
 						letter-spacing: 0.1em
 						border-top: 1px dotted $grey
+						border-bottom: 1px dotted $blue
 	.article
 		background-size: cover
 		div
-			z-index: -10			
+			// Removed z-index to get image to show up properly
+			//z-index: -10			
+	#cafeteria-405-kitchen
+		background: url('../images/405-kitchen_03_1000px.jpg') center center no-repeat
+	#dont-stop-make-believing
+		background: url('../images/cosplay-girl-group.jpg') top center no-repeat
 	#energy-drinks
 		background: url('../images/seoulist_energy-drinks_1000px.jpg') center center no-repeat
 	#temple-stay
 		background: url('../images/temple-stay_01_1080px-height.jpg') center center no-repeat
 	.branding-area
-		position: fixed
+		// switching to absolute to avoid branding/ui clashes w/content
+		//position: fixed
+		position: absolute
 		display: block
 		padding: 1.5em $column*1
 		width: 100%
@@ -476,7 +509,7 @@ body
 				padding: 0
 				font-weight: 400
 				@include small-text
-				color: $light-grey
+				color: white
 			h3
 				display: none
 				position: absolute

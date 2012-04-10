@@ -19,7 +19,7 @@ $(document).ready(function() {
 	$('#content-scroller').css({'width':((coverWidth)*(articleCount))+'px'});
 	// Set slideshow image width
 	$('.slideshow-image').css({'width':((coverWidth))+'px'});
-	$('#article-list').css({'height':((coverHeight))+'px'});
+	//$('#article-list').css({'height':((coverHeight))+'px'});
 
 	/* Scrolling */
 
@@ -54,7 +54,7 @@ $(document).ready(function() {
 			$('#content-scroller').css({'width':((coverWidth)*(articleCount))+'px'});
 			// Set slideshow image width
 			$('.slideshow-image').css({'width':((coverWidth))+'px'});
-			$('#article-list').css({'height':((coverHeight))+'px'});
+			//$('#article-list').css({'height':((coverHeight))+'px'});
 
 		});
 	}
