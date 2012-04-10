@@ -345,8 +345,55 @@ body {
         text-transform: uppercase;
         letter-spacing: 0.1em; }
 
+#full-frontal .cover {
+  box-shadow: none; }
+#full-frontal #bottom-section {
+  float: left;
+  margin: 0 5.556%;
+  padding: 1.5em 0; }
+  #full-frontal #bottom-section .wrapper {
+    float: left; }
+  #full-frontal #bottom-section #introduction {
+    width: 37.5%; }
+  #full-frontal #bottom-section #article-list {
+    width: 62.5%;
+    box-sizing: border-box; }
+    #full-frontal #bottom-section #article-list .home-item {
+      float: left;
+      position: relative;
+      width: 33.333%;
+      height: 12em;
+      padding: 0 0.75em;
+      background: none;
+      border-bottom: 1px dotted #33ccff;
+      box-sizing: border-box; }
+      #full-frontal #bottom-section #article-list .home-item hgroup a {
+        color: #999999;
+        font-style: italic;
+        text-decoration: none; }
+      #full-frontal #bottom-section #article-list .home-item hgroup h2, #full-frontal #bottom-section #article-list .home-item hgroup h3 {
+        /* 13px / 18px */
+        font-size: 0.813em;
+        line-height: 1.385em;
+        font-weight: 200;
+        color: #999999; }
+      #full-frontal #bottom-section #article-list .home-item hgroup h1 {
+        font-size: 1.25em;
+        font-weight: 600;
+        color: #999999; }
+      #full-frontal #bottom-section #article-list .home-item hgroup h3 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 0.75em 0;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        border-top: 1px dotted #999999; }
 #full-frontal .article {
   background-size: cover; }
+  #full-frontal .article div {
+    z-index: -10; }
 #full-frontal #energy-drinks {
   background: url("../images/seoulist_energy-drinks_1000px.jpg") center center no-repeat; }
 #full-frontal #temple-stay {

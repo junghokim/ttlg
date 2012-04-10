@@ -387,8 +387,54 @@ body
 						letter-spacing: 0.1em
 
 #full-frontal
+	.cover
+		box-shadow: none
+	#bottom-section
+		float: left
+		margin: 0 $column*1
+		padding: 1.5em 0
+		.wrapper
+			float: left
+		#introduction
+			width: 37.5%
+		#article-list
+			width: 62.5%
+			box-sizing: border-box
+			.home-item
+				float: left
+				position: relative
+				width: 33.3333%
+				height: 12em
+				padding: 0 0.75em
+				background: none
+				border-bottom: 1px dotted $blue
+				box-sizing: border-box
+				hgroup
+					a
+						color: $grey
+						font-style: italic
+						text-decoration: none
+					h2, h3
+						@include small-text
+						font-weight: 200
+						color: $grey
+					h1
+						font-size: 1.25em
+						font-weight: 600
+						color: $grey
+					h3
+						position: absolute
+						right: 0
+						bottom: 0
+						left: 0
+						padding: 0.75em 0
+						text-transform: uppercase
+						letter-spacing: 0.1em
+						border-top: 1px dotted $grey
 	.article
 		background-size: cover
+		div
+			z-index: -10			
 	#energy-drinks
 		background: url('../images/seoulist_energy-drinks_1000px.jpg') center center no-repeat
 	#temple-stay
