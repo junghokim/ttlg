@@ -121,9 +121,6 @@ body {
   box-sizing: border-box; }
 
 /* Seoulist */
-body {
-  border-top: 0.25em solid #33ccff; }
-
 #grid .home-item {
   float: left;
   display: inline-block;
@@ -265,6 +262,7 @@ body {
     float: left;
     width: 33%; }
 #list #table-of-contents {
+  display: none;
   float: left;
   margin: 0;
   width: 100%;
@@ -306,7 +304,7 @@ body {
   float: left;
   overflow: hidden;
   width: 100%;
-  height: 30em; }
+  height: 100%; }
   #list #slideshow .slides_container {
     overflow: hidden;
     width: inherit;
@@ -346,3 +344,123 @@ body {
         line-height: 1.385em;
         text-transform: uppercase;
         letter-spacing: 0.1em; }
+
+#full-frontal .article {
+  background-size: cover; }
+#full-frontal #energy-drinks {
+  background: url("../images/seoulist_energy-drinks_1000px.jpg") center center no-repeat; }
+#full-frontal #temple-stay {
+  background: url("../images/temple-stay_01_1080px-height.jpg") center center no-repeat; }
+#full-frontal .branding-area {
+  position: fixed;
+  display: block;
+  padding: 1.5em 5.556%;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 0.25em solid #33ccff; }
+  #full-frontal .branding-area #logo-wrapper {
+    display: block;
+    float: left;
+    width: 12.5%; }
+    #full-frontal .branding-area #logo-wrapper img {
+      float: left;
+      width: 4em; }
+  #full-frontal .branding-area hgroup#mini-mast {
+    position: relative;
+    display: block;
+    float: left;
+    width: 87.5%;
+    text-shadow: 0 1px 3px black; }
+    #full-frontal .branding-area hgroup#mini-mast h1 {
+      margin: 0;
+      font-weight: 700;
+      color: white; }
+      #full-frontal .branding-area hgroup#mini-mast h1 span.ist {
+        font-weight: 700;
+        color: #33ccff; }
+      #full-frontal .branding-area hgroup#mini-mast h1 span.selects {
+        margin-left: 0.25em;
+        line-height: 100%;
+        font-weight: 100; }
+    #full-frontal .branding-area hgroup#mini-mast h2 {
+      padding: 0;
+      font-weight: 400;
+      /* 13px / 18px */
+      font-size: 0.813em;
+      line-height: 1.385em;
+      color: #e1e1e1; }
+    #full-frontal .branding-area hgroup#mini-mast h3 {
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -0.5em;
+      height: 1em;
+      font-weight: 200; }
+#full-frontal #toc-trigger {
+  position: fixed;
+  bottom: 3em;
+  left: 5.556%; }
+#full-frontal #table-of-contents {
+  display: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0 0.75em;
+  height: 100%;
+  width: 30%;
+  background: url("../images/black_denim.png") repeat;
+  box-shadow: inset 2px 0 12px black; }
+  #full-frontal #table-of-contents #article-list {
+    position: relative;
+    padding: 1.5em 0;
+    height: 100%;
+    box-sizing: border-box; }
+    #full-frontal #table-of-contents #article-list .home-item {
+      position: relative;
+      margin-bottom: 0.75em;
+      padding: 0 0 4em 0;
+      background: none;
+      border-bottom: 1px dotted #33ccff; }
+      #full-frontal #table-of-contents #article-list .home-item hgroup a {
+        color: #999999;
+        font-style: italic;
+        text-decoration: none; }
+      #full-frontal #table-of-contents #article-list .home-item hgroup h2, #full-frontal #table-of-contents #article-list .home-item hgroup h3 {
+        /* 13px / 18px */
+        font-size: 0.813em;
+        line-height: 1.385em;
+        font-weight: 200;
+        color: #999999; }
+      #full-frontal #table-of-contents #article-list .home-item hgroup h1 {
+        font-size: 1.25em;
+        font-weight: 600;
+        color: #e1e1e1; }
+      #full-frontal #table-of-contents #article-list .home-item hgroup h3 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 0.75em 0;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        border-top: 1px dotted #e1e1e1; }
+      #full-frontal #table-of-contents #article-list .home-item:hover h1 {
+        color: #33ccff; }
+    #full-frontal #table-of-contents #article-list #more-scroll {
+      position: fixed;
+      bottom: 0;
+      padding: 0.5em 0.75em;
+      width: 100%;
+      background: black;
+      opacity: 0.93; }
+      #full-frontal #table-of-contents #article-list #more-scroll span {
+        /* 13px / 18px */
+        font-size: 0.813em;
+        line-height: 1.385em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: white; }

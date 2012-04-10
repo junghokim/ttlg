@@ -19,6 +19,7 @@ $(document).ready(function() {
 	$('#content-scroller').css({'width':((coverWidth)*(articleCount))+'px'});
 	// Set slideshow image width
 	$('.slideshow-image').css({'width':((coverWidth))+'px'});
+	$('#article-list').css({'height':((coverHeight))+'px'});
 
 	/* Scrolling */
 
@@ -50,6 +51,9 @@ $(document).ready(function() {
 			$('.masthead').css({'height':((coverHeight))+'px'});
 			// Set the width of the scrollable area which contains articles equal to the width of the viewport multiplied by the number of articles
 			$('#content-scroller').css({'width':((coverWidth)*(articleCount))+'px'});
+			// Set slideshow image width
+			$('.slideshow-image').css({'width':((coverWidth))+'px'});
+			$('#article-list').css({'height':((coverHeight))+'px'});
 
 		});
 	}
@@ -95,5 +99,60 @@ $(document).ready(function() {
 		generateNextPrev: false,
 		generatePagination: false
   });
+
+  /* Switch */
+
+	/*$('#trigger.closed').click ( function () {
+		$('#trigger').removeClass('closed').addClass('open');
+		$('#table-of-contents').show();
+	});*/
+
+	$('#table-of-contents').click ( function () {
+			$('#trigger').removeClass('open').addClass('closed');
+			$('#table-of-contents').hide();
+	});
+
+	$('#trigger').click(function() {
+  $('#table-of-contents').slideToggle('slow', function() {
+    // Animation complete.
+  });
+});
+
+	var openNav = function () {
+		$('#trigger').removeClass('closed').addClass('open');
+		$('#table-of-contents').show();
+		isNavOpen = true;
+	};
+
+	var closeNav = function () {
+		if (window.innerWidth <= MAX_PHONE_WIDTH) {
+			$('#trigger').removeClass('open').addClass('closed');
+			$('#table-of-contents').hide();
+			isNavOpen = false;		
+		}
+	};
+
+	var toggleNav = function () {
+		if (isNavOpen)
+			closeNav();
+		else
+			openNav();
+	};
+
+	var setupNavCallbacks = function () {
+		$('#trigger').click ( function () {
+			alert ('hi');
+			toggleNav();
+			return false;
+		});
+
+		$('nav ul li a').click ( function () {
+			closeNav();
+		});
+
+		$('html').click ( function () {
+			closeNav();			
+		});
+	}
 
 });

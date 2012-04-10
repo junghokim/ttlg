@@ -38,25 +38,8 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>	
 	
-	<body id="list" lang="en">
-		<div id="slideshow">
-			<div class="slides_container">
-				<div class="cafeteria-405-kitchen">
-					<hgroup>
-						<h1>Cafeteria<br />405<br />Kitchen<br /><span>Not Too Hot, Not Too Cold</span></h1>
-						<!--
-						<h2>Words by <a href="#credit">Sonja Swanson</a></h2>
-						<h2>Photos by <a href="#credit">Jungho Kim</a></h2>
-						<h3>2011 November 11</h3>
-					-->
-					</hgroup>
-					<img class="slideshow-image" src="images/405-kitchen_03_1000px.jpg" />
-				</div>
-				<div class="cosplay-girl-group">
-					<img class="slideshow-image" src="images/cosplay-girl-group.jpg" />
-				</div>
-			</div>
-		</div>
+	<body id="full-frontal" lang="en">
+
 		<div class="branding-area">
 			<div id="logo-wrapper" class="wrapper">
 				<img id="logo" src="images/seoulist_bug.png" />
@@ -67,21 +50,40 @@
 				<h3>Volume I: Year One</h3>
 			</hgroup>
 		</div>
-		<div id="introduction">
-			<div class="wrapper">
-				<h1>Welcome to Seoulist.</h1>
+<!--
+		<span class="previous-container">
+			<a class="pagination-previous" href="#previous-article">&rarr;</a>
+			<span class="previous-article-title">Previous Article</span>
+		</span>
+		<span class="next-container">
+			<a class="pagination-next" href="#next-article">&rarr;</a>
+			<span class="next-article-title">Next Article</span>
+		</span>
+-->
+		<div id="content-scroller-wrapper">
+			<div id="content-scroller">
+				<section id="temple-stay" class="article">
+					<div class="cover"></div>
+				</section>
+				<section id="cafeteria-405-kitchen" class="article">
+					<div class="cover"></div>
+				</section>
+				<section id="dont-stop-make-believing" class="article">
+					<div class="cover"></div>
+				</section>
+				<section id="energy-drinks" class="article">
+					<div class="cover"></div>
+				</section>
 			</div>
-			<p class="wrapper">In the fall of 2010 during late night sessions in Sinsa and side alley cafes in Hongdae we hatched a plan to bring the things we appreciated most about Seoul to the English speaking population that had become disconnected from the city we called home.</p>
-			<!--
-			<p class="wrapper">Seoulist is a platform for bringing interesting &amp; intriguing content to our readership that reaches from our own backyards in Seoul and across the world.</p>
-			-->
-			<p class="wrapper">We're a group of writers, designers, and photographers that have come together under a single banner to do what we love to do most; find a creative outlet to express the essence of what it is that we've come to love about Seoul.</p>
-			<p class="wrapper">In February of 2011 we published the first of our articles. Now just over a year later we’re excited to share some of our favorite pieces with you as we look forward to our second year of bringing you the best of Seoul affairs, characters and curiosities.</p>
 		</div>
+
+		<div id="toc-trigger">
+			<a id="trigger" class="closed" href="#">View Articles</a>
+		</div>
+
 		<div id="table-of-contents">
-			<!--
-			<div id="featured">
-				<div id="around-the-corner" class="home-item wrapper">
+			<div id="article-list">
+				<div id="around-the-corner" class="home-item">
 					<hgroup>
 						<h1>Sugar and Spice and All Things Rice</h1>
 						<h2>Words by <a href="#credit">Yaeri Song</a></h2>
@@ -101,11 +103,9 @@
 						<h1>Alternative Energy</h1>
 						<h2>Words by <a href="#credit">Jenna Gibson</a></h2>
 						<h2>Photos by <a href="#credit">Yaeri Song</a></h2>
+						<h3>2011 May 13</h3>
 					</hgroup>
 				</div>
-			</div>
-		-->
-			<div id="article-list">
 				<div id="stephanie-cafe" class="home-item">
 					<hgroup>
 						<h1>Pretty Delicious in Pink</h1>
@@ -249,18 +249,43 @@
 						<h3>2011 May 13</h3>
 					</hgroup>
 				</div>
+				<div id="more-scroll">
+					<span>Scroll for More Articles &darr;</span>
+				</div>
 			</div>
 		</div>
 
-				<!--
-				<img id="logo" src="images/seoulist_bug.png" />
-				 homepage only?
-				<hgroup id="mini-mast">
-					<h1>Seoulist Selects</h1>
-					<h2 class="small">Bespoke Lifestyle &amp; Culture</h2>
-				</hgroup>
-			-->
+		<!--
+		<div class="cover">
+			<div id="slideshow">
+				<div class="slides_container">
+					<div class="cafeteria-405-kitchen">
+						<hgroup>
+							<h1>Cafeteria<br />405<br />Kitchen<br /><span>Not Too Hot, Not Too Cold</span></h1>
 
+							<h2>Words by <a href="#credit">Sonja Swanson</a></h2>
+							<h2>Photos by <a href="#credit">Jungho Kim</a></h2>
+							<h3>2011 November 11</h3>
+
+						</hgroup>
+						<img class="slideshow-image" src="images/405-kitchen_03_1000px.jpg" />
+					</div>
+					<div class="cosplay-girl-group">
+						<img class="slideshow-image" src="images/cosplay-girl-group.jpg" />
+					</div>
+				</div>
+			</div>
+			<div class="branding-area">
+				<div id="logo-wrapper" class="wrapper">
+					<img id="logo" src="images/seoulist_bug.png" />
+				</div>
+				<hgroup id="mini-mast" class="wrapper">
+					<h1 class="huge">Seoul<span class="ist">ist</span><span class="selects">Selects</span></h1>
+					<h2>Bespoke Lifestyle &amp; Culture</h2>
+					<h3>Volume I: Year One</h3>
+				</hgroup>
+			</div>
+		</div>-->
 	</body>
 	
 </html>
