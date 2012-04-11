@@ -386,7 +386,7 @@ body
 						text-transform: uppercase
 						letter-spacing: 0.1em
 
-#full-frontal
+#full-frontal	
 	#content-scroller-wrapper
 		display: block
 		float: left
@@ -399,18 +399,41 @@ body
 		background: lighten(black, 5%)
 		box-sizing: border-box
 		#introduction
-			display: none
-			width: 37.5%
+			display: inline-block
+			//display: none
+			//width: 37.5%
+			margin: 1.5em 0 0 0
+			color: $light-grey
+			h2
+				float: left
+				width: 25%
+				color: lighten(black, 25%)
+			#overview
+				float: left
+				width: 75%
+				-webkit-column-count: 2
+				-webkit-column-gap: 1.5em
 		#article-list
 			//-webkit-column-count: 2
 			display: inline-block
+			padding: 0.75em 0 0
 			width: 100%
+			h3
+				margin: 1.5em 0
+				padding: 0.75em 0
+				color: $light-grey
+				font-weight: 400
+				text-transform: uppercase
+				letter-spacing: 0.2em
+				text-align: center
+				border-top: 3px solid $blue
+				border-bottom: 1px solid $blue
 			.home-item /* .wrapper */
 				float: left
 				position: relative
 				margin: 0 0 1.5em
 				width: 50%
-				height: 9em
+				height: 10em
 				// swapping margin for padding
 				//padding: 0
 				//padding: 0 0.75em
@@ -452,11 +475,29 @@ body
 						right: 0
 						bottom: 0
 						left: -7.25em
+						margin: 0
 						padding: 0.75em 0 0.75em 7.25em
 						text-transform: uppercase
+						text-align: left
 						letter-spacing: 0.1em
 						border-top: 1px dotted $grey
 						border-bottom: 1px dotted $blue
+					h4
+						z-index: 1
+						position: absolute
+						left: 40%
+						bottom: 6em
+						width: 3.5em
+						height: 3.5em
+						font-size: 0.75em
+						font-weight: 700
+						line-height: 3.5em
+						color: lighten(black, 12%)
+						text-align: center
+						background: transparent
+						border: 2px solid lighten(black, 12%)
+						@include border-radius(3.5em)
+						//box-shadow: 0 0 5px black
 	.article
 		background-size: cover
 		div

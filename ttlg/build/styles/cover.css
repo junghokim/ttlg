@@ -357,17 +357,38 @@ body {
   background: #0d0d0d;
   box-sizing: border-box; }
   #full-frontal #bottom-section #introduction {
-    display: none;
-    width: 37.5%; }
+    display: inline-block;
+    margin: 1.5em 0 0 0;
+    color: #e1e1e1; }
+    #full-frontal #bottom-section #introduction h2 {
+      float: left;
+      width: 25%;
+      color: #404040; }
+    #full-frontal #bottom-section #introduction #overview {
+      float: left;
+      width: 75%;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 1.5em; }
   #full-frontal #bottom-section #article-list {
     display: inline-block;
+    padding: 0.75em 0 0;
     width: 100%; }
+    #full-frontal #bottom-section #article-list h3 {
+      margin: 1.5em 0;
+      padding: 0.75em 0;
+      color: #e1e1e1;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      text-align: center;
+      border-top: 3px solid #33ccff;
+      border-bottom: 1px solid #33ccff; }
     #full-frontal #bottom-section #article-list .home-item {
       float: left;
       position: relative;
       margin: 0 0 1.5em;
       width: 50%;
-      height: 9em;
+      height: 10em;
       background: none;
       box-sizing: border-box; }
       #full-frontal #bottom-section #article-list .home-item .thumb-crop {
@@ -406,11 +427,30 @@ body {
           right: 0;
           bottom: 0;
           left: -7.25em;
+          margin: 0;
           padding: 0.75em 0 0.75em 7.25em;
           text-transform: uppercase;
+          text-align: left;
           letter-spacing: 0.1em;
           border-top: 1px dotted #999999;
           border-bottom: 1px dotted #33ccff; }
+        #full-frontal #bottom-section #article-list .home-item hgroup h4 {
+          z-index: 1;
+          position: absolute;
+          left: 40%;
+          bottom: 6em;
+          width: 3.5em;
+          height: 3.5em;
+          font-size: 0.75em;
+          font-weight: 700;
+          line-height: 3.5em;
+          color: #1f1f1f;
+          text-align: center;
+          background: transparent;
+          border: 2px solid #1f1f1f;
+          -moz-border-radius: 3.5em;
+          -webkit-border-radius: 3.5em;
+          border-radius: 3.5em; }
 #full-frontal .article {
   background-size: cover; }
 #full-frontal #cafeteria-405-kitchen {
