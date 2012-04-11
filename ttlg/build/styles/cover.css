@@ -440,9 +440,9 @@ body {
       color: #00bee1;
       font-size: 4em; }
       #full-frontal #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 .stop {
-        color: #fef538; }
+        color: #fd68db; }
       #full-frontal #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 .make {
-        color: #fd79ec; }
+        color: #fef538; }
       #full-frontal #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 .believing {
         color: #411e97; }
     #full-frontal #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h2 {
@@ -450,7 +450,7 @@ body {
       font-size: 1em;
       font-family: "omnes-pro";
       font-style: italic;
-      font-weight: 100; }
+      font-weight: 300; }
 #full-frontal #bottom-section {
   padding: 1.5em 5.556%;
   width: 100%;
@@ -474,16 +474,19 @@ body {
     display: inline-block;
     padding: 0.75em 0 0;
     width: 100%; }
-    #full-frontal #bottom-section #article-list h3 {
-      margin: 1.5em 0;
-      padding: 0.75em 0;
-      color: #e1e1e1;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      text-align: center;
-      border-top: 3px solid #33ccff;
-      border-bottom: 1px solid #33ccff; }
+    #full-frontal #bottom-section #article-list #title-outer {
+      float: left;
+      width: 100%; }
+      #full-frontal #bottom-section #article-list #title-outer h3 {
+        margin: 1.5em 0;
+        padding: 0.5em 0;
+        color: #e1e1e1;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        text-align: center;
+        border-top: 1px solid #33ccff;
+        border-bottom: 1px solid #33ccff; }
     #full-frontal #bottom-section #article-list .home-item {
       float: left;
       position: relative;
@@ -536,22 +539,14 @@ body {
           border-top: 1px dotted #999999;
           border-bottom: 1px dotted #33ccff; }
         #full-frontal #bottom-section #article-list .home-item hgroup h4 {
+          display: none;
           z-index: 1;
           position: absolute;
-          left: 40%;
-          bottom: 6em;
-          width: 3.5em;
-          height: 3.5em;
+          left: -5.25em;
+          bottom: 0.75em;
           font-size: 0.75em;
-          font-weight: 700;
-          line-height: 3.5em;
-          color: #1f1f1f;
-          text-align: center;
-          background: transparent;
-          border: 2px solid #1f1f1f;
-          -moz-border-radius: 3.5em;
-          -webkit-border-radius: 3.5em;
-          border-radius: 3.5em; }
+          font-weight: 200;
+          color: #999999; }
 #full-frontal .article {
   background-size: cover; }
 #full-frontal #cafeteria-405-kitchen {

@@ -480,9 +480,9 @@ body
 						color: #00BEE1
 						font-size: 4em
 						.stop
-							color: #FEF538
+							color: #FD68DB
 						.make
-							color: #FD79EC
+							color: #FEF538
 						.believing
 							color: #411E97
 					h2
@@ -490,7 +490,7 @@ body
 						font-size: 1em
 						font-family: 'omnes-pro'
 						font-style: italic
-						font-weight: 100
+						font-weight: 300
 	#bottom-section
 		// removing float: left and adding display: inline-block plus 100% width to child elements keeps shadow for #content-scroller-wrapper in check for some reason...
 		//float: left
@@ -521,16 +521,19 @@ body
 			display: inline-block
 			padding: 0.75em 0 0
 			width: 100%
-			h3
-				margin: 1.5em 0
-				padding: 0.75em 0
-				color: $light-grey
-				font-weight: 400
-				text-transform: uppercase
-				letter-spacing: 0.2em
-				text-align: center
-				border-top: 3px solid $blue
-				border-bottom: 1px solid $blue
+			#title-outer
+				float: left
+				width: 100%
+				h3
+					margin: 1.5em 0
+					padding: 0.5em 0
+					color: $light-grey
+					font-weight: 400
+					text-transform: uppercase
+					letter-spacing: 0.2em
+					text-align: center
+					border-top: 1px solid $blue
+					border-bottom: 1px solid $blue
 			.home-item /* .wrapper */
 				float: left
 				position: relative
@@ -586,20 +589,22 @@ body
 						border-top: 1px dotted $grey
 						border-bottom: 1px dotted $blue
 					h4
+						display: none
 						z-index: 1
 						position: absolute
-						left: 40%
-						bottom: 6em
-						width: 3.5em
-						height: 3.5em
+						left: -5.25em
+						bottom: 0.75em
+						//width: 3.5em
+						//height: 3.5em
 						font-size: 0.75em
-						font-weight: 700
-						line-height: 3.5em
-						color: lighten(black, 12%)
-						text-align: center
-						background: transparent
-						border: 2px solid lighten(black, 12%)
-						@include border-radius(3.5em)
+						font-weight: 200
+						//line-height: 3.5em
+						//color: lighten(black, 12%)
+						color: $grey
+						//text-align: center
+						//background: transparent
+						//border: 2px solid lighten(black, 12%)
+						//@include border-radius(3.5em)
 						//box-shadow: 0 0 5px black
 	.article
 		background-size: cover

@@ -10,7 +10,9 @@ $(document).ready(function() {
 	// alert (coverHeight);
 
 	// Set the height of the cover equal to the height of viewport
-	$('.cover').css({'height':((coverHeight)*.7)+'px'});
+	$('.cover').css({'height':((coverHeight))+'px'});
+	// Set height of covers on homepage
+	$('#full-frontal .article').css({'height':((coverHeight)*.7)+'px'});
 	// Set the width of the container that holds the articles and the articles themselves equal to the width of the viewport
 	$('#content-scroller-wrapper, .article').css({width: ((coverWidth))+'px'});
 	// Set the height of the masthead equal to the height of the viewport so items can be locked to the top and bottom
