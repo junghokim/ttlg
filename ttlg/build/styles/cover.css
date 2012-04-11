@@ -347,10 +347,110 @@ body {
 
 #full-frontal #content-scroller-wrapper {
   display: block;
+  position: relative;
   float: left;
   -moz-box-shadow: 0 0 12px black;
   -webkit-box-shadow: 0 0 12px black;
   box-shadow: 0 0 12px black; }
+  #full-frontal #content-scroller-wrapper ul.pagination {
+    z-index: 50;
+    position: absolute;
+    bottom: 1.5em;
+    left: 0;
+    margin-left: -5.4em;
+    width: 100%;
+    padding: 0 0 0 50%;
+    opacity: 0.8; }
+    #full-frontal #content-scroller-wrapper ul.pagination li {
+      margin: 0 0 0 1.25em;
+      float: left; }
+      #full-frontal #content-scroller-wrapper ul.pagination li a {
+        display: block;
+        width: 0.75em;
+        height: 0.75em;
+        text-indent: -999em;
+        background: transparent;
+        border: 3px solid white;
+        -moz-border-radius: 0.75em;
+        -webkit-border-radius: 0.75em;
+        border-radius: 0.75em;
+        box-shadow: 0 1px 1px black; }
+    #full-frontal #content-scroller-wrapper ul.pagination li.current a {
+      background: white; }
+  #full-frontal #content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen h1 {
+    position: absolute;
+    bottom: 12%;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-align: center; }
+  #full-frontal #content-scroller-wrapper .content-scroller #hangul-day h1 {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    font-size: 6em;
+    line-height: 1em;
+    color: white;
+    text-align: right;
+    text-shadow: 0 1px 3px black; }
+  #full-frontal #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup {
+    position: absolute;
+    right: 0;
+    bottom: 6em;
+    padding: 2em 3em;
+    text-align: right;
+    background: #fde700;
+    -moz-border-top-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
+    #full-frontal #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h1, #full-frontal #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h2 {
+      font-weight: 100; }
+    #full-frontal #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h1 {
+      position: relative;
+      font-size: 5em;
+      line-height: 1em;
+      color: #33ccff; }
+      #full-frontal #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h1 span {
+        font-family: "omnes-pro", sans-serif;
+        font-size: 0.5em;
+        font-style: italic;
+        color: black; }
+    #full-frontal #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h2, #full-frontal #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h3 {
+      display: inline-block;
+      font-size: 1em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em; }
+  #full-frontal #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup {
+    position: absolute;
+    right: 10%;
+    bottom: 14%;
+    left: 10%;
+    padding: 2em;
+    text-align: center;
+    background: white;
+    box-sizing: border-box;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    opacity: 0.95; }
+    #full-frontal #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 {
+      color: #00bee1;
+      font-size: 4em; }
+      #full-frontal #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 .stop {
+        color: #fef538; }
+      #full-frontal #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 .make {
+        color: #fd79ec; }
+      #full-frontal #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 .believing {
+        color: #411e97; }
+    #full-frontal #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h2 {
+      color: black;
+      font-size: 1em;
+      font-family: "omnes-pro";
+      font-style: italic;
+      font-weight: 100; }
 #full-frontal #bottom-section {
   padding: 1.5em 5.556%;
   width: 100%;
@@ -366,9 +466,10 @@ body {
       color: #404040; }
     #full-frontal #bottom-section #introduction #overview {
       float: left;
-      width: 75%;
-      -webkit-column-count: 2;
-      -webkit-column-gap: 1.5em; }
+      width: 75%; }
+      #full-frontal #bottom-section #introduction #overview p {
+        float: left;
+        width: 50%; }
   #full-frontal #bottom-section #article-list {
     display: inline-block;
     padding: 0.75em 0 0;
@@ -457,11 +558,12 @@ body {
   background: url("../images/405-kitchen_03_1000px.jpg") center center no-repeat; }
 #full-frontal #dont-stop-make-believing {
   background: url("../images/cosplay-girl-group.jpg") top center no-repeat; }
-#full-frontal #energy-drinks {
-  background: url("../images/seoulist_energy-drinks_1000px.jpg") center center no-repeat; }
-#full-frontal #temple-stay {
-  background: url("../images/temple-stay_01_1080px-height.jpg") center center no-repeat; }
+#full-frontal #searching-for-the-little-black-pen {
+  background: url("../images/mon-ami.jpg") center center no-repeat; }
+#full-frontal #hangul-day {
+  background: url("../images/jorop-jukamnida_detail.jpg") center center no-repeat; }
 #full-frontal .branding-area {
+  z-index: 99;
   position: absolute;
   display: block;
   padding: 1.5em 5.556%;
@@ -484,6 +586,7 @@ body {
     #full-frontal .branding-area hgroup#mini-mast h1 {
       margin: 0;
       font-weight: 700;
+      line-height: 1em;
       color: white; }
       #full-frontal .branding-area hgroup#mini-mast h1 span.ist {
         font-weight: 700;

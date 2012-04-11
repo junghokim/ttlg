@@ -389,8 +389,108 @@ body
 #full-frontal	
 	#content-scroller-wrapper
 		display: block
+		position: relative
 		float: left
 		@include page-shadow
+		ul.pagination
+			z-index: 50
+			position: absolute
+			bottom: 1.5em
+			left: 0
+			margin-left: -5.4em
+			width: 100%
+			padding: 0 0 0 50%
+			opacity: 0.8
+			li
+				margin: 0 0 0 1.25em
+				float: left
+				a
+					display: block
+					width: 0.75em
+					height: 0.75em
+					text-indent: -999em
+					background: transparent
+					border: 3px solid white
+					@include border-radius(0.75em)
+					box-shadow: 0 1px 1px black
+			li.current
+				a
+					background: white
+		.content-scroller
+			#searching-for-the-little-black-pen
+				h1
+					position: absolute				
+					bottom: 12%
+					width: 100%
+					font-size: 1.5em
+					font-weight: 100
+					text-align: center
+			#hangul-day
+				h1
+					position: absolute
+					bottom: 15%
+					right: 10%
+					//width: 100%
+					font-size: 6em
+					line-height: 1em
+					color: white
+					text-align: right
+					text-shadow: 0 1px 3px black
+					//text-align: center
+			#cafeteria-405-kitchen
+				hgroup
+					position: absolute
+					right: 0
+					bottom: 6em
+					padding: 2em 3em
+					text-align: right
+					background: $yellow
+					@include border-radius-ind(top, left, 5px)
+					@include border-radius-ind(bottom, left, 5px)
+					h1, h2
+						font-weight: 100
+					h1
+						position: relative
+						font-size: 5em
+						line-height: 1em
+						color: $blue
+						span
+							font-family: 'omnes-pro', sans-serif
+							font-size: 0.5em
+							font-style: italic
+							color: black
+					h2, h3
+						display: inline-block
+						font-size: 1em
+						text-transform: uppercase
+						letter-spacing: 0.1em
+			#dont-stop-make-believing
+				hgroup
+					position: absolute
+					right: 10%
+					bottom: 14%
+					left: 10%
+					padding: 2em
+					text-align: center
+					background: white
+					box-sizing: border-box
+					@include border-radius(1em)
+					opacity: 0.95
+					h1
+						color: #00BEE1
+						font-size: 4em
+						.stop
+							color: #FEF538
+						.make
+							color: #FD79EC
+						.believing
+							color: #411E97
+					h2
+						color: black
+						font-size: 1em
+						font-family: 'omnes-pro'
+						font-style: italic
+						font-weight: 100
 	#bottom-section
 		// removing float: left and adding display: inline-block plus 100% width to child elements keeps shadow for #content-scroller-wrapper in check for some reason...
 		//float: left
@@ -411,8 +511,11 @@ body
 			#overview
 				float: left
 				width: 75%
-				-webkit-column-count: 2
-				-webkit-column-gap: 1.5em
+				//-webkit-column-count: 2
+				//-webkit-column-gap: 1.5em
+				p
+					float: left
+					width: 50%
 		#article-list
 			//-webkit-column-count: 2
 			display: inline-block
@@ -507,11 +610,13 @@ body
 		background: url('../images/405-kitchen_03_1000px.jpg') center center no-repeat
 	#dont-stop-make-believing
 		background: url('../images/cosplay-girl-group.jpg') top center no-repeat
-	#energy-drinks
-		background: url('../images/seoulist_energy-drinks_1000px.jpg') center center no-repeat
-	#temple-stay
-		background: url('../images/temple-stay_01_1080px-height.jpg') center center no-repeat
+	#searching-for-the-little-black-pen
+		background: url('../images/mon-ami.jpg') center center no-repeat
+	#hangul-day
+		background: url('../images/jorop-jukamnida_detail.jpg') center center no-repeat
 	.branding-area
+		// z-index pops up over slidesjs plugin
+		z-index: 99
 		// switching to absolute to avoid branding/ui clashes w/content
 		//position: fixed
 		position: absolute
@@ -538,6 +643,7 @@ body
 			h1
 				margin: 0
 				font-weight: 700
+				line-height: 1em
 				color: white
 				span.ist
 					font-weight: 700

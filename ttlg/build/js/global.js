@@ -88,17 +88,16 @@ $(document).ready(function() {
 
 	}
 
-  $("#slideshow").slides({
+  $("#full-frontal > #content-scroller-wrapper").slides({
     preload: false,
     play: 0,
-    bigTarget: true,
-		effect: 'slide, fade',
+    bigTarget: false,
+		effect: 'slide',
 		crossfade: true,
 		slideSpeed: 500,
-		fadeSpeed: 500,
-		pagination: false,
+		pagination: true,
 		generateNextPrev: false,
-		generatePagination: false
+		generatePagination: true
   });
 
   /* Switch */
