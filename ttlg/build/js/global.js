@@ -16,7 +16,7 @@ $(document).ready(function() {
 	// Set the width of the container that holds the articles and the articles themselves equal to the width of the viewport
 	$('#content-scroller-wrapper, .article').css({width: ((coverWidth))+'px'});
 	// Set the height of the masthead equal to the height of the viewport so items can be locked to the top and bottom
-	$('.masthead').css({'height':((coverHeight))+'px'});
+	//$('.masthead').css({'height':((coverHeight))+'px'});
 	// Set the width of the scrollable area which contains articles equal to the width of the viewport multiplied by the number of articles
 	$('#content-scroller').css({'width':((coverWidth)*(articleCount))+'px'});
 	// Set slideshow image width
@@ -53,7 +53,7 @@ $(document).ready(function() {
 			// Set the width of the container that holds the articles and the articles themselves equal to the width of the viewport
 			$('#content-scroller-wrapper, .article').css({width: ((coverWidth))+'px'});
 			// Set the height of the masthead equal to the height of the viewport so items can be locked to the top and bottom
-			$('.masthead').css({'height':((coverHeight))+'px'});
+			//$('.masthead').css({'height':((coverHeight))+'px'});
 			// Set the width of the scrollable area which contains articles equal to the width of the viewport multiplied by the number of articles
 			$('#content-scroller').css({'width':((coverWidth)*(articleCount))+'px'});
 			// Set slideshow image width
@@ -74,7 +74,7 @@ $(document).ready(function() {
 
 			if ( (document.documentElement.scrollTop || document.body.scrollTop) >= ((coverHeight)/2))
 			{
-				$('.pagination-previous, .pagination-next').css('opacity', 0);
+				//$('.pagination-previous, .pagination-next').css('opacity', 0);
 				/* Commented out because it needs some kind of thing to stop it from animating a ton
 				$('.pagination-previous, .pagination-next').animate({
 					opacity: 0

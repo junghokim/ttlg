@@ -170,52 +170,56 @@ body
 
 body
 	padding-bottom: 3em
-	border-top: 0.25em solid $blue
 	font-family: 'jubilat', Helvetica, Arial, sans-serif
 	font-weight: 400
 header.masthead
-	float: left
-	z-index: 1
 	position: fixed
-	margin: 1.5em 0 0 $column*1
-	width: $column*2
-	.wrapper
-		position: relative
-		width: 100%
-		height: 100%
-		hgroup#mini-mast
-			z-index: 2
-			position: absolute
-			right: 0.75em
-			left: 0.75em
-			bottom: 9em
-			h1, h2
-				margin: 0
-				text-shadow: 0 1px 3px lighten(black, 30%)
-			h1
-				font-size: #{26 / $em}em
-				line-height: 1em
-				color: lighten($blue, 20%)
-			h2
-				color: $light-grey
-		img#logo
-			width: 50%
-			opacity: 0.8
+	z-index: 1
+	//padding: 0.75em 0
+	width: 100%
+	background: white
+	border-top: 0.25em solid $blue	
+	box-sizing: border-box
+	@include page-shadow
+	opacity: 0.97
+	hgroup#mini-mast
+		display: none
+		z-index: 2
+		h1, h2
+			margin: 0
+			text-shadow: 0 1px 3px lighten(black, 30%)
+		h1
+			font-size: #{26 / $em}em
+			line-height: 1em
+			color: lighten($blue, 20%)
+		h2
+			color: $light-grey
+	nav
+		float: right
+	img#logo
+		position: absolute
+		top: -50%
+		left: $column*1
+		margin-top: 2.375em
+		width: 2.5em
+		opacity: 0.8
 .pagination-previous, .pagination-next
+	padding: 1.125em 1.5em
+	border-left: 1px solid #CCC
 	opacity: 0.7
 .previous-container
 	z-index: 2
-	position: fixed
-	top: 50%
-	left: $column*1/5
-	margin-top: -33px
+	//position: fixed
+	//top: 50%
+	//left: $column*1/5
+	//margin-top: -33px
 	.pagination-previous
 		float: left
 		display: inline-block
-		width: 66px
-		height: 66px
+		width: 14px
+		height: 23px
 		color: white
-		background: url('../images/pagination-previous.png') center center no-repeat transparent
+		background: url('../images/pagination-previous-2.png') center center no-repeat transparent
 		text-indent: -1000em
 	.previous-article-title
 		float: left
@@ -223,24 +227,19 @@ header.masthead
 		margin: 1.25em 0 0 0.75em
 		color: white
 		text-shadow: 0 1px 2px #555
-	&:hover
-		.pagination-previous
-			opacity: 1.0
-		.previous-article-title
-			display: inline-block
 .next-container
 	z-index: 2
-	position: fixed
-	top: 50%
-	right: $column*1/5
-	margin-top: -33px
+	//position: fixed
+	//top: 50%
+	//right: $column*1/5
+	//margin-top: -33px
 	.pagination-next
-		float: right
+		float: left
 		display: inline-block
-		width: 66px
-		height: 66px
+		width: 14px
+		height: 23px
 		color: white
-		background: url('../images/pagination-next.png') center center no-repeat transparent
+		background: url('../images/pagination-next-2.png') center center no-repeat transparent
 		text-indent: -1000em
 	.next-article-title
 		float: right
@@ -248,11 +247,6 @@ header.masthead
 		margin: 1.25em 0.75em 0 0
 		color: white
 		text-shadow: 0 1px 2px #555
-	&:hover
-		.pagination-next
-			opacity: 1.0
-		.next-article-title
-			display: inline-block
 
 //
 // Pagination Setup
