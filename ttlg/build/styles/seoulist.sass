@@ -179,7 +179,7 @@ header.masthead
 	z-index: 1
 	padding: 0 0 0 $column*1
 	width: 100%
-	background: white
+	background: black
 	border-top: 0.25em solid $blue	
 	box-sizing: border-box
 	@include page-shadow
@@ -194,10 +194,10 @@ header.masthead
 		h1
 			font-size: #{26 / $em}em
 			line-height: 1em
-			color: $blue
+			color: white
 			span.ist
 				font-weight: 700
-				color: $light-grey
+				color: $blue
 			span.selects
 				margin-left: 0.25em
 				line-height: 100%
@@ -212,11 +212,10 @@ header.masthead
 		img
 			margin-top: 0.625em
 			width: 2.5em
-			opacity: 0.8
 	.pagination-previous, .pagination-next, a.view-articles
 		padding: 1.125em 1.5em
 		border-left: 1px solid #CCC
-		background-color: white
+		background-color: transparent
 	a.view-articles, .previous-container, .next-container
 		float: left
 		&:hover

@@ -133,7 +133,7 @@ header.masthead {
   z-index: 1;
   padding: 0 0 0 5.556%;
   width: 100%;
-  background: white;
+  background: black;
   border-top: 0.25em solid #33ccff;
   box-sizing: border-box;
   -moz-box-shadow: 0 0 12px black;
@@ -149,10 +149,10 @@ header.masthead {
     header.masthead hgroup#mini-mast h1 {
       font-size: 1.625em;
       line-height: 1em;
-      color: #33ccff; }
+      color: white; }
       header.masthead hgroup#mini-mast h1 span.ist {
         font-weight: 700;
-        color: #e1e1e1; }
+        color: #33ccff; }
       header.masthead hgroup#mini-mast h1 span.selects {
         margin-left: 0.25em;
         line-height: 100%;
@@ -166,12 +166,11 @@ header.masthead {
     float: left; }
     header.masthead #logo img {
       margin-top: 0.625em;
-      width: 2.5em;
-      opacity: 0.8; }
+      width: 2.5em; }
   header.masthead .pagination-previous, header.masthead .pagination-next, header.masthead a.view-articles {
     padding: 1.125em 1.5em;
     border-left: 1px solid #cccccc;
-    background-color: white; }
+    background-color: transparent; }
   header.masthead a.view-articles, header.masthead .previous-container, header.masthead .next-container {
     float: left; }
     header.masthead a.view-articles:hover, header.masthead .previous-container:hover, header.masthead .next-container:hover {
