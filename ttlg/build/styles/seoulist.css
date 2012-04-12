@@ -122,12 +122,14 @@ body {
 
 /* Seoulist */
 body {
+  padding-top: 3.938em;
   padding-bottom: 3em;
   font-family: "jubilat", Helvetica, Arial, sans-serif;
   font-weight: 400; }
 
 header.masthead {
   position: fixed;
+  top: 0;
   z-index: 1;
   width: 100%;
   background: white;

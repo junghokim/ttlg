@@ -10,7 +10,8 @@ $(document).ready(function() {
 	// alert (coverHeight);
 
 	// Set the height of the cover equal to the height of viewport
-	$('.cover').css({'height':((coverHeight))+'px'});
+	// Subtract the height of the #masthead (3.9375em x 16px = 63px)
+	$('.cover').css({'height':((coverHeight)-63)+'px'});
 	// Set height of covers on homepage
 	$('#full-frontal .article').css({'height':((coverHeight)*.7)+'px'});
 	// Set the width of the container that holds the articles and the articles themselves equal to the width of the viewport
@@ -47,7 +48,7 @@ $(document).ready(function() {
 
 			// Set the height of the cover equal to the height of viewport
 			// Changed to accomodate things below cover on homepage
-			$('.cover').css({'height':((coverHeight))+'px'});
+			$('.cover').css({'height':((coverHeight)-63)+'px'});
 			// Set height of covers on homepage
 			$('#full-frontal .article, .slides_control').css({'height':((coverHeight)*.7)+'px'});			
 			// Set the width of the container that holds the articles and the articles themselves equal to the width of the viewport
