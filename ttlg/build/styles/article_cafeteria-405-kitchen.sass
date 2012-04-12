@@ -84,19 +84,31 @@
 	// Styling for the destination containers
 	#story
 		h2
+			margin: 0.5em 0 0.25em
 			font-weight: 600
-		#district-1, #district-2
+		#district-1
 			overflow: hidden
 			margin-top: 3em
 		#district-1
 			float: left
 			width: 100%
 			height: 100%
-			#region-1, #region-2, #region-3 /* .wrapper */
+			#region-1
 				float: left
-				margin-left: 25%
-				width: 50%
-				height: 27em
+				margin-left: 12.5%
+				width: 62.5%
+			blockquote
+				float: left
+				margin: 1.5em 1.5em 1.5em 0
+				padding: 1.5em
+				width: 37.5%				
+				font-weight: 100
+				font-style: italic
+				color: $blue
+				border-top: 1px dotted green
+				border-bottom: 1px dotted green
+				// Not automatically applied with GGS
+				box-sizing: border-box
 			#image-1
 				float: right
 				width: 25%
@@ -105,46 +117,3 @@
 				.caption
 					padding-top: 0.75em
 					border-top: .25em solid $light-grey
-			#region-2 /* .wrapper */
-				height: 12em
-				width: 75%
-			#region-3 /* .wrapper */
-				height: 21em
-				width: 75%
-		#district-2
-			float: left
-			width: 100%
-			height: 60em
-			#region-4
-				display: block
-				float: left
-				margin-left: 25%
-				width: 75%
-				height: 20em
-			#quote-1
-				margin-left: 25%
-				width: 37.5%
-			blockquote
-				float: left
-				margin: 0
-				padding: 1.5em
-				font-weight: 100
-				font-style: italic
-				color: $blue
-				border-top: 1px dotted green
-				border-bottom: 1px dotted green
-				// Not automatically applied with GGS
-				box-sizing: border-box
-	.destination
-		display: block
-		// Flowed content will automatically overflow the container, this stops it
-		//overflow: hidden
-		// Content destinations need to have a fixed height declared, otherwise they default to the equivalent of height: auto
-		//height: 100%
-	// Making things flow
-	#story
-		#region-1, #region-2, #region-3, #region-4
-			content: -webkit-from-flow('article_flow')
-			-webkit-flow-from: article_flow
-			box-sizing: border-box
-		// Styling different regions... differently

@@ -30,26 +30,37 @@
       font-size: 6.875em;
       line-height: 1.091em;
       font-weight: 100;
-      line-height: 1m; }
+      line-height: 1em; }
     #cafeteria-405-kitchen.article .cover #article-title.wrapper h2 {
       margin: 0;
       font-family: "omnes-pro", sans-serif;
       font-weight: 200;
       font-style: italic; }
 #cafeteria-405-kitchen.article #story h2 {
+  margin: 0.5em 0 0.25em;
   font-weight: 600; }
-#cafeteria-405-kitchen.article #story #district-1, #cafeteria-405-kitchen.article #story #district-2 {
+#cafeteria-405-kitchen.article #story #district-1 {
   overflow: hidden;
   margin-top: 3em; }
 #cafeteria-405-kitchen.article #story #district-1 {
   float: left;
   width: 100%;
   height: 100%; }
-  #cafeteria-405-kitchen.article #story #district-1 #region-1, #cafeteria-405-kitchen.article #story #district-1 #region-2, #cafeteria-405-kitchen.article #story #district-1 #region-3 {
+  #cafeteria-405-kitchen.article #story #district-1 #region-1 {
     float: left;
-    margin-left: 25%;
-    width: 50%;
-    height: 27em; }
+    margin-left: 12.5%;
+    width: 62.5%; }
+  #cafeteria-405-kitchen.article #story #district-1 blockquote {
+    float: left;
+    margin: 1.5em 1.5em 1.5em 0;
+    padding: 1.5em;
+    width: 37.5%;
+    font-weight: 100;
+    font-style: italic;
+    color: #33ccff;
+    border-top: 1px dotted green;
+    border-bottom: 1px dotted green;
+    box-sizing: border-box; }
   #cafeteria-405-kitchen.article #story #district-1 #image-1 {
     float: right;
     width: 25%; }
@@ -58,38 +69,3 @@
     #cafeteria-405-kitchen.article #story #district-1 #image-1 .caption {
       padding-top: 0.75em;
       border-top: 0.25em solid #e1e1e1; }
-  #cafeteria-405-kitchen.article #story #district-1 #region-2 {
-    height: 12em;
-    width: 75%; }
-  #cafeteria-405-kitchen.article #story #district-1 #region-3 {
-    height: 21em;
-    width: 75%; }
-#cafeteria-405-kitchen.article #story #district-2 {
-  float: left;
-  width: 100%;
-  height: 60em; }
-  #cafeteria-405-kitchen.article #story #district-2 #region-4 {
-    display: block;
-    float: left;
-    margin-left: 25%;
-    width: 75%;
-    height: 20em; }
-  #cafeteria-405-kitchen.article #story #district-2 #quote-1 {
-    margin-left: 25%;
-    width: 37.5%; }
-  #cafeteria-405-kitchen.article #story #district-2 blockquote {
-    float: left;
-    margin: 0;
-    padding: 1.5em;
-    font-weight: 100;
-    font-style: italic;
-    color: #33ccff;
-    border-top: 1px dotted green;
-    border-bottom: 1px dotted green;
-    box-sizing: border-box; }
-#cafeteria-405-kitchen.article .destination {
-  display: block; }
-#cafeteria-405-kitchen.article #story #region-1, #cafeteria-405-kitchen.article #story #region-2, #cafeteria-405-kitchen.article #story #region-3, #cafeteria-405-kitchen.article #story #region-4 {
-  content: -webkit-from-flow("article_flow");
-  -webkit-flow-from: article_flow;
-  box-sizing: border-box; }
