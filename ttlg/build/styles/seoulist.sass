@@ -205,50 +205,41 @@ header.masthead
 		margin-top: 2.375em
 		width: 2.5em
 		opacity: 0.8
-.pagination-previous, .pagination-next
-	padding: 1.125em 1.5em
-	border-left: 1px solid #CCC
-	opacity: 0.7
-.previous-container
-	z-index: 2
-	//position: fixed
-	//top: 50%
-	//left: $column*1/5
-	//margin-top: -33px
-	.pagination-previous
+	.pagination-previous, .pagination-next, a.view-articles
+		padding: 1.125em 1.5em
+		border-left: 1px solid #CCC
+		background-color: white
+	a.view-articles, .previous-container, .next-container
 		float: left
-		display: inline-block
-		width: 14px
+		&:hover
+			background-color: lighten(black, 10%)
+	.pagination-previous, .pagination-next
+		display: block
+	a.view-articles
+		padding: 1.5em 1.5em
 		height: 23px
-		color: white
-		background: url('../images/pagination-previous-2.png') center center no-repeat transparent
-		text-indent: -1000em
-	.previous-article-title
-		float: left
-		display: none
-		margin: 1.25em 0 0 0.75em
-		color: white
-		text-shadow: 0 1px 2px #555
-.next-container
-	z-index: 2
-	//position: fixed
-	//top: 50%
-	//right: $column*1/5
-	//margin-top: -33px
-	.pagination-next
-		float: left
-		display: inline-block
-		width: 14px
-		height: 23px
-		color: white
-		background: url('../images/pagination-next-2.png') center center no-repeat transparent
-		text-indent: -1000em
-	.next-article-title
-		float: right
-		display: none
-		margin: 1.25em 0.75em 0 0
-		color: white
-		text-shadow: 0 1px 2px #555
+		font-size: 0.75em
+		font-weight: 500
+		color: #CCC
+		text-transform: uppercase
+		letter-spacing: 0.1em
+		text-decoration: none
+	.previous-container
+		z-index: 2
+		.pagination-previous
+			width: 14px
+			height: 23px
+			color: white
+			background: url('../images/pagination-previous-2.png') center center no-repeat
+			text-indent: -1000em
+	.next-container
+		z-index: 2
+		.pagination-next
+			width: 14px
+			height: 23px
+			color: white
+			background: url('../images/pagination-next-2.png') center center no-repeat
+			text-indent: -1000em
 
 //
 // Pagination Setup

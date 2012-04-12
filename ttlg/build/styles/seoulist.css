@@ -160,45 +160,41 @@ header.masthead {
     margin-top: 2.375em;
     width: 2.5em;
     opacity: 0.8; }
-
-.pagination-previous, .pagination-next {
-  padding: 1.125em 1.5em;
-  border-left: 1px solid #cccccc;
-  opacity: 0.7; }
-
-.previous-container {
-  z-index: 2; }
-  .previous-container .pagination-previous {
-    float: left;
-    display: inline-block;
-    width: 14px;
+  header.masthead .pagination-previous, header.masthead .pagination-next, header.masthead a.view-articles {
+    padding: 1.125em 1.5em;
+    border-left: 1px solid #cccccc;
+    background-color: white; }
+  header.masthead a.view-articles, header.masthead .previous-container, header.masthead .next-container {
+    float: left; }
+    header.masthead a.view-articles:hover, header.masthead .previous-container:hover, header.masthead .next-container:hover {
+      background-color: #1a1a1a; }
+  header.masthead .pagination-previous, header.masthead .pagination-next {
+    display: block; }
+  header.masthead a.view-articles {
+    padding: 1.5em 1.5em;
     height: 23px;
-    color: white;
-    background: url("../images/pagination-previous-2.png") center center no-repeat transparent;
-    text-indent: -1000em; }
-  .previous-container .previous-article-title {
-    float: left;
-    display: none;
-    margin: 1.25em 0 0 0.75em;
-    color: white;
-    text-shadow: 0 1px 2px #555555; }
-
-.next-container {
-  z-index: 2; }
-  .next-container .pagination-next {
-    float: left;
-    display: inline-block;
-    width: 14px;
-    height: 23px;
-    color: white;
-    background: url("../images/pagination-next-2.png") center center no-repeat transparent;
-    text-indent: -1000em; }
-  .next-container .next-article-title {
-    float: right;
-    display: none;
-    margin: 1.25em 0.75em 0 0;
-    color: white;
-    text-shadow: 0 1px 2px #555555; }
+    font-size: 0.75em;
+    font-weight: 500;
+    color: #cccccc;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none; }
+  header.masthead .previous-container {
+    z-index: 2; }
+    header.masthead .previous-container .pagination-previous {
+      width: 14px;
+      height: 23px;
+      color: white;
+      background: url("../images/pagination-previous-2.png") center center no-repeat;
+      text-indent: -1000em; }
+  header.masthead .next-container {
+    z-index: 2; }
+    header.masthead .next-container .pagination-next {
+      width: 14px;
+      height: 23px;
+      color: white;
+      background: url("../images/pagination-next-2.png") center center no-repeat;
+      text-indent: -1000em; }
 
 #content-scroller-wrapper {
   overflow: hidden; }
