@@ -174,7 +174,8 @@ header.masthead {
   header.masthead a.view-articles, header.masthead .previous-container, header.masthead .next-container {
     float: left; }
     header.masthead a.view-articles:hover, header.masthead .previous-container:hover, header.masthead .next-container:hover {
-      background-color: #1a1a1a; }
+      color: white;
+      background-color: #999999; }
   header.masthead .pagination-previous, header.masthead .pagination-next {
     display: block; }
   header.masthead a.view-articles {

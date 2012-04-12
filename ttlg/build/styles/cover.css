@@ -167,6 +167,8 @@ body {
 
 #full-frontal {
   padding-top: 3.938em; }
+  #full-frontal .pagination-previous, #full-frontal .pagination-next {
+    display: none; }
   #full-frontal #content-scroller-wrapper {
     display: block;
     position: relative;
@@ -300,7 +302,7 @@ body {
   #full-frontal #bottom-section {
     padding: 1.5em 5.556%;
     width: 100%;
-    background: #0d0d0d;
+    background: #262626;
     box-sizing: border-box; }
     #full-frontal #bottom-section #introduction {
       display: inline-block;

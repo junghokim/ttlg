@@ -205,6 +205,9 @@ body
 #full-frontal
 	// offsets the area of the fixed header
 	padding-top: 3.9375em
+	.pagination-previous, .pagination-next
+		// remove pagination navigation from home
+		display: none
 	#content-scroller-wrapper
 		display: block
 		position: relative
@@ -333,7 +336,7 @@ body
 		//float: left
 		padding: 1.5em $column*1
 		width: 100%
-		background: lighten(black, 5%)
+		background: lighten(black, 15%)
 		box-sizing: border-box
 		#introduction
 			display: inline-block
