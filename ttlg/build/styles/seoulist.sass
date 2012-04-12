@@ -177,34 +177,42 @@ header.masthead
 	position: fixed
 	top: 0
 	z-index: 1
-	//padding: 0.75em 0
+	padding: 0 0 0 $column*1
 	width: 100%
 	background: white
 	border-top: 0.25em solid $blue	
 	box-sizing: border-box
 	@include page-shadow
-	opacity: 0.97
+	opacity: 0.99
 	hgroup#mini-mast
-		display: none
 		z-index: 2
+		float: left
+		margin: 0.5em 0 0 1.5em
 		h1, h2
 			margin: 0
-			text-shadow: 0 1px 3px lighten(black, 30%)
+			//text-shadow: 0 1px 1px #666
 		h1
 			font-size: #{26 / $em}em
 			line-height: 1em
-			color: lighten($blue, 20%)
+			color: $blue
+			span.ist
+				font-weight: 700
+				color: $light-grey
+			span.selects
+				margin-left: 0.25em
+				line-height: 100%
+				font-weight: 200
 		h2
 			color: $light-grey
+			font-weight: 400
 	nav
 		float: right
-	img#logo
-		position: absolute
-		top: -50%
-		left: $column*1
-		margin-top: 2.375em
-		width: 2.5em
-		opacity: 0.8
+	#logo
+		float: left
+		img
+			margin-top: 0.625em
+			width: 2.5em
+			opacity: 0.8
 	.pagination-previous, .pagination-next, a.view-articles
 		padding: 1.125em 1.5em
 		border-left: 1px solid #CCC

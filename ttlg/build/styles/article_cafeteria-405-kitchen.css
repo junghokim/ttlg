@@ -11,7 +11,7 @@
     position: absolute;
     right: 0;
     bottom: 20%;
-    padding: 2em 5.556% 2em 2em;
+    padding: 2em 5.556% 2em 3em;
     text-align: right;
     background: #fde700;
     -moz-border-top-left-radius: 4px;
@@ -26,7 +26,11 @@
     #cafeteria-405-kitchen.article .cover #article-title.wrapper h1 {
       margin: 0;
       color: #33ccff;
-      font-weight: 100; }
+      /* 110px / 120px */
+      font-size: 6.875em;
+      line-height: 1.091em;
+      font-weight: 100;
+      line-height: 1m; }
     #cafeteria-405-kitchen.article .cover #article-title.wrapper h2 {
       margin: 0;
       font-family: "omnes-pro", sans-serif;
