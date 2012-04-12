@@ -130,15 +130,13 @@ body {
 header.masthead {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 10;
   padding: 0 0 0 5.556%;
   width: 100%;
   background: black;
   border-top: 0.25em solid #33ccff;
   box-sizing: border-box;
-  -moz-box-shadow: 0 0 12px black;
-  -webkit-box-shadow: 0 0 12px black;
-  box-shadow: 0 0 12px black;
+  box-shadow: 0 0 6px black;
   opacity: 0.99; }
   header.masthead hgroup#mini-mast {
     z-index: 2;
@@ -169,24 +167,19 @@ header.masthead {
       width: 2.5em; }
   header.masthead .pagination-previous, header.masthead .pagination-next, header.masthead a.view-articles {
     padding: 1.125em 1.5em;
-    border-left: 1px solid #cccccc;
+    border-left: 1px solid #444444;
     background-color: transparent; }
   header.masthead a.view-articles, header.masthead .previous-container, header.masthead .next-container {
     float: left; }
     header.masthead a.view-articles:hover, header.masthead .previous-container:hover, header.masthead .next-container:hover {
-      color: white;
       background-color: #999999; }
   header.masthead .pagination-previous, header.masthead .pagination-next {
     display: block; }
   header.masthead a.view-articles {
-    padding: 1.5em 1.5em;
+    width: 25px;
     height: 23px;
-    font-size: 0.75em;
-    font-weight: 500;
-    color: #cccccc;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-decoration: none; }
+    text-indent: -1000em;
+    background: url("../images/list-icon.png") center center no-repeat; }
   header.masthead .previous-container {
     z-index: 2; }
     header.masthead .previous-container .pagination-previous {
@@ -203,6 +196,107 @@ header.masthead {
       color: white;
       background: url("../images/pagination-next-2.png") center center no-repeat;
       text-indent: -1000em; }
+
+#table-of-contents {
+  z-index: 6;
+  display: block;
+  position: absolute;
+  top: 63px;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0 5.556% 1.5em;
+  background: #222222; }
+  #table-of-contents #title-outer {
+    float: left;
+    margin: 1.5em 0;
+    width: 100%; }
+    #table-of-contents #title-outer h3 {
+      margin: 0;
+      padding: 0.5em 0;
+      font-size: 1.5em;
+      font-weight: 700;
+      color: #333333;
+      border-bottom: 1px dotted #cccccc; }
+      #table-of-contents #title-outer h3 span {
+        color: #33ccff; }
+  #table-of-contents #article-list {
+    float: left;
+    position: relative;
+    padding: 1.5em 0.75em;
+    box-sizing: border-box; }
+    #table-of-contents #article-list .home-item {
+      float: left;
+      display: block;
+      margin-bottom: 1em;
+      padding: 0 1.5em 0 0;
+      width: 25%;
+      height: 8em;
+      background: none;
+      box-sizing: border-box;
+      border-bottom: 1px dotted #cccccc; }
+      #table-of-contents #article-list .home-item .thumb-crop {
+        overflow: hidden;
+        float: left;
+        width: 25%;
+        height: 3.5em;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px; }
+        #table-of-contents #article-list .home-item .thumb-crop img {
+          height: 3.5em; }
+      #table-of-contents #article-list .home-item hgroup {
+        float: left;
+        margin-top: -0.25em;
+        padding-left: 1em;
+        width: 75%;
+        box-sizing: border-box; }
+        #table-of-contents #article-list .home-item hgroup a {
+          color: #999999;
+          font-style: italic;
+          text-decoration: none; }
+        #table-of-contents #article-list .home-item hgroup h2, #table-of-contents #article-list .home-item hgroup h3 {
+          display: none;
+          /* 13px / 18px */
+          font-size: 0.813em;
+          line-height: 1.385em;
+          font-weight: 200;
+          color: #999999; }
+        #table-of-contents #article-list .home-item hgroup h1 {
+          font-size: 1.25em;
+          font-weight: 600;
+          color: #e1e1e1; }
+        #table-of-contents #article-list .home-item hgroup h4 {
+          display: none; }
+      #table-of-contents #article-list .home-item:hover h1 {
+        color: #33ccff; }
+  #table-of-contents #close {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+    background: black; }
+    #table-of-contents #close a {
+      display: block;
+      /* 13px / 18px */
+      font-size: 0.813em;
+      line-height: 1.385em;
+      color: #444444;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-decoration: none; }
+
+#curtain {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: black; }
 
 #content-scroller-wrapper {
   overflow: hidden; }

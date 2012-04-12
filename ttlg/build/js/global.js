@@ -114,12 +114,12 @@ $(document).ready(function() {
 
 	$('#table-of-contents').click ( function () {
 			$('#trigger').removeClass('open').addClass('closed');
-			$('#table-of-contents').hide();
+			$('#table-of-contents, #curtain').hide();
 	});
 
 	$('#trigger').click(function() {
   $('#table-of-contents').slideToggle('slow', function() {
-    // Animation complete.
+    $('#curtain').hide();
   });
 });
 

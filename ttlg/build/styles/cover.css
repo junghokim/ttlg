@@ -178,7 +178,7 @@ body {
     -webkit-box-shadow: 0 0 12px black;
     box-shadow: 0 0 12px black; }
     #full-frontal #content-scroller-wrapper ul.pagination {
-      z-index: 50;
+      z-index: 5;
       position: absolute;
       bottom: 1.5em;
       left: 0;
@@ -318,83 +318,6 @@ body {
         #full-frontal #bottom-section #introduction #overview p {
           float: left;
           width: 50%; }
-    #full-frontal #bottom-section #article-list {
-      display: inline-block;
-      padding: 0.75em 0 0;
-      width: 100%; }
-      #full-frontal #bottom-section #article-list #title-outer {
-        float: left;
-        width: 100%; }
-        #full-frontal #bottom-section #article-list #title-outer h3 {
-          margin: 1.5em 0;
-          padding: 0.5em 0;
-          color: #e1e1e1;
-          font-weight: 400;
-          text-transform: uppercase;
-          letter-spacing: 0.2em;
-          text-align: center;
-          border-top: 1px solid #33ccff;
-          border-bottom: 1px solid #33ccff; }
-      #full-frontal #bottom-section #article-list .home-item {
-        float: left;
-        position: relative;
-        margin: 0 0 1.5em;
-        width: 50%;
-        height: 10em;
-        background: none;
-        box-sizing: border-box; }
-        #full-frontal #bottom-section #article-list .home-item .thumb-crop {
-          overflow: hidden;
-          float: left;
-          width: 5em;
-          height: 5em;
-          -moz-border-radius: 3px;
-          -webkit-border-radius: 3px;
-          border-radius: 3px; }
-          #full-frontal #bottom-section #article-list .home-item .thumb-crop img {
-            height: 5em; }
-        #full-frontal #bottom-section #article-list .home-item hgroup {
-          position: absolute;
-          top: 0;
-          right: 0.75em;
-          bottom: 0;
-          left: 6.5em; }
-          #full-frontal #bottom-section #article-list .home-item hgroup a {
-            color: #999999;
-            font-style: italic;
-            text-decoration: none; }
-          #full-frontal #bottom-section #article-list .home-item hgroup h2, #full-frontal #bottom-section #article-list .home-item hgroup h3 {
-            /* 13px / 18px */
-            font-size: 0.813em;
-            line-height: 1.385em;
-            font-weight: 200;
-            color: #999999; }
-          #full-frontal #bottom-section #article-list .home-item hgroup h1 {
-            margin: 0 0 0.25em 0;
-            font-size: 1.25em;
-            font-weight: 600;
-            color: #e1e1e1; }
-          #full-frontal #bottom-section #article-list .home-item hgroup h3 {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: -7.25em;
-            margin: 0;
-            padding: 0.75em 0 0.75em 7.25em;
-            text-transform: uppercase;
-            text-align: left;
-            letter-spacing: 0.1em;
-            border-top: 1px dotted #999999;
-            border-bottom: 1px dotted #33ccff; }
-          #full-frontal #bottom-section #article-list .home-item hgroup h4 {
-            display: none;
-            z-index: 1;
-            position: absolute;
-            left: -5.25em;
-            bottom: 0.75em;
-            font-size: 0.75em;
-            font-weight: 200;
-            color: #999999; }
   #full-frontal .article {
     background-size: cover; }
   #full-frontal #cafeteria-405-kitchen {
@@ -457,66 +380,3 @@ body {
     position: fixed;
     bottom: 3em;
     left: 5.556%; }
-  #full-frontal #table-of-contents {
-    display: none;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
-    padding: 0 0.75em;
-    height: 100%;
-    width: 30%;
-    background: url("../images/black_denim.png") repeat;
-    box-shadow: inset 2px 0 12px black; }
-    #full-frontal #table-of-contents #article-list {
-      position: relative;
-      padding: 1.5em 0;
-      height: 100%;
-      box-sizing: border-box; }
-      #full-frontal #table-of-contents #article-list .home-item {
-        position: relative;
-        margin-bottom: 0.75em;
-        padding: 0 0 4em 0;
-        background: none;
-        border-bottom: 1px dotted #33ccff; }
-        #full-frontal #table-of-contents #article-list .home-item hgroup a {
-          color: #999999;
-          font-style: italic;
-          text-decoration: none; }
-        #full-frontal #table-of-contents #article-list .home-item hgroup h2, #full-frontal #table-of-contents #article-list .home-item hgroup h3 {
-          /* 13px / 18px */
-          font-size: 0.813em;
-          line-height: 1.385em;
-          font-weight: 200;
-          color: #999999; }
-        #full-frontal #table-of-contents #article-list .home-item hgroup h1 {
-          font-size: 1.25em;
-          font-weight: 600;
-          color: #e1e1e1; }
-        #full-frontal #table-of-contents #article-list .home-item hgroup h3 {
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          padding: 0.75em 0;
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-          border-top: 1px dotted #e1e1e1; }
-        #full-frontal #table-of-contents #article-list .home-item:hover h1 {
-          color: #33ccff; }
-      #full-frontal #table-of-contents #article-list #more-scroll {
-        position: fixed;
-        bottom: 0;
-        padding: 0.5em 0.75em;
-        width: 100%;
-        background: black;
-        opacity: 0.93; }
-        #full-frontal #table-of-contents #article-list #more-scroll span {
-          /* 13px / 18px */
-          font-size: 0.813em;
-          line-height: 1.385em;
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-          color: white; }

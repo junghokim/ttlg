@@ -215,7 +215,7 @@ body
 		min-height: 35em
 		@include page-shadow
 		ul.pagination
-			z-index: 50
+			z-index: 5
 			position: absolute
 			bottom: 1.5em
 			left: 0
@@ -356,96 +356,6 @@ body
 				p
 					float: left
 					width: 50%
-		#article-list
-			//-webkit-column-count: 2
-			display: inline-block
-			padding: 0.75em 0 0
-			width: 100%
-			#title-outer
-				float: left
-				width: 100%
-				h3
-					margin: 1.5em 0
-					padding: 0.5em 0
-					color: $light-grey
-					font-weight: 400
-					text-transform: uppercase
-					letter-spacing: 0.2em
-					text-align: center
-					border-top: 1px solid $blue
-					border-bottom: 1px solid $blue
-			.home-item /* .wrapper */
-				float: left
-				position: relative
-				margin: 0 0 1.5em
-				width: 50%
-				height: 10em
-				// swapping margin for padding
-				//padding: 0
-				//padding: 0 0.75em
-				background: none
-				//border-bottom: 1px dotted $blue
-				box-sizing: border-box
-				.thumb-crop
-					overflow: hidden
-					float: left
-					width: 5em
-					height: 5em
-					@include border-radius(3px)
-					img
-						height: 5em
-				hgroup
-					//float: left
-					//margin-left: 0.75em
-					position: absolute
-					top: 0
-					right: 0.75em
-					bottom: 0
-					left: 6.5em
-					a
-						color: $grey
-						font-style: italic
-						text-decoration: none
-					h2, h3
-						@include small-text
-						font-weight: 200
-						color: $grey
-					h1
-						margin: 0 0 0.25em 0
-						font-size: 1.25em
-						font-weight: 600
-						color: $light-grey
-					h3
-						//display: none
-						position: absolute
-						right: 0
-						bottom: 0
-						left: -7.25em
-						margin: 0
-						padding: 0.75em 0 0.75em 7.25em
-						text-transform: uppercase
-						text-align: left
-						letter-spacing: 0.1em
-						border-top: 1px dotted $grey
-						border-bottom: 1px dotted $blue
-					h4
-						display: none
-						z-index: 1
-						position: absolute
-						left: -5.25em
-						bottom: 0.75em
-						//width: 3.5em
-						//height: 3.5em
-						font-size: 0.75em
-						font-weight: 200
-						//line-height: 3.5em
-						//color: lighten(black, 12%)
-						color: $grey
-						//text-align: center
-						//background: transparent
-						//border: 2px solid lighten(black, 12%)
-						//@include border-radius(3.5em)
-						//box-shadow: 0 0 5px black
 	.article
 		background-size: cover
 		div
@@ -514,72 +424,3 @@ body
 		position: fixed
 		bottom: 3em
 		left: $column*1
-	#table-of-contents
-		display: none
-		overflow-y: scroll
-		overflow-x: hidden
-		position: absolute
-		top: 0
-		right: 0
-		margin: 0
-		padding: 0 0.75em
-		height: 100%
-		width: 30%
-		background: url('../images/black_denim.png') repeat
-		//border-top: 1px dotted $blue
-		//opacity: 0.98
-		box-shadow: inset 2px 0 12px black
-		#article-list
-			position: relative
-			//overflow-x: hidden
-			//overflow-y: scroll
-			padding: 1.5em 0
-			height: 100%
-			//-webkit-column-count: 1
-			//-webkit-column-gap: 0.75em
-			//-webkit-column-width: 12em		
-			box-sizing: border-box
-			.home-item
-				position: relative
-				margin-bottom: 0.75em
-				padding: 0 0 4em 0
-				//height: 9em
-				background: none
-				border-bottom: 1px dotted $blue
-				hgroup
-					a
-						color: $grey
-						font-style: italic
-						text-decoration: none
-					h2, h3
-						@include small-text
-						font-weight: 200
-						color: $grey
-					h1
-						font-size: 1.25em
-						font-weight: 600
-						color: $light-grey
-					h3
-						position: absolute
-						right: 0
-						bottom: 0
-						left: 0
-						padding: 0.75em 0
-						text-transform: uppercase
-						letter-spacing: 0.1em
-						border-top: 1px dotted $light-grey
-				&:hover
-					h1
-						color: $blue
-			#more-scroll
-				position: fixed
-				bottom: 0
-				padding: 0.5em 0.75em
-				width: 100%
-				background: black
-				opacity: 0.93
-				span
-					@include small-text
-					text-transform: uppercase
-					letter-spacing: 0.1em
-					color: white

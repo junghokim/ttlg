@@ -176,13 +176,13 @@ body
 header.masthead
 	position: fixed
 	top: 0
-	z-index: 1
+	z-index: 10
 	padding: 0 0 0 $column*1
 	width: 100%
 	background: black
 	border-top: 0.25em solid $blue	
 	box-sizing: border-box
-	@include page-shadow
+	box-shadow: 0 0 6px black
 	opacity: 0.99
 	hgroup#mini-mast
 		z-index: 2
@@ -214,24 +214,26 @@ header.masthead
 			width: 2.5em
 	.pagination-previous, .pagination-next, a.view-articles
 		padding: 1.125em 1.5em
-		border-left: 1px solid #CCC
+		border-left: 1px solid #444
 		background-color: transparent
 	a.view-articles, .previous-container, .next-container
 		float: left
 		&:hover
-			color: white
 			background-color: $grey
 	.pagination-previous, .pagination-next
 		display: block
 	a.view-articles
-		padding: 1.5em 1.5em
+		//padding: 1.5em 1.5em
+		width: 25px
 		height: 23px
-		font-size: 0.75em
-		font-weight: 500
-		color: #CCC
-		text-transform: uppercase
-		letter-spacing: 0.1em
-		text-decoration: none
+		//font-size: 0.75em
+		//font-weight: 500
+		//color: #CCC
+		//text-transform: uppercase
+		//letter-spacing: 0.1em
+		//text-decoration: none
+		text-indent: -1000em
+		background: url('../images/list-icon.png') center center no-repeat
 	.previous-container
 		z-index: 2
 		.pagination-previous
@@ -248,6 +250,110 @@ header.masthead
 			color: white
 			background: url('../images/pagination-next-2.png') center center no-repeat
 			text-indent: -1000em
+
+//
+// Articles List
+//
+
+#table-of-contents
+	z-index: 6
+	display: block
+	position: absolute
+	top: 63px
+	right: 0
+	left: 0
+	margin: 0
+	padding: 0 $column*1 1.5em
+	background: #222
+	//border-top: 1px dotted $blue
+	//opacity: 0.98
+	#title-outer
+		float: left
+		margin: 1.5em 0
+		width: 100%
+		h3
+			margin: 0
+			padding: 0.5em 0
+			font-size: 1.5em
+			font-weight: 700
+			color: #333
+			border-bottom: 1px dotted #CCC
+			span
+				color: $blue
+	#article-list
+		float: left
+		position: relative
+		//overflow-x: hidden
+		//overflow-y: scroll
+		padding: 1.5em 0.75em
+		//-webkit-column-width: 12em		
+		box-sizing: border-box
+		.home-item
+			float: left
+			display: block
+			margin-bottom: 1em
+			padding: 0 1.5em 0 0
+			width: 25%
+			height: 8em
+			background: none
+			box-sizing: border-box
+			border-bottom: 1px dotted #CCC
+			.thumb-crop
+				overflow: hidden
+				float: left
+				width: 25%
+				height: 3.5em
+				@include border-radius(3px)
+				img
+					height: 3.5em
+			hgroup
+				float: left
+				margin-top: -0.25em
+				padding-left: 1em
+				width: 75%
+				box-sizing: border-box
+				a
+					color: $grey
+					font-style: italic
+					text-decoration: none
+				h2, h3
+					display: none
+					@include small-text
+					font-weight: 200
+					color: $grey
+				h1
+					font-size: 1.25em
+					font-weight: 600
+					color: $light-grey
+				h4
+					display: none
+			&:hover
+				h1
+					color: $blue
+	#close
+		position: absolute
+		right: 0
+		bottom: 0
+		left: 0
+		padding: 0.5em 0
+		width: 100%
+		font-weight: 400
+		text-align: center
+		background: black
+		a
+			display: block
+			@include small-text
+			color: #444444
+			text-transform: uppercase
+			letter-spacing: 0.1em
+			text-decoration: none
+#curtain
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: black
 
 //
 // Pagination Setup
