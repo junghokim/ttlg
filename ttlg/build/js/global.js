@@ -11,9 +11,9 @@ $(document).ready(function() {
 
 	// Set the height of the cover equal to the height of viewport
 	// Subtract the height of the #masthead (3.9375em x 16px = 63px)
-	$('.cover').css({'height':((coverHeight)-63)+'px'});
+	$('.cover').css({'height':((coverHeight)-62)+'px'});
 	// Set height of covers on homepage
-	$('#full-frontal .article').css({'height':(((coverHeight)*.7)-63)+'px'});
+	$('#full-frontal .article').css({'height':(((coverHeight)*.7)-62)+'px'});
 	// Set the width of the container that holds the articles and the articles themselves equal to the width of the viewport
 	$('#content-scroller-wrapper, .article').css({width: ((coverWidth))+'px'});
 	// Set the height of the masthead equal to the height of the viewport so items can be locked to the top and bottom
@@ -48,9 +48,9 @@ $(document).ready(function() {
 
 			// Set the height of the cover equal to the height of viewport
 			// Changed to accomodate things below cover on homepage
-			$('.cover').css({'height':((coverHeight)-63)+'px'});
+			$('.cover').css({'height':((coverHeight)-62)+'px'});
 			// Set height of covers on homepage
-			$('#full-frontal .article, .slides_control').css({'height':((coverHeight)*.7)+'px'});			
+			$('#full-frontal .article, .slides_control').css({'height':(((coverHeight)*.7)-62)+'px'});			
 			// Set the width of the container that holds the articles and the articles themselves equal to the width of the viewport
 			$('#content-scroller-wrapper, .article').css({width: ((coverWidth))+'px'});
 			// Set the height of the masthead equal to the height of the viewport so items can be locked to the top and bottom
@@ -112,52 +112,11 @@ $(document).ready(function() {
 		$('#table-of-contents').show();
 	});*/
 
-	$('#table-of-contents').click ( function () {
-			$('#trigger').removeClass('open').addClass('closed');
-			$('#table-of-contents, #curtain').hide();
-	});
-
-	$('#trigger').click(function() {
+	$('#trigger, #close').click(function() {
   $('#table-of-contents').slideToggle('slow', function() {
     $('#curtain').hide();
   });
 });
 
-	var openNav = function () {
-		$('#trigger').removeClass('closed').addClass('open');
-		$('#table-of-contents').show();
-		isNavOpen = true;
-	};
-
-	var closeNav = function () {
-		if (window.innerWidth <= MAX_PHONE_WIDTH) {
-			$('#trigger').removeClass('open').addClass('closed');
-			$('#table-of-contents').hide();
-			isNavOpen = false;		
-		}
-	};
-
-	var toggleNav = function () {
-		if (isNavOpen)
-			closeNav();
-		else
-			openNav();
-	};
-
-	var setupNavCallbacks = function () {
-		$('#trigger').click ( function () {
-			alert ('hi');
-			toggleNav();
-			return false;
-		});
-
-		$('nav ul li a').click ( function () {
-			closeNav();
-		});
-
-		$('html').click ( function () {
-			closeNav();			
-		});
-	}
 
 });

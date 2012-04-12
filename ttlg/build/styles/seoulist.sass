@@ -257,16 +257,17 @@ header.masthead
 
 #table-of-contents
 	z-index: 6
-	display: block
+	display: none
 	position: absolute
 	top: 63px
 	right: 0
 	left: 0
-	margin: 0
+	//margin: 0 0.75em
 	padding: 0 $column*1 1.5em
-	background: #222
+	background: white
 	//border-top: 1px dotted $blue
-	//opacity: 0.98
+	opacity: 0.98
+	@include page-shadow
 	#title-outer
 		float: left
 		margin: 1.5em 0
@@ -285,32 +286,31 @@ header.masthead
 		position: relative
 		//overflow-x: hidden
 		//overflow-y: scroll
-		padding: 1.5em 0.75em
+		padding: 1.5em 0
 		//-webkit-column-width: 12em		
 		box-sizing: border-box
 		.home-item
 			float: left
 			display: block
-			margin-bottom: 1em
-			padding: 0 1.5em 0 0
+			position: relative
+			margin-bottom: 1.5em
+			padding: 0 0.75em
 			width: 25%
 			height: 8em
 			background: none
 			box-sizing: border-box
-			border-bottom: 1px dotted #CCC
-			.thumb-crop
-				overflow: hidden
-				float: left
-				width: 25%
-				height: 3.5em
-				@include border-radius(3px)
+			//border-bottom: 1px dotted #CCC
+			.thumb-crop				
 				img
+					float: left		
+					width: 3.5em
 					height: 3.5em
+					@include border-radius(3px)
 			hgroup
-				float: left
+				//float: left
 				margin-top: -0.25em
-				padding-left: 1em
-				width: 75%
+				padding-left: 4.5em
+				//width: 75%
 				box-sizing: border-box
 				a
 					color: $grey
@@ -323,13 +323,21 @@ header.masthead
 					color: $grey
 				h1
 					font-size: 1.25em
-					font-weight: 600
-					color: $light-grey
+					font-weight: 700
+					color: #333
 				h4
 					display: none
 			&:hover
 				h1
 					color: $blue
+				.bottom-line
+					border-bottom: 1px dotted $blue
+			.bottom-line
+				position: absolute
+				right: 0.75em
+				bottom: 0
+				left: 0.75em
+				border-bottom: 1px dotted $grey
 	#close
 		position: absolute
 		right: 0
@@ -348,6 +356,7 @@ header.masthead
 			letter-spacing: 0.1em
 			text-decoration: none
 #curtain
+	display: none
 	position: fixed
 	top: 0
 	right: 0

@@ -199,14 +199,17 @@ header.masthead {
 
 #table-of-contents {
   z-index: 6;
-  display: block;
+  display: none;
   position: absolute;
   top: 63px;
   right: 0;
   left: 0;
-  margin: 0;
   padding: 0 5.556% 1.5em;
-  background: #222222; }
+  background: white;
+  opacity: 0.98;
+  -moz-box-shadow: 0 0 12px black;
+  -webkit-box-shadow: 0 0 12px black;
+  box-shadow: 0 0 12px black; }
   #table-of-contents #title-outer {
     float: left;
     margin: 1.5em 0;
@@ -223,33 +226,28 @@ header.masthead {
   #table-of-contents #article-list {
     float: left;
     position: relative;
-    padding: 1.5em 0.75em;
+    padding: 1.5em 0;
     box-sizing: border-box; }
     #table-of-contents #article-list .home-item {
       float: left;
       display: block;
-      margin-bottom: 1em;
-      padding: 0 1.5em 0 0;
+      position: relative;
+      margin-bottom: 1.5em;
+      padding: 0 0.75em;
       width: 25%;
       height: 8em;
       background: none;
-      box-sizing: border-box;
-      border-bottom: 1px dotted #cccccc; }
-      #table-of-contents #article-list .home-item .thumb-crop {
-        overflow: hidden;
+      box-sizing: border-box; }
+      #table-of-contents #article-list .home-item .thumb-crop img {
         float: left;
-        width: 25%;
+        width: 3.5em;
         height: 3.5em;
         -moz-border-radius: 3px;
         -webkit-border-radius: 3px;
         border-radius: 3px; }
-        #table-of-contents #article-list .home-item .thumb-crop img {
-          height: 3.5em; }
       #table-of-contents #article-list .home-item hgroup {
-        float: left;
         margin-top: -0.25em;
-        padding-left: 1em;
-        width: 75%;
+        padding-left: 4.5em;
         box-sizing: border-box; }
         #table-of-contents #article-list .home-item hgroup a {
           color: #999999;
@@ -264,12 +262,20 @@ header.masthead {
           color: #999999; }
         #table-of-contents #article-list .home-item hgroup h1 {
           font-size: 1.25em;
-          font-weight: 600;
-          color: #e1e1e1; }
+          font-weight: 700;
+          color: #333333; }
         #table-of-contents #article-list .home-item hgroup h4 {
           display: none; }
       #table-of-contents #article-list .home-item:hover h1 {
         color: #33ccff; }
+      #table-of-contents #article-list .home-item:hover .bottom-line {
+        border-bottom: 1px dotted #33ccff; }
+      #table-of-contents #article-list .home-item .bottom-line {
+        position: absolute;
+        right: 0.75em;
+        bottom: 0;
+        left: 0.75em;
+        border-bottom: 1px dotted #999999; }
   #table-of-contents #close {
     position: absolute;
     right: 0;
@@ -291,6 +297,7 @@ header.masthead {
       text-decoration: none; }
 
 #curtain {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
