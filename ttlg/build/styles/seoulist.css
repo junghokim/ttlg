@@ -125,7 +125,8 @@ body {
   padding-top: 3.938em;
   padding-bottom: 3em;
   font-family: "jubilat", Helvetica, Arial, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  background: url("../images/white_texture-edited.png") repeat; }
 
 header.masthead {
   position: fixed;
@@ -335,7 +336,6 @@ header.masthead {
   padding: 0 5.556%; }
 
 p {
-  font-family: "rooney-web";
   font-weight: 400; }
 
 .article-source {

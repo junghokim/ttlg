@@ -121,50 +121,6 @@ body {
   box-sizing: border-box; }
 
 /* Seoulist */
-#cafeteria-405-kitchen {
-  background: url("../images/405-kitchen_03_1000px.jpg") center center no-repeat; }
-
-#dont-stop-make-believing {
-  background: url("../images/cosplay-girl-group.jpg") center center no-repeat; }
-
-#seoul-got-soul {
-  position: relative;
-  background: black;
-  color: #999999;
-  text-align: center; }
-  #seoul-got-soul hgroup {
-    position: absolute;
-    top: 50%;
-    margin: -3em auto 0;
-    width: 100%;
-    text-align: center; }
-    #seoul-got-soul hgroup h1 {
-      font-weight: 100; }
-
-#around-the-corner {
-  background: url("../images/around-the-corner_4-690x460.jpg") center center no-repeat; }
-
-#stephanie-cafe {
-  background: url("../images/stephanie-cafe_03_690px-690x459.jpg") center center no-repeat; }
-
-#temple-stay {
-  background: url("../images/temple-stay_01_690px-690x460.jpg") center center no-repeat; }
-
-#energy-drinks {
-  background: url("../images/seoulist_energy-drinks_1000px.jpg") center center no-repeat; }
-
-#ssuk {
-  background: url("../images/seoulist_ssuk_1000px-690x461.jpg") center center no-repeat; }
-
-#searching-for-the-little-black-pen {
-  background: url("../images/little_black_pen_mon_ami_690px_04-690x460.jpg") center center no-repeat; }
-
-#blu {
-  background: url("../images/blu-guesthouse_02.jpg") center center no-repeat; }
-
-#eat-your-kimchi {
-  background: url("../images/spaces_eatyourkimchi_01.jpg") center center no-repeat; }
-
 #full-frontal {
   padding-top: 3.938em; }
   #full-frontal .pagination-previous, #full-frontal .pagination-next {
@@ -174,9 +130,9 @@ body {
     position: relative;
     float: left;
     min-height: 35em;
-    -moz-box-shadow: 0 0 12px black;
-    -webkit-box-shadow: 0 0 12px black;
-    box-shadow: 0 0 12px black; }
+    -moz-box-shadow: 0 0 6px black;
+    -webkit-box-shadow: 0 0 6px black;
+    box-shadow: 0 0 6px black; }
     #full-frontal #content-scroller-wrapper ul.pagination {
       z-index: 5;
       position: absolute;
@@ -208,6 +164,29 @@ body {
         min-height: inherit; }
         #full-frontal #content-scroller-wrapper .content-scroller .slides_control .article {
           min-height: inherit; }
+          #full-frontal #content-scroller-wrapper .content-scroller .slides_control .article a.read-article {
+            font-size: 1em;
+            font-weight: 700;
+            text-decoration: none; }
+      #full-frontal #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen {
+        background: url("../images/405-kitchen_03_1000px.jpg") center center no-repeat; }
+      #full-frontal #content-scroller-wrapper .content-scroller #dont-stop-make-believing {
+        background: url("../images/cosplay-girl-group.jpg") center center no-repeat; }
+      #full-frontal #content-scroller-wrapper .content-scroller #seoul-got-soul {
+        position: relative;
+        background: black;
+        color: #999999;
+        text-align: center; }
+        #full-frontal #content-scroller-wrapper .content-scroller #seoul-got-soul hgroup {
+          position: absolute;
+          top: 50%;
+          margin: -3em auto 0;
+          width: 100%;
+          text-align: center; }
+          #full-frontal #content-scroller-wrapper .content-scroller #seoul-got-soul hgroup h1 {
+            font-weight: 100; }
+      #full-frontal #content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen {
+        background: url("../images/little_black_pen_mon_ami_690px_04-690x460.jpg") center center no-repeat; }
       #full-frontal #content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen h1 {
         position: absolute;
         bottom: 14%;
@@ -219,7 +198,7 @@ body {
       #full-frontal #content-scroller-wrapper .content-scroller #hangul-roundup hgroup {
         position: absolute;
         bottom: 8em;
-        right: 6em;
+        right: 8%;
         padding: 1.5em;
         text-shadow: 0 1px 3px #cccccc;
         background: #fefefd;
@@ -238,6 +217,22 @@ body {
           font-size: 1em;
           font-weight: 300;
           color: black; }
+      #full-frontal #content-scroller-wrapper .content-scroller #hangul-roundup a.read-article {
+        position: absolute;
+        bottom: 5em;
+        right: 8%;
+        padding: 0.25em 0.5em;
+        text-shadow: 0 1px 3px #333333;
+        color: #fefefd;
+        background: #d01914;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px #333333; }
+        #full-frontal #content-scroller-wrapper .content-scroller #hangul-roundup a.read-article:hover {
+          background: #a11310;
+          text-shadow: 0 -1px 3px #333333;
+          box-shadow: inset 0 1px 2px #333333; }
       #full-frontal #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup {
         position: absolute;
         right: 0;
@@ -300,24 +295,222 @@ body {
           font-style: italic;
           font-weight: 300; }
   #full-frontal #bottom-section {
+    float: left;
     padding: 1.5em 5.556%;
     width: 100%;
-    background: #262626;
     box-sizing: border-box; }
     #full-frontal #bottom-section #introduction {
       display: inline-block;
-      margin: 1.5em 0 0 0;
-      color: #e1e1e1; }
+      position: relative;
+      margin: 4em 0 0 0;
+      width: 100%; }
+      #full-frontal #bottom-section #introduction h1, #full-frontal #bottom-section #introduction h2 {
+        text-align: center; }
+      #full-frontal #bottom-section #introduction h1 {
+        position: absolute;
+        top: 0;
+        left: 25%;
+        right: 25%;
+        text-indent: -1000em; }
+        #full-frontal #bottom-section #introduction h1 img {
+          display: block;
+          margin: 0 auto;
+          width: 4em;
+          height: 4em; }
       #full-frontal #bottom-section #introduction h2 {
-        float: left;
-        width: 25%;
-        color: #404040; }
+        margin: 2em 0;
+        color: #210c08;
+        font-family: "omnes-pro";
+        font-weight: 200;
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-shadow: 0 1px 1px #333333;
+        -moz-border-radius: 1em;
+        -webkit-border-radius: 1em;
+        border-radius: 1em; }
+        #full-frontal #bottom-section #introduction h2#volume {
+          float: left;
+          margin-left: 12.5%; }
+        #full-frontal #bottom-section #introduction h2#slug {
+          float: right;
+          margin-right: 12.5%; }
       #full-frontal #bottom-section #introduction #overview {
         float: left;
-        width: 75%; }
+        clear: both;
+        margin-top: 6em;
+        width: 100%; }
         #full-frontal #bottom-section #introduction #overview p {
-          float: left;
-          width: 50%; }
+          margin: 0 auto 1em;
+          color: #999999;
+          /* 26 / 36px */
+          font-size: 1.625em;
+          line-height: 1.385em;
+          font-weight: 200;
+          text-align: center; }
+          #full-frontal #bottom-section #introduction #overview p#highlights {
+            -moz-border-radius: 1.75em;
+            -webkit-border-radius: 1.75em;
+            border-radius: 1.75em; }
+            #full-frontal #bottom-section #introduction #overview p#highlights .seoulist {
+              color: #33ccff;
+              font-weight: 700; }
+              #full-frontal #bottom-section #introduction #overview p#highlights .seoulist .ist {
+                color: #e1e1e1; }
+              #full-frontal #bottom-section #introduction #overview p#highlights .seoulist .selects {
+                font-weight: 200; }
+  #full-frontal #history {
+    float: left;
+    width: 100%;
+    padding: 2em 5.556%;
+    border-top: 1px dotted #33ccff;
+    border-bottom: 1px dotted #33ccff;
+    box-sizing: border-box; }
+    #full-frontal #history h2, #full-frontal #history h3 {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center; }
+    #full-frontal #history h2 {
+      margin-bottom: 0.25em;
+      color: #210c08;
+      /* 42px / 48px */
+      font-size: 2.625em;
+      line-height: 1.143em; }
+      #full-frontal #history h2 span {
+        color: #999999; }
+    #full-frontal #history h3 {
+      font-family: "omnes-pro";
+      font-weight: 200;
+      color: #999999; }
+    #full-frontal #history #timeline {
+      position: relative;
+      margin: 2em 0;
+      padding: 1em 0; }
+      #full-frontal #history #timeline #line {
+        display: block;
+        height: 0.25em;
+        background: #33ccff; }
+      #full-frontal #history #timeline .event, #full-frontal #history #timeline .launch, #full-frontal #history #timeline .divider {
+        position: absolute; }
+      #full-frontal #history #timeline .launch {
+        top: 50%;
+        left: 0;
+        margin-top: -1em; }
+        #full-frontal #history #timeline .launch img {
+          display: block;
+          width: 2em;
+          height: 2em; }
+      #full-frontal #history #timeline #events .event {
+        z-index: 50;
+        top: 50%;
+        margin-top: -0.625em;
+        text-decoration: none; }
+        #full-frontal #history #timeline #events .event:hover hgroup {
+          display: block;
+          text-decoration: none; }
+        #full-frontal #history #timeline #events .event .marker {
+          display: block;
+          height: 1em;
+          width: 1em;
+          background: white;
+          border: 2px solid #33ccff;
+          -moz-border-radius: 1em;
+          -webkit-border-radius: 1em;
+          border-radius: 1em; }
+        #full-frontal #history #timeline #events .event .marker:hover {
+          background: #33ccff; }
+        #full-frontal #history #timeline #events .event hgroup {
+          display: none;
+          margin-top: 0.75em;
+          padding: 0.75em;
+          width: 20em;
+          background: white;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          box-shadow: 0 1px 1px #e1e1e1;
+          box-sizing: border-box; }
+          #full-frontal #history #timeline #events .event hgroup .date, #full-frontal #history #timeline #events .event hgroup h1, #full-frontal #history #timeline #events .event hgroup h2 {
+            display: block; }
+          #full-frontal #history #timeline #events .event hgroup .date {
+            margin: 0 0 0.5em 0;
+            padding: 0 0 0.5em 0;
+            /* 13px / 18px */
+            font-size: 0.813em;
+            line-height: 1.385em;
+            color: #999999;
+            font-family: "omnes-pro";
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-bottom: 1px dotted #999999; }
+          #full-frontal #history #timeline #events .event hgroup h1 {
+            /* 16px / 24px */
+            font-size: 1em;
+            line-height: 1.5em;
+            color: #33ccff;
+            font-weight: 700; }
+          #full-frontal #history #timeline #events .event hgroup h2 {
+            /* 16px / 24px */
+            font-size: 1em;
+            line-height: 1.5em;
+            color: #999999;
+            font-family: "omnes-pro";
+            font-weight: 400;
+            text-align: left; }
+      #full-frontal #history #timeline #events #stephanie-cafe {
+        left: 4%; }
+      #full-frontal #history #timeline #events #dont-stop-make-believing {
+        left: 66%;
+        background: none; }
+      #full-frontal #history #timeline #events #hangul-roundup {
+        left: 60%;
+        background: none; }
+      #full-frontal #history #timeline #events #to-be-young-and-in-love-and-swinging {
+        left: 5.5%; }
+      #full-frontal #history #timeline #dividers .divider {
+        display: block;
+        top: 50%;
+        margin-top: -0.75em;
+        width: 1px;
+        height: 1.5em;
+        background: white; }
+      #full-frontal #history #timeline #dividers #one {
+        left: 7.143%; }
+      #full-frontal #history #timeline #dividers #two {
+        left: 14.286%; }
+      #full-frontal #history #timeline #dividers #three {
+        left: 21.428%; }
+      #full-frontal #history #timeline #dividers #four {
+        left: 28.571%; }
+      #full-frontal #history #timeline #dividers #five {
+        left: 35.714%; }
+      #full-frontal #history #timeline #dividers #six {
+        left: 42.857%; }
+      #full-frontal #history #timeline #dividers #seven {
+        left: 50.0%; }
+      #full-frontal #history #timeline #dividers #eight {
+        left: 57.142%; }
+      #full-frontal #history #timeline #dividers #nine {
+        left: 64.285%; }
+      #full-frontal #history #timeline #dividers #ten {
+        left: 71.428%; }
+      #full-frontal #history #timeline #dividers #eleven {
+        left: 78.571%; }
+      #full-frontal #history #timeline #dividers #twelve {
+        left: 85.714%; }
+      #full-frontal #history #timeline #dividers #thirteen {
+        left: 92.856%; }
+      #full-frontal #history #timeline #dividers #end {
+        right: 0;
+        width: 3px;
+        background: #33ccff; }
+  #full-frontal #staff {
+    display: block;
+    float: left;
+    padding: 0 5.556%;
+    height: 20em; }
   #full-frontal .article {
     background-size: cover; }
   #full-frontal #cafeteria-405-kitchen {
