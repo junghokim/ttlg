@@ -406,6 +406,8 @@ body {
         top: 50%;
         margin-top: -0.625em;
         text-decoration: none; }
+        #full-frontal #history #timeline #events .event:hover {
+          z-index: 49; }
         #full-frontal #history #timeline #events .event:hover hgroup {
           display: block;
           text-decoration: none; }
@@ -429,7 +431,7 @@ body {
           -moz-border-radius: 5px;
           -webkit-border-radius: 5px;
           border-radius: 5px;
-          box-shadow: 0 1px 1px #e1e1e1;
+          box-shadow: 0 1px 1px #999999;
           box-sizing: border-box; }
           #full-frontal #history #timeline #events .event hgroup .date, #full-frontal #history #timeline #events .event hgroup h1, #full-frontal #history #timeline #events .event hgroup h2 {
             display: block; }

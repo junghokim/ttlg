@@ -95,7 +95,7 @@ $(document).ready(function() {
 
   $("#full-frontal > #content-scroller-wrapper").slides({
     preload: false,
-    play: 0,
+    play: 5000,
     bigTarget: false,
 		effect: 'slide',
 		crossfade: true,

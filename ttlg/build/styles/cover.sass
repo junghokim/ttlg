@@ -445,6 +445,8 @@ body
 					top: 50%
 					margin-top: -0.625em
 					text-decoration: none
+					&:hover
+						z-index: 49
 					&:hover hgroup
 						display: block
 						text-decoration: none
@@ -464,7 +466,7 @@ body
 						width: 20em
 						background: white
 						@include border-radius(5px)
-						box-shadow: 0 1px 1px $light-grey
+						box-shadow: 0 1px 1px $grey
 						box-sizing: border-box
 						.date, h1, h2
 							display: block
