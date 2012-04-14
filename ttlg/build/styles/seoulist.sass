@@ -177,7 +177,7 @@ body
 header.masthead
 	position: fixed
 	top: 0
-	z-index: 10
+	z-index: 10000
 	padding: 0 0 0 $column*1
 	width: 100%
 	background: black
@@ -364,6 +364,43 @@ header.masthead
 	bottom: 0
 	left: 0
 	background: black
+
+//
+// Footer
+//
+
+footer
+	position: relative
+	display: block
+	float: left
+	padding: 1.5em $column*1
+	width: 100%
+	color: $medium-grey
+	background: $dark-grey
+	box-sizing: border-box
+	box-shadow: inset 0 1px 6px black
+	a
+		float: right
+		margin-left: 1.5em
+		//padding: 0.5em 1em
+		color: $light-grey
+		font-size: 0.75em
+		text-transform: uppercase
+		letter-spacing: 0.1em
+		text-decoration: none
+		//background: $light-grey
+		//@include border-radius(1.5em)
+		//box-shadow: inset 0 1px 2px black
+		&:hover
+			color: $blue
+	.copyright
+		float: left
+	.seoulist-link
+		position: absolute
+		top: 2em
+		left: 25%
+		right: 25%
+		text-align: center
 
 //
 // Pagination Setup

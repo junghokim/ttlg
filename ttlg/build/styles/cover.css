@@ -1,8 +1,3 @@
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, nav, section, menu, time, mark, audio, video, canvas {
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
 html {
   height: 100%;
   -webkit-text-size-adjust: 100%;
@@ -129,7 +124,7 @@ body {
     display: block;
     position: relative;
     float: left;
-    min-height: 35em;
+    min-height: 30em;
     -moz-box-shadow: 0 0 6px black;
     -webkit-box-shadow: 0 0 6px black;
     box-shadow: 0 0 6px black; }
@@ -294,30 +289,30 @@ body {
           font-family: "omnes-pro";
           font-style: italic;
           font-weight: 300; }
-  #full-frontal #bottom-section {
+  #full-frontal #about {
     float: left;
     padding: 1.5em 5.556%;
     width: 100%;
     box-sizing: border-box; }
-    #full-frontal #bottom-section #introduction {
+    #full-frontal #about #introduction {
       display: inline-block;
       position: relative;
-      margin: 4em 0 0 0;
+      margin: 2.5em 0 0 0;
       width: 100%; }
-      #full-frontal #bottom-section #introduction h1, #full-frontal #bottom-section #introduction h2 {
+      #full-frontal #about #introduction h1, #full-frontal #about #introduction h2 {
         text-align: center; }
-      #full-frontal #bottom-section #introduction h1 {
+      #full-frontal #about #introduction h1 {
         position: absolute;
         top: 0;
         left: 25%;
         right: 25%;
         text-indent: -1000em; }
-        #full-frontal #bottom-section #introduction h1 img {
+        #full-frontal #about #introduction h1 img {
           display: block;
           margin: 0 auto;
           width: 4em;
           height: 4em; }
-      #full-frontal #bottom-section #introduction h2 {
+      #full-frontal #about #introduction h2 {
         margin: 2em 0;
         color: #210c08;
         font-family: "omnes-pro";
@@ -329,40 +324,46 @@ body {
         -moz-border-radius: 1em;
         -webkit-border-radius: 1em;
         border-radius: 1em; }
-        #full-frontal #bottom-section #introduction h2#volume {
+        #full-frontal #about #introduction h2#volume {
           float: left;
           margin-left: 12.5%; }
-        #full-frontal #bottom-section #introduction h2#slug {
+        #full-frontal #about #introduction h2#slug {
           float: right;
           margin-right: 12.5%; }
-      #full-frontal #bottom-section #introduction #overview {
+      #full-frontal #about #introduction #overview {
         float: left;
         clear: both;
-        margin-top: 6em;
+        margin-top: 5em;
         width: 100%; }
-        #full-frontal #bottom-section #introduction #overview p {
+        #full-frontal #about #introduction #overview p {
           margin: 0 auto 1em;
           color: #999999;
-          /* 26 / 36px */
-          font-size: 1.625em;
-          line-height: 1.385em;
+          font-size: 1.5em;
           font-weight: 200;
+          line-height: 1.5em;
           text-align: center; }
-          #full-frontal #bottom-section #introduction #overview p#highlights {
+        #full-frontal #about #introduction #overview #highlights {
+          text-align: center; }
+          #full-frontal #about #introduction #overview #highlights p {
+            display: inline-block;
+            margin: 1.5em 0;
+            padding: 0.5em 1.25em;
+            background: white;
+            box-shadow: inset 0 1px 2px #e1e1e1;
             -moz-border-radius: 1.75em;
             -webkit-border-radius: 1.75em;
             border-radius: 1.75em; }
-            #full-frontal #bottom-section #introduction #overview p#highlights .seoulist {
+            #full-frontal #about #introduction #overview #highlights p .seoulist {
               color: #33ccff;
               font-weight: 700; }
-              #full-frontal #bottom-section #introduction #overview p#highlights .seoulist .ist {
-                color: #e1e1e1; }
-              #full-frontal #bottom-section #introduction #overview p#highlights .seoulist .selects {
+              #full-frontal #about #introduction #overview #highlights p .seoulist .ist {
+                color: #999999; }
+              #full-frontal #about #introduction #overview #highlights p .seoulist .selects {
                 font-weight: 200; }
   #full-frontal #history {
     float: left;
     width: 100%;
-    padding: 2em 5.556%;
+    padding: 4em 5.556% 2em;
     border-top: 1px dotted #33ccff;
     border-bottom: 1px dotted #33ccff;
     box-sizing: border-box; }
@@ -388,14 +389,30 @@ body {
       margin: 2em 0;
       padding: 1em 0; }
       #full-frontal #history #timeline #line {
+        position: relative;
         display: block;
-        height: 0.25em;
-        background: #33ccff; }
+        height: 2.5em;
+        background: #33ccff;
+        -moz-border-radius: 1.25em;
+        -webkit-border-radius: 1.25em;
+        border-radius: 1.25em; }
+        #full-frontal #history #timeline #line #inner-line {
+          position: absolute;
+          top: 50%;
+          right: 1em;
+          left: 1em;
+          margin-top: -0.15em;
+          display: block;
+          height: 0.25em;
+          background: white;
+          -moz-border-radius: 0.15em;
+          -webkit-border-radius: 0.15em;
+          border-radius: 0.15em; }
       #full-frontal #history #timeline .event, #full-frontal #history #timeline .launch, #full-frontal #history #timeline .divider {
         position: absolute; }
       #full-frontal #history #timeline .launch {
         top: 50%;
-        left: 0;
+        left: 0.4em;
         margin-top: -1em; }
         #full-frontal #history #timeline .launch img {
           display: block;
@@ -405,27 +422,29 @@ body {
         z-index: 50;
         top: 50%;
         margin-top: -0.625em;
-        text-decoration: none; }
+        text-decoration: none;
+        background: none; }
         #full-frontal #history #timeline #events .event:hover {
           z-index: 49; }
-        #full-frontal #history #timeline #events .event:hover hgroup {
+        #full-frontal #history #timeline #events .event:hover .event-inner {
           display: block;
           text-decoration: none; }
         #full-frontal #history #timeline #events .event .marker {
           display: block;
           height: 1em;
           width: 1em;
-          background: white;
-          border: 2px solid #33ccff;
+          background: #33ccff;
+          border: 2px solid white;
           -moz-border-radius: 1em;
           -webkit-border-radius: 1em;
           border-radius: 1em; }
         #full-frontal #history #timeline #events .event .marker:hover {
-          background: #33ccff; }
-        #full-frontal #history #timeline #events .event hgroup {
+          z-index: 75;
+          background: white; }
+        #full-frontal #history #timeline #events .event .event-inner {
           display: none;
-          margin-top: 0.75em;
-          padding: 0.75em;
+          margin: 0.25em 0 0 0.75em;
+          padding: 0.5em 0.75em;
           width: 20em;
           background: white;
           -moz-border-radius: 5px;
@@ -433,9 +452,9 @@ body {
           border-radius: 5px;
           box-shadow: 0 1px 1px #999999;
           box-sizing: border-box; }
-          #full-frontal #history #timeline #events .event hgroup .date, #full-frontal #history #timeline #events .event hgroup h1, #full-frontal #history #timeline #events .event hgroup h2 {
+          #full-frontal #history #timeline #events .event .event-inner hgroup .date, #full-frontal #history #timeline #events .event .event-inner hgroup h1, #full-frontal #history #timeline #events .event .event-inner hgroup h2 {
             display: block; }
-          #full-frontal #history #timeline #events .event hgroup .date {
+          #full-frontal #history #timeline #events .event .event-inner hgroup .date {
             margin: 0 0 0.5em 0;
             padding: 0 0 0.5em 0;
             /* 13px / 18px */
@@ -447,13 +466,13 @@ body {
             text-transform: uppercase;
             letter-spacing: 0.1em;
             border-bottom: 1px dotted #999999; }
-          #full-frontal #history #timeline #events .event hgroup h1 {
+          #full-frontal #history #timeline #events .event .event-inner hgroup h1 {
             /* 16px / 24px */
             font-size: 1em;
             line-height: 1.5em;
             color: #33ccff;
             font-weight: 700; }
-          #full-frontal #history #timeline #events .event hgroup h2 {
+          #full-frontal #history #timeline #events .event .event-inner hgroup h2 {
             /* 16px / 24px */
             font-size: 1em;
             line-height: 1.5em;
@@ -461,15 +480,40 @@ body {
             font-family: "omnes-pro";
             font-weight: 400;
             text-align: left; }
+          #full-frontal #history #timeline #events .event .event-inner .read-article {
+            display: inline-block;
+            width: 100%;
+            text-align: right;
+            color: #999999; }
+            #full-frontal #history #timeline #events .event .event-inner .read-article:hover {
+              color: #33ccff; }
+      #full-frontal #history #timeline #events #the-empty-chair .event-inner {
+        margin-left: -19.25em; }
       #full-frontal #history #timeline #events #stephanie-cafe {
         left: 4%; }
       #full-frontal #history #timeline #events #dont-stop-make-believing {
         left: 66%;
         background: none; }
       #full-frontal #history #timeline #events #hangul-roundup {
-        left: 60%;
+        left: 58%;
         background: none; }
       #full-frontal #history #timeline #events #to-be-young-and-in-love-and-swinging {
+        left: 6.2%; }
+      #full-frontal #history #timeline #events #searching-for-the-little-black-pen {
+        left: 17.2%; }
+      #full-frontal #history #timeline #events #beef-stock-chicken-stock-out-of-stock {
+        left: 53.5%; }
+      #full-frontal #history #timeline #events #the-empty-chair {
+        left: 88%; }
+      #full-frontal #history #timeline #events #seoul-safari-six-hours-in-seoul {
+        left: 68%; }
+      #full-frontal #history #timeline #events #extraordinary-expats-filmmaker-nj-calder {
+        left: 62.5%; }
+      #full-frontal #history #timeline #events #an-actors-map-of-seoul {
+        left: 60%; }
+      #full-frontal #history #timeline #events #cafeteria-405-kitchen {
+        left: 65%; }
+      #full-frontal #history #timeline #events #the-loft-that-launched-one-thousand-followers {
         left: 5.5%; }
       #full-frontal #history #timeline #dividers .divider {
         display: block;
@@ -477,7 +521,7 @@ body {
         margin-top: -0.75em;
         width: 1px;
         height: 1.5em;
-        background: white; }
+        background: #33ccff; }
       #full-frontal #history #timeline #dividers #one {
         left: 7.143%; }
       #full-frontal #history #timeline #dividers #two {
@@ -505,14 +549,74 @@ body {
       #full-frontal #history #timeline #dividers #thirteen {
         left: 92.856%; }
       #full-frontal #history #timeline #dividers #end {
+        display: none;
         right: 0;
         width: 3px;
         background: #33ccff; }
   #full-frontal #staff {
-    display: block;
     float: left;
-    padding: 0 5.556%;
-    height: 20em; }
+    padding: 3em 5.556%;
+    width: 100%;
+    box-sizing: border-box; }
+    #full-frontal #staff .profile {
+      float: left;
+      margin: 1.5em 0;
+      width: 33%;
+      height: 18em; }
+    #full-frontal #staff #middle .profile {
+      width: 35%; }
+      #full-frontal #staff #middle .profile:first-child {
+        margin-left: 15%; }
+    #full-frontal #staff #title {
+      position: relative;
+      float: left;
+      width: 100%;
+      height: 12em; }
+      #full-frontal #staff #title h2 {
+        position: absolute;
+        top: 20%;
+        right: 0;
+        left: 0;
+        /* 42px / 48px */
+        font-size: 2.625em;
+        line-height: 1.143em;
+        line-height: 1em;
+        color: #666666;
+        text-align: center; }
+        #full-frontal #staff #title h2 .meet-our {
+          font-size: 0.5em;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          text-shadow: none; }
+        #full-frontal #staff #title h2 span {
+          font-weight: 100; }
+    #full-frontal #staff .profile {
+      text-align: center; }
+      #full-frontal #staff .profile .circle-crop {
+        display: block;
+        overflow: hidden;
+        margin: 0 auto 1em;
+        width: 12em;
+        height: 12em;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%; }
+        #full-frontal #staff .profile .circle-crop img {
+          height: 100%;
+          width: 100%; }
+      #full-frontal #staff .profile h1 {
+        font-size: 2em;
+        color: #210c08; }
+        #full-frontal #staff .profile h1 span {
+          color: #33ccff; }
+      #full-frontal #staff .profile h2 {
+        /* 13px / 18px */
+        font-size: 0.813em;
+        line-height: 1.385em;
+        color: #210c08;
+        font-family: "omnes-pro";
+        text-transform: uppercase;
+        letter-spacing: 0.1em; }
   #full-frontal .article {
     background-size: cover; }
   #full-frontal #cafeteria-405-kitchen {

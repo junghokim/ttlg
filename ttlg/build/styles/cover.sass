@@ -4,10 +4,7 @@
 //	Margin, padding, and border resets
 //	except for form elements
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, nav, section, menu, time, mark, audio, video, canvas 
-	margin: 0
-	padding: 0
-	border: 0
+
 
 
 //	
@@ -175,7 +172,7 @@ body
 		display: block
 		position: relative
 		float: left
-		min-height: 35em
+		min-height: 30em
 		@include page-shadow
 		ul.pagination
 			z-index: 5
@@ -332,7 +329,7 @@ body
 						font-family: 'omnes-pro'
 						font-style: italic
 						font-weight: 300
-	#bottom-section
+	#about
 		// removing float: left and adding display: inline-block plus 100% width to child elements keeps shadow for #content-scroller-wrapper in check for some reason...
 		float: left
 		padding: 1.5em $column*1
@@ -341,7 +338,7 @@ body
 		#introduction
 			display: inline-block
 			position: relative
-			margin: 4em 0 0 0
+			margin: 2.5em 0 0 0
 			width: 100%
 			h1, h2
 				text-align: center
@@ -378,31 +375,37 @@ body
 			#overview
 				float: left
 				clear: both
-				margin-top: 6em
+				margin-top: 5em
 				width: 100%
 				p
 					margin: 0 auto 1em
 					color: $grey
-					@include large-text
+					font-size: 1.5em
 					font-weight: 200
+					line-height: 1.5em
 					text-align: center
-					&#highlights
-						//margin: 1.5em auto
-						//padding: 0.75em
-						//width: 75%
-						//background: $blue
+				#highlights
+					text-align: center
+					p
+						display: inline-block
+						margin: 1.5em 0
+						padding: 0.5em 1.25em
+						//width: auto
+						//color: $grey
+						background: white
+						box-shadow: inset 0 1px 2px $light-grey
 						@include border-radius(1.75em)
 						.seoulist
 							color: $blue
 							font-weight: 700
 							.ist
-								color: $light-grey
+								color: $grey
 							.selects
 								font-weight: 200
 	#history
 		float: left
 		width: 100%
-		padding: 2em $column*1
+		padding: 4em $column*1 2em
 		border-top: 1px dotted $blue
 		border-bottom: 1px dotted $blue
 		box-sizing: border-box
@@ -426,14 +429,27 @@ body
 			margin: 2em 0
 			padding: 1em 0
 			#line
+				position: relative
 				display: block
-				height: 0.25em
+				height: 2.5em
 				background: $blue
+				@include border-radius(1.25em)
+				#inner-line
+					position: absolute
+					top: 50%
+					right: 1em
+					left: 1em
+					margin-top: -0.15em
+					display: block
+					//width: 100%
+					height: 0.25em
+					background: white
+					@include border-radius(0.15em)
 			.event, .launch, .divider
 				position: absolute
 			.launch
 				top: 50%
-				left: 0
+				left: 0.4em
 				margin-top: -1em
 				img
 					display: block
@@ -445,62 +461,91 @@ body
 					top: 50%
 					margin-top: -0.625em
 					text-decoration: none
+					background: none
 					&:hover
 						z-index: 49
-					&:hover hgroup
+					&:hover .event-inner
 						display: block
 						text-decoration: none
 					.marker
 						display: block
 						height: 1em
 						width: 1em
-						background: white
-						border: 2px solid $blue
+						background: $blue
+						border: 2px solid white
 						@include border-radius(1em)
 					.marker:hover
-						background: $blue
-					hgroup
+						z-index: 75
+						background: white
+					.event-inner
 						display: none
-						margin-top: 0.75em
-						padding: 0.75em
+						margin: 0.25em 0 0 0.75em
+						padding: 0.5em 0.75em
 						width: 20em
 						background: white
 						@include border-radius(5px)
 						box-shadow: 0 1px 1px $grey
 						box-sizing: border-box
-						.date, h1, h2
-							display: block
-						.date
-							margin: 0 0 0.5em 0
-							padding: 0 0 0.5em 0
-							@include small-text
+						hgroup
+							.date, h1, h2
+								display: block
+							.date
+								margin: 0 0 0.5em 0
+								padding: 0 0 0.5em 0
+								@include small-text
+								color: $grey
+								font-family: 'omnes-pro'
+								font-weight: 400
+								text-transform: uppercase
+								letter-spacing: 0.1em
+								border-bottom: 1px dotted $grey
+							h1
+								@include normal-text
+								color: $blue
+								font-weight: 700
+							h2
+								@include normal-text
+								color: $grey
+								font-family: 'omnes-pro'
+								font-weight: 400
+								//text-transform: uppercase
+								//letter-spacing: 0.1em
+								text-align: left
+						.read-article
+							display: inline-block
+							width: 100%
+							text-align: right
 							color: $grey
-							font-family: 'omnes-pro'
-							font-weight: 400
-							text-transform: uppercase
-							letter-spacing: 0.1em
-							border-bottom: 1px dotted $grey
-						h1
-							@include normal-text
-							color: $blue
-							font-weight: 700
-						h2
-							@include normal-text
-							color: $grey
-							font-family: 'omnes-pro'
-							font-weight: 400
-							//text-transform: uppercase
-							//letter-spacing: 0.1em
-							text-align: left
+							&:hover
+								color: $blue
+				#the-empty-chair
+					.event-inner
+						margin-left: -19.25em
 				#stephanie-cafe
 					left: 4%
 				#dont-stop-make-believing
 					left: 66%
 					background: none
 				#hangul-roundup
-					left: 60%
+					left: 58%
 					background: none
 				#to-be-young-and-in-love-and-swinging
+					left: 6.2%
+				#searching-for-the-little-black-pen
+					left: 17.2%
+				#beef-stock-chicken-stock-out-of-stock
+					left: 53.5%
+				#the-empty-chair
+					left: 88%
+				#seoul-safari-six-hours-in-seoul
+					left: 68%
+				#extraordinary-expats-filmmaker-nj-calder
+					left: 62.5%
+				#an-actors-map-of-seoul
+					left: 60%
+				#cafeteria-405-kitchen
+					left: 65%
+				#the-loft-that-launched-one-thousand-followers
 					left: 5.5%
 			#dividers
 				$divider: 7.1428%
@@ -510,7 +555,7 @@ body
 					margin-top: -0.75em
 					width: 1px
 					height: 1.5em
-					background: white			
+					background: $blue
 				#one
 					left: $divider*1
 				#two
@@ -538,14 +583,71 @@ body
 				#thirteen
 					left: $divider*13
 				#end
+					display: none
 					right: 0
 					width: 3px
 					background: $blue
 	#staff
-		display: block
 		float: left
-		padding: 0 $column*1
-		height: 20em
+		padding: 3em $column*1
+		width: 100%
+		box-sizing: border-box
+		.profile
+			float: left
+			margin: 1.5em 0
+			width: 33%
+			height: 18em
+		#middle
+			.profile
+				width: 35%
+				&:first-child
+					margin-left: 15%
+		#title
+			position: relative
+			float: left
+			width: 100%
+			height: 12em
+			h2
+				position: absolute
+				top: 20%
+				right: 0
+				left: 0
+				//margin-top: -3.5em
+				@include huge-text
+				line-height: 1em
+				color: $medium-grey
+				text-align: center
+				//text-shadow: 0 1px 2px black
+				.meet-our
+					font-size: 0.5em
+					text-transform: uppercase
+					letter-spacing: 0.2em
+					text-shadow: none
+				span
+					font-weight: 100
+		.profile
+			text-align: center
+			.circle-crop
+				display: block
+				overflow: hidden
+				margin: 0 auto 1em
+				width: 12em
+				height: 12em
+				@include border-radius(50%)
+				img
+					height: 100%
+					width: 100%
+			h1
+				font-size: 2em
+				color: $brown
+				span
+					color: $blue
+			h2
+				@include small-text
+				color: $brown
+				font-family: 'omnes-pro'
+				text-transform: uppercase
+				letter-spacing: 0.1em
 	.article
 		background-size: cover
 		div
