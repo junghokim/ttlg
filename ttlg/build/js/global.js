@@ -113,10 +113,18 @@ $(document).ready(function() {
 	});*/
 
 	$('#trigger, #close').click(function() {
-  $('#table-of-contents').slideToggle('slow', function() {
-    $('#curtain').hide();
-  });
-});
+	  $('#table-of-contents').slideToggle('slow', function() {
+	    $('#curtain').hide();
+	  });
+	});
 
-
+	/* AJAXify */
+	$('html').click(function() {
+		$('html').ajax({
+		  url: "test.html",
+		  cache: false
+		}).done(function( html ) {
+		  $("#results").append(html);
+		});
+	});
 });
