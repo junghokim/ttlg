@@ -13,7 +13,7 @@ $(document).ready(function() {
 	// Subtract the height of the #masthead (3.9375em x 16px = 63px)
 	$('.cover').css({'height':((coverHeight)-62)+'px'});
 	// Set height of covers on homepage
-	$('#full-frontal .article').css({'height':(((coverHeight)*.7)-62)+'px'});
+	$('#home .article').css({'height':(((coverHeight)*.7)-62)+'px'});
 	// Set the width of the container that holds the articles and the articles themselves equal to the width of the viewport
 	$('#content-scroller-wrapper, .article').css({width: ((coverWidth))+'px'});
 	// Set the height of the masthead equal to the height of the viewport so items can be locked to the top and bottom
@@ -26,7 +26,7 @@ $(document).ready(function() {
 
 	/* Scrolling */
 
-	$('#content-scroller-wrapper').serialScroll({
+	$('#articles #content-scroller-wrapper').serialScroll({
 		items:'.article',
 		prev:'a.pagination-previous',
 		next:'a.pagination-next',
@@ -50,7 +50,7 @@ $(document).ready(function() {
 			// Changed to accomodate things below cover on homepage
 			$('.cover').css({'height':((coverHeight)-62)+'px'});
 			// Set height of covers on homepage
-			$('#full-frontal .article, .slides_control').css({'height':(((coverHeight)*.7)-62)+'px'});			
+			$('#home .article, .slides_control').css({'height':(((coverHeight)*.7)-62)+'px'});			
 			// Set the width of the container that holds the articles and the articles themselves equal to the width of the viewport
 			$('#content-scroller-wrapper, .article').css({width: ((coverWidth))+'px'});
 			// Set the height of the masthead equal to the height of the viewport so items can be locked to the top and bottom
@@ -93,7 +93,7 @@ $(document).ready(function() {
 
 	}
 
-  $("#full-frontal > #content-scroller-wrapper").slides({
+  $("#home > #content-scroller-wrapper").slides({
     preload: false,
     play: 5000,
     bigTarget: false,
@@ -104,6 +104,16 @@ $(document).ready(function() {
 		generateNextPrev: false,
 		generatePagination: true
   });
+
+  /* Movement Tests */
+
+	$('#test-trigger').click(function() {
+	  $('body').removeClass('home').addClass('articles');
+	  $('#home').slideUp('slow').fadeOut('slow', function() {
+    	$('#articles').fadeIn('slow');
+  	});
+	});
+
 
   /* Switch */
 
@@ -118,13 +128,4 @@ $(document).ready(function() {
 	  });
 	});
 
-	/* AJAXify */
-	$('html').click(function() {
-		$('html').ajax({
-		  url: "test.html",
-		  cache: false
-		}).done(function( html ) {
-		  $("#results").append(html);
-		});
-	});
 });
