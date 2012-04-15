@@ -1,0 +1,453 @@
+@import 'all'
+@import 'shared-variables'
+
+@mixin page-shadow
+	@include box-shadow(0, 0, 12px, black)
+
+//	Margin, padding, and border resets
+//	except for form elements
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, nav, section, menu, time, mark, audio, video, canvas 
+	margin: 0
+	padding: 0
+	border: 0
+
+
+//	
+//	
+//	Consistency fixes
+//	adopted from http://necolas.github.com/normalize.css/
+//	
+//	
+
+html 
+	height: 100%
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+
+body 
+	min-height: 100%
+	font-size: 100%
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, nav, section, audio, canvas, video 
+	display: block
+
+sub, sup 
+	font-size: 75%
+	line-height: 0
+	position: relative
+	vertical-align: baseline
+
+sup 
+	top: -0.5em
+
+sub 
+	bottom: -0.25em
+
+pre 
+	white-space: pre
+	white-space: pre-wrap
+	word-wrap: break-word
+
+b, strong 
+	font-weight: bold
+
+abbr[title] 
+	border-bottom: 1px dotted
+
+input, textarea, button, select 
+	margin: 0
+	font-size: 100%
+	line-height: normal
+	vertical-align: baseline
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] 
+	cursor: pointer
+	-webkit-appearance: button
+
+input[type="checkbox"],
+input[type="radio"] 
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	-ms-box-sizing: border-box
+	-o-box-sizing: border-box
+	box-sizing: border-box
+
+textarea 
+	overflow: auto
+
+table 
+	border-collapse: collapse
+	border-spacing: 0
+
+
+
+//	
+//	
+//	Simple fluid media
+//	
+//	
+
+figure 
+	position: relative
+
+figure img, figure object, figure embed, figure video 
+	max-width: 100%
+	display: block
+
+img 
+	border: 0
+	-ms-interpolation-mode: bicubic
+
+
+
+//	
+//	
+//	Zoomable baseline grid
+//	type size presets
+//	
+//	
+
+body 
+	/* 16px / 24px */
+	font-size: $font-size / 16 * 1em
+	line-height: #{$line / $em}em
+
+
+.small 
+	/* 13px / 18px */
+	font-size: #{($font-size*0.8125) / $em}em
+	line-height: ($line*0.75) / ($font-size*0.8125) * 1em
+
+
+.normal, h3 
+	/* 16px / 24px */
+	font-size: #{$font-size / $em}em
+	line-height: #{$line / $em}em /* 24 */
+
+
+.large, h2, h1 
+	/* 26 / 36px */
+	font-size: #{26 / $em}em
+	line-height: ($line*1.5) / 26 * 1em
+
+
+.huge 
+	/* 42px / 48px */
+	font-size: #{42 / $em}em
+	line-height: ($line*2) / 42 * 1em
+
+
+.massive 
+	/* 68px / 72px */
+	font-size: #{68 / $em}em
+	line-height: ($line*3) / 68 * 1em
+
+
+.gigantic 
+	/* 110px / 120px */
+	font-size: #{110 / $em}em
+	line-height: ($line*5) / 110 * 1em
+
+//	
+//	Simple elastic gutters
+//	Note: box-sizing will not work in IE6-7
+//	
+
+.wrapper 
+	padding: 0 #{($line/2) / $em}em
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	-ms-box-sizing: border-box
+	box-sizing: border-box
+
+
+/* Seoulist */
+
+body
+	padding-top: 3.9375em
+	padding-bottom: 3em
+	font-family: 'jubilat', Helvetica, Arial, sans-serif
+	font-weight: 400
+	background: url('../images/white_texture-edited.png') repeat
+header.masthead
+	position: fixed
+	top: 0
+	z-index: 10000
+	padding: 0 0 0 $column*1
+	width: 100%
+	background: black
+	border-top: 0.25em solid $blue	
+	box-sizing: border-box
+	box-shadow: 0 0 6px black
+	opacity: 0.99
+	hgroup#mini-mast
+		z-index: 2
+		float: left
+		margin: 0.5em 0 0 1.5em
+		h1, h2
+			margin: 0
+			//text-shadow: 0 1px 1px #666
+		h1
+			font-size: 1.625em
+			line-height: 1em
+			color: white
+			span.ist
+				font-weight: 700
+				color: $blue
+			span.selects
+				margin-left: 0.25em
+				line-height: 100%
+				font-weight: 200
+		h2
+			color: $light-grey
+			font-weight: 400
+	nav
+		float: right
+	#logo
+		float: left
+		img
+			margin-top: 0.625em
+			width: 2.5em
+	.pagination-previous, .pagination-next, a.view-articles
+		padding: 1.125em 1.5em
+		border-left: 1px solid #444
+		background-color: transparent
+	a.view-articles, .previous-container, .next-container
+		float: left
+		&:hover
+			background-color: $grey
+	.pagination-previous, .pagination-next
+		display: block
+	a.view-articles
+		//padding: 1.5em 1.5em
+		width: 25px
+		height: 23px
+		//font-size: 0.75em
+		//font-weight: 500
+		//color: #CCC
+		//text-transform: uppercase
+		//letter-spacing: 0.1em
+		//text-decoration: none
+		text-indent: -1000em
+		background: url('../images/list-icon.png') center center no-repeat
+	.previous-container
+		z-index: 2
+		.pagination-previous
+			width: 14px
+			height: 23px
+			color: white
+			background: url('../images/pagination-previous-2.png') center center no-repeat
+			text-indent: -1000em
+	.next-container
+		z-index: 2
+		.pagination-next
+			width: 14px
+			height: 23px
+			color: white
+			background: url('../images/pagination-next-2.png') center center no-repeat
+			text-indent: -1000em
+
+//
+// Articles List
+//
+
+#table-of-contents
+	z-index: 6
+	display: none
+	position: absolute
+	top: 63px
+	right: 0
+	left: 0
+	//margin: 0 0.75em
+	padding: 0 $column*1 1.5em
+	background: white
+	//border-top: 1px dotted $blue
+	opacity: 0.98
+	@include page-shadow
+	#title-outer
+		float: left
+		margin: 1.5em 0
+		width: 100%
+		h3
+			margin: 0
+			padding: 0.5em 0
+			font-size: 1.5em
+			font-weight: 700
+			color: #333
+			border-bottom: 1px dotted #CCC
+			span
+				color: $blue
+	#article-list
+		float: left
+		position: relative
+		//overflow-x: hidden
+		//overflow-y: scroll
+		padding: 1.5em 0
+		//-webkit-column-width: 12em		
+		box-sizing: border-box
+		.home-item
+			float: left
+			display: block
+			position: relative
+			margin-bottom: 1.5em
+			padding: 0 0.75em
+			width: 25%
+			height: 8em
+			background: none
+			box-sizing: border-box
+			//border-bottom: 1px dotted #CCC
+			.thumb-crop				
+				img
+					float: left		
+					width: 3.5em
+					height: 3.5em
+					@include border-radius(3px)
+			hgroup
+				//float: left
+				margin-top: -0.25em
+				padding-left: 4.5em
+				//width: 75%
+				box-sizing: border-box
+				a
+					color: $grey
+					font-style: italic
+					text-decoration: none
+				h2, h3
+					display: none
+					@include small-text
+					font-weight: 200
+					color: $grey
+				h1
+					font-size: 1.25em
+					font-weight: 700
+					color: #333
+				h4
+					display: none
+			&:hover
+				h1
+					color: $blue
+				.bottom-line
+					border-bottom: 1px dotted $blue
+			.bottom-line
+				position: absolute
+				right: 0.75em
+				bottom: 0
+				left: 0.75em
+				border-bottom: 1px dotted $grey
+	#close
+		position: absolute
+		right: 0
+		bottom: 0
+		left: 0
+		padding: 0.5em 0
+		width: 100%
+		font-weight: 400
+		text-align: center
+		background: black
+		a
+			display: block
+			@include small-text
+			color: #444444
+			text-transform: uppercase
+			letter-spacing: 0.1em
+			text-decoration: none
+#curtain
+	display: none
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: black
+
+//
+// Footer
+//
+
+footer
+	position: relative
+	display: block
+	float: left
+	padding: 1.5em $column*1
+	width: 100%
+	color: $medium-grey
+	background: $dark-grey
+	box-sizing: border-box
+	box-shadow: inset 0 1px 6px black
+	a
+		float: right
+		margin-left: 1.5em
+		//padding: 0.5em 1em
+		color: $light-grey
+		font-size: 0.75em
+		text-transform: uppercase
+		letter-spacing: 0.1em
+		text-decoration: none
+		//background: $light-grey
+		//@include border-radius(1.5em)
+		//box-shadow: inset 0 1px 2px black
+		&:hover
+			color: $blue
+	.copyright
+		float: left
+	.seoulist-link
+		position: absolute
+		top: 2em
+		left: 25%
+		right: 25%
+		text-align: center
+
+//
+// Pagination Setup
+//
+#content-scroller-wrapper
+	overflow: hidden
+#content-scroller
+	.article-container
+		float: left
+
+//
+// Cover Setup
+//
+
+.article
+	float: left
+	width: 100%
+	.cover
+		position: relative
+		float: left
+		display: block
+		overflow: auto
+		padding: 1.5em $column*1
+		width: 100%
+		background-size: cover
+		box-sizing: border-box
+		@include page-shadow
+.cover
+	box-sizing: border-box
+
+//
+// Article Setup
+//
+
+#story
+	float: left
+	padding: 0 $column*1
+p
+	font-weight: 400
+
+//
+// Regions Setup
+//
+.article-source
+	-webkit-flow-into: article_flow
+	h2
+		margin-top: 0
+	p
+		margin-bottom: 1.5em
+		-webkit-hyphens: auto

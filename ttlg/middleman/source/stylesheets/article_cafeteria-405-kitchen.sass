@@ -1,0 +1,119 @@
+@import 'all'
+@import 'shared-variables'
+
+@mixin page-shadow
+	@include box-shadow(0, 0, 12px, black)
+
+// For Article
+
+
+//	
+//	
+//	Four-column grid active
+//	----------------------------------------
+//	Margin   | #  1   2   3   4   |   Margin
+//	5.55555% | %  25  50  75  100 | 5.55555%
+//	
+//
+
+//	
+//	
+//	Eight-column grid active
+//	----------------------------------------------------------------------
+//	Margin   | #  1     2     3     4     5     6     7     8   |   Margin
+//	5.55555% | %  12.5  25.0  37.5  50.0  62.5  75.0  87.5  100 | 5.55555%
+//	
+//	
+//	
+
+/* @media screen and (min-width: 720px) */
+// iPad
+@media screen and (min-width: 45em) 
+
+	body 
+		/* Reset baseline grid to 16/16 = 1 */
+		font-size: #{($font-size) / $em}em
+	
+
+/* @media screen and (min-width: 984px) */
+// Standard Desktop
+@media screen and (min-width: 61.5em)
+
+
+//	
+//	
+//	Sixteen-column grid active
+//	----------------------------------------------------------------------------------------------------------------------
+//	Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
+//	5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
+//	
+//	
+//
+
+/* @media screen and (min-width: 1872px) */
+// Wide Desktop
+@media screen and (min-width: 117em)
+
+#cafeteria-405-kitchen.article
+	.cover
+		background: url('../images/405-kitchen_03_1000px.jpg') top left no-repeat
+		#article-title.wrapper
+			position: absolute
+			right: 0
+			bottom: 20%
+			padding: 2em $column*1 2em 3em
+			text-align: right
+			background: $yellow
+			@include border-radius-ind(top, left, 4px)
+			@include border-radius-ind(bottom, left, 4px)
+			opacity: 0.95
+			text-shadow: 0 1px 2px #CCC
+			box-shadow: 0 1px 3px #333
+			h1
+				margin: 0
+				color: $blue
+				@include gigantic-text
+				font-weight: 100
+				line-height: 1em
+				//text-shadow: 0 2px 3px #555
+			h2
+				margin: 0
+				font-family: 'omnes-pro', sans-serif
+				font-weight: 200
+				font-style: italic
+	// Styling for the destination containers
+	#story
+		h2
+			margin: 0.5em 0 0.25em
+			font-weight: 600
+		#district-1
+			overflow: hidden
+			margin-top: 3em
+		#district-1
+			float: left
+			width: 100%
+			height: 100%
+			#region-1
+				float: left
+				margin-left: 12.5%
+				width: 62.5%
+			blockquote
+				float: left
+				margin: 1.5em 1.5em 1.5em 0
+				padding: 1.5em
+				width: 37.5%				
+				font-weight: 100
+				font-style: italic
+				color: $blue
+				border-top: 1px dotted green
+				border-bottom: 1px dotted green
+				// Not automatically applied with GGS
+				box-sizing: border-box
+			#image-1
+				float: right
+				width: 25%
+				img
+					width: 100%
+				.caption
+					padding-top: 0.75em
+					border-top: .25em solid $light-grey

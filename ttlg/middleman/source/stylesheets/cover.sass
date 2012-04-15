@@ -1,0 +1,596 @@
+@import 'all'
+@import 'shared-variables'
+
+.wrapper 
+	padding: 0 #{($line/2) / $em}em
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	-ms-box-sizing: border-box
+	box-sizing: border-box
+
+
+/* Seoulist */
+
+body.home
+	.pagination-previous, .pagination-next
+		// remove pagination navigation from home
+		display: none
+
+#articles
+	display: none
+
+body
+	// offsets the area of the fixed header
+	padding-top: 3.9375em
+	#content-scroller-wrapper
+		display: block
+		position: relative
+		float: left
+		min-height: 30em
+		@include page-shadow
+		ul.pagination
+			z-index: 5
+			position: absolute
+			bottom: 0
+			left: 0
+			margin-left: -5.4em
+			width: 100%
+			padding: 1em 0 1em 50%
+			opacity: 0.8
+			li
+				margin: 0 0 0 1.25em
+				float: left
+				a
+					display: block
+					width: 0.75em
+					height: 0.75em
+					text-indent: -999em
+					background: transparent
+					border: 3px solid white
+					@include border-radius(0.75em)
+					box-shadow: 0 1px 1px black
+			li.current
+				a
+					background: white
+		.content-scroller
+			min-height: inherit
+			.slides_control
+				min-height: inherit
+				.article
+					min-height: inherit
+			a
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 3em
+				left: 0
+			#cafeteria-405-kitchen
+				background: url('../images/405-kitchen_03_1000px.jpg') center center no-repeat
+			#dont-stop-make-believing
+				background: url('../images/cosplay-girl-group.jpg') top center no-repeat
+			#hangul-roundup
+				background: url('../images/jorop_jukamnida_fullcard.jpg') top center no-repeat
+			#searching-for-the-little-black-pen
+				background: url('../images/little_black_pen_mon_ami_690px_04-690x460.jpg') center center no-repeat						
+			#searching-for-the-little-black-pen
+				hgroup
+					position: absolute				
+					top: 28%
+					width: 100%
+					text-align: center
+					text-shadow: 0 1px 2px #CCC
+					h1
+						font-size: 1.5em
+						font-weight: 100
+					h2
+						margin-top: 1em
+						font-size: 0.85em
+						font-weight: 100
+						color: $dark-grey
+						text-transform: uppercase
+						letter-spacing: 0.2em
+				a.read-article
+					display: none
+			#hangul-roundup
+				hgroup
+					position: absolute
+					bottom: 8em
+					right: 8%
+					padding: 1.5em
+					text-shadow: 0 1px 3px #CCC
+					background: #FEFEFD					
+					@include border-radius(5px)
+					box-shadow: inset 0 1px 2px #CCC
+					opacity: 0.9
+					h1
+						font-size: 6em
+						font-weight: 100
+						font-style: italic
+						line-height: 1em
+						color: #D01914
+					h2
+						font-size: 1em
+						font-weight: 300
+						color: black
+				a.read-article
+					display: none
+					position: absolute
+					bottom: 5em
+					right: 8%
+					padding: 0.25em 0.5em
+					text-shadow: 0 1px 3px #333
+					color: #FEFEFD
+					background: #D01914		
+					@include border-radius(5px)
+					box-shadow: 0 1px 2px #333
+					//opacity: 0.9					
+					&:hover
+						background: darken(#D01914, 10%)
+						text-shadow: 0 -1px 3px #333
+						box-shadow: inset 0 1px 2px #333
+			#cafeteria-405-kitchen
+				hgroup
+					position: absolute
+					right: 0
+					bottom: 6em
+					padding: 2em 3em
+					text-align: right
+					background: $yellow
+					@include border-radius-ind(top, left, 5px)
+					@include border-radius-ind(bottom, left, 5px)
+					text-shadow: 0 1px 2px #CCC
+					h1, h2
+						font-weight: 100
+					h1
+						position: relative
+						font-size: 5em
+						line-height: 1em
+						color: $blue
+						span
+							font-family: 'omnes-pro', sans-serif
+							font-size: 0.5em
+							font-style: italic
+							color: black
+					h2, h3
+						display: inline-block
+						font-size: 1em
+						font-style: italic
+						text-transform: uppercase
+						letter-spacing: 0.1em
+					a.read-article
+						display: none
+						margin: 1em 0 0 0
+						padding: 0.25em 0.5em
+						text-shadow: 0 1px 3px #333
+						color: #FEFEFD
+						background: #D01914		
+						@include border-radius(5px)
+						box-shadow: 0 1px 2px #333
+						//opacity: 0.9					
+						&:hover
+							background: darken(#D01914, 10%)
+							text-shadow: 0 -1px 3px #333
+							box-shadow: inset 0 1px 2px #333
+			#dont-stop-make-believing
+				hgroup
+					position: absolute
+					right: 10%
+					bottom: 14%
+					left: 10%
+					padding: 2em
+					text-align: center
+					background: white
+					box-sizing: border-box
+					@include border-radius(5px)
+					//opacity: 0.95
+					text-shadow: 0 1px 2px #CCC
+					h1
+						color: #00BEE1
+						font-size: 4em
+						.stop
+							color: #FD68DB
+						.make
+							color: #FDF432
+						.believing
+							color: #DBA4F9
+					h2
+						color: black
+						font-size: 1em
+						font-family: 'omnes-pro'
+						font-style: italic
+						font-weight: 300
+				a.read-article
+					display: none
+					margin: 1.5em 0 0 0
+					padding: 0.25em 1em
+					text-shadow: 0 1px 1px $grey
+					color: white
+					background: $light-grey
+					@include border-radius(1em)
+					box-shadow: 0 1px 2px $light-grey
+					//opacity: 0.9					
+					&:hover
+						color: #FDF432
+						background: darken(#390E3B, 3%)
+						text-shadow: 0 -1px 3px #333
+						box-shadow: inset 0 1px 2px black
+	#about
+		// removing float: left and adding display: inline-block plus 100% width to child elements keeps shadow for #content-scroller-wrapper in check for some reason...
+		float: left
+		padding: 1.5em $column*1
+		width: 100%
+		box-sizing: border-box
+		#introduction
+			display: inline-block
+			position: relative
+			margin: 2.5em 0 0 0
+			width: 100%
+			h1, h2
+				text-align: center
+			h1
+				position: absolute
+				top: 0
+				left: 25%
+				right: 25%
+				text-indent: -1000em
+				img
+					display: block
+					margin: 0 auto
+					width: 4em
+					height: 4em
+			h2
+				margin: 2em 0
+				//padding: 0.25em 1em
+				color: $brown
+				font-family: 'omnes-pro'
+				font-weight: 200
+				font-size: 1em
+				text-transform: uppercase
+				letter-spacing: 0.1em
+				//background: $light-grey
+				//box-shadow: inset 0 1px 2px $grey
+				text-shadow: 0 1px 1px $dark-grey
+				@include border-radius(1em)
+				&#volume
+					float: left
+					margin-left: 12.5%
+				&#slug
+					float: right
+					margin-right: 12.5%
+			#overview
+				float: left
+				clear: both
+				margin-top: 5em
+				width: 100%
+				p
+					margin: 0 auto 1em
+					color: $grey
+					font-size: 1.5em
+					font-weight: 200
+					line-height: 1.5em
+					text-align: center
+				#highlights
+					text-align: center
+					p
+						display: inline-block
+						margin: 1.5em 0
+						padding: 0.5em 1.25em
+						//width: auto
+						//color: $grey
+						background: white
+						box-shadow: inset 0 1px 2px $light-grey
+						@include border-radius(1.75em)
+						.seoulist
+							color: $blue
+							font-weight: 700
+							.ist
+								color: $grey
+							.selects
+								margin-left: 0.25em
+								font-weight: 200
+	#history
+		float: left
+		width: 100%
+		padding: 4em $column*1 2em
+		border-top: 1px dotted $blue
+		border-bottom: 1px dotted $blue
+		box-sizing: border-box
+		h2, h3
+			display: block
+			margin: 0 auto
+			width: 100%
+			text-align: center
+		h2
+			margin-bottom: 0.25em
+			color: $brown
+			@include huge-text
+			span
+				color: $grey
+		h3
+			font-family: 'omnes-pro'
+			font-weight: 200
+			color: $grey
+		#timeline
+			position: relative
+			margin: 2em 0
+			padding: 1em 0
+			#line
+				position: relative
+				display: block
+				height: 2.5em
+				background: $blue
+				@include border-radius(1.25em)
+				#inner-line
+					position: absolute
+					top: 50%
+					right: 1em
+					left: 1em
+					margin-top: -0.15em
+					display: block
+					//width: 100%
+					height: 0.25em
+					background: white
+					@include border-radius(0.15em)
+			.event, .launch, .divider
+				position: absolute
+			.launch
+				top: 50%
+				left: 0.4em
+				margin-top: -1em
+				img
+					display: block
+					width: 2em
+					height: 2em
+			#events
+				.event
+					z-index: 50
+					top: 50%
+					margin-top: -0.625em
+					text-decoration: none
+					background: none
+					&:hover
+						z-index: 49
+					&:hover .event-inner
+						display: block
+						text-decoration: none
+					.marker
+						display: block
+						height: 1em
+						width: 1em
+						background: $blue
+						border: 2px solid white
+						@include border-radius(1em)
+					.marker:hover
+						z-index: 75
+						background: white
+					.event-inner
+						display: none
+						margin: 0.25em 0 0 0.75em
+						padding: 0.5em 0.75em
+						width: 20em
+						background: white
+						@include border-radius(5px)
+						box-shadow: 0 1px 1px $grey
+						box-sizing: border-box
+						hgroup
+							.date, h1, h2
+								display: block
+							.date
+								margin: 0 0 0.5em 0
+								padding: 0 0 0.5em 0
+								@include small-text
+								color: $grey
+								font-family: 'omnes-pro'
+								font-weight: 400
+								text-transform: uppercase
+								letter-spacing: 0.1em
+								border-bottom: 1px dotted $grey
+							h1
+								@include normal-text
+								color: $blue
+								font-weight: 700
+							h2
+								@include normal-text
+								color: $grey
+								font-family: 'omnes-pro'
+								font-weight: 400
+								//text-transform: uppercase
+								//letter-spacing: 0.1em
+								text-align: left
+						.read-article
+							display: inline-block
+							width: 100%
+							text-align: right
+							color: $grey
+							&:hover
+								color: $blue
+				#the-empty-chair
+					.event-inner
+						margin-left: -19.25em
+				#stephanie-cafe
+					left: 4%
+				#dont-stop-make-believing
+					left: 66%
+					background: none
+				#hangul-roundup
+					left: 58%
+					background: none
+				#to-be-young-and-in-love-and-swinging
+					left: 6.2%
+				#searching-for-the-little-black-pen
+					left: 17.2%
+				#beef-stock-chicken-stock-out-of-stock
+					left: 53.5%
+				#the-empty-chair
+					left: 88%
+				#seoul-safari-six-hours-in-seoul
+					left: 68%
+				#extraordinary-expats-filmmaker-nj-calder
+					left: 62.5%
+				#an-actors-map-of-seoul
+					left: 60%
+				#cafeteria-405-kitchen
+					left: 65%
+				#the-loft-that-launched-one-thousand-followers
+					left: 5.5%
+			#dividers
+				$divider: 7.1428%
+				.divider
+					display: block
+					top: 50%
+					margin-top: -0.75em
+					width: 1px
+					height: 1.5em
+					background: $blue
+				#one
+					left: $divider*1
+				#two
+					left: $divider*2
+				#three
+					left: $divider*3
+				#four
+					left: $divider*4
+				#five
+					left: $divider*5
+				#six
+					left: $divider*6
+				#seven
+					left: $divider*7
+				#eight
+					left: $divider*8
+				#nine
+					left: $divider*9
+				#ten
+					left: $divider*10
+				#eleven
+					left: $divider*11
+				#twelve
+					left: $divider*12
+				#thirteen
+					left: $divider*13
+				#end
+					display: none
+					right: 0
+					width: 3px
+					background: $blue
+	#staff
+		float: left
+		padding: 3em $column*1
+		width: 100%
+		box-sizing: border-box
+		.profile
+			float: left
+			margin: 1.5em 0
+			width: 33%
+			height: 18em
+		#middle
+			.profile
+				width: 35%
+				&:first-child
+					margin-left: 15%
+		#title
+			position: relative
+			float: left
+			width: 100%
+			height: 12em
+			h2
+				position: absolute
+				top: 20%
+				right: 0
+				left: 0
+				//margin-top: -3.5em
+				@include huge-text
+				line-height: 1em
+				color: $medium-grey
+				text-align: center
+				//text-shadow: 0 1px 2px black
+				.meet-our
+					font-size: 0.5em
+					text-transform: uppercase
+					letter-spacing: 0.2em
+					text-shadow: none
+				span
+					font-weight: 100
+		.profile
+			text-align: center
+			.circle-crop
+				display: block
+				overflow: hidden
+				margin: 0 auto 1em
+				width: 12em
+				height: 12em
+				@include border-radius(50%)
+				img
+					height: 100%
+					width: 100%
+			h1
+				font-size: 2em
+				color: $brown
+				span
+					color: $blue
+			h2
+				@include small-text
+				color: $brown
+				font-family: 'omnes-pro'
+				text-transform: uppercase
+				letter-spacing: 0.1em
+	.article
+		background-size: cover
+		div
+			// Removed z-index to get image to show up properly
+			//z-index: -10			
+	.branding-area
+		// z-index pops up over slidesjs plugin
+		z-index: 99
+		// switching to absolute to avoid branding/ui clashes w/content
+		//position: fixed
+		position: absolute
+		display: block
+		padding: 1.5em $column*1
+		width: 100%
+		box-sizing: border-box
+		border-top: 0.25em solid $blue
+		//background: white
+		//@include page-shadow
+		#logo-wrapper /* .wrapper */
+			display: block
+			float: left
+			width: 12.5%
+			img
+				float: left
+				width: 4em
+		hgroup#mini-mast /* .wrapper */
+			position: relative
+			display: block
+			float: left
+			width: 87.5%
+			text-shadow: 0 1px 3px black
+			h1
+				margin: 0
+				font-weight: 700
+				line-height: 1em
+				color: white
+				span.ist
+					font-weight: 700
+					color: $blue
+				span.selects
+					margin-left: 0.25em
+					line-height: 100%
+					font-weight: 100
+			h2
+				padding: 0
+				font-weight: 400
+				@include small-text
+				color: white
+			h3
+				display: none
+				position: absolute
+				top: 50%
+				right: 0
+				margin-top: -0.5em
+				height: 1em
+				font-weight: 200
+	#toc-trigger
+		position: fixed
+		bottom: 3em
+		left: $column*1
