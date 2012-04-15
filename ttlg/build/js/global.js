@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 	// Set the height of the cover equal to the height of viewport
 	// Subtract the height of the #masthead (3.9375em x 16px = 63px)
-	$('.cover').css({'height':((coverHeight)-62)+'px'});
+	$('.cover').css({'height':((coverHeight)-61)+'px'});
 	// Set height of covers on homepage
 	$('#home .article').css({'height':(((coverHeight)*.7)-62)+'px'});
 	// Set the width of the container that holds the articles and the articles themselves equal to the width of the viewport
@@ -26,6 +26,8 @@ $(document).ready(function() {
 
 	/* Scrolling */
 
+	// Serial Scroll
+
 	$('#articles #content-scroller-wrapper').serialScroll({
 		items:'.article',
 		prev:'a.pagination-previous',
@@ -38,6 +40,34 @@ $(document).ready(function() {
 		// easing:'easeOutQuart', //use this easing equation for a funny effect
 		jump: true //click on the images to scroll to them
 	});
+
+	// Local Scroll
+
+	$.localScroll.defaults.axis = 'x';
+	
+	// Scroll initially if there's a hash (#something) in the url 
+	$.localScroll.hash({
+		target: '#content-scroller-wrapper', // Could be a selector or a jQuery object too.
+		queue:true,
+		duration:1500
+	});
+	
+	/**
+	 * NOTE: I use $.localScroll instead of $('#navigation').localScroll() so I
+	 * also affect the >> and << links. I want every link in the page to scroll.
+	 */
+	$.localScroll({
+		target: '#content', // could be a selector or a jQuery object too.
+		queue:true,
+		duration:1000,
+		hash:true,
+		onBefore:function( e, anchor, $target ){
+			// The 'this' is the settings object, can be modified
+		},
+		onAfter:function( anchor, settings ){
+			// The 'this' contains the scrolled element (#content)
+		}
+	});   
 
 	{
 		$(window).resize(function() {
