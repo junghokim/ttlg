@@ -15,7 +15,7 @@ $(document).ready(function() {
 	// Set height of covers on homepage
 	$('#home .article').css({'height':(((coverHeight)*.7)-62)+'px'});
 	// Set the width of the container that holds the articles and the articles themselves equal to the width of the viewport
-	$('#content-scroller-wrapper, .article').css({width: ((coverWidth))+'px'});
+	$('.content-scroller-wrapper, .article').css({width: ((coverWidth))+'px'});
 	// Set the height of the masthead equal to the height of the viewport so items can be locked to the top and bottom
 	//$('.masthead').css({'height':((coverHeight))+'px'});
 	// Set the width of the scrollable area which contains articles equal to the width of the viewport multiplied by the number of articles
@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 	// Serial Scroll
 
-	$('#articles #content-scroller-wrapper').serialScroll({
+	$('#articles .content-scroller-wrapper').serialScroll({
 		items:'.article',
 		prev:'a.pagination-previous',
 		next:'a.pagination-next',
@@ -47,7 +47,7 @@ $(document).ready(function() {
 	
 	// Scroll initially if there's a hash (#something) in the url 
 	$.localScroll.hash({
-		target: '#content-scroller-wrapper', // Could be a selector or a jQuery object too.
+		target: '.content-scroller-wrapper', // Could be a selector or a jQuery object too.
 		queue:true,
 		duration:1500
 	});
@@ -56,17 +56,8 @@ $(document).ready(function() {
 	 * NOTE: I use $.localScroll instead of $('#navigation').localScroll() so I
 	 * also affect the >> and << links. I want every link in the page to scroll.
 	 */
-	$.localScroll({
-		target: '#content', // could be a selector or a jQuery object too.
-		queue:true,
-		duration:1000,
-		hash:true,
-		onBefore:function( e, anchor, $target ){
-			// The 'this' is the settings object, can be modified
-		},
-		onAfter:function( anchor, settings ){
-			// The 'this' contains the scrolled element (#content)
-		}
+	$('.home-item hgroup').localScroll({
+		target: '.content-scroller-wrapper'
 	});   
 
 	{
@@ -82,7 +73,7 @@ $(document).ready(function() {
 			// Set height of covers on homepage
 			$('#home .article, .slides_control').css({'height':(((coverHeight)*.7)-62)+'px'});			
 			// Set the width of the container that holds the articles and the articles themselves equal to the width of the viewport
-			$('#content-scroller-wrapper, .article').css({width: ((coverWidth))+'px'});
+			$('.content-scroller-wrapper, .article').css({width: ((coverWidth))+'px'});
 			// Set the height of the masthead equal to the height of the viewport so items can be locked to the top and bottom
 			//$('.masthead').css({'height':((coverHeight))+'px'});
 			// Set the width of the scrollable area which contains articles equal to the width of the viewport multiplied by the number of articles
@@ -123,7 +114,7 @@ $(document).ready(function() {
 
 	}
 
-  $("#home > #content-scroller-wrapper").slides({
+  $("#home > .content-scroller-wrapper").slides({
     preload: false,
     play: 5000,
     bigTarget: false,
@@ -137,11 +128,28 @@ $(document).ready(function() {
 
   /* Movement Tests */
 
-	$('#test-trigger').click(function() {
+	$('#home .content-scroller a').click(function() {
 	  $('body').removeClass('home').addClass('articles');
-	  $('#home').slideUp('slow').fadeOut('slow', function() {
-    	$('#articles').fadeIn('slow');
+	  $('#home').slideUp('slow').fadeOut('slow',
+	  	function() {
+    		$('#articles').fadeIn('slow');
+    		// Removing #home from DOM lets localscroll work by not creating an ID conflict with articles (previously they were both in the featured area in #home and within #articles as themselves)
+    		$('#home').remove();
   	});
+	});
+
+	$('#events a').click(function() {
+	  $('body').removeClass('home').addClass('articles');
+	  $('#home').slideUp('slow').fadeOut('slow',
+	  	function() {
+    		$('#articles').fadeIn('slow');
+    		// Removing #home from DOM lets localscroll work by not creating an ID conflict with articles (previously they were both in the featured area in #home and within #articles as themselves)
+    		$('#home').remove();
+  	});
+  	// Not working !!!
+  	$(this).localScroll({
+		target: '.content-scroller-wrapper'
+	}); 
 	});
 
 

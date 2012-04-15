@@ -335,10 +335,10 @@ footer {
     right: 25%;
     text-align: center; }
 
-#content-scroller-wrapper {
+.content-scroller-wrapper {
   overflow: hidden; }
 
-#content-scroller .article-container {
+.content-scroller .article-container {
   float: left; }
 
 .article {

@@ -14,7 +14,7 @@ body.home .pagination-previous, body.home .pagination-next {
 
 body {
   padding-top: 3.938em; }
-  body #content-scroller-wrapper {
+  body .content-scroller-wrapper {
     display: block;
     position: relative;
     float: left;
@@ -22,7 +22,7 @@ body {
     -moz-box-shadow: 0 0 6px black;
     -webkit-box-shadow: 0 0 6px black;
     box-shadow: 0 0 6px black; }
-    body #content-scroller-wrapper ul.pagination {
+    body .content-scroller-wrapper ul.pagination {
       z-index: 5;
       position: absolute;
       bottom: 0;
@@ -31,10 +31,10 @@ body {
       width: 100%;
       padding: 1em 0 1em 50%;
       opacity: 0.8; }
-      body #content-scroller-wrapper ul.pagination li {
+      body .content-scroller-wrapper ul.pagination li {
         margin: 0 0 0 1.25em;
         float: left; }
-        body #content-scroller-wrapper ul.pagination li a {
+        body .content-scroller-wrapper ul.pagination li a {
           display: block;
           width: 0.75em;
           height: 0.75em;
@@ -45,47 +45,47 @@ body {
           -webkit-border-radius: 0.75em;
           border-radius: 0.75em;
           box-shadow: 0 1px 1px black; }
-      body #content-scroller-wrapper ul.pagination li.current a {
+      body .content-scroller-wrapper ul.pagination li.current a {
         background: white; }
-    body #content-scroller-wrapper .content-scroller {
+    body .content-scroller-wrapper .content-scroller {
       min-height: inherit; }
-      body #content-scroller-wrapper .content-scroller .slides_control {
+      body .content-scroller-wrapper .content-scroller .slides_control {
         min-height: inherit; }
-        body #content-scroller-wrapper .content-scroller .slides_control .article {
+        body .content-scroller-wrapper .content-scroller .slides_control .article {
           min-height: inherit; }
-      body #content-scroller-wrapper .content-scroller a {
+      body .content-scroller-wrapper .content-scroller a {
         position: absolute;
         top: 0;
         right: 0;
         bottom: 3em;
         left: 0; }
-      body #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen {
+      body .content-scroller-wrapper .content-scroller #cafeteria-405-kitchen {
         background: url("../images/405-kitchen_03_1000px.jpg") center center no-repeat; }
-      body #content-scroller-wrapper .content-scroller #dont-stop-make-believing {
+      body .content-scroller-wrapper .content-scroller #dont-stop-make-believing {
         background: url("../images/cosplay-girl-group.jpg") top center no-repeat; }
-      body #content-scroller-wrapper .content-scroller #hangul-roundup {
+      body .content-scroller-wrapper .content-scroller #hangul-roundup {
         background: url("../images/jorop_jukamnida_fullcard.jpg") top center no-repeat; }
-      body #content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen {
+      body .content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen {
         background: url("../images/little_black_pen_mon_ami_690px_04-690x460.jpg") center center no-repeat; }
-      body #content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen hgroup {
+      body .content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen hgroup {
         position: absolute;
         top: 28%;
         width: 100%;
         text-align: center;
         text-shadow: 0 1px 2px #cccccc; }
-        body #content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen hgroup h1 {
+        body .content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen hgroup h1 {
           font-size: 1.5em;
           font-weight: 100; }
-        body #content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen hgroup h2 {
+        body .content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen hgroup h2 {
           margin-top: 1em;
           font-size: 0.85em;
           font-weight: 100;
           color: #333333;
           text-transform: uppercase;
           letter-spacing: 0.2em; }
-      body #content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen a.read-article {
+      body .content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen a.read-article {
         display: none; }
-      body #content-scroller-wrapper .content-scroller #hangul-roundup hgroup {
+      body .content-scroller-wrapper .content-scroller #hangul-roundup hgroup {
         position: absolute;
         bottom: 8em;
         right: 8%;
@@ -97,17 +97,17 @@ body {
         border-radius: 5px;
         box-shadow: inset 0 1px 2px #cccccc;
         opacity: 0.9; }
-        body #content-scroller-wrapper .content-scroller #hangul-roundup hgroup h1 {
+        body .content-scroller-wrapper .content-scroller #hangul-roundup hgroup h1 {
           font-size: 6em;
           font-weight: 100;
           font-style: italic;
           line-height: 1em;
           color: #d01914; }
-        body #content-scroller-wrapper .content-scroller #hangul-roundup hgroup h2 {
+        body .content-scroller-wrapper .content-scroller #hangul-roundup hgroup h2 {
           font-size: 1em;
           font-weight: 300;
           color: black; }
-      body #content-scroller-wrapper .content-scroller #hangul-roundup a.read-article {
+      body .content-scroller-wrapper .content-scroller #hangul-roundup a.read-article {
         display: none;
         position: absolute;
         bottom: 5em;
@@ -120,11 +120,11 @@ body {
         -webkit-border-radius: 5px;
         border-radius: 5px;
         box-shadow: 0 1px 2px #333333; }
-        body #content-scroller-wrapper .content-scroller #hangul-roundup a.read-article:hover {
+        body .content-scroller-wrapper .content-scroller #hangul-roundup a.read-article:hover {
           background: #a11310;
           text-shadow: 0 -1px 3px #333333;
           box-shadow: inset 0 1px 2px #333333; }
-      body #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup {
+      body .content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup {
         position: absolute;
         right: 0;
         bottom: 6em;
@@ -138,25 +138,25 @@ body {
         -webkit-border-bottom-left-radius: 5px;
         border-bottom-left-radius: 5px;
         text-shadow: 0 1px 2px #cccccc; }
-        body #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h1, body #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h2 {
+        body .content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h1, body .content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h2 {
           font-weight: 100; }
-        body #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h1 {
+        body .content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h1 {
           position: relative;
           font-size: 5em;
           line-height: 1em;
           color: #33ccff; }
-          body #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h1 span {
+          body .content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h1 span {
             font-family: "omnes-pro", sans-serif;
             font-size: 0.5em;
             font-style: italic;
             color: black; }
-        body #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h2, body #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h3 {
+        body .content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h2, body .content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h3 {
           display: inline-block;
           font-size: 1em;
           font-style: italic;
           text-transform: uppercase;
           letter-spacing: 0.1em; }
-        body #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup a.read-article {
+        body .content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup a.read-article {
           display: none;
           margin: 1em 0 0 0;
           padding: 0.25em 0.5em;
@@ -167,11 +167,11 @@ body {
           -webkit-border-radius: 5px;
           border-radius: 5px;
           box-shadow: 0 1px 2px #333333; }
-          body #content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup a.read-article:hover {
+          body .content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup a.read-article:hover {
             background: #a11310;
             text-shadow: 0 -1px 3px #333333;
             box-shadow: inset 0 1px 2px #333333; }
-      body #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup {
+      body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup {
         position: absolute;
         right: 10%;
         bottom: 14%;
@@ -184,22 +184,22 @@ body {
         -webkit-border-radius: 5px;
         border-radius: 5px;
         text-shadow: 0 1px 2px #cccccc; }
-        body #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 {
+        body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 {
           color: #00bee1;
           font-size: 4em; }
-          body #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 .stop {
+          body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 .stop {
             color: #fd68db; }
-          body #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 .make {
+          body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 .make {
             color: #fdf432; }
-          body #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 .believing {
+          body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 .believing {
             color: #dba4f9; }
-        body #content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h2 {
+        body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h2 {
           color: black;
           font-size: 1em;
           font-family: "omnes-pro";
           font-style: italic;
           font-weight: 300; }
-      body #content-scroller-wrapper .content-scroller #dont-stop-make-believing a.read-article {
+      body .content-scroller-wrapper .content-scroller #dont-stop-make-believing a.read-article {
         display: none;
         margin: 1.5em 0 0 0;
         padding: 0.25em 1em;
@@ -210,7 +210,7 @@ body {
         -webkit-border-radius: 1em;
         border-radius: 1em;
         box-shadow: 0 1px 2px #e1e1e1; }
-        body #content-scroller-wrapper .content-scroller #dont-stop-make-believing a.read-article:hover {
+        body .content-scroller-wrapper .content-scroller #dont-stop-make-believing a.read-article:hover {
           color: #fdf432;
           background: #2d0b2f;
           text-shadow: 0 -1px 3px #333333;
@@ -440,8 +440,8 @@ body {
         left: 60%; }
       body #history #timeline #events #cafeteria-405-kitchen {
         left: 65%; }
-      body #history #timeline #events #the-loft-that-launched-one-thousand-followers {
-        left: 5.5%; }
+      body #history #timeline #events #around-the-corner {
+        left: 24.5%; }
       body #history #timeline #dividers .divider {
         display: block;
         top: 50%;
