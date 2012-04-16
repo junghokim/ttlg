@@ -1,0 +1,58 @@
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+    font-size: 1em; } }
+/* @media screen and (min-width: 984px) */
+/* @media screen and (min-width: 1872px) */
+#an-actors-map-of-seoul {
+  position: relative; }
+  #an-actors-map-of-seoul .cover {
+    background: url("../images/an-actors-map-of-seoul_cover.jpg") center center no-repeat; }
+    #an-actors-map-of-seoul .cover hgroup {
+      z-index: 100;
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      box-sizing: border-box;
+      text-shadow: 0 1px 2px #333333; }
+      #an-actors-map-of-seoul .cover hgroup h1 {
+        color: white;
+        font-size: 5em;
+        line-height: 1em; }
+        #an-actors-map-of-seoul .cover hgroup h1 span {
+          display: block;
+          font-size: 0.5em;
+          font-weight: 100;
+          text-transform: uppercase;
+          letter-spacing: 0.1em; }
+    #an-actors-map-of-seoul .cover h2 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0.75em;
+      color: white;
+      font-size: 1em;
+      font-family: "omnes-pro";
+      font-style: italic;
+      font-weight: 300;
+      text-align: center;
+      background: #2d2327;
+      opacity: 0.9;
+      box-shadow: 0 0 4px black; }
+    #an-actors-map-of-seoul .cover #grid {
+      opacity: 0.15; }
+      #an-actors-map-of-seoul .cover #grid span {
+        position: absolute; }
+      #an-actors-map-of-seoul .cover #grid #horizontal span {
+        right: 0;
+        left: 0;
+        border-top: 1px dotted white; }
+      #an-actors-map-of-seoul .cover #grid #vertical span {
+        top: 0;
+        bottom: 0;
+        border-left: 1px dotted white; }
+  #an-actors-map-of-seoul #story .wrapper {
+    margin-left: 12.5%;
+    width: 75.5%; }

@@ -9,9 +9,6 @@
 body.home .pagination-previous, body.home .pagination-next {
   display: none; }
 
-#articles {
-  display: none; }
-
 body {
   padding-top: 3.938em; }
   body .content-scroller-wrapper {
@@ -67,24 +64,24 @@ body {
         background: url("../images/jorop_jukamnida_fullcard.jpg") top center no-repeat; }
       body .content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen {
         background: url("../images/little_black_pen_mon_ami_690px_04-690x460.jpg") center center no-repeat; }
-      body .content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen hgroup {
-        position: absolute;
-        top: 28%;
-        width: 100%;
-        text-align: center;
-        text-shadow: 0 1px 2px #cccccc; }
-        body .content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen hgroup h1 {
-          font-size: 1.5em;
-          font-weight: 100; }
-        body .content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen hgroup h2 {
-          margin-top: 1em;
-          font-size: 0.85em;
-          font-weight: 100;
-          color: #333333;
-          text-transform: uppercase;
-          letter-spacing: 0.2em; }
-      body .content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen a.read-article {
-        display: none; }
+        body .content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen hgroup {
+          position: absolute;
+          top: 28%;
+          width: 100%;
+          text-align: center;
+          text-shadow: 0 1px 2px #cccccc; }
+          body .content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen hgroup h1 {
+            font-size: 1.5em;
+            font-weight: 100; }
+          body .content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen hgroup h2 {
+            margin-top: 1em;
+            font-size: 0.85em;
+            font-weight: 100;
+            color: #333333;
+            text-transform: uppercase;
+            letter-spacing: 0.2em; }
+        body .content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen a.read-article {
+          display: none; }
       body .content-scroller-wrapper .content-scroller #hangul-roundup hgroup {
         position: absolute;
         bottom: 8em;
