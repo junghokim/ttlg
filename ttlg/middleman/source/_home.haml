@@ -1,6 +1,20 @@
 #home
 	.content-scroller-wrapper
 		.content-scroller
+			%section#hangul-roundup.article
+				%a{:href => "#hangul-roundup"}
+				%hgroup
+					%h1 Hangul Roundup
+					%h2 Showcasing some of our favorite typefaces, designers and curiosities in celebration of Hangul Day.		
+			%section#dont-stop-make-believing.article
+				%a{:href => "#dont-stop-make-believing"}
+				%hgroup#article-title.wrapper
+					%h1
+						Don't
+						%span.stop Stop
+						%span.make Make
+						%span.believing Believing
+					%h2 Seoul's monthly cosplay conventions summon a vibrant community of adults who love to play dress up.		
 			%section#cafeteria-405-kitchen.article
 				%a{:href => "#cafeteria-405-kitchen"}
 				%hgroup#article-title.wrapper
@@ -10,21 +24,7 @@
 						405
 						%br/
 						Kitchen
-					%h2 Not Too Hot, Not Too Cold
-			%section#dont-stop-make-believing.article
-				%a{:href => "#dont-stop-make-believing"}
-				%hgroup#article-title.wrapper
-					%h1
-						Don't
-						%span.stop Stop
-						%span.make Make
-						%span.believing Believing
-					%h2 Seoul's monthly cosplay conventions summon a vibrant community of adults who love to play dress up.
-			%section#hangul-roundup.article
-				%a{:href => "#hangul-roundup"}
-				%hgroup
-					%h1 Hangul Roundup
-					%h2 Showcasing some of our favorite typefaces, designers and curiosities in celebration of Hangul Day.
+					%h2 Not Too Hot, Not Too Cold		
 			%section#searching-for-the-little-black-pen.article
 				%a{:href => "#searching-for-the-little-black-pen"}
 				%hgroup#article-title.wrapper
@@ -182,13 +182,11 @@
 				%span#thirteen.divider
 				%span#end.divider
 	#staff
+		%a{:name => "about"}				
 		#title.wrapper
 			%h2
 				%span.meet-our Meet Our
-				%br/
-				Makers
-				%span> &
-				Shakers
+				%span.makers Makers<span class="and">&</span>Shakers
 		#middle.wrapper
 			%article#yaeri.profile
 				.circle-crop

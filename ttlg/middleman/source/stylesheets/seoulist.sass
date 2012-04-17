@@ -190,6 +190,7 @@ hgroup#mini-mast
 footer
 	display: block
 	float: left
+	padding: 1.5em 0
 	width: 100%	
 	color: $medium-grey	
 	//text-align: center
@@ -199,9 +200,9 @@ footer
 	text-align: center
 	a, .copyright
 		display: block
-	a
 		float: none
-		margin: 0 0 0.75em 0
+		margin: 0
+		padding: 0.75em 0
 		color: $light-grey
 		font-size: 0.75em
 		text-transform: uppercase
@@ -211,8 +212,18 @@ footer
 			color: $blue
 	.copyright
 		float: none
+		padding: 0 0 0.75em 0
+		margin-bottom: 0.75em
+		color: $grey
 	.seoulist-link
 		position: static
+		padding: 0.75em
+		color: white
+		background: black
+		border: 1px dotted $light-grey
+		&:hover
+			background: $blue
+			color: white
 		
 //	
 //	
@@ -230,6 +241,8 @@ footer
 	body 
 		/* Reset baseline grid to 16/16 = 1 */
 		font-size: #{($font-size) / $em}em
+	hgroup#mini-mast
+		display: block
 	footer
 		position: relative
 		padding: 1.5em $column*1

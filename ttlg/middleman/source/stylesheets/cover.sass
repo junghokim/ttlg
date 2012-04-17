@@ -11,14 +11,22 @@
 
 /* Seoulist */
 
+
+//	
+//	Four-column grid active
+//	----------------------------------------
+//	Margin   | #  1   2   3   4   |   Margin
+//	5.55555% | %  25  50  75  100 | 5.55555%
+//	
+//
+
 body.home
 	.pagination-previous, .pagination-next
 		// remove pagination navigation from home
 		display: none
-
 #articles
-	//display: none
-	float: left
+	display: none
+	//float: left
 
 body
 	// offsets the area of the fixed header
@@ -27,7 +35,7 @@ body
 		display: block
 		position: relative
 		float: left
-		min-height: 30em
+		min-height: 22em
 		@include page-shadow
 		ul.pagination
 			z-index: 5
@@ -59,6 +67,7 @@ body
 				min-height: inherit
 				.article
 					min-height: inherit
+					background-size: cover
 			a
 				position: absolute
 				top: 0
@@ -66,7 +75,7 @@ body
 				bottom: 3em
 				left: 0
 			#cafeteria-405-kitchen
-				background: url('../images/405-kitchen_03_1000px.jpg') center center no-repeat
+				background: url('../images/405-kitchen_03_1000px.jpg') top center no-repeat
 			#dont-stop-make-believing
 				background: url('../images/cosplay-girl-group.jpg') top center no-repeat
 			#hangul-roundup
@@ -75,15 +84,16 @@ body
 				background: url('../images/little_black_pen_mon_ami_690px_04-690x460.jpg') center center no-repeat			
 				hgroup
 					position: absolute				
-					top: 28%
-					width: 100%
+					top: 10%
+					left: 10%
+					right: 10%
 					text-align: center
 					text-shadow: 0 1px 2px #CCC
 					h1
-						font-size: 1.5em
+						font-size: 1.9em
 						font-weight: 100
 					h2
-						margin-top: 1em
+						margin-top: 0.8em
 						font-size: 0.85em
 						font-weight: 100
 						color: $dark-grey
@@ -94,22 +104,23 @@ body
 			#hangul-roundup
 				hgroup
 					position: absolute
-					bottom: 8em
-					right: 8%
-					padding: 1.5em
+					bottom: 3em
+					right: 6%
+					left: 6%
+					padding: 1em
 					text-shadow: 0 1px 3px #CCC
 					background: #FEFEFD					
 					@include border-radius(5px)
 					box-shadow: inset 0 1px 2px #CCC
 					opacity: 0.9
 					h1
-						font-size: 6em
+						font-size: 4em
 						font-weight: 100
 						font-style: italic
 						line-height: 1em
 						color: #D01914
 					h2
-						font-size: 1em
+						font-size: 0.95em
 						font-weight: 300
 						color: black
 				a.read-article
@@ -132,8 +143,8 @@ body
 				hgroup
 					position: absolute
 					right: 0
-					bottom: 6em
-					padding: 2em 3em
+					bottom: 3em
+					padding: 1em 1.5em
 					text-align: right
 					background: $yellow
 					@include border-radius-ind(top, left, 5px)
@@ -143,17 +154,12 @@ body
 						font-weight: 100
 					h1
 						position: relative
-						font-size: 5em
+						font-size: 3.5em
 						line-height: 1em
 						color: $blue
-						span
-							font-family: 'omnes-pro', sans-serif
-							font-size: 0.5em
-							font-style: italic
-							color: black
 					h2, h3
 						display: inline-block
-						font-size: 1em
+						font-size: 0.9em
 						font-style: italic
 						text-transform: uppercase
 						letter-spacing: 0.1em
@@ -177,16 +183,17 @@ body
 					right: 10%
 					bottom: 14%
 					left: 10%
-					padding: 2em
+					padding: 1em
 					text-align: center
 					background: white
 					box-sizing: border-box
 					@include border-radius(5px)
-					//opacity: 0.95
+					opacity: 0.95
 					text-shadow: 0 1px 2px #CCC
 					h1
 						color: #00BEE1
-						font-size: 4em
+						font-size: 2.6em
+						line-height: 1em
 						.stop
 							color: #FD68DB
 						.make
@@ -199,21 +206,6 @@ body
 						font-family: 'omnes-pro'
 						font-style: italic
 						font-weight: 300
-				a.read-article
-					display: none
-					margin: 1.5em 0 0 0
-					padding: 0.25em 1em
-					text-shadow: 0 1px 1px $grey
-					color: white
-					background: $light-grey
-					@include border-radius(1em)
-					box-shadow: 0 1px 2px $light-grey
-					//opacity: 0.9					
-					&:hover
-						color: #FDF432
-						background: darken(#390E3B, 3%)
-						text-shadow: 0 -1px 3px #333
-						box-shadow: inset 0 1px 2px black
 	#about
 		// removing float: left and adding display: inline-block plus 100% width to child elements keeps shadow for .content-scroller-wrapper in check for some reason...
 		float: left
@@ -221,25 +213,23 @@ body
 		width: 100%
 		box-sizing: border-box
 		#introduction
-			display: inline-block
+			//display: inline-block
 			position: relative
 			margin: 2.5em 0 0 0
 			width: 100%
+			text-align: center
 			h1, h2
-				text-align: center
+				display: block
 			h1
-				position: absolute
-				top: 0
-				left: 25%
-				right: 25%
+				margin-bottom: 1em
 				text-indent: -1000em
 				img
 					display: block
 					margin: 0 auto
-					width: 4em
-					height: 4em
+					width: 5em
+					height: 5em
 			h2
-				margin: 2em 0
+				margin: 0 0 0.5em
 				//padding: 0.25em 1em
 				color: $brown
 				font-family: 'omnes-pro'
@@ -247,39 +237,28 @@ body
 				font-size: 1em
 				text-transform: uppercase
 				letter-spacing: 0.1em
-				//background: $light-grey
-				//box-shadow: inset 0 1px 2px $grey
-				text-shadow: 0 1px 1px $dark-grey
-				@include border-radius(1em)
-				&#volume
-					float: left
-					margin-left: 12.5%
-				&#slug
-					float: right
-					margin-right: 12.5%
+				text-shadow: 0 1px 2px $dark-grey
 			#overview
 				float: left
 				clear: both
-				margin-top: 5em
+				margin-top: 2em
 				width: 100%
 				p
 					margin: 0 auto 1em
 					color: $grey
-					font-size: 1.5em
+					font-size: 1.2em
 					font-weight: 200
-					line-height: 1.5em
+					line-height: 1.4em
 					text-align: center
 				#highlights
 					text-align: center
 					p
 						display: inline-block
-						margin: 1.5em 0
+						margin: 1em 0
 						padding: 0.5em 1.25em
-						//width: auto
-						//color: $grey
 						background: white
 						box-shadow: inset 0 1px 2px $light-grey
-						@include border-radius(1.75em)
+						@include border-radius(0.75em)
 						.seoulist
 							color: $blue
 							font-weight: 700
@@ -289,230 +268,44 @@ body
 								margin-left: 0.25em
 								font-weight: 200
 	#history
-		float: left
-		width: 100%
-		padding: 4em $column*1 2em
-		border-top: 1px dotted $blue
-		border-bottom: 1px dotted $blue
-		box-sizing: border-box
-		h2, h3
-			display: block
-			margin: 0 auto
-			width: 100%
-			text-align: center
-		h2
-			margin-bottom: 0.25em
-			color: $brown
-			@include huge-text
-			span
-				color: $grey
-		h3
-			font-family: 'omnes-pro'
-			font-weight: 200
-			color: $grey
-		#timeline
-			position: relative
-			margin: 2em 0
-			padding: 1em 0
-			#line
-				position: relative
-				display: block
-				height: 2.5em
-				background: $blue
-				@include border-radius(1.25em)
-				#inner-line
-					position: absolute
-					top: 50%
-					right: 1em
-					left: 1em
-					margin-top: -0.15em
-					display: block
-					//width: 100%
-					height: 0.25em
-					background: white
-					@include border-radius(0.15em)
-			.event, .launch, .divider
-				position: absolute
-			.launch
-				top: 50%
-				left: 0.4em
-				margin-top: -1em
-				img
-					display: block
-					width: 2em
-					height: 2em
-			#events
-				.event
-					z-index: 50
-					top: 50%
-					margin-top: -0.625em
-					text-decoration: none
-					background: none
-					&:hover
-						z-index: 49
-					&:hover .event-inner
-						display: block
-						text-decoration: none
-					.marker
-						display: block
-						height: 1em
-						width: 1em
-						background: $blue
-						border: 2px solid white
-						@include border-radius(1em)
-					.marker:hover
-						z-index: 75
-						background: white
-					.event-inner
-						display: none
-						margin: 0.25em 0 0 0.75em
-						padding: 0.5em 0.75em
-						width: 20em
-						background: white
-						@include border-radius(5px)
-						box-shadow: 0 1px 1px $grey
-						box-sizing: border-box
-						hgroup
-							.date, h1, h2
-								display: block
-							.date
-								margin: 0 0 0.5em 0
-								padding: 0 0 0.5em 0
-								@include small-text
-								color: $grey
-								font-family: 'omnes-pro'
-								font-weight: 400
-								text-transform: uppercase
-								letter-spacing: 0.1em
-								border-bottom: 1px dotted $grey
-							h1
-								@include normal-text
-								color: $blue
-								font-weight: 700
-							h2
-								@include normal-text
-								color: $grey
-								font-family: 'omnes-pro'
-								font-weight: 400
-								//text-transform: uppercase
-								//letter-spacing: 0.1em
-								text-align: left
-						.read-article
-							display: inline-block
-							width: 100%
-							text-align: right
-							color: $grey
-							&:hover
-								color: $blue
-				#the-empty-chair
-					.event-inner
-						margin-left: -19.25em
-				#stephanie-cafe
-					left: 4%
-				#dont-stop-make-believing
-					left: 66%
-					background: none
-				#hangul-roundup
-					left: 58%
-					background: none
-				#to-be-young-and-in-love-and-swinging
-					left: 6.2%
-				#searching-for-the-little-black-pen
-					left: 17.2%
-				#beef-stock-chicken-stock-out-of-stock
-					left: 53.5%
-				#the-empty-chair
-					left: 88%
-				#seoul-safari-six-hours-in-seoul
-					left: 68%
-				#extraordinary-expats-filmmaker-nj-calder
-					left: 62.5%
-				#an-actors-map-of-seoul
-					left: 60%
-				#cafeteria-405-kitchen
-					left: 65%
-				#around-the-corner
-					left: 24.5%
-			#dividers
-				$divider: 7.1428%
-				.divider
-					display: block
-					top: 50%
-					margin-top: -0.75em
-					width: 1px
-					height: 1.5em
-					background: $blue
-				#one
-					left: $divider*1
-				#two
-					left: $divider*2
-				#three
-					left: $divider*3
-				#four
-					left: $divider*4
-				#five
-					left: $divider*5
-				#six
-					left: $divider*6
-				#seven
-					left: $divider*7
-				#eight
-					left: $divider*8
-				#nine
-					left: $divider*9
-				#ten
-					left: $divider*10
-				#eleven
-					left: $divider*11
-				#twelve
-					left: $divider*12
-				#thirteen
-					left: $divider*13
-				#end
-					display: none
-					right: 0
-					width: 3px
-					background: $blue
+		display: none
 	#staff
 		float: left
 		padding: 3em $column*1
 		width: 100%
 		box-sizing: border-box
-		.profile
-			float: left
-			margin: 1.5em 0
-			width: 33%
-			height: 18em
-		#middle
-			.profile
-				width: 35%
-				&:first-child
-					margin-left: 15%
+		border-top: 1px dotted $blue
 		#title
-			position: relative
 			float: left
+			margin-bottom: 2em
+			padding-bottom: 2em
 			width: 100%
-			height: 12em
+			border-bottom: 1px dotted $light-grey
 			h2
-				position: absolute
-				top: 20%
-				right: 0
-				left: 0
-				//margin-top: -3.5em
-				@include huge-text
+				font-size: 3em
 				line-height: 1em
 				color: $medium-grey
-				text-align: center
+				text-align: left
 				//text-shadow: 0 1px 2px black
 				.meet-our
+					display: block				
 					font-size: 0.5em
+					font-weight: 100
 					text-transform: uppercase
 					letter-spacing: 0.2em
 					text-shadow: none
-				span
+				.makers
+					display: block
+					font-weight: 700
+				.and
+					display: block
 					font-weight: 100
 		.profile
+			float: none
+			margin: 0
+			padding: 1.5em 0
 			text-align: center
+			border-bottom: 1px dotted $light-grey
 			.circle-crop
 				display: block
 				overflow: hidden
@@ -532,13 +325,10 @@ body
 				@include small-text
 				color: $brown
 				font-family: 'omnes-pro'
+				font-weight: 200
 				text-transform: uppercase
 				letter-spacing: 0.1em
-	.article
-		background-size: cover
-		div
-			// Removed z-index to get image to show up properly
-			//z-index: -10			
+				text-shadow: 0 1px 2px $grey
 	.branding-area
 		// z-index pops up over slidesjs plugin
 		z-index: 99
@@ -593,4 +383,651 @@ body
 	#toc-trigger
 		position: fixed
 		bottom: 3em
-		left: $column*1
+		left: $column*1		
+		
+//	
+//	
+//	Eight-column grid active
+//	----------------------------------------------------------------------
+//	Margin   | #  1     2     3     4     5     6     7     8   |   Margin
+//	5.55555% | %  12.5  25.0  37.5  50.0  62.5  75.0  87.5  100 | 5.55555%
+//	
+//	
+//	
+
+/* @media screen and (min-width: 720px) */
+// iPad
+@media screen and (min-width: 45em) 
+	body 
+		/* Reset baseline grid to 16/16 = 1 */
+		font-size: #{($font-size) / $em}em
+		.content-scroller-wrapper
+			min-height: 27em
+			.content-scroller
+				#searching-for-the-little-black-pen
+					hgroup
+						top: 28%
+						text-shadow: 0 1px 2px #CCC
+						h1
+							font-size: 1.5em
+							font-weight: 100
+						h2
+							margin-top: 1em
+							font-size: 0.85em
+							font-weight: 100
+							color: $dark-grey
+							text-transform: uppercase
+							letter-spacing: 0.2em
+				#cafeteria-405-kitchen
+					hgroup
+						bottom: 6em
+						padding: 2em 3em
+						h1, h2
+							font-weight: 100
+						h1
+							position: relative
+							font-size: 5em
+							line-height: 1em
+							color: $blue
+						h2, h3
+							font-size: 1em
+				#dont-stop-make-believing
+					hgroup
+						left: 6%
+						right: 6%
+						opacity: 1						
+						h1
+							font-size: 3.1em
+							line-height: 1.385em
+						h2
+							margin-top: 1em
+							font-size: 0.9em
+				#hangul-roundup
+					hgroup
+						left: 47%
+						bottom: 5em
+						padding: 1.5em
+						h1
+							font-size: 5em
+						h2
+							font-size: 1em
+		#about
+			#introduction
+				h1
+					position: absolute
+					top: 0
+					left: 15%
+					right: 15%
+					margin-bottom: 0
+					img
+						display: block
+						margin: 0 auto
+						width: 4em
+						height: 4em
+				h2
+					margin: 2em 0
+					&#volume
+						float: left
+						margin-left: 6.25%
+						text-align: right
+					&#slug
+						float: right
+						margin-right: 6.25%
+						text-align: left
+				#overview
+					p
+						font-size: 1.25em
+						line-height: 1.5em
+					#highlights
+						p
+							margin: 1.5em 0
+							padding: 0.5em 1.25em
+							@include border-radius(1.75em)
+		#staff
+			#title
+				position: relative
+				float: left
+				margin-bottom: 0
+				padding-bottom: 0
+				width: 100%
+				height: 12em
+				border-bottom: none
+				h2
+					position: absolute
+					top: 20%
+					right: 0
+					left: 0
+					@include huge-text
+					line-height: 1em
+					text-align: center
+					//text-shadow: 0 1px 2px black
+					.meet-our					
+						font-size: 0.5em
+						text-transform: uppercase
+						letter-spacing: 0.2em
+						text-shadow: none
+					.makers
+						display: inline
+					.and
+						display: inline
+			.profile
+				float: left
+				margin: 1.5em 0
+				padding: 0
+				width: 45%
+				height: 18em
+				text-align: center
+				border-bottom: none
+				.circle-crop
+					display: block
+					overflow: hidden
+					margin: 0 auto 1em
+					width: 12em
+					height: 12em
+					@include border-radius(50%)
+					img
+						height: 100%
+						width: 100%
+				h1
+					font-size: 2em
+					color: $brown
+					span
+						color: $blue
+				h2
+					@include small-text
+					color: $brown
+					font-family: 'omnes-pro'
+					text-transform: uppercase
+					letter-spacing: 0.1em				
+			#middle			
+				.profile
+					&:first-child
+						margin-left: 5%
+			#sonja
+				float: none
+				display: inline
+			#meagan
+				clear: left
+				margin-left: 5%
+		.branding-area
+			// z-index pops up over slidesjs plugin
+			z-index: 99
+			// switching to absolute to avoid branding/ui clashes w/content
+			//position: fixed
+			position: absolute
+			display: block
+			padding: 1.5em $column*1
+			width: 100%
+			box-sizing: border-box
+			border-top: 0.25em solid $blue
+			//background: white
+			//@include page-shadow
+			#logo-wrapper /* .wrapper */
+				display: block
+				float: left
+				width: 12.5%
+				img
+					float: left
+					width: 4em
+			hgroup#mini-mast /* .wrapper */
+				position: relative
+				display: block
+				float: left
+				width: 87.5%
+				text-shadow: 0 1px 3px black
+				h1
+					margin: 0
+					font-weight: 700
+					line-height: 1em
+					color: white
+					span.ist
+						font-weight: 700
+						color: $blue
+					span.selects
+						margin-left: 0.25em
+						line-height: 100%
+						font-weight: 100
+				h2
+					padding: 0
+					font-weight: 400
+					@include small-text
+					color: white
+				h3
+					display: none
+					position: absolute
+					top: 50%
+					right: 0
+					margin-top: -0.5em
+					height: 1em
+					font-weight: 200
+		#toc-trigger
+			position: fixed
+			bottom: 3em
+			left: $column*1							
+
+							
+/* @media screen and (min-width: 984px) */
+// Standard Desktop
+@media screen and (min-width: 61.5em)
+	body
+		.content-scroller-wrapper
+			min-height: 30em
+			.content-scroller
+				a
+					position: absolute
+					top: 0
+					right: 0
+					bottom: 3em
+					left: 0
+				#dont-stop-make-believing
+					hgroup
+						padding: 2em
+						@include border-radius(5px)
+						h1
+							font-size: 4em
+						h2
+							font-size: 1em
+				#hangul-roundup
+					hgroup
+						bottom: 8em
+						right: 8%
+						left: auto
+						padding: 1.5em
+						h1
+							font-size: 6em
+							line-height: 1em
+						h2
+							font-size: 1em							
+		#about
+			// removing float: left and adding display: inline-block plus 100% width to child elements keeps shadow for .content-scroller-wrapper in check for some reason...
+			padding: 1.5em $column*1
+			width: 100%
+			#introduction
+				//display: inline-block
+				position: relative
+				margin: 2.5em 0 0 0
+				width: 100%
+				h1, h2
+					text-align: center
+				h1
+					position: absolute
+					top: 0
+					left: 25%
+					right: 25%
+					text-indent: -1000em
+					img
+						display: block
+						margin: 0 auto
+						width: 4em
+						height: 4em
+				h2
+					margin: 2em 0
+					//padding: 0.25em 1em
+					color: $brown
+					font-family: 'omnes-pro'
+					font-weight: 200
+					font-size: 1em
+					text-transform: uppercase
+					letter-spacing: 0.1em
+					//background: $light-grey
+					//box-shadow: inset 0 1px 2px $grey
+					text-shadow: 0 1px 1px $dark-grey
+					@include border-radius(1em)
+					&#volume
+						float: left
+						margin-left: 12.5%
+					&#slug
+						float: right
+						margin-right: 12.5%
+				#overview
+					float: left
+					clear: both
+					margin-top: 5em
+					width: 100%
+					p
+						margin: 0 auto 1em
+						color: $grey
+						font-size: 1.5em
+						font-weight: 200
+						line-height: 1.5em
+						text-align: center
+					#highlights
+						text-align: center
+						p
+							display: inline-block
+							margin: 1.5em 0
+							padding: 0.5em 1.25em
+							//width: auto
+							//color: $grey
+							background: white
+							box-shadow: inset 0 1px 2px $light-grey
+							@include border-radius(1.75em)
+							.seoulist
+								color: $blue
+								font-weight: 700
+								.ist
+									color: $grey
+								.selects
+									margin-left: 0.25em
+									font-weight: 200
+		#staff
+			border-top: none
+			#title
+				position: relative
+				float: left
+				margin-bottom: 0
+				padding-bottom: 0
+				width: 100%
+				height: 12em
+				border-bottom: none
+				h2
+					position: absolute
+					top: 20%
+					right: 0
+					left: 0
+					@include huge-text
+					line-height: 1em
+					text-align: center
+					//text-shadow: 0 1px 2px black
+					.meet-our					
+						font-size: 0.5em
+						text-transform: uppercase
+						letter-spacing: 0.2em
+						text-shadow: none
+					.makers
+						display: inline
+					.and
+						display: inline
+			.profile
+				float: left
+				margin: 1.5em 0
+				padding: 0
+				width: 33%
+				height: 18em
+				text-align: center
+				border-bottom: none
+				.circle-crop
+					display: block
+					overflow: hidden
+					margin: 0 auto 1em
+					width: 12em
+					height: 12em
+					@include border-radius(50%)
+					img
+						height: 100%
+						width: 100%
+				h1
+					font-size: 2em
+					color: $brown
+					span
+						color: $blue
+				h2
+					@include small-text
+					color: $brown
+					font-family: 'omnes-pro'
+					text-transform: uppercase
+					letter-spacing: 0.1em				
+			#middle
+				.profile
+					width: 35%
+					&:first-child
+						margin-left: 15%
+		.branding-area
+			// z-index pops up over slidesjs plugin
+			z-index: 99
+			// switching to absolute to avoid branding/ui clashes w/content
+			//position: fixed
+			position: absolute
+			display: block
+			padding: 1.5em $column*1
+			width: 100%
+			box-sizing: border-box
+			border-top: 0.25em solid $blue
+			//background: white
+			//@include page-shadow
+			#logo-wrapper /* .wrapper */
+				display: block
+				float: left
+				width: 12.5%
+				img
+					float: left
+					width: 4em
+			hgroup#mini-mast /* .wrapper */
+				position: relative
+				display: block
+				float: left
+				width: 87.5%
+				text-shadow: 0 1px 3px black
+				h1
+					margin: 0
+					font-weight: 700
+					line-height: 1em
+					color: white
+					span.ist
+						font-weight: 700
+						color: $blue
+					span.selects
+						margin-left: 0.25em
+						line-height: 100%
+						font-weight: 100
+				h2
+					padding: 0
+					font-weight: 400
+					@include small-text
+					color: white
+				h3
+					display: none
+					position: absolute
+					top: 50%
+					right: 0
+					margin-top: -0.5em
+					height: 1em
+					font-weight: 200
+		#toc-trigger
+			position: fixed
+			bottom: 3em
+			left: $column*1	
+		#history
+			display: block
+			float: left
+			width: 100%
+			padding: 4em $column*1 2em
+			border-top: 1px dotted $blue
+			border-bottom: 1px dotted $blue
+			box-sizing: border-box
+			h2, h3
+				display: block
+				margin: 0 auto
+				width: 100%
+				text-align: center
+			h2
+				margin-bottom: 0.25em
+				color: $brown
+				@include huge-text
+				span
+					color: $grey
+			h3
+				font-family: 'omnes-pro'
+				font-weight: 200
+				color: $grey
+			#timeline
+				position: relative
+				margin: 2em 0
+				padding: 1em 0
+				#line
+					position: relative
+					display: block
+					height: 2.5em
+					background: $blue
+					@include border-radius(1.25em)
+					#inner-line
+						position: absolute
+						top: 50%
+						right: 1em
+						left: 1em
+						margin-top: -0.15em
+						display: block
+						//width: 100%
+						height: 0.25em
+						background: white
+						@include border-radius(0.15em)
+				.event, .launch, .divider
+					position: absolute
+				.launch
+					top: 50%
+					left: 0.4em
+					margin-top: -1em
+					img
+						display: block
+						width: 2em
+						height: 2em
+				#events
+					.event
+						z-index: 50
+						top: 50%
+						margin-top: -0.625em
+						text-decoration: none
+						background: none
+						&:hover
+							z-index: 49
+						&:hover .event-inner
+							display: block
+							text-decoration: none
+						.marker
+							display: block
+							height: 1em
+							width: 1em
+							background: $blue
+							border: 2px solid white
+							@include border-radius(1em)
+						.marker:hover
+							z-index: 75
+							background: white
+						.event-inner
+							display: none
+							margin: 0.25em 0 0 0.75em
+							padding: 0.5em 0.75em
+							width: 20em
+							background: white
+							@include border-radius(5px)
+							box-shadow: 0 1px 1px $grey
+							box-sizing: border-box
+							hgroup
+								.date, h1, h2
+									display: block
+								.date
+									margin: 0 0 0.5em 0
+									padding: 0 0 0.5em 0
+									@include small-text
+									color: $grey
+									font-family: 'omnes-pro'
+									font-weight: 400
+									text-transform: uppercase
+									letter-spacing: 0.1em
+									border-bottom: 1px dotted $grey
+								h1
+									@include normal-text
+									color: $blue
+									font-weight: 700
+								h2
+									@include normal-text
+									color: $grey
+									font-family: 'omnes-pro'
+									font-weight: 400
+									//text-transform: uppercase
+									//letter-spacing: 0.1em
+									text-align: left
+							.read-article
+								display: inline-block
+								width: 100%
+								text-align: right
+								color: $grey
+								&:hover
+									color: $blue
+					#the-empty-chair
+						.event-inner
+							margin-left: -19.25em
+					#stephanie-cafe
+						left: 4%
+					#dont-stop-make-believing
+						left: 66%
+						background: none
+					#hangul-roundup
+						left: 58%
+						background: none
+					#to-be-young-and-in-love-and-swinging
+						left: 6.2%
+					#searching-for-the-little-black-pen
+						left: 17.2%
+					#beef-stock-chicken-stock-out-of-stock
+						left: 53.5%
+					#the-empty-chair
+						left: 88%
+					#seoul-safari-six-hours-in-seoul
+						left: 68%
+					#extraordinary-expats-filmmaker-nj-calder
+						left: 62.5%
+					#an-actors-map-of-seoul
+						left: 60%
+					#cafeteria-405-kitchen
+						left: 65%
+					#around-the-corner
+						left: 24.5%
+				#dividers
+					$divider: 7.1428%
+					.divider
+						display: block
+						top: 50%
+						margin-top: -0.75em
+						width: 1px
+						height: 1.5em
+						background: $blue
+					#one
+						left: $divider*1
+					#two
+						left: $divider*2
+					#three
+						left: $divider*3
+					#four
+						left: $divider*4
+					#five
+						left: $divider*5
+					#six
+						left: $divider*6
+					#seven
+						left: $divider*7
+					#eight
+						left: $divider*8
+					#nine
+						left: $divider*9
+					#ten
+						left: $divider*10
+					#eleven
+						left: $divider*11
+					#twelve
+						left: $divider*12
+					#thirteen
+						left: $divider*13
+					#end
+						display: none
+						right: 0
+						width: 3px
+						background: $blue
+//	
+//	
+//	Sixteen-column grid active
+//	----------------------------------------------------------------------------------------------------------------------
+//	Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
+//	5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
+//	
+//	
+//
+
+/* @media screen and (min-width: 1872px) */
+// Wide Desktop
+@media screen and (min-width: 117em)
+
+
+
+
+

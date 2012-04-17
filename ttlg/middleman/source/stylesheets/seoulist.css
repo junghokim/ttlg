@@ -127,6 +127,7 @@ hgroup#mini-mast {
 footer {
   display: block;
   float: left;
+  padding: 1.5em 0;
   width: 100%;
   color: #666666;
   background: #333333;
@@ -134,27 +135,40 @@ footer {
   box-shadow: inset 0 1px 6px black;
   text-align: center; }
   footer a, footer .copyright {
-    display: block; }
-  footer a {
+    display: block;
     float: none;
-    margin: 0 0 0.75em 0;
+    margin: 0;
+    padding: 0.75em 0;
     color: #e1e1e1;
     font-size: 0.75em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     text-decoration: none; }
-    footer a:hover {
+    footer a:hover, footer .copyright:hover {
       color: #33ccff; }
   footer .copyright {
-    float: none; }
+    float: none;
+    padding: 0 0 0.75em 0;
+    margin-bottom: 0.75em;
+    color: #999999; }
   footer .seoulist-link {
-    position: static; }
+    position: static;
+    padding: 0.75em;
+    color: white;
+    background: black;
+    border: 1px dotted #e1e1e1; }
+    footer .seoulist-link:hover {
+      background: #33ccff;
+      color: white; }
 
 /* @media screen and (min-width: 720px) */
 @media screen and (min-width: 45em) {
   body {
     /* Reset baseline grid to 16/16 = 1 */
     font-size: 1em; }
+
+  hgroup#mini-mast {
+    display: block; }
 
   footer {
     position: relative;
