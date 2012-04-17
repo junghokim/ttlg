@@ -1,9 +1,6 @@
 @import 'all'
 @import 'shared-variables'
 
-@mixin page-shadow
-	@include box-shadow(0, 0, 12px, black)
-
 // For Article
 
 
@@ -65,22 +62,23 @@ $map-divisions: 0.1
 		hgroup
 			z-index: 100
 			position: absolute
-			top: 50%
-			//right: 30%
+			top: 38%
+			right: 0
 			//bottom: 30%
-			left: 20%
+			left: 0
 			//padding: 2em
+			text-align: center
 			//background: white
 			box-sizing: border-box
 			//opacity: 0.95
-			text-shadow: 0 1px 2px $dark-grey
+			text-shadow: 0 2px 2px black
 			h1
 				color: white
-				font-size: 5em
-				line-height: 1em
+				font-size: 6em
+				line-height: 1.3em
 				span
 					display: block
-					font-size: 0.5em
+					font-size: 1.2em
 					font-weight: 100					
 					text-transform: uppercase
 					letter-spacing: 0.1em
@@ -114,7 +112,85 @@ $map-divisions: 0.1
 					bottom: 0
 					border-left: 1px dotted white
 	// Styling for the destination containers
-	#story
-		.wrapper
-			margin-left: 12.5%
-			width: 75.5%
+	article
+		float: left
+		padding: 0
+		.bleed
+			width: 100%
+			box-sizing: border-box			
+		#intro
+			display: inline-block
+			width: 100%
+			padding: 3em $column*1
+			background: url('../images/bgnoise_lg.jpg') repeat
+			@include page-shadow
+			.wrapper
+				margin-left: 12.5%
+				width: 75%
+				p
+					margin-bottom: 0.75em
+					font-size: 1.25em
+					font-weight: 200
+					line-height: 1.5em		
+		#story
+			display: inline-block
+			width: 100%
+			padding: 3em $column*1 1.5em
+			@include page-shadow
+			box-sizing: border-box
+			#main.wrapper
+				margin-left: 12.5%
+				width: 75%
+				.stop
+					margin-bottom: 1.5em
+					//padding-bottom: 1.5em
+					border-bottom: 1px dotted $light-grey
+					img
+						margin-bottom: 1em
+						width: 100%
+					em
+						font-family: 'omnes-pro'
+		#bottom-matter
+			width: 100%
+			padding-bottom: 1.5em
+			padding-top: 1.5em
+			color: white			
+			background: $blue
+			box-sizing: border-box
+			#order, #translated
+				margin-left: 12.5%
+			#translated
+				margin-bottom: 1.5em
+				padding: 0.75em
+				width: 75%
+				//background: lighten($blue, 5%)
+				border: 1px dotted white
+				@include border-radius(0.75em)
+				//border-bottom: 1px solid white
+				//border-left: 1px solid white
+				box-sizing: border-box
+			#order, #further-reading
+				float: left
+				width: 37.5%%
+				font-family: 'omnes-pro'
+				font-style: italic
+			.label
+				border-bottom: 1px dotted $light-grey
+			a
+				color: $dark-grey
+		#laminate
+			margin: 0.75em 0 1.5em
+			padding: 0
+			border-top: 1px dotted $blue
+			border-bottom: 1px dotted $blue
+			img
+				display: block
+				width: 100%
+		h3
+			display: inline-block
+			margin: 0 0 0.75em 0
+			font-size: 1.5em
+			font-weight: 600
+			span
+				display: block
+				font-weight: 200

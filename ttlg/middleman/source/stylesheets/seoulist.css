@@ -121,6 +121,60 @@ body {
   box-sizing: border-box; }
 
 /* Seoulist */
+hgroup#mini-mast {
+  display: none; }
+
+footer {
+  display: block;
+  float: left;
+  width: 100%;
+  color: #666666;
+  background: #333333;
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 6px black;
+  text-align: center; }
+  footer a, footer .copyright {
+    display: block; }
+  footer a {
+    float: none;
+    margin: 0 0 0.75em 0;
+    color: #e1e1e1;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none; }
+    footer a:hover {
+      color: #33ccff; }
+  footer .copyright {
+    float: none; }
+  footer .seoulist-link {
+    position: static; }
+
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+    font-size: 1em; }
+
+  footer {
+    position: relative;
+    padding: 1.5em 5.556%; } }
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+  footer {
+    text-align: left; }
+    footer .copyright {
+      float: left; }
+    footer .seoulist-link {
+      position: absolute;
+      top: 2em;
+      left: 25%;
+      right: 25%;
+      text-align: center; }
+    footer a {
+      float: right;
+      margin-left: 1.5em; } }
+/* @media screen and (min-width: 1872px) */
 body {
   padding-top: 3.938em;
   padding-bottom: 3em;
@@ -199,7 +253,7 @@ header.masthead {
       text-indent: -1000em; }
 
 #table-of-contents {
-  z-index: 6;
+  z-index: 200;
   display: none;
   position: absolute;
   top: 63px;
@@ -306,35 +360,6 @@ header.masthead {
   left: 0;
   background: black; }
 
-footer {
-  position: relative;
-  display: block;
-  float: left;
-  padding: 1.5em 5.556%;
-  width: 100%;
-  color: #666666;
-  background: #333333;
-  box-sizing: border-box;
-  box-shadow: inset 0 1px 6px black; }
-  footer a {
-    float: right;
-    margin-left: 1.5em;
-    color: #e1e1e1;
-    font-size: 0.75em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-decoration: none; }
-    footer a:hover {
-      color: #33ccff; }
-  footer .copyright {
-    float: left; }
-  footer .seoulist-link {
-    position: absolute;
-    top: 2em;
-    left: 25%;
-    right: 25%;
-    text-align: center; }
-
 .content-scroller-wrapper {
   overflow: hidden; }
 
@@ -360,13 +385,32 @@ footer {
 .cover {
   box-sizing: border-box; }
 
-#story {
+#story, #bottom-matter {
   float: left;
   padding: 0 5.556%; }
+  #story p, #bottom-matter p {
+    margin-bottom: 1.5em;
+    font-weight: 300; }
+  #story a, #bottom-matter a {
+    color: #33ccff; }
+    #story a:hover, #bottom-matter a:hover {
+      text-decoration: none; }
+  #story .label, #bottom-matter .label {
+    display: inline-block;
+    margin-bottom: 0.25em;
+    font-family: "jubilat";
+    font-size: 0.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 1px dotted #e1e1e1; }
+  #story .highlight, #bottom-matter .highlight {
+    font-family: "omnes-pro";
+    font-style: italic;
+    background: white; }
 
-p {
-  font-weight: 400; }
-
+/*p
+ * font-weight: 400 */
 .article-source {
   -webkit-flow-into: article_flow; }
   .article-source h2 {

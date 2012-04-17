@@ -12,17 +12,19 @@
     #an-actors-map-of-seoul .cover hgroup {
       z-index: 100;
       position: absolute;
-      top: 50%;
-      left: 20%;
+      top: 38%;
+      right: 0;
+      left: 0;
+      text-align: center;
       box-sizing: border-box;
-      text-shadow: 0 1px 2px #333333; }
+      text-shadow: 0 2px 2px black; }
       #an-actors-map-of-seoul .cover hgroup h1 {
         color: white;
-        font-size: 5em;
-        line-height: 1em; }
+        font-size: 6em;
+        line-height: 1.3em; }
         #an-actors-map-of-seoul .cover hgroup h1 span {
           display: block;
-          font-size: 0.5em;
+          font-size: 1.2em;
           font-weight: 100;
           text-transform: uppercase;
           letter-spacing: 0.1em; }
@@ -53,6 +55,87 @@
         top: 0;
         bottom: 0;
         border-left: 1px dotted white; }
-  #an-actors-map-of-seoul #story .wrapper {
-    margin-left: 12.5%;
-    width: 75.5%; }
+  #an-actors-map-of-seoul article {
+    float: left;
+    padding: 0; }
+    #an-actors-map-of-seoul article .bleed {
+      width: 100%;
+      box-sizing: border-box; }
+    #an-actors-map-of-seoul article #intro {
+      display: inline-block;
+      width: 100%;
+      padding: 3em 5.556%;
+      background: url("../images/bgnoise_lg.jpg") repeat;
+      -moz-box-shadow: 0 0 6px black;
+      -webkit-box-shadow: 0 0 6px black;
+      box-shadow: 0 0 6px black; }
+      #an-actors-map-of-seoul article #intro .wrapper {
+        margin-left: 12.5%;
+        width: 75%; }
+        #an-actors-map-of-seoul article #intro .wrapper p {
+          margin-bottom: 0.75em;
+          font-size: 1.25em;
+          font-weight: 200;
+          line-height: 1.5em; }
+    #an-actors-map-of-seoul article #story {
+      display: inline-block;
+      width: 100%;
+      padding: 3em 5.556% 1.5em;
+      -moz-box-shadow: 0 0 6px black;
+      -webkit-box-shadow: 0 0 6px black;
+      box-shadow: 0 0 6px black;
+      box-sizing: border-box; }
+      #an-actors-map-of-seoul article #story #main.wrapper {
+        margin-left: 12.5%;
+        width: 75%; }
+        #an-actors-map-of-seoul article #story #main.wrapper .stop {
+          margin-bottom: 1.5em;
+          border-bottom: 1px dotted #e1e1e1; }
+          #an-actors-map-of-seoul article #story #main.wrapper .stop img {
+            margin-bottom: 1em;
+            width: 100%; }
+          #an-actors-map-of-seoul article #story #main.wrapper .stop em {
+            font-family: "omnes-pro"; }
+    #an-actors-map-of-seoul article #bottom-matter {
+      width: 100%;
+      padding-bottom: 1.5em;
+      padding-top: 1.5em;
+      color: white;
+      background: #33ccff;
+      box-sizing: border-box; }
+      #an-actors-map-of-seoul article #bottom-matter #order, #an-actors-map-of-seoul article #bottom-matter #translated {
+        margin-left: 12.5%; }
+      #an-actors-map-of-seoul article #bottom-matter #translated {
+        margin-bottom: 1.5em;
+        padding: 0.75em;
+        width: 75%;
+        border: 1px dotted white;
+        -moz-border-radius: 0.75em;
+        -webkit-border-radius: 0.75em;
+        border-radius: 0.75em;
+        box-sizing: border-box; }
+      #an-actors-map-of-seoul article #bottom-matter #order, #an-actors-map-of-seoul article #bottom-matter #further-reading {
+        float: left;
+        width: 37.5%%;
+        font-family: "omnes-pro";
+        font-style: italic; }
+      #an-actors-map-of-seoul article #bottom-matter .label {
+        border-bottom: 1px dotted #e1e1e1; }
+      #an-actors-map-of-seoul article #bottom-matter a {
+        color: #333333; }
+    #an-actors-map-of-seoul article #laminate {
+      margin: 0.75em 0 1.5em;
+      padding: 0;
+      border-top: 1px dotted #33ccff;
+      border-bottom: 1px dotted #33ccff; }
+      #an-actors-map-of-seoul article #laminate img {
+        display: block;
+        width: 100%; }
+    #an-actors-map-of-seoul article h3 {
+      display: inline-block;
+      margin: 0 0 0.75em 0;
+      font-size: 1.5em;
+      font-weight: 600; }
+      #an-actors-map-of-seoul article h3 span {
+        display: block;
+        font-weight: 200; }

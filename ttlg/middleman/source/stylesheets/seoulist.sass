@@ -168,6 +168,106 @@ body
 
 /* Seoulist */
 
+//
+// Footer
+//
+
+.shortcut
+	//float: left
+	//display: block
+
+//	
+//	
+//	Four-column grid active
+//	----------------------------------------
+//	Margin   | #  1   2   3   4   |   Margin
+//	5.55555% | %  25  50  75  100 | 5.55555%
+//	
+//
+
+hgroup#mini-mast
+	display: none
+footer
+	display: block
+	float: left
+	width: 100%	
+	color: $medium-grey	
+	//text-align: center
+	background: $dark-grey
+	box-sizing: border-box
+	box-shadow: inset 0 1px 6px black
+	text-align: center
+	a, .copyright
+		display: block
+	a
+		float: none
+		margin: 0 0 0.75em 0
+		color: $light-grey
+		font-size: 0.75em
+		text-transform: uppercase
+		letter-spacing: 0.1em
+		text-decoration: none
+		&:hover
+			color: $blue
+	.copyright
+		float: none
+	.seoulist-link
+		position: static
+		
+//	
+//	
+//	Eight-column grid active
+//	----------------------------------------------------------------------
+//	Margin   | #  1     2     3     4     5     6     7     8   |   Margin
+//	5.55555% | %  12.5  25.0  37.5  50.0  62.5  75.0  87.5  100 | 5.55555%
+//	
+//	
+//	
+
+/* @media screen and (min-width: 720px) */
+// iPad
+@media screen and (min-width: 45em) 
+	body 
+		/* Reset baseline grid to 16/16 = 1 */
+		font-size: #{($font-size) / $em}em
+	footer
+		position: relative
+		padding: 1.5em $column*1
+
+/* @media screen and (min-width: 984px) */
+// Standard Desktop
+@media screen and (min-width: 61.5em)
+	footer
+		text-align: left
+		.copyright
+			float: left
+		.seoulist-link
+			position: absolute
+			top: 2em
+			left: 25%
+			right: 25%
+			text-align: center
+		a
+			float: right
+			margin-left: 1.5em
+
+
+
+//	
+//	
+//	Sixteen-column grid active
+//	----------------------------------------------------------------------------------------------------------------------
+//	Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
+//	5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
+//	
+//	
+//
+
+/* @media screen and (min-width: 1872px) */
+// Wide Desktop
+@media screen and (min-width: 117em)
+
+
 body
 	padding-top: 3.9375em
 	padding-bottom: 3em
@@ -257,7 +357,7 @@ header.masthead
 //
 
 #table-of-contents
-	z-index: 6
+	z-index: 200
 	display: none
 	position: absolute
 	top: 63px
@@ -369,38 +469,7 @@ header.masthead
 // Footer
 //
 
-footer
-	position: relative
-	display: block
-	float: left
-	padding: 1.5em $column*1
-	width: 100%
-	color: $medium-grey
-	background: $dark-grey
-	box-sizing: border-box
-	box-shadow: inset 0 1px 6px black
-	a
-		float: right
-		margin-left: 1.5em
-		//padding: 0.5em 1em
-		color: $light-grey
-		font-size: 0.75em
-		text-transform: uppercase
-		letter-spacing: 0.1em
-		text-decoration: none
-		//background: $light-grey
-		//@include border-radius(1.5em)
-		//box-shadow: inset 0 1px 2px black
-		&:hover
-			color: $blue
-	.copyright
-		float: left
-	.seoulist-link
-		position: absolute
-		top: 2em
-		left: 25%
-		right: 25%
-		text-align: center
+
 
 //
 // Pagination Setup
@@ -435,11 +504,32 @@ footer
 // Article Setup
 //
 
-#story
+#story, #bottom-matter
 	float: left
 	padding: 0 $column*1
-p
-	font-weight: 400
+	p
+		margin-bottom: 1.5em
+		//font-family: 'ff-basic-gothic-web-pro'
+		font-weight: 300
+	a
+		color: $blue
+		&:hover
+			text-decoration: none
+	.label
+		display: inline-block
+		margin-bottom: 0.25em
+		font-family: 'jubilat'
+		font-size: 0.75em
+		font-weight: 700
+		text-transform: uppercase
+		letter-spacing: 0.1em
+		border-bottom: 1px dotted $light-grey
+	.highlight
+		font-family: 'omnes-pro'
+		font-style: italic
+		background: white
+/*p
+	font-weight: 400*/
 
 //
 // Regions Setup

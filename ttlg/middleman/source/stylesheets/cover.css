@@ -9,6 +9,9 @@
 body.home .pagination-previous, body.home .pagination-next {
   display: none; }
 
+#articles {
+  float: left; }
+
 body {
   padding-top: 3.938em; }
   body .content-scroller-wrapper {
