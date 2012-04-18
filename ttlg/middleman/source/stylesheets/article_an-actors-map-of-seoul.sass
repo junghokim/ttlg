@@ -13,72 +13,29 @@
 //	
 //
 
-//	
-//	
-//	Eight-column grid active
-//	----------------------------------------------------------------------
-//	Margin   | #  1     2     3     4     5     6     7     8   |   Margin
-//	5.55555% | %  12.5  25.0  37.5  50.0  62.5  75.0  87.5  100 | 5.55555%
-//	
-//	
-//	
-
-/* @media screen and (min-width: 720px) */
-// iPad
-@media screen and (min-width: 45em) 
-
-	body 
-		/* Reset baseline grid to 16/16 = 1 */
-		font-size: #{($font-size) / $em}em
-	
-
-/* @media screen and (min-width: 984px) */
-// Standard Desktop
-@media screen and (min-width: 61.5em)
-
-
-//	
-//	
-//	Sixteen-column grid active
-//	----------------------------------------------------------------------------------------------------------------------
-//	Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
-//	5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
-//	
-//	
-//
-
-/* @media screen and (min-width: 1872px) */
-// Wide Desktop
-@media screen and (min-width: 117em)
-
-
 $map-divisions: 0.1
 
 #an-actors-map-of-seoul
 	position: relative
 	.cover
 		//position: static
-		background: url('../images/an-actors-map-of-seoul_cover.jpg') center center no-repeat
+		background: url('../images/an-actors-map-of-seoul_cover.jpg') center top no-repeat
 		hgroup
 			z-index: 100
 			position: absolute
-			top: 38%
+			top: 39%
 			right: 0
-			//bottom: 30%
 			left: 0
-			//padding: 2em
 			text-align: center
-			//background: white
 			box-sizing: border-box
-			//opacity: 0.95
 			text-shadow: 0 2px 2px black
 			h1
 				color: white
-				font-size: 6em
-				line-height: 1.3em
+				font-size: 2em
+				line-height: 1.25em
 				span
 					display: block
-					font-size: 1.2em
+					font-size: 1.1em
 					font-weight: 100					
 					text-transform: uppercase
 					letter-spacing: 0.1em
@@ -111,7 +68,6 @@ $map-divisions: 0.1
 					top: 0
 					bottom: 0
 					border-left: 1px dotted white
-	// Styling for the destination containers
 	article
 		float: left
 		padding: 0
@@ -121,33 +77,50 @@ $map-divisions: 0.1
 		#intro
 			display: inline-block
 			width: 100%
-			padding: 3em $column*1
+			padding: 1.5em $column*1
 			background: url('../images/bgnoise_lg.jpg') repeat
 			@include page-shadow
 			.wrapper
-				margin-left: 12.5%
-				width: 75%
+				width: 100%
 				p
 					margin-bottom: 0.75em
-					font-size: 1.25em
+					font-size: 1em
 					font-weight: 200
-					line-height: 1.5em		
+					line-height: 1.5em	
+				#laminate
+					margin: 0.75em 0 1.5em
+					margin-left: -$column*2
+					padding: 0
+					width: 100%+$column*4					
+					border-top: 1px dotted $blue
+					border-bottom: 1px dotted $blue
+					img
+						display: block
+						width: 100%
 		#story
 			display: inline-block
 			width: 100%
-			padding: 3em $column*1 1.5em
+			padding: 1.5em $column*1 1.5em
 			@include page-shadow
 			box-sizing: border-box
 			#main.wrapper
-				margin-left: 12.5%
-				width: 75%
+				width: 100%
 				.stop
 					margin-bottom: 1.5em
 					//padding-bottom: 1.5em
 					border-bottom: 1px dotted $light-grey
+					&:last-child
+						margin-bottom: 0
+						p
+							margin-bottom: 0
+					h3
+						line-height: 1.3em
+						span
+							font-size: 0.75em
 					img
+						margin-left: -$column*2
 						margin-bottom: 1em
-						width: 100%
+						width: 100%+$column*4
 					em
 						font-family: 'omnes-pro'
 		#bottom-matter
@@ -157,35 +130,22 @@ $map-divisions: 0.1
 			color: white			
 			background: $blue
 			box-sizing: border-box
-			#order, #translated
-				margin-left: 12.5%
 			#translated
 				margin-bottom: 1.5em
-				padding: 0.75em
-				width: 75%
-				//background: lighten($blue, 5%)
+				padding: 0.5em 0.75em
+				width: 100%
 				border: 1px dotted white
 				@include border-radius(0.75em)
-				//border-bottom: 1px solid white
-				//border-left: 1px solid white
 				box-sizing: border-box
 			#order, #further-reading
 				float: left
-				width: 37.5%%
+				width: 100%
 				font-family: 'omnes-pro'
 				font-style: italic
 			.label
-				border-bottom: 1px dotted $light-grey
+				border-bottom: 1px dotted $dark-grey
 			a
 				color: $dark-grey
-		#laminate
-			margin: 0.75em 0 1.5em
-			padding: 0
-			border-top: 1px dotted $blue
-			border-bottom: 1px dotted $blue
-			img
-				display: block
-				width: 100%
 		h3
 			display: inline-block
 			margin: 0 0 0.75em 0
@@ -194,3 +154,137 @@ $map-divisions: 0.1
 			span
 				display: block
 				font-weight: 200
+
+
+//	
+//	
+//	Eight-column grid active
+//	----------------------------------------------------------------------
+//	Margin   | #  1     2     3     4     5     6     7     8   |   Margin
+//	5.55555% | %  12.5  25.0  37.5  50.0  62.5  75.0  87.5  100 | 5.55555%
+//	
+//	
+//	
+
+/* @media screen and (min-width: 720px) */
+// iPad
+@media screen and (min-width: 45em) 
+
+	body 
+		/* Reset baseline grid to 16/16 = 1 */
+		font-size: #{($font-size) / $em}em
+	#an-actors-map-of-seoul
+		.cover
+			hgroup
+				top: 39.75%
+				right: 0
+				left: 0
+				text-align: center
+				//opacity: 0.95
+				h1
+					color: white
+					font-size: 4.3em
+					line-height: 1.4em
+					span
+						display: block
+						font-size: 1.2em
+						font-weight: 100					
+						text-transform: uppercase
+						letter-spacing: 0.1em
+			h2
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+				padding: 0.75em
+				color: white
+				font-size: 1em
+				font-family: 'omnes-pro'
+				font-style: italic
+				font-weight: 300
+				text-align: center
+				background: #2D2327
+				opacity: 0.9
+				box-shadow: 0 0 4px black
+		article
+			#intro
+				padding: 3em $column*1
+				.wrapper
+					p
+						margin-bottom: 0.75em
+						font-size: 1.25em
+						font-weight: 200
+						line-height: 1.5em		
+					#laminate
+						margin-left: 0
+						width: 100%						
+			#story
+				padding: 3em $column*1
+				#main.wrapper
+					.stop
+						img
+							margin-left: 0
+							width: 100%
+			#bottom-matter		
+				#translated
+					margin-bottom: 1.5em
+				#order, #further-reading
+					width: 50%
+
+
+/* @media screen and (min-width: 984px) */
+// Standard Desktop
+@media screen and (min-width: 61.5em)
+	#an-actors-map-of-seoul
+		.cover
+			hgroup
+				top: 38%
+				right: 0
+				left: 0
+				text-align: center
+				//opacity: 0.95
+				h1
+					color: white
+					font-size: 6em
+					line-height: 1.25em
+					span
+						display: block
+						font-size: 1.2em
+						font-weight: 100					
+						text-transform: uppercase
+						letter-spacing: 0.1em
+		article
+			#intro
+				padding: 3em $column*1
+				.wrapper
+					margin-left: 12.5%
+					width: 75%
+			#story
+				#main.wrapper
+					margin-left: 12.5%
+					width: 75%
+			#bottom-matter		
+				#order, #translated
+					margin-left: 12.5%
+				#translated
+					margin-bottom: 1.5em
+					width: 75%
+				#order, #further-reading
+					width: 37.5%					
+
+
+//	
+//	
+//	Sixteen-column grid active
+//	----------------------------------------------------------------------------------------------------------------------
+//	Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
+//	5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
+//	
+//	
+//
+
+/* @media screen and (min-width: 1872px) */
+// Wide Desktop
+@media screen and (min-width: 117em)
+
+

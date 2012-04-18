@@ -5,7 +5,7 @@ $(document).ready(function() {
 	var coverHeight = $(window).height();
 	var coverWidth = $(window).width();
 	var articleCount = $('.article').length;
-
+	
 	$('#vertical').each(function() {
 			var $children = $(this).children(),
 					count = $children.size(),
@@ -38,7 +38,6 @@ $(document).ready(function() {
 					}
 			});
 	});	
-
 
 	// alert (articleCount);
 	// alert (coverHeight);
@@ -230,6 +229,39 @@ $(document).ready(function() {
 							// easing:'easeOutQuart', //use this easing equation for a funny effect
 							jump: true //click on the images to scroll to them
 						});
+
+						$('#vertical').each(function() {
+								var $children = $(this).children(),
+										count = $children.size(),
+										$item;
+								$children.each(function(i) {
+										$item = $(this)
+												.css({'left':((i + 1)*10)+'%'});
+										if (i === 0) {
+												$item.addClass('first');
+										}
+										if (i == count - 1) {
+												$item.addClass('last');
+										}
+								});
+						});
+
+						$('#horizontal').each(function() {
+								var $children = $(this).children(),
+										count = $children.size(),
+										$item;
+								$children.each(function(i) {
+										var coverHeight = $(window).height();
+										$item = $(this)
+												.css({'top':(((coverHeight)-62)*(i + 1))*.1});
+										if (i === 0) {
+												$item.addClass('first');
+										}
+										if (i == count - 1) {
+												$item.addClass('last');
+										}
+								});
+						});							
 
 					});
 				// Removing #home from DOM lets localscroll work by not creating an ID conflict with articles (previously they were both in the featured area in #home and within #articles as themselves)

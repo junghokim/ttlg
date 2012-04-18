@@ -1,0 +1,43 @@
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+    font-size: 1em; } }
+/* @media screen and (min-width: 984px) */
+/* @media screen and (min-width: 1872px) */
+#dont-stop-make-believing.article .cover {
+  background: url("../images/cosplay-girl-group.jpg") center center no-repeat; }
+  #dont-stop-make-believing.article .cover hgroup {
+    position: absolute;
+    right: 10%;
+    bottom: 14%;
+    left: 10%;
+    padding: 2em;
+    text-align: center;
+    background: white;
+    box-sizing: border-box;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-shadow: 0 1px 2px #cccccc; }
+    #dont-stop-make-believing.article .cover hgroup h1 {
+      color: #00bee1;
+      font-size: 4em; }
+      #dont-stop-make-believing.article .cover hgroup h1 .stop {
+        color: #fd68db; }
+      #dont-stop-make-believing.article .cover hgroup h1 .make {
+        color: #fdf432; }
+      #dont-stop-make-believing.article .cover hgroup h1 .believing {
+        color: #dba4f9; }
+    #dont-stop-make-believing.article .cover hgroup h2 {
+      color: black;
+      font-size: 1em;
+      font-family: "omnes-pro";
+      font-style: italic;
+      font-weight: 300; }
+#dont-stop-make-believing.article .destination {
+  display: block; }
+#dont-stop-make-believing.article #story #region-1, #dont-stop-make-believing.article #story #region-2, #dont-stop-make-believing.article #story #region-3, #dont-stop-make-believing.article #story #region-4 {
+  content: -webkit-from-flow("article_flow");
+  -webkit-flow-from: article_flow;
+  box-sizing: border-box; }
