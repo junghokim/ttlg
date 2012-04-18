@@ -399,17 +399,17 @@ header.masthead {
 .cover {
   box-sizing: border-box; }
 
-#story, #bottom-matter {
+.story, #bottom-matter {
   float: left;
   padding: 0 5.556%; }
-  #story p, #bottom-matter p {
+  .story p, #bottom-matter p {
     margin-bottom: 1.5em;
     font-weight: 300; }
-  #story a, #bottom-matter a {
+  .story a, #bottom-matter a {
     color: #33ccff; }
-    #story a:hover, #bottom-matter a:hover {
+    .story a:hover, #bottom-matter a:hover {
       text-decoration: none; }
-  #story .label, #bottom-matter .label {
+  .story .label, #bottom-matter .label {
     display: inline-block;
     margin-bottom: 0.25em;
     font-family: "jubilat";
@@ -418,7 +418,7 @@ header.masthead {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     border-bottom: 1px dotted #e1e1e1; }
-  #story .highlight, #bottom-matter .highlight {
+  .story .highlight, #bottom-matter .highlight {
     font-family: "omnes-pro";
     font-style: italic;
     background: white; }

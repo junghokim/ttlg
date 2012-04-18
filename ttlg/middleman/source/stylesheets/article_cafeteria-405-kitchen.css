@@ -36,36 +36,33 @@
       font-family: "omnes-pro", sans-serif;
       font-weight: 200;
       font-style: italic; }
-#cafeteria-405-kitchen.article #story h2 {
-  margin: 0.5em 0 0.25em;
-  font-weight: 600; }
-#cafeteria-405-kitchen.article #story #district-1 {
-  overflow: hidden;
-  margin-top: 3em; }
-#cafeteria-405-kitchen.article #story #district-1 {
+#cafeteria-405-kitchen.article article {
   float: left;
   width: 100%;
-  height: 100%; }
-  #cafeteria-405-kitchen.article #story #district-1 #region-1 {
-    float: left;
+  padding: 3em 0;
+  box-sizing: border-box; }
+  #cafeteria-405-kitchen.article article .story .wrapper.main {
     margin-left: 12.5%;
-    width: 62.5%; }
-  #cafeteria-405-kitchen.article #story #district-1 blockquote {
+    width: 50%; }
+    #cafeteria-405-kitchen.article article .story .wrapper.main h2 {
+      margin: 0.5em 0 0.25em;
+      font-weight: 600; }
+  #cafeteria-405-kitchen.article article .image.wrapper {
     float: left;
-    margin: 1.5em 1.5em 1.5em 0;
-    padding: 1.5em;
-    width: 37.5%;
-    font-weight: 100;
-    font-style: italic;
-    color: #33ccff;
-    border-top: 1px dotted green;
-    border-bottom: 1px dotted green;
+    width: 25%;
     box-sizing: border-box; }
-  #cafeteria-405-kitchen.article #story #district-1 #image-1 {
-    float: right;
-    width: 25%; }
-    #cafeteria-405-kitchen.article #story #district-1 #image-1 img {
-      width: 100%; }
-    #cafeteria-405-kitchen.article #story #district-1 #image-1 .caption {
+    #cafeteria-405-kitchen.article article .image.wrapper img {
+      max-width: 100%; }
+    #cafeteria-405-kitchen.article article .image.wrapper .caption {
       padding-top: 0.75em;
       border-top: 0.25em solid #e1e1e1; }
+  #cafeteria-405-kitchen.article article #quote-1 {
+    float: left;
+    margin: 0 0.75em 0.75em -3em;
+    width: 30%;
+    font-family: "omnes-pro";
+    font-size: 1.9em;
+    font-weight: 100;
+    font-style: italic;
+    color: #fde700;
+    line-height: 1.2em; }

@@ -79,7 +79,7 @@
           #an-actors-map-of-seoul article #intro .wrapper #laminate img {
             display: block;
             width: 100%; }
-    #an-actors-map-of-seoul article #story {
+    #an-actors-map-of-seoul article .story {
       display: inline-block;
       width: 100%;
       padding: 1.5em 5.556% 1.5em;
@@ -87,24 +87,24 @@
       -webkit-box-shadow: 0 0 6px black;
       box-shadow: 0 0 6px black;
       box-sizing: border-box; }
-      #an-actors-map-of-seoul article #story #main.wrapper {
+      #an-actors-map-of-seoul article .story #main.wrapper {
         width: 100%; }
-        #an-actors-map-of-seoul article #story #main.wrapper .stop {
+        #an-actors-map-of-seoul article .story #main.wrapper .stop {
           margin-bottom: 1.5em;
           border-bottom: 1px dotted #e1e1e1; }
-          #an-actors-map-of-seoul article #story #main.wrapper .stop:last-child {
+          #an-actors-map-of-seoul article .story #main.wrapper .stop:last-child {
             margin-bottom: 0; }
-            #an-actors-map-of-seoul article #story #main.wrapper .stop:last-child p {
+            #an-actors-map-of-seoul article .story #main.wrapper .stop:last-child p {
               margin-bottom: 0; }
-          #an-actors-map-of-seoul article #story #main.wrapper .stop h3 {
+          #an-actors-map-of-seoul article .story #main.wrapper .stop h3 {
             line-height: 1.3em; }
-            #an-actors-map-of-seoul article #story #main.wrapper .stop h3 span {
+            #an-actors-map-of-seoul article .story #main.wrapper .stop h3 span {
               font-size: 0.75em; }
-          #an-actors-map-of-seoul article #story #main.wrapper .stop img {
+          #an-actors-map-of-seoul article .story #main.wrapper .stop img {
             margin-left: -11.111%;
             margin-bottom: 1em;
             width: 122.222%; }
-          #an-actors-map-of-seoul article #story #main.wrapper .stop em {
+          #an-actors-map-of-seoul article .story #main.wrapper .stop em {
             font-family: "omnes-pro"; }
     #an-actors-map-of-seoul article #bottom-matter {
       width: 100%;
@@ -186,9 +186,9 @@
     #an-actors-map-of-seoul article #intro .wrapper #laminate {
       margin-left: 0;
       width: 100%; }
-  #an-actors-map-of-seoul article #story {
+  #an-actors-map-of-seoul article .story {
     padding: 3em 5.556%; }
-    #an-actors-map-of-seoul article #story #main.wrapper .stop img {
+    #an-actors-map-of-seoul article .story #main.wrapper .stop img {
       margin-left: 0;
       width: 100%; }
   #an-actors-map-of-seoul article #bottom-matter #translated {
@@ -217,7 +217,7 @@
     #an-actors-map-of-seoul article #intro .wrapper {
       margin-left: 12.5%;
       width: 75%; }
-  #an-actors-map-of-seoul article #story #main.wrapper {
+  #an-actors-map-of-seoul article .story #main.wrapper {
     margin-left: 12.5%;
     width: 75%; }
   #an-actors-map-of-seoul article #bottom-matter #order, #an-actors-map-of-seoul article #bottom-matter #translated {
