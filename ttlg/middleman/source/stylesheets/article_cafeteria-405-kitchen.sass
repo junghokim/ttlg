@@ -16,6 +16,112 @@
 //	
 //
 
+#cafeteria-405-kitchen.article
+	.cover
+		background: url('../images/405-kitchen_03_1000px.jpg') top left no-repeat
+		hgroup
+			position: absolute
+			right: 0
+			bottom: 1.5em
+			padding: 1em 1.5em
+			text-align: right
+			background: $yellow
+			@include border-radius-ind(top, left, 5px)
+			@include border-radius-ind(bottom, left, 5px)
+			text-shadow: 0 1px 2px #CCC
+			h1, h2
+				font-weight: 100
+			h1
+				position: relative
+				font-size: 3.5em
+				line-height: 1em
+				color: $blue
+				span
+					display: block
+			h2, h3
+				display: inline-block
+				font-size: 0.9em
+				font-style: italic
+				text-transform: uppercase
+				letter-spacing: 0.1em
+	article
+		float: left
+		width: 100%
+		padding: 3em 0
+		box-sizing: border-box
+		.story
+			.wrapper.main
+				width: 100%
+				h2
+					margin-bottom: 1em
+					font-weight: 600
+					line-height: 1.2em
+		.image-block
+			float: left
+			margin: 1.5em 0 3em
+			width: 100%
+			box-sizing: border-box
+			.image
+				float: left
+				width: 100%
+				box-sizing: border-box
+			.caption
+				padding: 0.75em 0 0.75em 0.75em
+				font-family: 'omnes-pro'
+				font-style: italic
+				color: $grey
+				text-align: center
+				border-bottom: 1px dotted $light-grey
+		#additional-information
+			float: left
+			margin-top: 1.5em
+			padding: 3em $column*1 0
+			width: 100%
+			border-top: 1px dotted $light-grey
+			box-sizing: border-box
+			h2
+				margin-bottom: 1.5em
+			.info-name
+				display: block
+				font-size: 1.5em							
+				font-weight: 100
+				font-style: italic
+			.additional-information-module
+				float: left
+				margin-top: 0.75em
+				width: 100%
+				ul
+					margin: 0
+					padding: 0
+					list-style: none
+					li
+						margin: 0
+						padding: 0
+						.label
+							font-weight: 200
+						li
+							font-weight: 200
+					.info-heading
+						margin-bottom: 0.75em
+		img
+			display: block
+			width: 100%
+		#quote-1
+			float: left
+			margin: 0 0 1.5em
+			padding: 0.75em 0
+			width: 100%
+			border-top: 1px dotted $blue
+			border-bottom: 1px dotted $blue
+			box-sizing: border-box
+			blockquote
+				font-family: 'omnes-pro'
+				font-size: 1.5em
+				font-weight: 100
+				font-style: italic
+				color: $blue
+				line-height: 1.2em
+
 //	
 //	
 //	Eight-column grid active
@@ -33,11 +139,56 @@
 	body 
 		/* Reset baseline grid to 16/16 = 1 */
 		font-size: #{($font-size) / $em}em
-	
+	#cafeteria-405-kitchen.article
+		.cover
+			hgroup
+				bottom: 4em
+				padding: 2em 3em
+				h1
+					position: relative
+					font-size: 5em
+				h2, h3
+					font-size: 1em
+		article
+			.image-block
+				float: left
+				margin: 1.5em 0 3em
+				width: 100%
+				box-sizing: border-box
+				.image
+					width: 50%
+					&:nth-child(2n)
+						.caption
+							border-left: 1px dotted $light-grey
+			#additional-information
+				h2
+					margin-bottom: 1em
+				.additional-information-module
+					width: 25%
+			#quote-1
+				margin: 0 0.75em 0.75em 0
+				padding: 0 0.75em 0 0
+				width: 30%
+				border: none
 
 /* @media screen and (min-width: 984px) */
 // Standard Desktop
 @media screen and (min-width: 61.5em)
+	body 
+		/* Reset baseline grid to 16/16 = 1 */
+		font-size: #{($font-size) / $em}em
+	#cafeteria-405-kitchen.article
+		.cover
+			hgroup
+				bottom: 6em
+				h1
+					font-size: 6em
+		article
+			padding: 3em 0
+			.story
+				.wrapper.main
+					margin-left: 12.5%
+					width: 75%
 
 
 //	
@@ -53,67 +204,3 @@
 /* @media screen and (min-width: 1872px) */
 // Wide Desktop
 @media screen and (min-width: 117em)
-
-#cafeteria-405-kitchen.article
-	.cover
-		background: url('../images/405-kitchen_03_1000px.jpg') top left no-repeat
-		#article-title.wrapper
-			position: absolute
-			right: 0
-			bottom: 20%
-			padding: 2em $column*1 2em 3em
-			text-align: right
-			background: $yellow
-			@include border-radius-ind(top, left, 4px)
-			@include border-radius-ind(bottom, left, 4px)
-			opacity: 0.95
-			text-shadow: 0 1px 2px #CCC
-			box-shadow: 0 1px 3px #333
-			h1
-				margin: 0
-				color: $blue
-				@include gigantic-text
-				font-weight: 100
-				line-height: 1em
-				//text-shadow: 0 2px 3px #555
-			h2
-				margin: 0
-				font-family: 'omnes-pro', sans-serif
-				font-weight: 200
-				font-style: italic
-	// Styling for the destination containers
-	article
-		float: left
-		width: 100%
-		padding: 3em 0
-		box-sizing: border-box
-		.story
-			.wrapper.main
-				margin-left: 12.5%
-				width: 50%
-				h2
-					margin: 0.5em 0 0.25em
-					font-weight: 600
-		.image.wrapper
-			float: left
-			width: 25%
-			box-sizing: border-box
-			img
-				max-width: 100%
-			.caption
-				padding-top: 0.75em
-				border-top: .25em solid $light-grey
-		#quote-1
-			float: left
-			margin: 0 0.75em 0.75em -3em
-			//padding: 1em 1em 1em 0
-			width: 30%
-			font-family: 'omnes-pro'
-			font-size: 1.9em
-			font-weight: 100
-			font-style: italic
-			color: $yellow
-			line-height: 1.2em
-			//border-top: 1px dotted $grey
-			//border-bottom: 1px dotted $grey
-			// Not automatically applied with GGS

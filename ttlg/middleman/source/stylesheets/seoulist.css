@@ -405,23 +405,26 @@ header.masthead {
   .story p, #bottom-matter p {
     margin-bottom: 1.5em;
     font-weight: 300; }
-  .story a, #bottom-matter a {
-    color: #33ccff; }
-    .story a:hover, #bottom-matter a:hover {
-      text-decoration: none; }
-  .story .label, #bottom-matter .label {
-    display: inline-block;
-    margin-bottom: 0.25em;
-    font-family: "jubilat";
-    font-size: 0.75em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    border-bottom: 1px dotted #e1e1e1; }
-  .story .highlight, #bottom-matter .highlight {
-    font-family: "omnes-pro";
-    font-style: italic;
-    background: white; }
+
+a {
+  color: #33ccff; }
+  a:hover {
+    text-decoration: none; }
+
+.label {
+  display: inline-block;
+  margin-bottom: 0.25em;
+  font-family: "jubilat";
+  font-size: 0.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 1px dotted #e1e1e1; }
+
+.highlight {
+  font-family: "omnes-pro";
+  font-style: italic;
+  background: white; }
 
 /*p
  * font-weight: 400 */

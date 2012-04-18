@@ -1,68 +1,156 @@
-/* @media screen and (min-width: 720px) */
-@media screen and (min-width: 45em) {
-  body {
-    /* Reset baseline grid to 16/16 = 1 */
-    font-size: 1em; } }
-/* @media screen and (min-width: 984px) */
-/* @media screen and (min-width: 1872px) */
 #cafeteria-405-kitchen.article .cover {
   background: url("../images/405-kitchen_03_1000px.jpg") top left no-repeat; }
-  #cafeteria-405-kitchen.article .cover #article-title.wrapper {
+  #cafeteria-405-kitchen.article .cover hgroup {
     position: absolute;
     right: 0;
-    bottom: 20%;
-    padding: 2em 5.556% 2em 3em;
+    bottom: 1.5em;
+    padding: 1em 1.5em;
     text-align: right;
     background: #fde700;
-    -moz-border-top-left-radius: 4px;
-    -webkit-border-top-left-radius: 4px;
-    border-top-left-radius: 4px;
-    -moz-border-bottom-left-radius: 4px;
-    -webkit-border-bottom-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    opacity: 0.95;
-    text-shadow: 0 1px 2px #cccccc;
-    box-shadow: 0 1px 3px #333333; }
-    #cafeteria-405-kitchen.article .cover #article-title.wrapper h1 {
-      margin: 0;
-      color: #33ccff;
-      /* 110px / 120px */
-      font-size: 6.875em;
-      line-height: 1.091em;
-      font-weight: 100;
-      line-height: 1em; }
-    #cafeteria-405-kitchen.article .cover #article-title.wrapper h2 {
-      margin: 0;
-      font-family: "omnes-pro", sans-serif;
-      font-weight: 200;
-      font-style: italic; }
+    -moz-border-top-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-shadow: 0 1px 2px #cccccc; }
+    #cafeteria-405-kitchen.article .cover hgroup h1, #cafeteria-405-kitchen.article .cover hgroup h2 {
+      font-weight: 100; }
+    #cafeteria-405-kitchen.article .cover hgroup h1 {
+      position: relative;
+      font-size: 3.5em;
+      line-height: 1em;
+      color: #33ccff; }
+      #cafeteria-405-kitchen.article .cover hgroup h1 span {
+        display: block; }
+    #cafeteria-405-kitchen.article .cover hgroup h2, #cafeteria-405-kitchen.article .cover hgroup h3 {
+      display: inline-block;
+      font-size: 0.9em;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: 0.1em; }
 #cafeteria-405-kitchen.article article {
   float: left;
   width: 100%;
   padding: 3em 0;
   box-sizing: border-box; }
   #cafeteria-405-kitchen.article article .story .wrapper.main {
-    margin-left: 12.5%;
-    width: 50%; }
+    width: 100%; }
     #cafeteria-405-kitchen.article article .story .wrapper.main h2 {
-      margin: 0.5em 0 0.25em;
-      font-weight: 600; }
-  #cafeteria-405-kitchen.article article .image.wrapper {
+      margin-bottom: 1em;
+      font-weight: 600;
+      line-height: 1.2em; }
+  #cafeteria-405-kitchen.article article .image-block {
     float: left;
-    width: 25%;
+    margin: 1.5em 0 3em;
+    width: 100%;
     box-sizing: border-box; }
-    #cafeteria-405-kitchen.article article .image.wrapper img {
-      max-width: 100%; }
-    #cafeteria-405-kitchen.article article .image.wrapper .caption {
-      padding-top: 0.75em;
-      border-top: 0.25em solid #e1e1e1; }
+    #cafeteria-405-kitchen.article article .image-block .image {
+      float: left;
+      width: 100%;
+      box-sizing: border-box; }
+    #cafeteria-405-kitchen.article article .image-block .caption {
+      padding: 0.75em 0 0.75em 0.75em;
+      font-family: "omnes-pro";
+      font-style: italic;
+      color: #999999;
+      text-align: center;
+      border-bottom: 1px dotted #e1e1e1; }
+  #cafeteria-405-kitchen.article article #additional-information {
+    float: left;
+    margin-top: 1.5em;
+    padding: 3em 5.556% 0;
+    width: 100%;
+    border-top: 1px dotted #e1e1e1;
+    box-sizing: border-box; }
+    #cafeteria-405-kitchen.article article #additional-information h2 {
+      margin-bottom: 1.5em; }
+    #cafeteria-405-kitchen.article article #additional-information .info-name {
+      display: block;
+      font-size: 1.5em;
+      font-weight: 100;
+      font-style: italic; }
+    #cafeteria-405-kitchen.article article #additional-information .additional-information-module {
+      float: left;
+      margin-top: 0.75em;
+      width: 100%; }
+      #cafeteria-405-kitchen.article article #additional-information .additional-information-module ul {
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+        #cafeteria-405-kitchen.article article #additional-information .additional-information-module ul li {
+          margin: 0;
+          padding: 0; }
+          #cafeteria-405-kitchen.article article #additional-information .additional-information-module ul li .label {
+            font-weight: 200; }
+          #cafeteria-405-kitchen.article article #additional-information .additional-information-module ul li li {
+            font-weight: 200; }
+        #cafeteria-405-kitchen.article article #additional-information .additional-information-module ul .info-heading {
+          margin-bottom: 0.75em; }
+  #cafeteria-405-kitchen.article article img {
+    display: block;
+    width: 100%; }
   #cafeteria-405-kitchen.article article #quote-1 {
     float: left;
-    margin: 0 0.75em 0.75em -3em;
+    margin: 0 0 1.5em;
+    padding: 0.75em 0;
+    width: 100%;
+    border-top: 1px dotted #33ccff;
+    border-bottom: 1px dotted #33ccff;
+    box-sizing: border-box; }
+    #cafeteria-405-kitchen.article article #quote-1 blockquote {
+      font-family: "omnes-pro";
+      font-size: 1.5em;
+      font-weight: 100;
+      font-style: italic;
+      color: #33ccff;
+      line-height: 1.2em; }
+
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+    font-size: 1em; }
+
+  #cafeteria-405-kitchen.article .cover hgroup {
+    bottom: 4em;
+    padding: 2em 3em; }
+    #cafeteria-405-kitchen.article .cover hgroup h1 {
+      position: relative;
+      font-size: 5em; }
+    #cafeteria-405-kitchen.article .cover hgroup h2, #cafeteria-405-kitchen.article .cover hgroup h3 {
+      font-size: 1em; }
+  #cafeteria-405-kitchen.article article .image-block {
+    float: left;
+    margin: 1.5em 0 3em;
+    width: 100%;
+    box-sizing: border-box; }
+    #cafeteria-405-kitchen.article article .image-block .image {
+      width: 50%; }
+      #cafeteria-405-kitchen.article article .image-block .image:nth-child(2n) .caption {
+        border-left: 1px dotted #e1e1e1; }
+  #cafeteria-405-kitchen.article article #additional-information h2 {
+    margin-bottom: 1em; }
+  #cafeteria-405-kitchen.article article #additional-information .additional-information-module {
+    width: 25%; }
+  #cafeteria-405-kitchen.article article #quote-1 {
+    margin: 0 0.75em 0.75em 0;
+    padding: 0 0.75em 0 0;
     width: 30%;
-    font-family: "omnes-pro";
-    font-size: 1.9em;
-    font-weight: 100;
-    font-style: italic;
-    color: #fde700;
-    line-height: 1.2em; }
+    border: none; } }
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+    font-size: 1em; }
+
+  #cafeteria-405-kitchen.article .cover hgroup {
+    bottom: 6em; }
+    #cafeteria-405-kitchen.article .cover hgroup h1 {
+      font-size: 6em; }
+  #cafeteria-405-kitchen.article article {
+    padding: 3em 0; }
+    #cafeteria-405-kitchen.article article .story .wrapper.main {
+      margin-left: 12.5%;
+      width: 75%; } }
+/* @media screen and (min-width: 1872px) */
