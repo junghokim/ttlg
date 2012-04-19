@@ -185,102 +185,6 @@ body
 //	
 //
 
-hgroup#mini-mast
-	display: none
-footer
-	display: block
-	float: left
-	padding: 1.5em 0
-	width: 100%	
-	color: $medium-grey	
-	//text-align: center
-	background: $dark-grey
-	box-sizing: border-box
-	box-shadow: inset 0 1px 6px black
-	text-align: center
-	a, .copyright
-		display: block
-		float: none
-		margin: 0
-		padding: 0.75em 0
-		color: $light-grey
-		font-size: 0.75em
-		text-transform: uppercase
-		letter-spacing: 0.1em
-		text-decoration: none
-		&:hover
-			color: $blue
-	.copyright
-		float: none
-		padding: 0 0 0.75em 0
-		margin-bottom: 0.75em
-		color: $grey
-	.seoulist-link
-		position: static
-		padding: 0.75em
-		color: white
-		background: black
-		border: 1px dotted $light-grey
-		&:hover
-			background: $blue
-			color: white
-		
-//	
-//	
-//	Eight-column grid active
-//	----------------------------------------------------------------------
-//	Margin   | #  1     2     3     4     5     6     7     8   |   Margin
-//	5.55555% | %  12.5  25.0  37.5  50.0  62.5  75.0  87.5  100 | 5.55555%
-//	
-//	
-//	
-
-/* @media screen and (min-width: 720px) */
-// iPad
-@media screen and (min-width: 45em) 
-	body 
-		/* Reset baseline grid to 16/16 = 1 */
-		font-size: #{($font-size) / $em}em
-	hgroup#mini-mast
-		display: block
-	footer
-		position: relative
-		padding: 1.5em $column*1
-
-/* @media screen and (min-width: 984px) */
-// Standard Desktop
-@media screen and (min-width: 61.5em)
-	footer
-		text-align: left
-		.copyright
-			float: left
-		.seoulist-link
-			position: absolute
-			top: 2em
-			left: 25%
-			right: 25%
-			text-align: center
-		a
-			float: right
-			margin-left: 1.5em
-
-
-
-//	
-//	
-//	Sixteen-column grid active
-//	----------------------------------------------------------------------------------------------------------------------
-//	Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
-//	5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
-//	
-//	
-//
-
-/* @media screen and (min-width: 1872px) */
-// Wide Desktop
-@media screen and (min-width: 117em)
-
-
 body
 	padding-top: 3.9375em
 	padding-bottom: 3em
@@ -517,13 +421,60 @@ header.masthead
 // Article Setup
 //
 
-.story, #bottom-matter
-	float: left
-	padding: 0 $column*1
-	p
-		margin-bottom: 1.5em
-		//font-family: 'ff-basic-gothic-web-pro'
-		font-weight: 300
+#articles
+	article
+		p
+			margin-bottom: 1.5em
+			font-family: 'skolar'
+			font-weight: 300
+		em
+			font-family: 'omnes-pro'		
+		em.inline
+			font-family: 'skolar'
+		.bleed
+			width: 100%
+			box-sizing: border-box			
+		.story
+			float: left
+			padding: 0 $column*1			
+		#intro
+			display: inline-block
+			overflow-x: hidden
+			width: 100%
+			padding: 1.5em $column*1
+			background: url('../images/bgnoise_lg.jpg') repeat
+			@include page-shadow
+			.wrapper
+				width: 100%
+				h2
+					margin-bottom: 1em
+					font-weight: 600
+					line-height: 1.2em
+				p
+					margin-bottom: 0.75em
+					font-size: 1em
+					font-weight: 200
+					line-height: 1.5em
+		.bottom-matter
+			float: left		
+			width: 100%
+			padding: 0 $column*1						
+			padding-bottom: 1.5em
+			padding-top: 1.5em
+			color: white			
+			background: $blue
+			box-sizing: border-box
+			.notable
+				margin-bottom: 1.5em
+				padding: 0.5em 0.75em
+				width: 100%
+				border: 1px dotted white
+				@include border-radius(0.75em)
+				box-sizing: border-box
+			.label
+				border-bottom: 1px dotted $dark-grey
+			a
+				color: $dark-grey							
 a
 	color: $blue
 	&:hover
@@ -538,7 +489,7 @@ a
 	letter-spacing: 0.1em
 	border-bottom: 1px dotted $light-grey
 .highlight
-	font-family: 'omnes-pro'
+	font-family: 'skolar'
 	font-style: italic
 	background: white
 /*p
@@ -554,3 +505,131 @@ a
 	p
 		margin-bottom: 1.5em
 		-webkit-hyphens: auto
+
+hgroup#mini-mast
+	display: none
+footer
+	display: block
+	float: left
+	padding: 1.5em 0
+	width: 100%	
+	color: $medium-grey	
+	//text-align: center
+	background: $dark-grey
+	box-sizing: border-box
+	box-shadow: inset 0 1px 6px black
+	text-align: center
+	a, .copyright
+		display: block
+		float: none
+		margin: 0
+		padding: 0.75em 0
+		color: $light-grey
+		font-size: 0.75em
+		text-transform: uppercase
+		letter-spacing: 0.1em
+		text-decoration: none
+		&:hover
+			color: $blue
+	.copyright
+		float: none
+		padding: 0 0 0.75em 0
+		margin-bottom: 0.75em
+		color: $grey
+	.seoulist-link
+		position: static
+		padding: 0.75em
+		color: white
+		background: black
+		border: 1px dotted $light-grey
+		&:hover
+			background: $blue
+			color: white
+		
+//	
+//	
+//	Eight-column grid active
+//	----------------------------------------------------------------------
+//	Margin   | #  1     2     3     4     5     6     7     8   |   Margin
+//	5.55555% | %  12.5  25.0  37.5  50.0  62.5  75.0  87.5  100 | 5.55555%
+//	
+//	
+//	
+
+/* @media screen and (min-width: 720px) */
+// iPad
+@media screen and (min-width: 45em) 
+	body 
+		/* Reset baseline grid to 16/16 = 1 */
+		font-size: #{($font-size) / $em}em
+	hgroup#mini-mast
+		display: block
+	footer
+		position: relative
+		padding: 1.5em $column*1
+	#articles
+		article
+			.story
+				padding: 3em $column*1
+			#intro
+				padding: 3em $column*1
+				.wrapper
+					p
+						margin-bottom: 0.75em
+						font-size: 1.25em
+						font-weight: 200
+						line-height: 1.5em
+			.bottom-matter
+				.notable
+					margin-bottom: 1.5em
+
+
+/* @media screen and (min-width: 984px) */
+// Standard Desktop
+@media screen and (min-width: 61.5em)
+	footer
+		text-align: left
+		.copyright
+			float: left
+		.seoulist-link
+			position: absolute
+			top: 2em
+			left: 25%
+			right: 25%
+			text-align: center
+		a
+			float: right
+			margin-left: 1.5em
+	#articles
+		article
+			#intro
+				padding: 3em $column*1
+				.wrapper
+					margin-left: 12.5%
+					width: 75%
+			.main.wrapper
+				margin-left: 12.5%
+				width: 75%
+			.bottom-matter		
+				.notable
+					margin-bottom: 1.5em
+					margin-left: 12.5%					
+					width: 75%
+
+
+
+
+//	
+//	
+//	Sixteen-column grid active
+//	----------------------------------------------------------------------------------------------------------------------
+//	Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
+//	5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
+//	
+//	
+//
+
+/* @media screen and (min-width: 1872px) */
+// Wide Desktop
+@media screen and (min-width: 117em)
+

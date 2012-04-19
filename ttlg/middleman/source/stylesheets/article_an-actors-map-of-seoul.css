@@ -54,31 +54,16 @@
     #an-actors-map-of-seoul article .bleed {
       width: 100%;
       box-sizing: border-box; }
-    #an-actors-map-of-seoul article #intro {
-      display: inline-block;
-      width: 100%;
-      padding: 1.5em 5.556%;
-      background: url("../images/bgnoise_lg.jpg") repeat;
-      -moz-box-shadow: 0 0 6px black;
-      -webkit-box-shadow: 0 0 6px black;
-      box-shadow: 0 0 6px black; }
-      #an-actors-map-of-seoul article #intro .wrapper {
+    #an-actors-map-of-seoul article #intro .wrapper #laminate {
+      margin: 0.75em 0 1.5em;
+      margin-left: -11.111%;
+      padding: 0;
+      width: 122.222%;
+      border-top: 1px dotted #33ccff;
+      border-bottom: 1px dotted #33ccff; }
+      #an-actors-map-of-seoul article #intro .wrapper #laminate img {
+        display: block;
         width: 100%; }
-        #an-actors-map-of-seoul article #intro .wrapper p {
-          margin-bottom: 0.75em;
-          font-size: 1em;
-          font-weight: 200;
-          line-height: 1.5em; }
-        #an-actors-map-of-seoul article #intro .wrapper #laminate {
-          margin: 0.75em 0 1.5em;
-          margin-left: -11.111%;
-          padding: 0;
-          width: 122.222%;
-          border-top: 1px dotted #33ccff;
-          border-bottom: 1px dotted #33ccff; }
-          #an-actors-map-of-seoul article #intro .wrapper #laminate img {
-            display: block;
-            width: 100%; }
     #an-actors-map-of-seoul article .story {
       display: inline-block;
       width: 100%;
@@ -87,50 +72,37 @@
       -webkit-box-shadow: 0 0 6px black;
       box-shadow: 0 0 6px black;
       box-sizing: border-box; }
-      #an-actors-map-of-seoul article .story #main.wrapper {
+      #an-actors-map-of-seoul article .story .main.wrapper {
         width: 100%; }
-        #an-actors-map-of-seoul article .story #main.wrapper .stop {
+        #an-actors-map-of-seoul article .story .main.wrapper .stop {
           margin-bottom: 1.5em;
           border-bottom: 1px dotted #e1e1e1; }
-          #an-actors-map-of-seoul article .story #main.wrapper .stop:last-child {
+          #an-actors-map-of-seoul article .story .main.wrapper .stop:last-child {
             margin-bottom: 0; }
-            #an-actors-map-of-seoul article .story #main.wrapper .stop:last-child p {
+            #an-actors-map-of-seoul article .story .main.wrapper .stop:last-child p {
               margin-bottom: 0; }
-          #an-actors-map-of-seoul article .story #main.wrapper .stop h3 {
+          #an-actors-map-of-seoul article .story .main.wrapper .stop h3 {
             line-height: 1.3em; }
-            #an-actors-map-of-seoul article .story #main.wrapper .stop h3 span {
+            #an-actors-map-of-seoul article .story .main.wrapper .stop h3 span {
               font-size: 0.75em; }
-          #an-actors-map-of-seoul article .story #main.wrapper .stop img {
+          #an-actors-map-of-seoul article .story .main.wrapper .stop img {
             margin-left: -11.111%;
             margin-bottom: 1em;
             width: 122.222%; }
-          #an-actors-map-of-seoul article .story #main.wrapper .stop em {
-            font-family: "omnes-pro"; }
-    #an-actors-map-of-seoul article #bottom-matter {
+    #an-actors-map-of-seoul article .bottom-matter .notable {
+      margin-bottom: 1.5em;
+      padding: 0.5em 0.75em;
       width: 100%;
-      padding-bottom: 1.5em;
-      padding-top: 1.5em;
-      color: white;
-      background: #33ccff;
+      border: 1px dotted white;
+      -moz-border-radius: 0.75em;
+      -webkit-border-radius: 0.75em;
+      border-radius: 0.75em;
       box-sizing: border-box; }
-      #an-actors-map-of-seoul article #bottom-matter #translated {
-        margin-bottom: 1.5em;
-        padding: 0.5em 0.75em;
-        width: 100%;
-        border: 1px dotted white;
-        -moz-border-radius: 0.75em;
-        -webkit-border-radius: 0.75em;
-        border-radius: 0.75em;
-        box-sizing: border-box; }
-      #an-actors-map-of-seoul article #bottom-matter #order, #an-actors-map-of-seoul article #bottom-matter #further-reading {
-        float: left;
-        width: 100%;
-        font-family: "omnes-pro";
-        font-style: italic; }
-      #an-actors-map-of-seoul article #bottom-matter .label {
-        border-bottom: 1px dotted #333333; }
-      #an-actors-map-of-seoul article #bottom-matter a {
-        color: #333333; }
+    #an-actors-map-of-seoul article .bottom-matter #order, #an-actors-map-of-seoul article .bottom-matter #further-reading {
+      float: left;
+      width: 100%;
+      font-family: "omnes-pro";
+      font-style: italic; }
     #an-actors-map-of-seoul article h3 {
       display: inline-block;
       margin: 0 0 0.75em 0;
@@ -176,24 +148,20 @@
     background: #2d2327;
     opacity: 0.9;
     box-shadow: 0 0 4px black; }
-  #an-actors-map-of-seoul article #intro {
-    padding: 3em 5.556%; }
-    #an-actors-map-of-seoul article #intro .wrapper p {
-      margin-bottom: 0.75em;
-      font-size: 1.25em;
-      font-weight: 200;
-      line-height: 1.5em; }
-    #an-actors-map-of-seoul article #intro .wrapper #laminate {
-      margin-left: 0;
-      width: 100%; }
+  #an-actors-map-of-seoul article #intro .wrapper p {
+    margin-bottom: 0.75em;
+    font-size: 1.25em;
+    font-weight: 200;
+    line-height: 1.5em; }
+  #an-actors-map-of-seoul article #intro .wrapper #laminate {
+    margin-left: 0;
+    width: 100%; }
   #an-actors-map-of-seoul article .story {
     padding: 3em 5.556%; }
-    #an-actors-map-of-seoul article .story #main.wrapper .stop img {
+    #an-actors-map-of-seoul article .story .main.wrapper .stop img {
       margin-left: 0;
       width: 100%; }
-  #an-actors-map-of-seoul article #bottom-matter #translated {
-    margin-bottom: 1.5em; }
-  #an-actors-map-of-seoul article #bottom-matter #order, #an-actors-map-of-seoul article #bottom-matter #further-reading {
+  #an-actors-map-of-seoul article .bottom-matter #order, #an-actors-map-of-seoul article .bottom-matter #further-reading {
     width: 50%; } }
 /* @media screen and (min-width: 984px) */
 @media screen and (min-width: 61.5em) {
@@ -217,14 +185,11 @@
     #an-actors-map-of-seoul article #intro .wrapper {
       margin-left: 12.5%;
       width: 75%; }
-  #an-actors-map-of-seoul article .story #main.wrapper {
+  #an-actors-map-of-seoul article .story .main.wrapper {
     margin-left: 12.5%;
     width: 75%; }
-  #an-actors-map-of-seoul article #bottom-matter #order, #an-actors-map-of-seoul article #bottom-matter #translated {
+  #an-actors-map-of-seoul article .bottom-matter #order {
     margin-left: 12.5%; }
-  #an-actors-map-of-seoul article #bottom-matter #translated {
-    margin-bottom: 1.5em;
-    width: 75%; }
-  #an-actors-map-of-seoul article #bottom-matter #order, #an-actors-map-of-seoul article #bottom-matter #further-reading {
+  #an-actors-map-of-seoul article .bottom-matter #order, #an-actors-map-of-seoul article .bottom-matter #further-reading {
     width: 37.5%; } }
 /* @media screen and (min-width: 1872px) */

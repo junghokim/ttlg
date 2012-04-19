@@ -1,0 +1,270 @@
+@import 'all'
+@import 'shared-variables'
+
+@mixin page-shadow
+	@include box-shadow(0, 0, 6px, black)
+
+// For Article
+
+
+//	
+//	
+//	Four-column grid active
+//	----------------------------------------
+//	Margin   | #  1   2   3   4   |   Margin
+//	5.55555% | %  25  50  75  100 | 5.55555%
+//	
+//
+
+$purple: #3F3578
+
+
+#seoul-safari-six-hours-in-seoul
+	.cover
+		background: url('../images/seoul-safari_cover.jpg') center top no-repeat
+		hgroup
+			position: absolute
+			right: 0
+			bottom: 0
+			left: 0
+			padding: 1em 1.5em
+			background: $purple
+			text-shadow: 0 1px 2px $dark-grey
+			h1, h2
+				font-weight: 100
+			h1
+				position: relative
+				margin-bottom: 0.25em				
+				padding-bottom: 0.25em
+				font-size: 2.15em
+				font-weight: 700
+				line-height: 1em
+				color: $blue
+				border-bottom: 1px dotted $light-grey
+				.safari
+					color: $light-grey
+				.six-hours
+					display: block
+					font-weight: 100
+			h2
+				display: inline-block
+				font-family: 'omnes-pro'
+				font-size: 1em
+				font-style: italic			
+				color: white
+				line-height: 1.1em
+	article
+		float: left
+		width: 100%
+		padding: 0
+		box-sizing: border-box
+		#intro
+			background: url('../images/concrete_wall_dark.png') repeat
+			color: $light-grey
+			h2.prologue
+				margin: 1.5em 0 2em
+				padding: 1em 0
+				font-size: 1.25em
+				font-weight: 200
+				color: $light-grey
+				text-transform: uppercase
+				text-align: center
+				letter-spacing: 0.3em
+				border-top: 1px dotted $light-grey
+				border-bottom: 1px dotted $light-grey
+				box-sizing: border-box
+		#intro + .story
+			padding-bottom: 0
+		.story
+			padding: 2.5em $column*1
+			.main.wrapper
+				width: 100%
+				h2
+					margin-bottom: 1em
+					font-weight: 600
+					line-height: 1.2em
+			blockquote
+				float: left
+				margin: 0 0 2em
+				padding: 1em
+				font-family: 'omnes-pro'
+				font-size: 1.25em
+				font-style: italic
+				line-height: 1.5em
+				color: $purple
+				//background: lighten($purple, 60%)
+				background: lighten($light-grey, 7%)
+				@include border-radius(0.25em)
+		.activity:nth-of-type(1)
+			.activity-info.wrapper
+				margin-left: 12.5%
+		.activity.no-time
+			.activity-time.wrapper
+				display: none
+		.activity
+			float: left	
+			margin: 0 $column*1
+			//border-top: 1px dotted $grey
+			.border
+				position: relative
+				margin: 0 0 0.75em 0
+				span
+					position: absolute
+					right: 0.75em
+					left: 0.75em
+					border-top: 1px dotted $grey
+			.activity-time.wrapper
+				float: left
+				margin-bottom: 0.75em
+				width: 100%
+				h3
+					//float: right
+					font-family: 'skolar'
+					font-size: 1em
+					font-weight: 400
+					color: $grey
+					line-height: 1em
+					//text-align: right						
+					span
+						display: block
+						margin: 0.75em 0 0 0
+						padding: 0.8em 0 0 0
+						//font-family: 
+						font-size: 0.4em
+						font-weight: 200
+						//color: $grey
+						letter-spacing: 0.1em
+						line-height: 1.7em
+						text-transform: uppercase
+						border-top: 1px dotted $grey
+					.same-time
+						margin: 0
+						padding: 0
+						border-top: none
+						line-height: 2em
+			.activity-info.wrapper
+				float: left
+				width: 100%
+				h4 + blockquote
+					margin-top: 1.5em
+				img
+					margin-bottom: 1.5em
+				blockquote
+					float: none
+					margin: 0 0 1.4em
+					padding: 1em
+					font-family: 'omnes-pro'
+					font-size: 1.25em
+					font-style: italic
+					line-height: 1.5em
+					color: $purple
+					//background: lighten($purple, 60%)
+					background: lighten($light-grey, 7%)
+					@include border-radius(0.25em)
+					//border-top: 1px dotted $purple
+					//border-bottom: 1px dotted $purple				
+				h4
+					margin-bottom: 1.5em
+					padding-bottom: 0.7em
+					font-family: 'skolar'
+					font-weight: 700
+					line-height: 1.4em
+					border-bottom: 1px dotted $grey				
+					span
+						display: block
+						margin-top: 0.5em
+						font-weight: 300
+						color: $grey
+				.label
+					margin-bottom: 0.75em
+			.activity-info.wrapper > h4:nth-of-type(2)
+				margin-top: 0.7em
+				padding-top: 0.6em
+				border-top: 1px dotted $grey
+		.bottom-matter
+			padding: 1.5em $column*1 1.5em
+			#further-reading
+				margin-top: 0.75em
+				clear: left
+			h4, #further-reading
+				display: block
+				float: left
+				font-style: italic
+		img
+			display: block
+			width: 100%
+
+//	
+//	
+//	Eight-column grid active
+//	----------------------------------------------------------------------
+//	Margin   | #  1     2     3     4     5     6     7     8   |   Margin
+//	5.55555% | %  12.5  25.0  37.5  50.0  62.5  75.0  87.5  100 | 5.55555%
+//	
+//	
+//	
+
+/* @media screen and (min-width: 720px) */
+// iPad
+@media screen and (min-width: 45em) 
+
+	body 
+		/* Reset baseline grid to 16/16 = 1 */
+		font-size: #{($font-size) / $em}em
+	#seoul-safari-six-hours-in-seoul.article
+		.cover
+			hgroup
+				padding: 2em 3em
+				h1
+					font-size: 4.5em
+				h2
+					font-size: 1.25em
+		article
+			.story
+				padding: 3em $column*1
+			.activity.no-time
+				.activity-info.wrapper
+					margin-left: 12.5%
+			.activity
+				.activity-time.wrapper
+					margin-bottom: 0
+					width: 12.5%
+				.activity-info.wrapper
+					float: left
+					width: 87.5%
+		.bottom-matter
+			h4, #further-reading
+				margin-left: 12.5%
+
+/* @media screen and (min-width: 984px) */
+// Standard Desktop
+@media screen and (min-width: 61.5em)
+	body 
+		/* Reset baseline grid to 16/16 = 1 */
+		font-size: #{($font-size) / $em}em
+	#seoul-safari-six-hours-in-seoul.article
+		.cover
+			hgroup
+				h1
+					font-size: 6em
+		article
+			.story
+				.wrapper.main
+					margin-left: 12.5%
+					width: 75%
+			.activity
+				margin: 0 $column*3				
+
+//	
+//	
+//	Sixteen-column grid active
+//	----------------------------------------------------------------------------------------------------------------------
+//	Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
+//	5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
+//	
+//	
+//
+
+/* @media screen and (min-width: 1872px) */
+// Wide Desktop
+@media screen and (min-width: 117em)

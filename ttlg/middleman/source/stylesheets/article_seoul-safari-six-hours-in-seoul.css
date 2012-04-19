@@ -1,0 +1,205 @@
+#seoul-safari-six-hours-in-seoul .cover {
+  background: url("../images/seoul-safari_cover.jpg") center top no-repeat; }
+  #seoul-safari-six-hours-in-seoul .cover hgroup {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1em 1.5em;
+    background: #3f3578;
+    text-shadow: 0 1px 2px #333333; }
+    #seoul-safari-six-hours-in-seoul .cover hgroup h1, #seoul-safari-six-hours-in-seoul .cover hgroup h2 {
+      font-weight: 100; }
+    #seoul-safari-six-hours-in-seoul .cover hgroup h1 {
+      position: relative;
+      margin-bottom: 0.25em;
+      padding-bottom: 0.25em;
+      font-size: 2.15em;
+      font-weight: 700;
+      line-height: 1em;
+      color: #33ccff;
+      border-bottom: 1px dotted #e1e1e1; }
+      #seoul-safari-six-hours-in-seoul .cover hgroup h1 .safari {
+        color: #e1e1e1; }
+      #seoul-safari-six-hours-in-seoul .cover hgroup h1 .six-hours {
+        display: block;
+        font-weight: 100; }
+    #seoul-safari-six-hours-in-seoul .cover hgroup h2 {
+      display: inline-block;
+      font-family: "omnes-pro";
+      font-size: 1em;
+      font-style: italic;
+      color: white;
+      line-height: 1.1em; }
+#seoul-safari-six-hours-in-seoul article {
+  float: left;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box; }
+  #seoul-safari-six-hours-in-seoul article #intro {
+    background: url("../images/concrete_wall_dark.png") repeat;
+    color: #e1e1e1; }
+    #seoul-safari-six-hours-in-seoul article #intro h2.prologue {
+      margin: 1.5em 0 2em;
+      padding: 1em 0;
+      font-size: 1.25em;
+      font-weight: 200;
+      color: #e1e1e1;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.3em;
+      border-top: 1px dotted #e1e1e1;
+      border-bottom: 1px dotted #e1e1e1;
+      box-sizing: border-box; }
+  #seoul-safari-six-hours-in-seoul article #intro + .story {
+    padding-bottom: 0; }
+  #seoul-safari-six-hours-in-seoul article .story {
+    padding: 2.5em 5.556%; }
+    #seoul-safari-six-hours-in-seoul article .story .main.wrapper {
+      width: 100%; }
+      #seoul-safari-six-hours-in-seoul article .story .main.wrapper h2 {
+        margin-bottom: 1em;
+        font-weight: 600;
+        line-height: 1.2em; }
+    #seoul-safari-six-hours-in-seoul article .story blockquote {
+      float: left;
+      margin: 0 0 2em;
+      padding: 1em;
+      font-family: "omnes-pro";
+      font-size: 1.25em;
+      font-style: italic;
+      line-height: 1.5em;
+      color: #3f3578;
+      background: #f3f3f3;
+      -moz-border-radius: 0.25em;
+      -webkit-border-radius: 0.25em;
+      border-radius: 0.25em; }
+  #seoul-safari-six-hours-in-seoul article .activity:nth-of-type(1) .activity-info.wrapper {
+    margin-left: 12.5%; }
+  #seoul-safari-six-hours-in-seoul article .activity.no-time .activity-time.wrapper {
+    display: none; }
+  #seoul-safari-six-hours-in-seoul article .activity {
+    float: left;
+    margin: 0 5.556%; }
+    #seoul-safari-six-hours-in-seoul article .activity .border {
+      position: relative;
+      margin: 0 0 0.75em 0; }
+      #seoul-safari-six-hours-in-seoul article .activity .border span {
+        position: absolute;
+        right: 0.75em;
+        left: 0.75em;
+        border-top: 1px dotted #999999; }
+    #seoul-safari-six-hours-in-seoul article .activity .activity-time.wrapper {
+      float: left;
+      margin-bottom: 0.75em;
+      width: 100%; }
+      #seoul-safari-six-hours-in-seoul article .activity .activity-time.wrapper h3 {
+        font-family: "skolar";
+        font-size: 1em;
+        font-weight: 400;
+        color: #999999;
+        line-height: 1em; }
+        #seoul-safari-six-hours-in-seoul article .activity .activity-time.wrapper h3 span {
+          display: block;
+          margin: 0.75em 0 0 0;
+          padding: 0.8em 0 0 0;
+          font-size: 0.4em;
+          font-weight: 200;
+          letter-spacing: 0.1em;
+          line-height: 1.7em;
+          text-transform: uppercase;
+          border-top: 1px dotted #999999; }
+        #seoul-safari-six-hours-in-seoul article .activity .activity-time.wrapper h3 .same-time {
+          margin: 0;
+          padding: 0;
+          border-top: none;
+          line-height: 2em; }
+    #seoul-safari-six-hours-in-seoul article .activity .activity-info.wrapper {
+      float: left;
+      width: 100%; }
+      #seoul-safari-six-hours-in-seoul article .activity .activity-info.wrapper h4 + blockquote {
+        margin-top: 1.5em; }
+      #seoul-safari-six-hours-in-seoul article .activity .activity-info.wrapper img {
+        margin-bottom: 1.5em; }
+      #seoul-safari-six-hours-in-seoul article .activity .activity-info.wrapper blockquote {
+        float: none;
+        margin: 0 0 1.4em;
+        padding: 1em;
+        font-family: "omnes-pro";
+        font-size: 1.25em;
+        font-style: italic;
+        line-height: 1.5em;
+        color: #3f3578;
+        background: #f3f3f3;
+        -moz-border-radius: 0.25em;
+        -webkit-border-radius: 0.25em;
+        border-radius: 0.25em; }
+      #seoul-safari-six-hours-in-seoul article .activity .activity-info.wrapper h4 {
+        margin-bottom: 1.5em;
+        padding-bottom: 0.7em;
+        font-family: "skolar";
+        font-weight: 700;
+        line-height: 1.4em;
+        border-bottom: 1px dotted #999999; }
+        #seoul-safari-six-hours-in-seoul article .activity .activity-info.wrapper h4 span {
+          display: block;
+          margin-top: 0.5em;
+          font-weight: 300;
+          color: #999999; }
+      #seoul-safari-six-hours-in-seoul article .activity .activity-info.wrapper .label {
+        margin-bottom: 0.75em; }
+    #seoul-safari-six-hours-in-seoul article .activity .activity-info.wrapper > h4:nth-of-type(2) {
+      margin-top: 0.7em;
+      padding-top: 0.6em;
+      border-top: 1px dotted #999999; }
+  #seoul-safari-six-hours-in-seoul article .bottom-matter {
+    padding: 1.5em 5.556% 1.5em; }
+    #seoul-safari-six-hours-in-seoul article .bottom-matter #further-reading {
+      margin-top: 0.75em;
+      clear: left; }
+    #seoul-safari-six-hours-in-seoul article .bottom-matter h4, #seoul-safari-six-hours-in-seoul article .bottom-matter #further-reading {
+      display: block;
+      float: left;
+      font-style: italic; }
+  #seoul-safari-six-hours-in-seoul article img {
+    display: block;
+    width: 100%; }
+
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+    font-size: 1em; }
+
+  #seoul-safari-six-hours-in-seoul.article .cover hgroup {
+    padding: 2em 3em; }
+    #seoul-safari-six-hours-in-seoul.article .cover hgroup h1 {
+      font-size: 4.5em; }
+    #seoul-safari-six-hours-in-seoul.article .cover hgroup h2 {
+      font-size: 1.25em; }
+  #seoul-safari-six-hours-in-seoul.article article .story {
+    padding: 3em 5.556%; }
+  #seoul-safari-six-hours-in-seoul.article article .activity.no-time .activity-info.wrapper {
+    margin-left: 12.5%; }
+  #seoul-safari-six-hours-in-seoul.article article .activity .activity-time.wrapper {
+    margin-bottom: 0;
+    width: 12.5%; }
+  #seoul-safari-six-hours-in-seoul.article article .activity .activity-info.wrapper {
+    float: left;
+    width: 87.5%; }
+  #seoul-safari-six-hours-in-seoul.article .bottom-matter h4, #seoul-safari-six-hours-in-seoul.article .bottom-matter #further-reading {
+    margin-left: 12.5%; } }
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+    font-size: 1em; }
+
+  #seoul-safari-six-hours-in-seoul.article .cover hgroup h1 {
+    font-size: 6em; }
+  #seoul-safari-six-hours-in-seoul.article article .story .wrapper.main {
+    margin-left: 12.5%;
+    width: 75%; }
+  #seoul-safari-six-hours-in-seoul.article article .activity {
+    margin: 0 16.667%; } }
+/* @media screen and (min-width: 1872px) */

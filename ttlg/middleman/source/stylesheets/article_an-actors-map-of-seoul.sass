@@ -75,18 +75,7 @@ $map-divisions: 0.1
 			width: 100%
 			box-sizing: border-box			
 		#intro
-			display: inline-block
-			width: 100%
-			padding: 1.5em $column*1
-			background: url('../images/bgnoise_lg.jpg') repeat
-			@include page-shadow
 			.wrapper
-				width: 100%
-				p
-					margin-bottom: 0.75em
-					font-size: 1em
-					font-weight: 200
-					line-height: 1.5em	
 				#laminate
 					margin: 0.75em 0 1.5em
 					margin-left: -$column*2
@@ -103,7 +92,7 @@ $map-divisions: 0.1
 			padding: 1.5em $column*1 1.5em
 			@include page-shadow
 			box-sizing: border-box
-			#main.wrapper
+			.main.wrapper
 				width: 100%
 				.stop
 					margin-bottom: 1.5em
@@ -121,16 +110,8 @@ $map-divisions: 0.1
 						margin-left: -$column*2
 						margin-bottom: 1em
 						width: 100%+$column*4
-					em
-						font-family: 'omnes-pro'
-		#bottom-matter
-			width: 100%
-			padding-bottom: 1.5em
-			padding-top: 1.5em
-			color: white			
-			background: $blue
-			box-sizing: border-box
-			#translated
+		.bottom-matter
+			.notable
 				margin-bottom: 1.5em
 				padding: 0.5em 0.75em
 				width: 100%
@@ -142,10 +123,6 @@ $map-divisions: 0.1
 				width: 100%
 				font-family: 'omnes-pro'
 				font-style: italic
-			.label
-				border-bottom: 1px dotted $dark-grey
-			a
-				color: $dark-grey
 		h3
 			display: inline-block
 			margin: 0 0 0.75em 0
@@ -208,7 +185,6 @@ $map-divisions: 0.1
 				box-shadow: 0 0 4px black
 		article
 			#intro
-				padding: 3em $column*1
 				.wrapper
 					p
 						margin-bottom: 0.75em
@@ -220,14 +196,12 @@ $map-divisions: 0.1
 						width: 100%						
 			.story
 				padding: 3em $column*1
-				#main.wrapper
+				.main.wrapper
 					.stop
 						img
 							margin-left: 0
 							width: 100%
-			#bottom-matter		
-				#translated
-					margin-bottom: 1.5em
+			.bottom-matter		
 				#order, #further-reading
 					width: 50%
 
@@ -260,15 +234,12 @@ $map-divisions: 0.1
 					margin-left: 12.5%
 					width: 75%
 			.story
-				#main.wrapper
+				.main.wrapper
 					margin-left: 12.5%
 					width: 75%
-			#bottom-matter		
-				#order, #translated
+			.bottom-matter		
+				#order
 					margin-left: 12.5%
-				#translated
-					margin-bottom: 1.5em
-					width: 75%
 				#order, #further-reading
 					width: 37.5%					
 
