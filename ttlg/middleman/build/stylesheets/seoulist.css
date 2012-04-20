@@ -121,74 +121,6 @@ body {
   box-sizing: border-box; }
 
 /* Seoulist */
-hgroup#mini-mast {
-  display: none; }
-
-footer {
-  display: block;
-  float: left;
-  padding: 1.5em 0;
-  width: 100%;
-  color: #666666;
-  background: #333333;
-  box-sizing: border-box;
-  box-shadow: inset 0 1px 6px black;
-  text-align: center; }
-  footer a, footer .copyright {
-    display: block;
-    float: none;
-    margin: 0;
-    padding: 0.75em 0;
-    color: #e1e1e1;
-    font-size: 0.75em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-decoration: none; }
-    footer a:hover, footer .copyright:hover {
-      color: #33ccff; }
-  footer .copyright {
-    float: none;
-    padding: 0 0 0.75em 0;
-    margin-bottom: 0.75em;
-    color: #999999; }
-  footer .seoulist-link {
-    position: static;
-    padding: 0.75em;
-    color: white;
-    background: black;
-    border: 1px dotted #e1e1e1; }
-    footer .seoulist-link:hover {
-      background: #33ccff;
-      color: white; }
-
-/* @media screen and (min-width: 720px) */
-@media screen and (min-width: 45em) {
-  body {
-    /* Reset baseline grid to 16/16 = 1 */
-    font-size: 1em; }
-
-  hgroup#mini-mast {
-    display: block; }
-
-  footer {
-    position: relative;
-    padding: 1.5em 5.556%; } }
-/* @media screen and (min-width: 984px) */
-@media screen and (min-width: 61.5em) {
-  footer {
-    text-align: left; }
-    footer .copyright {
-      float: left; }
-    footer .seoulist-link {
-      position: absolute;
-      top: 2em;
-      left: 25%;
-      right: 25%;
-      text-align: center; }
-    footer a {
-      float: right;
-      margin-left: 1.5em; } }
-/* @media screen and (min-width: 1872px) */
 body {
   padding-top: 3.938em;
   padding-bottom: 3em;
@@ -399,12 +331,62 @@ header.masthead {
 .cover {
   box-sizing: border-box; }
 
-.story, #bottom-matter {
+#articles article p {
+  margin-bottom: 1.5em;
+  font-family: "skolar";
+  font-weight: 300; }
+#articles article em {
+  font-family: "omnes-pro"; }
+#articles article em.inline {
+  font-family: "skolar"; }
+#articles article .bleed {
+  width: 100%;
+  box-sizing: border-box; }
+#articles article .story {
   float: left;
   padding: 0 5.556%; }
-  .story p, #bottom-matter p {
+#articles article #intro {
+  display: inline-block;
+  overflow-x: hidden;
+  width: 100%;
+  padding: 1.5em 5.556%;
+  background: url("../images/bgnoise_lg.jpg") repeat;
+  -moz-box-shadow: 0 0 12px black;
+  -webkit-box-shadow: 0 0 12px black;
+  box-shadow: 0 0 12px black; }
+  #articles article #intro .wrapper {
+    width: 100%; }
+    #articles article #intro .wrapper h2 {
+      margin-bottom: 1em;
+      font-weight: 600;
+      line-height: 1.2em; }
+    #articles article #intro .wrapper p {
+      margin-bottom: 0.75em;
+      font-size: 1em;
+      font-weight: 200;
+      line-height: 1.5em; }
+#articles article .bottom-matter {
+  float: left;
+  width: 100%;
+  padding: 0 5.556%;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+  color: white;
+  background: #33ccff;
+  box-sizing: border-box; }
+  #articles article .bottom-matter .notable {
     margin-bottom: 1.5em;
-    font-weight: 300; }
+    padding: 0.5em 0.75em;
+    width: 100%;
+    border: 1px dotted white;
+    -moz-border-radius: 0.75em;
+    -webkit-border-radius: 0.75em;
+    border-radius: 0.75em;
+    box-sizing: border-box; }
+  #articles article .bottom-matter .label {
+    border-bottom: 1px dotted #333333; }
+  #articles article .bottom-matter a {
+    color: #333333; }
 
 a {
   color: #33ccff; }
@@ -422,7 +404,7 @@ a {
   border-bottom: 1px dotted #e1e1e1; }
 
 .highlight {
-  font-family: "omnes-pro";
+  font-family: "skolar";
   font-style: italic;
   background: white; }
 
@@ -435,3 +417,97 @@ a {
   .article-source p {
     margin-bottom: 1.5em;
     -webkit-hyphens: auto; }
+
+hgroup#mini-mast {
+  display: none; }
+
+footer {
+  display: block;
+  float: left;
+  padding: 1.5em 0;
+  width: 100%;
+  color: #666666;
+  background: #333333;
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 6px black;
+  text-align: center; }
+  footer a, footer .copyright {
+    display: block;
+    float: none;
+    margin: 0;
+    padding: 0.75em 0;
+    color: #e1e1e1;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none; }
+    footer a:hover, footer .copyright:hover {
+      color: #33ccff; }
+  footer .copyright {
+    float: none;
+    padding: 0 0 0.75em 0;
+    margin-bottom: 0.75em;
+    color: #999999; }
+  footer .seoulist-link {
+    position: static;
+    padding: 0.75em;
+    color: white;
+    background: black;
+    border: 1px dotted #e1e1e1; }
+    footer .seoulist-link:hover {
+      background: #33ccff;
+      color: white; }
+
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+    font-size: 1em; }
+
+  hgroup#mini-mast {
+    display: block; }
+
+  footer {
+    position: relative;
+    padding: 1.5em 5.556%; }
+
+  #articles article .story {
+    padding: 3em 5.556%; }
+  #articles article #intro {
+    padding: 3em 5.556%; }
+    #articles article #intro .wrapper p {
+      margin-bottom: 0.75em;
+      font-size: 1.25em;
+      font-weight: 200;
+      line-height: 1.5em; }
+  #articles article .bottom-matter .notable {
+    margin-bottom: 1.5em; } }
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+  footer {
+    text-align: left; }
+    footer .copyright {
+      float: left; }
+    footer .seoulist-link {
+      position: absolute;
+      top: 2em;
+      left: 25%;
+      right: 25%;
+      text-align: center; }
+    footer a {
+      float: right;
+      margin-left: 1.5em; }
+
+  #articles article #intro {
+    padding: 3em 5.556%; }
+    #articles article #intro .wrapper {
+      margin-left: 12.5%;
+      width: 75%; }
+  #articles article .main.wrapper {
+    margin-left: 12.5%;
+    width: 75%; }
+  #articles article .bottom-matter .notable {
+    margin-bottom: 1.5em;
+    margin-left: 12.5%;
+    width: 75%; } }
+/* @media screen and (min-width: 1872px) */
