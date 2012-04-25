@@ -5,6 +5,8 @@ $(document).ready(function() {
 	var coverHeight = $(window).height();
 	var coverWidth = $(window).width();
 	var articleCount = $('.article').length;
+
+	//alert (articleCount);
 	
 	$('#vertical').each(function() {
 			var $children = $(this).children(),
@@ -74,6 +76,13 @@ $(document).ready(function() {
 		jump: true //click on the images to scroll to them
 	});
 
+	$('a.pagination-previous, a.pagination-next').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 'fast');
+		return false;
+	});
+
 
 
 	// Local Scroll
@@ -100,7 +109,7 @@ $(document).ready(function() {
 
 			var coverHeight = $(window).height();
 			var coverWidth = $(window).width();
-			var articleCount = $('.article').length;
+			//var articleCount = $('.article').length;
 
 			// Set the height of the cover equal to the height of viewport
 			// Changed to accomodate things below cover on homepage
@@ -198,12 +207,14 @@ $(document).ready(function() {
 	});
 */
 
-	$('#home .content-scroller a').click(function() {
+	$('#home .content-scroller a, .home-item').click(function() {
 		$('body').removeClass('home').addClass('articles');
 		$('#home').slideUp('slow').fadeOut('slow',
 			function() {
 				$('#articles').load('articles.html',
 					function() {
+
+						var articleCount = $('.article').length;				
 
 						// Set the height of the cover equal to the height of viewport
 						// Changed to accomodate things below cover on homepage
@@ -274,6 +285,11 @@ $(document).ready(function() {
 		$('#home').slideUp('slow').fadeOut('slow',
 			function() {
 				$('#articles').load('articles.html');
+				
+				var articleCount = $('.article').length;				
+
+				$('#content-scroller').css({'width':((coverWidth)*(articleCount))+'px'});
+
 
 				// Removing #home from DOM lets localscroll work by not creating an ID conflict with articles (previously they were both in the featured area in #home and within #articles as themselves)
 				$('#home').remove();
@@ -292,10 +308,11 @@ $(document).ready(function() {
 		$('#table-of-contents').show();
 	});*/
 
-	$('#trigger, #close').click(function() {
+	$('#trigger, #close, .home-item').click(function() {
 		$('#table-of-contents').slideToggle('slow', function() {
 			$('#curtain').hide();
 		});
+		$('#home, #articles').fadeToggle('fast');		
 	});
 
 

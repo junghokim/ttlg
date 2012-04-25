@@ -2,7 +2,7 @@
 @import 'shared-variables'
 
 @mixin page-shadow
-	@include box-shadow(0, 0, 12px, black)
+	@include box-shadow(0, 0, 6px, black)
 
 //	Margin, padding, and border resets
 //	except for form elements
@@ -187,7 +187,7 @@ body
 
 body
 	padding-top: 3.9375em
-	padding-bottom: 3em
+	//padding-bottom: 3em
 	font-family: 'jubilat', Helvetica, Arial, sans-serif
 	font-weight: 400
 	background: url('../images/white_texture-edited.png') repeat
@@ -236,8 +236,6 @@ header.masthead
 		background-color: transparent
 	a.view-articles, .previous-container, .next-container
 		float: left
-		&:hover
-			background-color: $grey
 	.pagination-previous, .pagination-next
 		display: block
 	a.view-articles
@@ -284,46 +282,47 @@ header.masthead
 	padding: 0 $column*1 1.5em
 	background: white
 	//border-top: 1px dotted $blue
-	opacity: 0.98
+	//opacity: 0.98
 	@include page-shadow
 	#title-outer
 		float: left
-		margin: 1.5em 0
+		margin: 1.5em 0 0
 		width: 100%
 		h3
 			margin: 0
-			padding: 0.5em 0
+			padding: 0.5em 0 1em
 			font-size: 1.5em
 			font-weight: 700
 			color: #333
 			border-bottom: 1px dotted #CCC
+			.slash
+				display: none
+				color: black
 			span
 				color: $blue
 	#article-list
 		float: left
 		position: relative
-		//overflow-x: hidden
-		//overflow-y: scroll
-		padding: 1.5em 0
-		//-webkit-column-width: 12em		
+		width: 100%	
 		box-sizing: border-box
 		.home-item
-			float: left
-			display: block
+			display: inline-block
 			position: relative
-			margin-bottom: 1.5em
-			padding: 0 0.75em
-			width: 25%
-			height: 8em
+			padding: 1.5em 0.75em
+			width: 100%
 			background: none
 			box-sizing: border-box
-			//border-bottom: 1px dotted #CCC
-			.thumb-crop				
+			.thumb-crop
+				float: left
+				overflow: hidden		
+				width: 3.5em
+				height: 3.5em
+				@include border-radius(3px)			
 				img
-					float: left		
-					width: 3.5em
-					height: 3.5em
-					@include border-radius(3px)
+					float: left
+					margin-left: -0.9em		
+					//max-width: 100%
+					max-height: 100%
 			hgroup
 				//float: left
 				margin-top: -0.25em
@@ -331,14 +330,16 @@ header.masthead
 				//width: 75%
 				box-sizing: border-box
 				a
-					color: $grey
-					font-style: italic
+					color: black
+					//font-style: italic
 					text-decoration: none
+					&:hover
+						color: $blue
 				h2, h3
 					display: none
 					@include small-text
 					font-weight: 200
-					color: $grey
+					//color: $grey
 				h1
 					font-size: 1.25em
 					font-weight: 700
@@ -346,10 +347,7 @@ header.masthead
 				h4
 					display: none
 			&:hover
-				h1
-					color: $blue
-				.bottom-line
-					border-bottom: 1px dotted $blue
+				cursor: pointer
 			.bottom-line
 				position: absolute
 				right: 0.75em
@@ -369,7 +367,7 @@ header.masthead
 		a
 			display: block
 			@include small-text
-			color: #444444
+			color: white
 			text-transform: uppercase
 			letter-spacing: 0.1em
 			text-decoration: none
@@ -402,6 +400,7 @@ header.masthead
 //
 
 .article
+	overflow-x: hidden
 	float: left
 	width: 100%
 	.cover
@@ -418,11 +417,21 @@ header.masthead
 	box-sizing: border-box
 
 //
+// Interlude Setup
+//
+
+.interlude
+	.cover
+		border-bottom: 5px solid darken($blue, 25%)
+		//border-bottom: 10px solid black
+
+//
 // Article Setup
 //
 
 #articles
 	article
+		//display: none
 		p
 			margin-bottom: 1.5em
 			font-family: 'skolar'
@@ -509,13 +518,14 @@ a
 hgroup#mini-mast
 	display: none
 footer
-	display: block
+	//display: none
 	float: left
 	padding: 1.5em 0
 	width: 100%	
 	color: $medium-grey	
 	//text-align: center
-	background: $dark-grey
+	//background: $dark-grey
+	background: black
 	box-sizing: border-box
 	box-shadow: inset 0 1px 6px black
 	text-align: center
@@ -533,10 +543,11 @@ footer
 			color: $blue
 	.copyright
 		float: none
-		padding: 0 0 0.75em 0
+		//padding: 0 0 0.75em 0
 		margin-bottom: 0.75em
 		color: $grey
 	.seoulist-link
+		display: none
 		position: static
 		padding: 0.75em
 		color: white
@@ -582,11 +593,52 @@ footer
 			.bottom-matter
 				.notable
 					margin-bottom: 1.5em
-
+	#table-of-contents
+		#title-outer
+			h3
+				.slash
+					display: inline-block
+		#article-list
+			.home-item
+				hgroup
+					position: absolute
+					//float: left
+					top: 50%
+					margin-top: -0.75em
+					padding-left: 4.5em
+					//width: 75%
+					box-sizing: border-box
+					a
+						color: black
+						//font-style: italic
+						text-decoration: none
+					h2, h3
+						display: none
+						@include small-text
+						font-weight: 200
+						//color: $grey
+					h1
+						font-size: 1.25em
+						font-weight: 700
+						color: #333
+					h4
+						display: none
+				&:hover
+					h1
+						color: $blue
+				.bottom-line
+					position: absolute
+					right: 0.75em
+					bottom: 0
+					left: 0.75em
+					border-bottom: 1px dotted $grey
 
 /* @media screen and (min-width: 984px) */
 // Standard Desktop
 @media screen and (min-width: 61.5em)
+	a.view-articles, .previous-container, .next-container
+		&:hover
+			background-color: $grey
 	footer
 		text-align: left
 		.copyright

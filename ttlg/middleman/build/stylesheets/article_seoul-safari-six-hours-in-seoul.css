@@ -159,7 +159,8 @@
       clear: left; }
     #seoul-safari-six-hours-in-seoul article .bottom-matter h4, #seoul-safari-six-hours-in-seoul article .bottom-matter #further-reading {
       display: block;
-      float: left;
+      float: left; }
+    #seoul-safari-six-hours-in-seoul article .bottom-matter #further-reading {
       font-style: italic; }
   #seoul-safari-six-hours-in-seoul article img {
     display: block;

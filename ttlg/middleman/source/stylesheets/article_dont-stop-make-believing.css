@@ -1,43 +1,71 @@
-/* @media screen and (min-width: 720px) */
-@media screen and (min-width: 45em) {
-  body {
-    /* Reset baseline grid to 16/16 = 1 */
-    font-size: 1em; } }
-/* @media screen and (min-width: 984px) */
-/* @media screen and (min-width: 1872px) */
 #dont-stop-make-believing.article .cover {
-  background: url("../images/cosplay-girl-group.jpg") center center no-repeat; }
+  background: url("../images/cosplay-girl-group.jpg") top center no-repeat; }
   #dont-stop-make-believing.article .cover hgroup {
     position: absolute;
-    right: 10%;
-    bottom: 14%;
-    left: 10%;
-    padding: 2em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
     text-align: center;
     background: white;
     box-sizing: border-box;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+    opacity: 0.93;
     text-shadow: 0 1px 2px #cccccc; }
     #dont-stop-make-believing.article .cover hgroup h1 {
+      margin-bottom: 0.25em;
       color: #00bee1;
-      font-size: 4em; }
-      #dont-stop-make-believing.article .cover hgroup h1 .stop {
-        color: #fd68db; }
-      #dont-stop-make-believing.article .cover hgroup h1 .make {
-        color: #fdf432; }
-      #dont-stop-make-believing.article .cover hgroup h1 .believing {
-        color: #dba4f9; }
+      font-size: 2em;
+      line-height: 1em; }
+      #dont-stop-make-believing.article .cover hgroup h1 span {
+        display: block; }
     #dont-stop-make-believing.article .cover hgroup h2 {
       color: black;
       font-size: 1em;
       font-family: "omnes-pro";
       font-style: italic;
       font-weight: 300; }
-#dont-stop-make-believing.article .destination {
-  display: block; }
-#dont-stop-make-believing.article #story #region-1, #dont-stop-make-believing.article #story #region-2, #dont-stop-make-believing.article #story #region-3, #dont-stop-make-believing.article #story #region-4 {
-  content: -webkit-from-flow("article_flow");
-  -webkit-flow-from: article_flow;
+#dont-stop-make-believing.article article {
+  float: left;
+  width: 100%;
+  padding: 0;
   box-sizing: border-box; }
+  #dont-stop-make-believing.article article #intro {
+    background: transparent; }
+  #dont-stop-make-believing.article article .story {
+    padding: 2.5em 5.556%;
+    box-sizing: border-box; }
+    #dont-stop-make-believing.article article .story .interview em {
+      margin-bottom: 1.5em;
+      font-family: "skolar";
+      font-weight: 700; }
+  #dont-stop-make-believing.article article #two {
+    float: left;
+    margin-bottom: 1.5em; }
+    #dont-stop-make-believing.article article #two img {
+      width: 50%; }
+  #dont-stop-make-believing.article article img {
+    float: left;
+    width: 100%; }
+
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+  #dont-stop-make-believing.article .cover hgroup {
+    padding: 1.5em;
+    opacity: 0.95; }
+    #dont-stop-make-believing.article .cover hgroup h1 {
+      font-size: 4em; }
+    #dont-stop-make-believing.article .cover hgroup h2 {
+      margin-top: 1em;
+      font-size: 1em; }
+  #dont-stop-make-believing.article article #intro p {
+    font-size: 1.5em; } }
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+  #dont-stop-make-believing.article .cover hgroup {
+    padding: 2.5em;
+    opacity: 0.93; }
+    #dont-stop-make-believing.article .cover hgroup h1 {
+      font-size: 5em; }
+      #dont-stop-make-believing.article .cover hgroup h1 span {
+        display: inline; } }
+/* @media screen and (min-width: 1872px) */

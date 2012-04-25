@@ -2,7 +2,7 @@
 @import 'shared-variables'
 
 @mixin page-shadow
-	@include box-shadow(0, 0, 12px, black)
+	@include box-shadow(0, 0, 6px, black)
 
 // For Article
 
@@ -38,8 +38,9 @@
 				color: $blue
 				span
 					display: block
-			h2, h3
+			h2
 				display: inline-block
+				font-family: 'omnes-pro'
 				font-size: 0.9em
 				font-style: italic
 				text-transform: uppercase
@@ -58,7 +59,7 @@
 					line-height: 1.2em
 		.image-block
 			float: left
-			margin: 1.5em 0 3em
+			margin: 1.5em 0
 			width: 100%
 			box-sizing: border-box
 			.image
@@ -66,6 +67,7 @@
 				width: 100%
 				box-sizing: border-box
 			.caption
+				margin-bottom: 0
 				padding: 0.75em 0 0.75em 0.75em
 				font-family: 'omnes-pro'
 				font-style: italic

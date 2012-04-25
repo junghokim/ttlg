@@ -2,7 +2,7 @@
 @import 'shared-variables'
 
 @mixin page-shadow
-	@include box-shadow(0, 0, 12px, black)
+	@include box-shadow(0, 0, 6px, black)
 
 // For Article
 
@@ -15,6 +15,30 @@
 //	5.55555% | %  25  50  75  100 | 5.55555%
 //	
 //
+
+#searching-for-the-little-black-pen.article
+	.cover
+		background: url('../images/searching-for-the-little-black-pen_cover.jpg') center center no-repeat
+		hgroup
+			position: absolute				
+			top: 10%
+			right: 3%
+			left: 3%
+			text-align: center
+			text-shadow: 0 1px 2px #CCC
+			h1
+				font-size: 1.9em
+				font-weight: 100
+				text-shadow: 0 1px 2px $grey						
+			h2
+				margin-top: 0.8em
+				font-family: 'omnes-pro'
+				font-size: 0.85em
+				font-weight: 200
+				color: $blue
+				text-transform: uppercase
+				letter-spacing: 0.2em
+
 
 //	
 //	
@@ -53,24 +77,3 @@
 /* @media screen and (min-width: 1872px) */
 // Wide Desktop
 @media screen and (min-width: 117em)
-
-#searching-for-the-little-black-pen.article
-	.cover
-		background: url('../images/little_black_pen_mon_ami_690px_04-690x460.jpg') center center no-repeat
-		hgroup
-			position: absolute				
-			top: 28%
-			right: 0
-			left: 0
-			text-align: center
-			text-shadow: 0 1px 2px #CCC
-			h1
-				font-size: 1.5em
-				font-weight: 100
-			h2
-				margin-top: 1em
-				font-size: 0.85em
-				font-weight: 100
-				color: $dark-grey
-				text-transform: uppercase
-				letter-spacing: 0.2em

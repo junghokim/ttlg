@@ -2,11 +2,10 @@
 @import 'shared-variables'
 
 @mixin page-shadow
-	@include box-shadow(0, 0, 12px, black)
+	@include box-shadow(0, 0, 6px, black)
 
 // For Article
 
-$yellow: #FDE700
 
 //	
 //	
@@ -16,6 +15,65 @@ $yellow: #FDE700
 //	5.55555% | %  25  50  75  100 | 5.55555%
 //	
 //
+
+#dont-stop-make-believing.article
+	.cover
+		background: url('../images/cosplay-girl-group.jpg') top center no-repeat
+		hgroup
+			position: absolute
+			right: 0
+			bottom: 0
+			left: 0
+			padding: 1em
+			text-align: center
+			background: white
+			box-sizing: border-box
+			//@include border-radius(5px)
+			opacity: 0.93
+			text-shadow: 0 1px 2px #CCC
+			h1
+				margin-bottom: 0.25em
+				color: #00BEE1
+				font-size: 2em
+				line-height: 1em
+				span
+					display: block
+			h2
+				color: black
+				font-size: 1em
+				font-family: 'omnes-pro'
+				font-style: italic
+				font-weight: 300
+	article
+		float: left
+		width: 100%
+		padding: 0
+		box-sizing: border-box
+		#intro
+			background: transparent
+			p
+				//font-family: 'omnes-pro'
+				//font-size: 1.15em
+				//font-style: italic
+				//color: #FE47BB
+				//text-shadow: 0 -1px 1px darken(#FE47BB, 25%)
+		.story
+			padding: 2.5em $column*1
+			box-sizing: border-box
+			.interview
+				em
+					margin-bottom: 1.5em
+					font-family: 'skolar'
+					font-weight: 700
+
+		#two
+			float: left
+			margin-bottom: 1.5em
+			img
+				width: 50%
+		img
+			float: left
+			width: 100%
 
 //	
 //	
@@ -31,16 +89,40 @@ $yellow: #FDE700
 // iPad
 @media screen and (min-width: 45em) 
 
-	body 
-		/* Reset baseline grid to 16/16 = 1 */
-		font-size: #{($font-size) / $em}em
+	#dont-stop-make-believing.article
+		.cover
+			hgroup
+				//bottom: 0
+				padding: 1.5em
+				opacity: 0.95
+				h1
+					font-size: 4em
+					//line-height: 1.385em
+				h2
+					margin-top: 1em
+					font-size: 1em	
+		article
+			#intro
+				p
+					font-size: 1.5em
 	
 
 /* @media screen and (min-width: 984px) */
 // Standard Desktop
 @media screen and (min-width: 61.5em)
 
-
+	#dont-stop-make-believing.article
+		.cover
+			hgroup
+				//bottom: 0
+				padding: 2.5em
+				opacity: 0.93
+				h1
+					font-size: 5em
+					//line-height: 1.385em
+					span
+						display: inline
+				h2
 //	
 //	
 //	Sixteen-column grid active
@@ -54,44 +136,3 @@ $yellow: #FDE700
 /* @media screen and (min-width: 1872px) */
 // Wide Desktop
 @media screen and (min-width: 117em)
-
-#dont-stop-make-believing.article
-	.cover
-		background: url('../images/cosplay-girl-group.jpg') center center no-repeat
-		hgroup
-			position: absolute
-			right: 10%
-			bottom: 14%
-			left: 10%
-			padding: 2em
-			text-align: center
-			background: white
-			box-sizing: border-box
-			@include border-radius(5px)
-			//opacity: 0.95
-			text-shadow: 0 1px 2px #CCC
-			h1
-				color: #00BEE1
-				font-size: 4em
-				.stop
-					color: #FD68DB
-				.make
-					color: #FDF432
-				.believing
-					color: #DBA4F9
-			h2
-				color: black
-				font-size: 1em
-				font-family: 'omnes-pro'
-				font-style: italic
-				font-weight: 300
-	// Styling for the destination containers
-	#story
-	.destination
-		display: block
-	#story
-		#region-1, #region-2, #region-3, #region-4
-			content: -webkit-from-flow('article_flow')
-			-webkit-flow-from: article_flow
-			box-sizing: border-box
-		// Styling different regions... differently

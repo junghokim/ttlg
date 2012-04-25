@@ -23,8 +23,9 @@
       color: #33ccff; }
       #cafeteria-405-kitchen.article .cover hgroup h1 span {
         display: block; }
-    #cafeteria-405-kitchen.article .cover hgroup h2, #cafeteria-405-kitchen.article .cover hgroup h3 {
+    #cafeteria-405-kitchen.article .cover hgroup h2 {
       display: inline-block;
+      font-family: "omnes-pro";
       font-size: 0.9em;
       font-style: italic;
       text-transform: uppercase;
@@ -42,7 +43,7 @@
       line-height: 1.2em; }
   #cafeteria-405-kitchen.article article .image-block {
     float: left;
-    margin: 1.5em 0 3em;
+    margin: 1.5em 0;
     width: 100%;
     box-sizing: border-box; }
     #cafeteria-405-kitchen.article article .image-block .image {
@@ -50,6 +51,7 @@
       width: 100%;
       box-sizing: border-box; }
     #cafeteria-405-kitchen.article article .image-block .caption {
+      margin-bottom: 0;
       padding: 0.75em 0 0.75em 0.75em;
       font-family: "omnes-pro";
       font-style: italic;
