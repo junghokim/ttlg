@@ -63,6 +63,9 @@ $(document).ready(function() {
 
 	// Serial Scroll
 
+	$('#content-scroller').find('.article').not(':first-child').addClass('hidden');
+	$('#content-scroller .article:first-child').addClass('visible');
+
 	$('#articles .content-scroller-wrapper').serialScroll({
 		items:'.article',
 		prev:'a.pagination-previous',
@@ -73,15 +76,17 @@ $(document).ready(function() {
 		lock:false,
 		cycle:true, //don't pull back once you reach the end
 		// easing:'easeOutQuart', //use this easing equation for a funny effect
-		jump: true //click on the images to scroll to them
+		//jump: true, //click on the images to scroll to them,
+		onBefore:function( e, elem, $pane, $items, pos ){
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);	
+			$items.removeClass('visible').addClass('hidden');
+			$(elem).removeClass('hidden').addClass('visible');
+			//$(this).removeClass('visible').addClass('hidden');
+		}
 	});
 
-	$('a.pagination-previous, a.pagination-next').click(function () {
-		$('body,html').animate({
-			scrollTop: 0
-		}, 'fast');
-		return false;
-	});
 
 
 
@@ -238,9 +243,16 @@ $(document).ready(function() {
 							lock:false,
 							cycle:true, //don't pull back once you reach the end
 							// easing:'easeOutQuart', //use this easing equation for a funny effect
-							jump: true //click on the images to scroll to them
+							//jump: true, //click on the images to scroll to them,
+							onBefore:function( e, elem, $pane, $items, pos ){
+								$('body,html').animate({
+									scrollTop: 0
+								}, 800);	
+								$items.removeClass('visible').addClass('hidden');
+								$(elem).removeClass('hidden').addClass('visible');
+								//$(this).removeClass('visible').addClass('hidden');
+							}
 						});
-
 						$('#vertical').each(function() {
 								var $children = $(this).children(),
 										count = $children.size(),

@@ -334,6 +334,9 @@ header.masthead {
 .interlude .cover {
   border-bottom: 5px solid #0086b3; }
 
+#articles .hidden article {
+  display: none; }
+
 #articles article p {
   margin-bottom: 1.5em;
   font-family: "skolar";
