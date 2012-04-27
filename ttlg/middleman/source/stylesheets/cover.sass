@@ -28,6 +28,13 @@ body.home
 	//display: none
 	//float: left
 
+// Blanks
+
+#i-love-seoul
+	.cover
+		background: url('../images/i-love-seoul_original.png') center center no-repeat
+		border-bottom: 5px solid red
+
 body
 	// offsets the area of the fixed header
 	padding-top: 3.9375em
@@ -170,14 +177,14 @@ body
 			#dont-stop-make-believing
 				hgroup
 					position: absolute
-					right: 10%
-					bottom: 14%
-					left: 10%
-					padding: 1em
+					right: 0
+					bottom: 0
+					left: 0
+					padding: 1em 1em 3em
 					text-align: center
 					background: white
 					box-sizing: border-box
-					@include border-radius(5px)
+					//@include border-radius(5px)
 					opacity: 0.95
 					text-shadow: 0 1px 2px #CCC
 					h1
@@ -418,14 +425,13 @@ body
 							font-size: 1em
 				#dont-stop-make-believing
 					hgroup
-						left: 6%
-						right: 6%
+						padding: 1.5em 1.5em 3.5em
 						opacity: 1						
 						h1
 							font-size: 3.1em
 							line-height: 1.385em
 						h2
-							margin-top: 1em
+							margin-top: 0
 							font-size: 0.9em
 				#hangul-roundup
 					hgroup
@@ -611,8 +617,8 @@ body
 							font-size: 3.3em
 				#dont-stop-make-believing
 					hgroup
-						padding: 2em
-						@include border-radius(5px)
+						//padding: 2em 2em 3.5em
+						//@include border-radius(5px)
 						h1
 							font-size: 4em
 						h2

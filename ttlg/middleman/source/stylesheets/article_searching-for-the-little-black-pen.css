@@ -24,6 +24,20 @@
 @media screen and (min-width: 45em) {
   body {
     /* Reset baseline grid to 16/16 = 1 */
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  #searching-for-the-little-black-pen.article .cover hgroup {
+    top: 21%; }
+    #searching-for-the-little-black-pen.article .cover hgroup h1 {
+      font-size: 2.5em;
+      font-weight: 100; }
+    #searching-for-the-little-black-pen.article .cover hgroup h2 {
+      margin-top: 1em;
+      font-size: 0.85em; } }
 /* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+  #searching-for-the-little-black-pen.article .cover hgroup {
+    top: 23%; }
+    #searching-for-the-little-black-pen.article .cover hgroup h1 {
+      font-size: 3.3em; } }
 /* @media screen and (min-width: 1872px) */

@@ -331,9 +331,6 @@ header.masthead {
 .cover {
   box-sizing: border-box; }
 
-.interlude .cover {
-  border-bottom: 5px solid #0086b3; }
-
 #articles .hidden article {
   display: none; }
 

@@ -233,6 +233,10 @@ $(document).ready(function() {
 
 						// Having to call this again for some reason after load();
 
+						$('#content-scroller').find('.article').not(':first-child').addClass('hidden');
+						$('#content-scroller .article:first-child').addClass('visible');
+
+
 						$('#articles .content-scroller-wrapper').serialScroll({
 							items:'.article',
 							prev:'a.pagination-previous',
