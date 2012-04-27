@@ -9,6 +9,10 @@
 body.home .pagination-previous, body.home .pagination-next {
   display: none; }
 
+#i-love-seoul .cover {
+  background: url("../images/i-love-seoul_original.png") center center no-repeat;
+  border-bottom: 5px solid red; }
+
 body {
   padding-top: 3.938em; }
   body .content-scroller-wrapper {
@@ -157,16 +161,13 @@ body {
           letter-spacing: 0.1em; }
       body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup {
         position: absolute;
-        right: 10%;
-        bottom: 14%;
-        left: 10%;
-        padding: 1em;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1em 1em 3em;
         text-align: center;
         background: white;
         box-sizing: border-box;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
         opacity: 0.95;
         text-shadow: 0 1px 2px #cccccc; }
         body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 {
@@ -385,14 +386,13 @@ body {
         body .content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h2, body .content-scroller-wrapper .content-scroller #cafeteria-405-kitchen hgroup h3 {
           font-size: 1em; }
       body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup {
-        left: 6%;
-        right: 6%;
+        padding: 1.5em 1.5em 3.5em;
         opacity: 1; }
         body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 {
           font-size: 3.1em;
           line-height: 1.385em; }
         body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h2 {
-          margin-top: 1em;
+          margin-top: 0;
           font-size: 0.9em; }
       body .content-scroller-wrapper .content-scroller #hangul-roundup hgroup {
         left: 47%;
@@ -566,15 +566,10 @@ body {
       top: 23%; }
       body .content-scroller-wrapper .content-scroller #searching-for-the-little-black-pen hgroup h1 {
         font-size: 3.3em; }
-    body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup {
-      padding: 2em;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      border-radius: 5px; }
-      body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 {
-        font-size: 4em; }
-      body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h2 {
-        font-size: 1em; }
+    body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h1 {
+      font-size: 4em; }
+    body .content-scroller-wrapper .content-scroller #dont-stop-make-believing hgroup h2 {
+      font-size: 1em; }
     body .content-scroller-wrapper .content-scroller #hangul-roundup hgroup {
       bottom: 8em;
       right: 8%;
