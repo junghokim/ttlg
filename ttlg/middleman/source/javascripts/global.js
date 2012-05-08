@@ -5,8 +5,6 @@ $(document).ready(function() {
 	var coverHeight = $(window).height();
 	var coverWidth = $(window).width();
 	var articleCount = $('.article').length;
-
-	//alert (articleCount);
 	
 	$('#vertical').each(function() {
 			var $children = $(this).children(),
@@ -220,10 +218,11 @@ $(document).ready(function() {
 					function() {
 
 						var articleCount = $('.article').length;				
+						//alert (articleCount);
 
 						// Set the height of the cover equal to the height of viewport
 						// Changed to accomodate things below cover on homepage
-						$('.cover').css({'height':((coverHeight)-62)+'px'});
+						$('.cover').css({'height':((coverHeight))+'px'});
 					
 						// Set the width of the container that holds the articles and the articles themselves equal to the width of the viewport
 						$('.content-scroller-wrapper, .article').css({width: ((coverWidth))+'px'});
