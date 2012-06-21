@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 	// Serial Scroll
 
-	$('#content-scroller').find('.article').not(':first-child').addClass('hidden');
+	//$('#content-scroller').find('.article').not(':first-child').addClass('hidden');
 	$('#content-scroller .article:first-child').addClass('visible');
 
 	$('#articles .content-scroller-wrapper').serialScroll({
@@ -222,7 +222,7 @@ $(document).ready(function() {
 
 						// Set the height of the cover equal to the height of viewport
 						// Changed to accomodate things below cover on homepage
-						$('.cover').css({'height':((coverHeight))+'px'});
+						$('.cover').css({'height':((coverHeight)-62)+'px'});
 					
 						// Set the width of the container that holds the articles and the articles themselves equal to the width of the viewport
 						$('.content-scroller-wrapper, .article').css({width: ((coverWidth))+'px'});
@@ -247,14 +247,6 @@ $(document).ready(function() {
 							cycle:true, //don't pull back once you reach the end
 							// easing:'easeOutQuart', //use this easing equation for a funny effect
 							//jump: true, //click on the images to scroll to them,
-							onBefore:function( e, elem, $pane, $items, pos ){
-								$('body,html').animate({
-									scrollTop: 0
-								}, 800);	
-								$items.removeClass('visible').addClass('hidden');
-								$(elem).removeClass('hidden').addClass('visible');
-								//$(this).removeClass('visible').addClass('hidden');
-							}
 						});
 						$('#vertical').each(function() {
 								var $children = $(this).children(),

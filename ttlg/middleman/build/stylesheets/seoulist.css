@@ -331,9 +331,6 @@ header.masthead {
 .cover {
   box-sizing: border-box; }
 
-#articles .hidden article {
-  display: none; }
-
 #articles article p {
   margin-bottom: 1.5em;
   font-family: "skolar";
